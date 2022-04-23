@@ -1,0 +1,58 @@
+body { 
+    background-color: rgb(40, 40, 60);
+    color: white;
+}
+
+.webapps {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.webapp {
+    background-color: rgb(30, 30, 60);
+    border: 1.5px solid SandyBrown;
+    border-radius: 1.5%;
+    padding: 2%;
+    margin: 2%;
+}
+
+button {
+    border: 1.5px solid SandyBrown;
+    border-radius: 1.5%;
+    padding: 1%;
+    margin: 1%;
+    cursor: pointer;
+}
+
+.toggle {
+    background-color: rgb(200, 150, 150);
+}
+
+.toggle-on {
+    background-color: rgb(150, 200, 150);
+}
+
+h1 { 
+    color: wheat;
+    text-align:center;
+}
+
+h2 {
+    text-align:center;
+}
+
+div {
+    display: block;
+}
+
+a:link {
+    color: PapayaWhip;
+}
+
+footer {
+    background-color: rgb(20, 20, 60);
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
