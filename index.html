@@ -1,749 +1,1150 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- seo meta -->
-        <meta name="keywords" content="music web apps kids accesible">
-        <meta name="description" content="Online platform for musical apps available in the browser that lets users to filter them by its accessibility for different groups of people. Applications that fit the categories and are strictly related to creating, generating, learning or editing music.">
-        <meta name="author" content="Wojtek Węgrzyn, Dominik Oczoś">
-        <!-- technical meta -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- <base href="http://webmusic.apps.dj/" target="_blank"> -->
-        <meta charset="UTF-8">
-        <!-- representation meta -->
-        <title>Web music apps for everybody</title>
-        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-        <!-- internal hrefs -->
-        <link rel="stylesheet" href="style.css">
-        <link rel="manifest" href="site.webmanifest">
-        <!-- external hrefs -->
-        <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> TODO https://www.w3schools.com/html/html_responsive.asp -->
-    </head>
-    <body>
-        <script src="script.js"></script>
-        <header>
-            <noscript>Sorry, your browser does not support JavaScript! Due to this fact, no filtering of apps is possible.</noscript>
-            <h1 id="pageTitle">Web music apps for everybody</h1>
-        </header>
-        <nav>
-            <button type="button" class="toggle toggle-on toggle-physic" onclick="hideShowClassElement('physic')">Physic</button>
-            <button type="button" class="toggle toggle-on toggle-bigTech" onclick="hideShowClassElement('bigTech')">bigTech</button>
-            <button type="button" class="toggle toggle-on toggle-classic" onclick="hideShowClassElement('classic')">classic</button>
-            <button type="button" class="toggle toggle-on toggle-openSource" onclick="hideShowClassElement('openSource')">openSource</button>
-            <button type="button" class="toggle toggle-on toggle-descriptive" onclick="hideShowClassElement('descriptive')">descriptive</button>
-            <button type="button" class="toggle toggle-on toggle-AI" onclick="hideShowClassElement('AI')">AI</button>
-            <button type="button" class="toggle toggle-on toggle-commercial" onclick="hideShowClassElement('commercial')">commercial</button>
-            <button type="button" class="toggle toggle-on toggle-FreeSound" onclick="hideShowClassElement('FreeSound')">FreeSound</button>
-            <button type="button" class="toggle toggle-on toggle-DIY"    onclick="hideShowClassElement('DIY')">DIY</button>
-            <button type="button" class="toggle toggle-on toggle-math" onclick="hideShowClassElement('math')">math</button>
-            <button type="button" class="toggle toggle-on toggle-mustCheck" onclick="hideShowClassElement('mustCheck')">mustCheck</button>
-
-        </nav>
-        <div id="webapps" class="webapps">
-            <div class="webapp mustCheck TeroParviainen">
-        <h2><a href="https://teropa.info/loop/#/title target="_blank">Jak działa muzyka generatywna?</a></h2>
+ <head>
+  <!-- seo meta -->
+  <meta content="music web apps kids accesible" name="keywords"/>
+  <meta content="Online platform for musical apps available in the browser that lets users to filter them by its accessibility for different groups of people. Applications that fit the categories and are strictly related to creating, generating, learning or editing music." name="description"/>
+  <meta content="Wojtek Węgrzyn, Dominik Oczoś" name="author"/>
+  <!-- technical meta -->
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <!-- <base href="http://webmusic.apps.dj/" target="_blank"> -->
+  <meta charset="utf-8"/>
+  <!-- representation meta -->
+  <title>
+   Web music apps for everybody
+  </title>
+  <link href="images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+  <link href="images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+  <link href="images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+  <!-- internal hrefs -->
+  <link href="style.css" rel="stylesheet"/>
+  <link href="site.webmanifest" rel="manifest"/>
+  <!-- external hrefs -->
+  <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> TODO https://www.w3schools.com/html/html_responsive.asp -->
+  <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"/>
+ </head>
+ <body>
+  <script src="script.js">
+  </script>
+  <div id="container">
+   <header>
+    <noscript>
+     Sorry, your browser does not support JavaScript! Due to this fact, no filtering of apps is possible.
+    </noscript>
+    <h1 id="pageTitle">
+     Web music apps for everybody
+    </h1>
+   </header>
+   <nav>
+    <span class="filtering buttons">
+     <button class="button is-rounded toggle-all toggle-all-off" onclick="toggleAll()" type="button">
+      Toggle all
+     </button>
+    </span>
+   </nav>
+   <div id="webapps" class="webapps">
+        <div class="webapp TeroParviainen mustCheck">
+        <h2><a href="https://teropa.info/loop/#/title" target="_blank">Jak działa muzyka generatywna?</a></h2>
         <h3>Authors: <a href='http://teropa.info'>Tero Parviainen</a> </h3>
+        <br/>
         <p>Webowy przewodnik z wieloma interaktywnymi przykładami z historii muzyki nowej. Jest to chyba najbardziej rozbudowana aplikacja w całym wpisie. Przejrzenie jej całej zajmuje około 1-2godzin, według mnie jest to wartość conajmniej kilku dobrych lekcji od razu z praktycznym wypróbowaniem nauczonych konceptów. Aplikacja zbiera wiele różnych aplikacji stworzonych przez Parviainena, które w różnych wariacjach/rozwinięciach pojawią się jeszcze w tym spisie.</p>
-        <p>Tags: mustCheck TeroParviainen</p>
+        <p class="tags"><a class='tag'>#TeroParviainen</a> <a class='tag'>#mustCheck</a></p>
+        
+        
+        
         </div>
         
         <div class="webapp bigTech mustCheck tonejs">
-        <h2><a href="https://learningsynths.ableton.com target="_blank">Aplikacja webowa tłumacząca w interakrywny sposób podstawy syntezy dźwięku</a></h2>
+        <h2><a href="https://learningsynths.ableton.com" target="_blank">Aplikacja webowa tłumacząca w interakrywny sposób podstawy syntezy dźwięku</a></h2>
         <h3>Authors: <a href='https://www.ableton.com/'>Ableton</a> </h3>
+        <br/>
         <p>Zrobiona przez Ableton (twórców jednego z najpopularniejszych programów do tworzenia i obróbki muzyki) aplikacja webowa w bardzo barwny sposób przedstawia najważniejsze koncepty i udostępnia świetną ‘piaskownicę’, żeby każdy mógł na spokojnie spróbować w praktyce przeczytane wcześniej informacje. Poniżej wklejam również podobną stronę, która tłumaczy tworzenie muzyki i różne podstawowe koncepty z tym związane. </p>
-        <p>Tags: bigTech mustCheck tonejs</p>
+        <p class="tags"><a class='tag'>#bigTech</a> <a class='tag'>#mustCheck</a> <a class='tag'>#tonejs</a></p>
+        
+        <ul>More links:<li><a href='https://learningmusic.ableton.com/'>Nauka tworzenia muzyki w ogóle, też od Abletona</a></li></ul>
+        
         </div>
         
         <div class="webapp bigTech openSource">
-        <h2><a href="https://musiclab.chromeexperiments.com/Experiments target="_blank">Chrome Music Lab - zbiór prostych aplikacji muzycznych</a></h2>
+        <h2><a href="https://musiclab.chromeexperiments.com/Experiments" target="_blank">Chrome Music Lab - zbiór prostych aplikacji muzycznych</a></h2>
         <h3>Authors: <a href='https://experiments.withgoogle.com/'>Google</a> </h3>
+        <br/>
         <p>Można na przykład zobaczyć sobie ładny spektogram albo napisać ładne melodie. W większości aplikacje mają przeznaczenie edukacyjne, raczej dla młodszych odbiorców, choć wydaje mi się że każdy znajdzie na tej stronie przynajmniej jedną miłą rzecz.</p>
-        <p>Tags: bigTech openSource</p>
+        <p class="tags"><a class='tag'>#bigTech</a> <a class='tag'>#openSource</a></p>
+        
+        <ul>More links:<li><a href='https://github.com/googlecreativelab/chrome-music-lab'>Kod źródłowy</a></li></ul>
+        
         </div>
         
         <div class="webapp DIY descriptive openSource">
-        <h2><a href="https://femurdesign.com/omni target="_blank">Omni - poznaj różne skale muzyczne</a></h2>
+        <h2><a href="https://femurdesign.com/omni" target="_blank">Omni - poznaj różne skale muzyczne</a></h2>
         <h3>Authors: <a href='http://femurdesign.com/'>Luke Phillips</a> </h3>
+        <br/>
         <p>Kilka skal do wyboru, sympatyczne efekty dźwiękowe, ładny design. Naprawdę polecam osobom zainteresowanym poznaniem niestandardowych skal muzycznych typu japońskich Hirajōshi czy Iwato. Można też nagrać krótki fragment swojego wykonu i go zapętlić. </p>
-        <p>Tags: DIY descriptive openSource</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#descriptive</a> <a class='tag'>#openSource</a></p>
+        
+        <ul>More links:<li><a href='https://github.com/lukephills/omni'>Kod źródłowy</a></li></ul>
+        
         </div>
         
         <div class="webapp bigTech">
-        <h2><a href="https://www.concerthotels.com/got-rhythm target="_blank">Tester wyczucia rytmu</a></h2>
+        <h2><a href="https://www.concerthotels.com/got-rhythm" target="_blank">Tester wyczucia rytmu</a></h2>
         <h3>Authors: <a href='https://www.concerthotels.com/'>concerthotels.com</a> </h3>
+        <br/>
         <p>Użytkownik ma proste zadanie: musi 20 razy wcisnąć spację w tempe 120bpm. Na podstawie tego testu jest oceniony wynikiem w przedziale 0-1000. Mimo, że aplikacja została stworzona w celach reklamowych i trochę odstaje poziomem od innych aplikacji tutaj, to jednak ją wklejam, bo znam ją sprzed lat i pamiętam z jakim ciepłym odbiorem się spotkała. </p>
-        <p>Tags: bigTech</p>
+        <p class="tags"><a class='tag'>#bigTech</a></p>
+        
+        
+        
         </div>
         
         <div class="webapp descriptive math">
-        <h2><a href="https://academo.org/demos/19-tet-keyboard target="_blank">Klawiatura muzyczna, pozwalająca sprawdzić jak brzmi oktawa podzielona na 19, zamiast 12 części</a></h2>
+        <h2><a href="https://academo.org/demos/19-tet-keyboard" target="_blank">Klawiatura muzyczna, pozwalająca sprawdzić jak brzmi oktawa podzielona na 19, zamiast 12 części</a></h2>
         <h3>Authors: <a href='https://github.com/edwardball'>Ed Ball</a> </h3>
+        <br/>
         <p>Bonus to wartościowe wytłumaczenie procederu oraz dodatkowe tłumaczenia niejasności w komentarzach. Jest to bardzo prosta strona, na dosłownie 5 minut, ale chciałem zaznaczyć jej obecność tutaj, bo można tam znaleźć wiele więcej podobnych tematów, już niekoniecznie związane z dźwiękiem. </p>
-        <p>Tags: descriptive math</p>
+        <p class="tags"><a class='tag'>#descriptive</a> <a class='tag'>#math</a></p>
+        
+        <ul>More links:<li><a href='https://github.com/edwardball/academo.org/tree/master/demos/19-tet-keyboard'>Kod źródłowy</a></li></ul>
+        
         </div>
         
         <div class="webapp DIY classic physic">
-        <h2><a href="https://dood.al/pinktrombone target="_blank">Symulacja modulacji ludzkiego głosu</a></h2>
+        <h2><a href="https://dood.al/pinktrombone" target="_blank">Symulacja modulacji ludzkiego głosu</a></h2>
         <h3>Authors: <a href='http://venuspatrol.nfshost.com/'>Neil Thapen</a> </h3>
+        <br/>
         <p>Można se poklikać i się dowiedzieć jak to działa trochę. Aplikacja nie posiada kodu źródłowego, mimo że została stworzona przez niezależnego twórcę gier przeglądarkowych i jednocześnie wykładowcę akademickiego. </p>
-        <p>Tags: DIY classic physic</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#classic</a> <a class='tag'>#physic</a></p>
+        
+        
+        
         </div>
         
-        <div class="webapp DIY physic openSource">
-        <h2><a href="https://harmony.brianfoo.com target="_blank">Informacje na temat świata przedstawione dźwiękowo</a></h2>
+        <div class="webapp DIY openSource physic">
+        <h2><a href="https://harmony.brianfoo.com" target="_blank">Informacje na temat świata przedstawione dźwiękowo</a></h2>
         <h3>Authors: <a href='https://brianfoo.com/'>Brian Foo</a> </h3>
+        <br/>
         <p>Każda szerokość geograficzna opisana jest przez jej zbiorcze PKB, emisje CO2, temperaturę i inne, gdzie każda z tych informacji wpływa na głosność instrumentu, tworząc ścianę dźwięku, zmieniającą się wraz z przeglądaną przez nas szerokością geograficzną. </p>
-        <p>Tags: DIY physic openSource</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#openSource</a> <a class='tag'>#physic</a></p>
+        
+        <ul>More links:<li><a href='https://github.com/beefoo/latitude'>Kod źródłowy</a></li></ul>
+        
         </div>
         
-        <div class="webapp mustCheck descriptive bgtTech">
-        <h2><a href="http://everynoise.com target="_blank">Wszystkie możliwe statystyki Spotify zebrane w jednym miejscu</a></h2>
+        <div class="webapp bigTech descriptive mustCheck">
+        <h2><a href="http://everynoise.com" target="_blank">Wszystkie możliwe statystyki Spotify zebrane w jednym miejscu</a></h2>
         <h3>Authors: <a href='https://twitter.com/glenn_mcdonald'>Glenn McDonald</a>     Kilka podstron tej strony:
 </h3>
+        <br/>
         <p>Można sprawdzić czego słuchają ludzie w Twoim mieście albo na uczelni. Choć zdaje się, że autorzy pokusili się o jakieś dzikie odsiewanie rzeczy bardziej popularnych, żeby wskazać dane bardziej charakterystyczne dla wyszukiwania.</p>
-        <p>Tags: mustCheck descriptive bgtTech</p>
+        <p class="tags"><a class='tag'>#bigTech</a> <a class='tag'>#descriptive</a> <a class='tag'>#mustCheck</a></p>
+        
+        <ul>More links:<li><a href='http://everynoise.com/everyplace.cgi'>Czego słucha się w danym mieście?</a></li><li><a href='http://everynoise.com/retromatic.html'>Najpopularniejsze gatunki w danym roku</a></li><li><a href='http://everynoise.com/new_releases_by_genre.cgi'>Nowe wydania z danego gatunku muzycznego</a></li><li><a href='http://everynoise.com/cities.html'>Powiązania gatunków z miastami</a></li><li><a href='http://everynoise.com/worldbrowser.cgi'>Przegląd autorskich playlist Spotify z różnych krajów</a></li><li><a href='http://everynoise.com/everyschool.cgi'>Czego słucha się na danej uczelni?</a></li><li><a href='http://everynoise.com/genrewords.html'>Zbiór wyrazów używanych najczęściej w tytułach piosenek z danego gatunku</a></li><li><a href='http://everynoise.com/everydemo.cgi'>Szczegółowe dane demograficzne</a></li><li><a href='http://everynoise.com/gender_tldr.html'>Gender bias w muzyce</a></li><li><a href='http://everynoise.com/world_playlist_mindset.html'>Jak dzisiaj ludzie nazywali swoje playlisty?</a></li></ul>
+        
         </div>
         
-        <div class="webapp descriptive TeroParviainen tonejs">
-        <h2><a href="https://teropa.info/blog/2016/07/28/javascript-systems-music.html target="_blank">Poradnik tworzenia webowych aplikacji muzycznych w JavaScript</a></h2>
+        <div class="webapp TeroParviainen descriptive tonejs">
+        <h2><a href="https://teropa.info/blog/2016/07/28/javascript-systems-music.html" target="_blank">Poradnik tworzenia webowych aplikacji muzycznych w JavaScript</a></h2>
         <h3>Authors: <a href='http://teropa.info'>Tero Parviainen</a> </h3>
+        <br/>
         <p>Przejrzysty poradnik jak łatwo można zrobić swoją własną aplikację webową z przykładami działających już apek imitujących dzieła m.in. Briana Eno. Wklejam, ponieważ nawet osoba nie do końca zainteresowana pisaniem takich aplikacji może w interaktywny sposób podejrzeć co się dzieje w kodzie. </p>
-        <p>Tags: descriptive TeroParviainen tonejs</p>
+        <p class="tags"><a class='tag'>#TeroParviainen</a> <a class='tag'>#descriptive</a> <a class='tag'>#tonejs</a></p>
+        
+        
+        
         </div>
         
         <div class="webapp descriptive">
-        <h2><a href="https://musicbrainz.org target="_blank">OpenSource muzyczna encyklopedia - MusicBrainz</a></h2>
+        <h2><a href="https://musicbrainz.org" target="_blank">OpenSource muzyczna encyklopedia - MusicBrainz</a></h2>
         <h3>Authors: <a href='https://metabrainz.org/'>MetaBrainz</a> </h3>
+        <br/>
         <p>Choć projekt chyba upadł albo nie jest tak aktywny jak inne encyklopedie, zarządzane już przez konkretne podmioty jak RateYourMusic przez Sonemic czy Discogs przez Zink Media. Niemniej myślę, że jest to pomysł warty do conajmniej przemyślenia. </p>
-        <p>Tags: descriptive</p>
+        <p class="tags"><a class='tag'>#descriptive</a></p>
+        
+        <ul>More links:<li><a href='https://en.wikipedia.org/wiki/List_of_online_music_databases'>Swoją drogą, może warto też spojrzeć na listę encyklopedii muzycznych online i się nad tym pochylić</a></li></ul>
+        
         </div>
         
         <div class="webapp AI">
-        <h2><a href="https://jaipaul.bronze.ai target="_blank">“Jasmine” Jai Paul</a></h2>
+        <h2><a href="https://jaipaul.bronze.ai" target="_blank">“Jasmine” Jai Paul</a></h2>
         <h3>Authors: <a href='https://twitter.com/bronzemuzic'>Bronze</a> </h3>
+        <br/>
         <p>Stworzone za pomocą autorskiego systemu Bronze AI we współpracy z twórcą oryginału, Jaiem Paulem. Strona internetowa na bieżąco odtwarza niekończącą się aranżację wcześniej wydanego utworu “Jasmine”. Zespół Bronze przygotował również wystawę we współpracy z Philippe Parreno, Arca oraz Nicolasem Beckerem w nowojorskim MoMA. </p>
-        <p>Tags: AI</p>
+        <p class="tags"><a class='tag'>#AI</a></p>
+        
+        
+        
         </div>
         
         <div class="webapp DIY">
-        <h2><a href="http://www.pianophase.com target="_blank">"Piano Phase" Steve Reich</a></h2>
+        <h2><a href="http://www.pianophase.com" target="_blank">"Piano Phase" Steve Reich</a></h2>
         <h3>Authors: <a href='http://www.chenalexander.com/'>Alexander Chen</a> </h3>
+        <br/>
         <p>Nigdy się nie kończy i ma wizualizacje też. Aplikacja pozwala na interakcję użytkownika. </p>
-        <p>Tags: DIY</p>
+        <p class="tags"><a class='tag'>#DIY</a></p>
+        
+        
+        
         </div>
         
         <div class="webapp DIY math physic">
-        <h2><a href="http://www.baroque.me target="_blank">Suita nr 1, G-dur, BWV 1007, J.S. Bach</a></h2>
+        <h2><a href="http://www.baroque.me" target="_blank">Suita nr 1, G-dur, BWV 1007, J.S. Bach</a></h2>
         <h3>Authors: <a href='http://www.chenalexander.com/'>Alexander Chen</a> </h3>
+        <br/>
         <p>Aplikacja jest interaktywna. Bazując na matematycznych powiązaniach długości struny i wysokości dźwięku strona prezentuje kolejne nuty jako struny. </p>
-        <p>Tags: DIY math physic</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#math</a> <a class='tag'>#physic</a></p>
+        
+        
+        
         </div>
         
-        <div class="webapp  ">
-        <h2><a href="https://codepen.io/teropa/full/YgRayV target="_blank">Neural Bach Slowly</a></h2>
+        <div class="webapp ambient classical">
+        <h2><a href="https://codepen.io/teropa/full/YgRayV" target="_blank">Neural Bach Slowly</a></h2>
         <h3>Authors: <a href='http://teropa.info'>Tero Parviainen</a> </h3>
+        <br/>
         <p>Sieć neuronowa, która generuje utwory Bacha to temat znany już od kilku dekad. Tym razem jednak jest mała wariacja w postaci bardzo powolnego tempa. </p>
-        <p>Tags:  </p>
+        <p class="tags"><a class='tag'>#ambient</a> <a class='tag'>#classical</a></p>
+        
+        <ul>More links:<li><a href='https://codepen.io/teropa/pen/YgRayV'>Kod źródłowy</a></li></ul>
+        
         </div>
         
-        <div class="webapp  ">
-        <h2><a href="https://mezoistvan.github.io/discreetmusic target="_blank">“Discreet music" Brian Eno</a></h2>
+        <div class="webapp ambient">
+        <h2><a href="https://mezoistvan.github.io/discreetmusic" target="_blank">“Discreet music" Brian Eno</a></h2>
         <h3>Authors:     brak autora? 
 </h3>
+        <br/>
         <p>W formie audiowizualnej strony internetowej.</p>
-        <p>Tags:  </p>
+        <p class="tags"><a class='tag'>#ambient</a></p>
+        
+        <ul>More links:<li><a href='https://github.com/teropa/discreetmusic.js'>Kod źródłowy innego dewelopera, ale opierający się na tym samym utworze</a></li></ul>
+        
         </div>
         
         <div class="webapp DIY openSource">
-        <h2><a href="https://eclipticalis.com target="_blank">“Music eclipticalis” John Cage</a></h2>
+        <h2><a href="https://eclipticalis.com" target="_blank">“Music eclipticalis” John Cage</a></h2>
         <h3>Authors: <a href='https://brianfoo.com/'>Brian Foo</a> </h3>
+        <br/>
         <p>Dzieło polegające na nałożeniu pięciolinii na gwieździste niebo, gdzie gwiazdy reprezentują nuty. John Cage napisał swój utwór na bazie atlasu, tutaj interpretowane jest niebo według danych z bazy gwiazd HYG</p>
-        <p>Tags: DIY openSource</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#openSource</a></p>
+        
+        <ul>More links:<li><a href='https://github.com/beefoo/eclipticalis'>Kod źródłowy</a></li><li><a href='http://www.astronexus.com/hyg'>Otwarta baza danych dotyczących gwiazd</a></li></ul>
+        
         </div>
         
         <div class="webapp DIY openSource">
-        <h2><a href="https://blossom.alexbainter.com target="_blank">Blossom (oparte na “Bloom” Briana Eno)</a></h2>
+        <h2><a href="https://blossom.alexbainter.com" target="_blank">Blossom (oparte na “Bloom” Briana Eno)</a></h2>
         <h3>Authors: <a href='https://alexbainter.com/'>Alex Bainter</a> </h3>
+        <br/>
         <p>Można sobie kliknąć lub pozwolić komputerowi klikać za nas :) Inspirowane ostatnimi dziełami Briana Eno, wydanymi w formie aplikacji na iPhony.  </p>
-        <p>Tags: DIY openSource</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#openSource</a></p>
+        
+        <ul>More links:<li><a href='https://github.com/generative-music/blossom'>Kod źródłowy</a></li></ul>
+        
         </div>
         
         <div class="webapp DIY openSource">
-        <h2><a href="https://corruptionloops.alexbainter.com target="_blank">Corruption Loops (oparte na “Desintegration Loops” Williama Basinskiego)</a></h2>
+        <h2><a href="https://corruptionloops.alexbainter.com" target="_blank">Corruption Loops (oparte na “Desintegration Loops” Williama Basinskiego)</a></h2>
         <h3>Authors: <a href='https://alexbainter.com/'>Alex Bainter</a> </h3>
+        <br/>
         <p>Corruption Loops to strona napisana przez Alexa Baintera, która generuje unikalny fragment muzyczny, a następnie go dekonstruuje.</p>
-        <p>Tags: DIY openSource</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#openSource</a></p>
+        
+        <ul>More links:<li><a href='https://github.com/metalex9/corruption-loops'>Kod źródłowy</a></li></ul>
+        
         </div>
         
-        <div class="webapp  ">
-        <h2><a href="http://player.cageconcert.org target="_blank">“Concert for Orchestra and Piano” John Cage</a></h2>
+        <div class="webapp classic">
+        <h2><a href="http://player.cageconcert.org" target="_blank">“Concert for Orchestra and Piano” John Cage</a></h2>
         <h3>Authors:     autorstwa pracowników Universities of Huddersfield and Leeds
 </h3>
+        <br/>
         <p>Znane i lubiane dzieło do odtworzenia w przeglądarce. Można zdecydować o chyba wszystkich parametrach utworu, a sam utwór można odtworzyć w estetycznej oprawie wizualnej. </p>
-        <p>Tags:  </p>
+        <p class="tags"><a class='tag'>#classic</a></p>
+        
+        <ul>More links:<li><a href='https://cageconcert.org/wp-content/uploads/2019/11/John-Cage-Concert-Player-Guide-1.pdf'>User guide</a></li></ul>
+        
         </div>
         
         <div class="webapp DIY tonejs">
-        <h2><a href="https://teropa.info/musicmouse target="_blank">“Music Mouse” Laurie Spiegel</a></h2>
+        <h2><a href="https://teropa.info/musicmouse" target="_blank">“Music Mouse” Laurie Spiegel</a></h2>
         <h3>Authors: <a href='http://teropa.info'>Tero Parviainen</a> </h3>
+        <br/>
         <p>Implementacja dzieła Laurie Spiegel, które podejmowało znany problem grania muzyki za pomocą myszki komputerowej. Więcej informacji w linku poniżej. Program może generować muzykę lub przekazywać informację MIDI do wybranego przez nas programu. </p>
-        <p>Tags: DIY tonejs</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#tonejs</a></p>
+        
+        <ul>More links:<li><a href='http://retiary.org/ls/programs.html'>Podstrona na temat Music Mouse na stronie samej Laurie Spiegel</a></li></ul>
+        
         </div>
         
-        <div class="webapp DIY tonejs openSource">
-        <h2><a href="https://teropa.info/in-c target="_blank">“In C” Terry Riley</a></h2>
+        <div class="webapp DIY openSource tonejs">
+        <h2><a href="https://teropa.info/in-c" target="_blank">“In C” Terry Riley</a></h2>
         <h3>Authors: <a href='http://teropa.info'>Tero Parviainen</a> </h3>
+        <br/>
         <p>Audiowizualna interpretacja klasycznego dzieła muzyki generatywnej. </p>
-        <p>Tags: DIY tonejs openSource</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#openSource</a> <a class='tag'>#tonejs</a></p>
+        
+        <ul>More links:<li><a href='https://github.com/teropa/in-c'>Kod źródłowy</a></li></ul>
+        
         </div>
         
         <div class="webapp DIY openSource">
-        <h2><a href="https://codepen.io/swallez/full/zVdarx target="_blank">Gymnopedie 1-3, Erik Satie</a></h2>
+        <h2><a href="https://codepen.io/swallez/full/zVdarx" target="_blank">Gymnopedie 1-3, Erik Satie</a></h2>
         <h3>Authors: <a href='http://teropa.info'>Tero Parviainen</a> </h3>
+        <br/>
         <p>Klasyczne dzieło zwizualizowane za pomocą grafów, gdzie każdy wierzchołek reprezentuje kolejno pojawiające się nuty. </p>
-        <p>Tags: DIY openSource</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#openSource</a></p>
+        
+        <ul>More links:<li><a href='https://codepen.io/swallez/pen/zVdarx'>Kod źródłowy</a></li><li><a href='https://codepen.io/teropa/full/JJNKxW'>Wizualizacja za pomocą grafu nut zagranych przez użytkownika</a></li></ul>
+        
         </div>
         
-        <div class="webapp  ">
-        <h2><a href="http://www.playonlinedicegames.com/mozart target="_blank">Mozart Dice Game</a></h2>
+        <div class="webapp classic">
+        <h2><a href="http://www.playonlinedicegames.com/mozart" target="_blank">Mozart Dice Game</a></h2>
         <h3>Authors: <a href='http://www.playonlinedicegames.com/'>PlayOnlineDiceGames.com</a> </h3>
+        <br/>
         <p>Z opisu strony: “Mozart Dice Game more commonly known as Musical Dice Game is a system in which dice is used to generate music from precomposed options. In 1787, Wolfgang Amadeus Mozart published a musical composition entitled "Musikalisches Würfelspiel". This composition allows one, as Mozart puts it, "to compose, without the least knowledge of music, so many German waltzes or ländler as one pleases, by throwing a certain number with two dice."”</p>
-        <p>Tags:  </p>
+        <p class="tags"><a class='tag'>#classic</a></p>
+        
+        <ul>More links:<li><a href='https://en.wikipedia.org/wiki/Musikalisches_W%C3%BCrfelspiel'>Artykuł na Wikipedii o dziele</a></li></ul>
+        
         </div>
         
         <div class="webapp DIY openSource">
-        <h2><a href="https://generative.fm/music/alex-bainter-aisatsana target="_blank">“aisatsana” Aphex Twin</a></h2>
+        <h2><a href="https://generative.fm/music/alex-bainter-aisatsana" target="_blank">“aisatsana” Aphex Twin</a></h2>
         <h3>Authors: <a href='https://alexbainter.com/'>Alex Bainter</a> </h3>
+        <br/>
         <p>Alex Bainter, którego inne dzieła są również opisane niżej i wyżej tym razem zabrał się za generatywną interpretację utworu z relatywnie niedawno wydanego albumu “Syro” Aphexa Twina. Prawdę mówiąc jestem nieco zdziwiony, że sam Aphex Twin nie doczekał się jeszcze zbyt wielu bardziej zaawansowanych technologicznie interpretacji, ta jest jedyna, którą udało mi się znaleźć. </p>
-        <p>Tags: DIY openSource</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#openSource</a></p>
+        
+        <ul>More links:<li><a href='https://medium.com/@metalex9/generating-more-of-my-favorite-aphex-twin-track-cde9b7ecda3a'>Opis algorytmu</a></li><li><a href='https://github.com/generative-music/pieces-alex-bainter/blob/master/packages/piece-aisatsana/src/piece.js'>Kod źródłowy</a></li></ul>
+        
         </div>
         
         <div class="webapp DIY mustCheck openSource">
-        <h2><a href="https://the.wubmachine.com target="_blank">The Wub Machine</a></h2>
+        <h2><a href="https://the.wubmachine.com" target="_blank">The Wub Machine</a></h2>
         <h3>Authors: <a href='http://blog.petersobot.com/'>Peter Sobot</a> </h3>
+        <br/>
         <p>Nie jest to wprost rekonstrukcja, ale nie mogłem się nie pokusić wrzucić tutaj tego cuda. Aplikacja jest ultra prosta - wrzucamy po prostu utwór, wybieramy w jakim gatunku chcemy remiks i po momencie ładowania mamy gotowe. Co więcej, na testowanych przeze mnie piosenkach działało to naprawdę bardzo dobrze. Jestem pod wrażeniem tej aplikacji. Dodam tylko, że ta aplikacja w przeciwieństwie do zdecydowanej większości programów tutaj została napisana w języku Python, co widać - wysyłamy materiał źródłowy i czekamy na output, nie otrzymujemy efektów na bieżąco.</p>
-        <p>Tags: DIY mustCheck openSource</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#mustCheck</a> <a class='tag'>#openSource</a></p>
+        
+        <ul>More links:<li><a href='http://blog.petersobot.com/the-wub-machine-v20'>Opis działania</a></li><li><a href='https://github.com/psobot/wub-machine#readme'>Kod źródłowy</a></li></ul>
+        
         </div>
         
         <div class="webapp DIY tonejs">
-        <h2><a href="https://www.halloweensoundboard.com target="_blank">Generator Halloweenowej muzyki</a></h2>
+        <h2><a href="https://www.halloweensoundboard.com" target="_blank">Generator Halloweenowej muzyki</a></h2>
         <h3>Authors: <a href='https://www.mattmccorkle.com/'>Matt McCorkle</a> </h3>
+        <br/>
         <p>Znajduję to całkiem zabawnym prawdę mówiąc :} Muzyka oparta na utworze "The Skeleton Rag" autorstwa Sama Reidera.</p>
-        <p>Tags: DIY tonejs</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#tonejs</a></p>
+        
+        
+        
         </div>
         
         <div class="webapp DIY">
-        <h2><a href="http://www.mta.me target="_blank">Jak brzmi nowojorskie metro?</a></h2>
+        <h2><a href="http://www.mta.me" target="_blank">Jak brzmi nowojorskie metro?</a></h2>
         <h3>Authors: <a href='http://www.chenalexander.com/'>Alexander Chen</a> </h3>
+        <br/>
         <p>Strona internetowa w rzeczywistym czasie wyświetla przejazdy metra, które interpretowane są jako różnej długości struny.</p>
-        <p>Tags: DIY</p>
+        <p class="tags"><a class='tag'>#DIY</a></p>
+        
+        <ul>More links:<li><a href='https://datadrivendj.com/tracks/subway/'>Podobne dzieło napisane przez Briana Foo z dokładnym tłumaczeniem i źródłami tego pomysłu</a></li><li><a href='https://codepen.io/teropa/pen/mBbPEe'>Analogicznie, jak brzmią tramwaje w Helsinkach, z kodem źródłowym</a></li></ul>
+        
         </div>
         
         <div class="webapp DIY">
-        <h2><a href="http://www.cappel-nord.de/webaudio/public-sequencer-matrix target="_blank">A gdyby tak stworzyć sekwencer muzyczny do którego może mieć dostęp każdy?</a></h2>
+        <h2><a href="http://www.cappel-nord.de/webaudio/public-sequencer-matrix" target="_blank">A gdyby tak stworzyć sekwencer muzyczny do którego może mieć dostęp każdy?</a></h2>
         <h3>Authors: <a href='http://www.cappel-nord.de/webaudio/'>Patrick Borgeat</a> </h3>
+        <br/>
         <p>Say no more. Sekwencer w czasie rzeczywistym może edytować każda osoba, która go wyświetla. Taki hehe "eksperyment społeczny". Strona wyświetla też lokalizację uczestników projektu.</p>
-        <p>Tags: DIY</p>
+        <p class="tags"><a class='tag'>#DIY</a></p>
+        
+        
+        
         </div>
         
         <div class="webapp DIY openSource">
-        <h2><a href="https://tweet-fm.herokuapp.com target="_blank">Tweet FM</a></h2>
+        <h2><a href="https://tweet-fm.herokuapp.com" target="_blank">Tweet FM</a></h2>
         <h3>Authors: <a href='https://twitter.com/innernets'>Mike Mitchell</a> </h3>
+        <br/>
         <p>Strona wyświetla dodawane tweety w czasie rzeczywistym (choć pewnie nie jest w stanie zarejestrować wszystkich, bo cos malo mi sie wydaje) i odtwarza do nich dzwieki, no spoko.</p>
-        <p>Tags: DIY openSource</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#openSource</a></p>
+        
+        <ul>More links:<li><a href='https://github.com/m10l/tweet-fm'>Kod źródłowy</a></li><li><a href='https://maratropa.com/marpistudio#'>Podobna apka, ale skupiająca się bardziej na sferze wizualnej</a></li></ul>
+        
         </div>
         
         <div class="webapp DIY openSource">
-        <h2><a href="https://github.audio target="_blank">Github audio</a></h2>
+        <h2><a href="https://github.audio" target="_blank">Github audio</a></h2>
         <h3>Authors: <a href='https://github.com/debugger22'>Sudhanshu Mishra</a> </h3>
+        <br/>
         <p>GitHub to najpopularniejsza strona, agregująca projekty oparte na kontroli wersji (lub też po prostu kody źródłowe projektów). Powyższy link przedstawia kolejne ‘commity’ użytkowników w formie dźwiękowej. “There are three types of sounds(bell, string pluck and string swell) based on four types of events(PushEvent, PullRequestEvent, IssuesEvent and IssueCommentEvent). Bells represent PushEvents, string plucks represent IssuesEvents and IssueCommentEvents whereas string swells represent PullRequestEvents.”</p>
-        <p>Tags: DIY openSource</p>
-        </div>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#openSource</a></p>
         
-        <div class="webapp  ">
-        <h2><a href="https://www.bitlisten.com target="_blank">Listen to Bitcoin</a></h2>
-        <h3>Authors: <a href='https://www.maxlaumeister.com/'>Maximillian Laumeister</a> </h3>
-        <p>Projekt analogiczny do Tweet FM czy Github audio - strona interpretuje dźwiękowo zmiany w Wikipedii z całego świata, dodatkowo pobierając informacje dotyczące wielokości w bajtach usuniętych/dodanych informacji.</p>
-        <p>Tags:  </p>
+        <ul>More links:<li><a href='https://github.com/debugger22/github-audio'>Kod źródłowy</a></li><li><a href='http://listen.hatnote.com/'>Projekt “listen to Wikipedia”, na którym opierał się autor</a></li></ul>
+        
         </div>
         
         <div class="webapp DIY">
-        <h2><a href="https://driveandlisten.herokuapp.com target="_blank">Jedź i słuchaj</a></h2>
+        <h2><a href="https://www.bitlisten.com" target="_blank">Listen to Bitcoin</a></h2>
+        <h3>Authors: <a href='https://www.maxlaumeister.com/'>Maximillian Laumeister</a> </h3>
+        <br/>
+        <p>Projekt analogiczny do Tweet FM czy Github audio - strona interpretuje dźwiękowo zmiany w Wikipedii z całego świata, dodatkowo pobierając informacje dotyczące wielokości w bajtach usuniętych/dodanych informacji.</p>
+        <p class="tags"><a class='tag'>#DIY</a></p>
+        
+        <ul>More links:<li><a href='https://github.com/MaxLaumeister/bitlisten'>Kod źródłowy</a></li></ul>
+        
+        </div>
+        
+        <div class="webapp DIY">
+        <h2><a href="https://driveandlisten.herokuapp.com" target="_blank">Jedź i słuchaj</a></h2>
         <h3>Authors: <a href='https://www.buymeacoffee.com/erkam?ref=dnl0'>Erkam Şeker</a> </h3>
+        <br/>
         <p>Aplikacja odtwarza film nagrany z perspektywy pasażera samochodu, który jeździ ulicami wybranego miasta oraz słucha lokalnych stacji radiowych. </p>
-        <p>Tags: DIY</p>
+        <p class="tags"><a class='tag'>#DIY</a></p>
+        
+        
+        
         </div>
         
         <div class="webapp AI DIY openSource">
-        <h2><a href="https://twitter.com/arpobservatory target="_blank">Projekt ARP Observatory</a></h2>
+        <h2><a href="https://twitter.com/arpobservatory" target="_blank">Projekt ARP Observatory</a></h2>
         <h3>Authors: <a href='http://whitevinyldesign.com/#about'>Luke Twyman</a> </h3>
+        <br/>
         <p>Za stroną artysty: “ARP is a fictional radio telescope observatory. It’s a Twitter & SoundCloud bot which procedurally generates audio, data visualisations, and the tweets (and occasionally long-exposure photography) of an astronomer/research scientist who works at ARP, who is obsessive over the audio messages, and who runs the observatory’s Twitter account.”</p>
-        <p>Tags: AI DIY openSource</p>
+        <p class="tags"><a class='tag'>#AI</a> <a class='tag'>#DIY</a> <a class='tag'>#openSource</a></p>
+        
+        <ul>More links:<li><a href='https://twitter.com/arpobservatory'>Twitter</a></li><li><a href='https://soundcloud.com/arpobservatory'>SoundCloud</a></li><li><a href='https://github.com/Whitevinyl/ARP'>Kod źródłowy</a></li></ul>
+        
         </div>
         
         <div class="webapp DIY openSource">
-        <h2><a href="http://forever.fm target="_blank">Forever.fm</a></h2>
+        <h2><a href="http://forever.fm" target="_blank">Forever.fm</a></h2>
         <h3>Authors: <a href='http://blog.petersobot.com/'>Peter Sobot</a> </h3>
+        <br/>
         <p>Niestety, wbrew zapewnieniom kategorii aplikacja ta nie działa w czasie rzeczywistym, ale nie miałem pomysłu gdzie ją umieścić. Ale z powodu tego, że generuje ona nieskończony DJ set na bieżąco, stwierdziłem że można uznać to jako interakcję z wirtualnym DJem w czasie rzeczywistym :} </p>
-        <p>Tags: DIY openSource</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#openSource</a></p>
+        
+        <ul>More links:<li><a href='http://blog.petersobot.com/the-architecture-of-an-infinite-stream-of-music'>Opis architektury</a></li><li><a href='https://github.com/psobot/foreverfm'>Kod źródłowy</a></li></ul>
+        
         </div>
         
         <div class="webapp DIY">
-        <h2><a href="https://twitter.com/MelodyBot3456 target="_blank">MelodyBot3456 - co godzinę nowa melodia w twoim feedzie</a></h2>
+        <h2><a href="https://twitter.com/MelodyBot3456" target="_blank">MelodyBot3456 - co godzinę nowa melodia w twoim feedzie</a></h2>
         <h3>Authors:     autor nieznany?
 </h3>
+        <br/>
         <p>Taki sobie prosty fajny bot. Jest też obecny na facebooku. Autor postawił sobie za cel przede wszystkim generowanie ciekawych i krótkich melodii, które mogłyby zainspirować innych. Ostatecznie jednak warto zwrócić uwagę na reakcje społeczności, która bardzo ochoczo komentuje próby automatu (zwłaszcza te nieudane). Zaznaczę jeszcze, że jestem świadomy, że znowu trochę nagiąłem zasady podziału kategorii, ale nie mam naprawdę pojęcia gdzie mógłbym wrzucić taki twór… </p>
-        <p>Tags: DIY</p>
+        <p class="tags"><a class='tag'>#DIY</a></p>
+        
+        
+        
         </div>
         
-        <div class="webapp mustCheck descriptive math">
-        <h2><a href="http://tones.wolfram.com target="_blank">WolframTones - twórz proste kompozycje za pomocą algorytmów</a></h2>
+        <div class="webapp descriptive math mustCheck">
+        <h2><a href="http://tones.wolfram.com" target="_blank">WolframTones - twórz proste kompozycje za pomocą algorytmów</a></h2>
         <h3>Authors: <a href='https://www.wolfram.com/'>Wolfram</a> </h3>
+        <br/>
         <p>Można regulować styl, instrumenty, zakres wysokości, tempo i tak dalej. Generowanie podstawowych melodii oparte jest na automacie komórkowym (podobnym do ‘gry w życie’). Każda kombinacja parametrów reprezentowana jest przez unikalny adres URL, tak więc dzielenie się swoimi rezultatami ze znajomymi wymaga jedynie skopiowanie linka z przeglądarki. Polecam też lekturę działania systemu, jest bardzo dobrze opisana. </p>
-        <p>Tags: mustCheck descriptive math</p>
+        <p class="tags"><a class='tag'>#descriptive</a> <a class='tag'>#math</a> <a class='tag'>#mustCheck</a></p>
+        
+        
+        
         </div>
         
         <div class="webapp AI bigTech">
-        <h2><a href="https://experiments.withgoogle.com/ai/drum-machine/view target="_blank">Mapa dźwięków od Google</a></h2>
+        <h2><a href="https://experiments.withgoogle.com/ai/drum-machine/view" target="_blank">Mapa dźwięków od Google</a></h2>
         <h3>Authors: <a href='https://experiments.withgoogle.com/'>Google</a> </h3>
+        <br/>
         <p>Posortowana przez AI, bez żadnych tagów, na podstawie samego audio. Strona posiada funkcję odtwarzania sekwencji.</p>
-        <p>Tags: AI bigTech</p>
+        <p class="tags"><a class='tag'>#AI</a> <a class='tag'>#bigTech</a></p>
+        
+        
+        
         </div>
         
         <div class="webapp FreeSound openSource">
-        <h2><a href="https://andyp103.github.io/FreesoundTimbralSearch target="_blank">Mapa dźwięków open source</a></h2>
+        <h2><a href="https://andyp103.github.io/FreesoundTimbralSearch" target="_blank">Mapa dźwięków open source</a></h2>
         <h3>Authors: <a href='https://www.audiocommons.org/'>AudioCommons</a> </h3>
+        <br/>
         <p>W odróżnieniu od wersji Googla, ta mapa bardziej skupia się na poszukiwaniu podobnych dźwięków i eksplorowaniu powiązań.</p>
-        <p>Tags: FreeSound openSource</p>
+        <p class="tags"><a class='tag'>#FreeSound</a> <a class='tag'>#openSource</a></p>
+        
+        <ul>More links:<li><a href='https://github.com/AudioCommons/timbral_models'>Kod źródłowy</a></li></ul>
+        
         </div>
         
         <div class="webapp AI bigTech">
-        <h2><a href="https://g.co/melodymixer target="_blank">Melody Mixer</a></h2>
+        <h2><a href="https://g.co/melodymixer" target="_blank">Melody Mixer</a></h2>
         <h3>Authors: <a href='https://experiments.withgoogle.com/'>Google</a> </h3>
+        <br/>
         <p>Stronka, która pozwala na mieszanie dwóch różnych melodii przy pomocy AI.</p>
-        <p>Tags: AI bigTech</p>
+        <p class="tags"><a class='tag'>#AI</a> <a class='tag'>#bigTech</a></p>
+        
+        
+        
         </div>
         
         <div class="webapp DIY">
-        <h2><a href="https://euclidean-cracked.firebaseapp.com target="_blank">Generator euklidesowych sekwencji rytmicznych</a></h2>
+        <h2><a href="https://euclidean-cracked.firebaseapp.com" target="_blank">Generator euklidesowych sekwencji rytmicznych</a></h2>
         <h3>Authors: <a href='http://venuspatrol.nfshost.com/'>Neil Thapen</a> </h3>
+        <br/>
         <p>Rzeczy, które działają niezależnie od odbiorcy (ale mogą być interaktywne) i którym jest najbliżej do eksponatów wystawionych online.</p>
-        <p>Tags: DIY</p>
+        <p class="tags"><a class='tag'>#DIY</a></p>
+        
+        
+        
         </div>
         
         <div class="webapp openSource">
-        <h2><a href="https://euclidean-sequencer.herokuapp.com target="_blank">Generator euklidesowych sekwencji rytmicznych</a></h2>
+        <h2><a href="https://euclidean-sequencer.herokuapp.com" target="_blank">Generator euklidesowych sekwencji rytmicznych</a></h2>
         <h3>Authors:     autorstwo Ethan Rountree, Phi Nguyen, Porter Libby
 </h3>
+        <br/>
         <p>No to takie coś, że określając ilość wystąpień danej nuty w cyklu możemy tworzyć fajne cykliczne struktury dźwiękowe</p>
-        <p>Tags: openSource</p>
+        <p class="tags"><a class='tag'>#openSource</a></p>
+        
+        <ul>More links:<li><a href='https://github.com/xoxwaw/euclidean-sequencer'>Kod źródłowy</a></li></ul>
+        
         </div>
         
-        <div class="webapp  ">
-        <h2><a href="https://codepen.io/teropa/full/zPEYbY target="_blank">Generator euklidesowych sekwencji rytmicznych</a></h2>
+        <div class="webapp TeroParviainen">
+        <h2><a href="https://codepen.io/teropa/full/zPEYbY" target="_blank">Generator euklidesowych sekwencji rytmicznych</a></h2>
         <h3>Authors: <a href='http://teropa.info'>Tero Parviainen</a> </h3>
+        <br/>
         <p>Tym razem z sympatycznymi animacjami i lekkim brzmieniem.</p>
-        <p>Tags:  </p>
+        <p class="tags"><a class='tag'>#TeroParviainen</a></p>
+        
+        <ul>More links:<li><a href='https://codepen.io/teropa/pen/zPEYbY'>Kod źródłowy</a></li><li><a href='https://codepen.io/shaunlebron/full/rYGmRv/'>Lekka modyfikacja innego autora</a></li></ul>
+        
         </div>
         
-        <div class="webapp mustCheck FreeSound openSource">
-        <h2><a href="https://ffont.github.io/freesound-loop-generator target="_blank">Freesound loop generator</a></h2>
+        <div class="webapp FreeSound mustCheck openSource">
+        <h2><a href="https://ffont.github.io/freesound-loop-generator" target="_blank">Freesound loop generator</a></h2>
         <h3>Authors: <a href='https://www.youtube.com/watch?
 '>Javi Agenjo, Bram de Jong, Frederic Font</a>     v=NCYBjv2wDAw)
 </h3>
+        <br/>
         <p>Aplikacja bazując na bibliotece sampli freesound pozwala na tworzenie pętli perkusyjnych w sieci. Można sobie importować losowe sample z biblioteki oraz randomizować rytm, tworząc zupełnie niedeterministyczny sekwencer.</p>
-        <p>Tags: mustCheck FreeSound openSource</p>
+        <p class="tags"><a class='tag'>#FreeSound</a> <a class='tag'>#mustCheck</a> <a class='tag'>#openSource</a></p>
+        
+        <ul>More links:<li><a href='https://github.com/ffont/freesound-loop-generator'>Kod źródłowy</a></li><li><a href='https://tamats.com/apps/idradio/'>Jakiś inny sekwencer, ale jest tak zagmatwany że nie wiem jak działa do końca</a></li></ul>
+        
         </div>
         
-        <div class="webapp DIY mustCheck FreeSound openSource">
-        <h2><a href="https://beatpush.com target="_blank">Mocno zaawansowany sekwencer online</a></h2>
+        <div class="webapp DIY FreeSound mustCheck openSource">
+        <h2><a href="https://beatpush.com" target="_blank">Mocno zaawansowany sekwencer online</a></h2>
         <h3>Authors: <a href='https://github.com/Evanfeenstra'>Evan Feenstra</a> </h3>
+        <br/>
         <p>Działa mobilnie, pozwala na umieszczenie w utworze jednego syntezatora, z kilkoma efektami oraz na pobieranie sampli z biblioteki freesound. </p>
-        <p>Tags: DIY mustCheck FreeSound openSource</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#FreeSound</a> <a class='tag'>#mustCheck</a> <a class='tag'>#openSource</a></p>
+        
+        <ul>More links:<li><a href='https://github.com/Evanfeenstra/beatpush'>Kod źródłowy</a></li></ul>
+        
         </div>
         
         <div class="webapp DIY openSource">
-        <h2><a href="https://micthing.stuartkeith.com target="_blank">Sekwencer oparty na nagraniach z mikrofonu</a></h2>
+        <h2><a href="https://micthing.stuartkeith.com" target="_blank">Sekwencer oparty na nagraniach z mikrofonu</a></h2>
         <h3>Authors: <a href='https://stuartkeith.com/'>Stuart Keith</a> </h3>
+        <br/>
         <p>Dzięki dobrze zaprojektowanemu interfejsowi bardzo łatwo i przyjemnie można zrobić sobie szybki utwór. </p>
-        <p>Tags: DIY openSource</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#openSource</a></p>
+        
+        <ul>More links:<li><a href='https://github.com/stuartkeith/micthing'>Kod źródłowy</a></li></ul>
+        
         </div>
         
         <div class="webapp DIY FreeSound openSource">
-        <h2><a href="https://webaudiosequencer.stuartkeith.com target="_blank">I jeszcze jeden całkiem fajny sekwencer</a></h2>
+        <h2><a href="https://webaudiosequencer.stuartkeith.com" target="_blank">I jeszcze jeden całkiem fajny sekwencer</a></h2>
         <h3>Authors: <a href='https://stuartkeith.com/'>Stuart Keith</a> </h3>
+        <br/>
         <p>Ten zaś pozwala na samplowanie z freesound oraz soundcloud.</p>
-        <p>Tags: DIY FreeSound openSource</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#FreeSound</a> <a class='tag'>#openSource</a></p>
+        
+        <ul>More links:<li><a href='https://github.com/stuartkeith/webaudiosequencer/'>Kod źródłowy</a></li></ul>
+        
         </div>
         
         <div class="webapp DIY FreeSound openSource">
-        <h2><a href="https://reasonml-sequencer.stuartkeith.com target="_blank">No i jeszcze jeden sekwencer tego samego autora</a></h2>
+        <h2><a href="https://reasonml-sequencer.stuartkeith.com" target="_blank">No i jeszcze jeden sekwencer tego samego autora</a></h2>
         <h3>Authors: <a href='https://stuartkeith.com/'>Stuart Keith</a> </h3>
+        <br/>
         <p>Tym razem oparty na polirytmach oraz randomizacji parametrów. Fajny do poeksperymentowania sobie. </p>
-        <p>Tags: DIY FreeSound openSource</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#FreeSound</a> <a class='tag'>#openSource</a></p>
+        
+        <ul>More links:<li><a href='http://github.com/stuartkeith/reasonml-sequencer'>Kod źródłowy</a></li></ul>
+        
         </div>
         
         <div class="webapp DIY FreeSound openSource">
-        <h2><a href="https://keyseq.stuartkeith.com target="_blank">Dobra, to już ostatni sekwencer tego samego autora</a></h2>
+        <h2><a href="https://keyseq.stuartkeith.com" target="_blank">Dobra, to już ostatni sekwencer tego samego autora</a></h2>
         <h3>Authors: <a href='https://stuartkeith.com/'>Stuart Keith</a> </h3>
+        <br/>
         <p>Zasadniczo, jest to jedynie rozwinięcie poprzednich pomysłów. Warto poklikać sobie random i posłuchać różnych kombinacji.</p>
-        <p>Tags: DIY FreeSound openSource</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#FreeSound</a> <a class='tag'>#openSource</a></p>
+        
+        <ul>More links:<li><a href='https://github.com/stuartkeith/keyseq'>Kod źródłowy</a></li></ul>
+        
         </div>
         
         <div class="webapp tonejs">
-        <h2><a href="https://blokdust.com target="_blank">Blokdust - niestandardowy DAW</a></h2>
+        <h2><a href="https://blokdust.com" target="_blank">Blokdust - niestandardowy DAW</a></h2>
         <h3>Authors: <a href='http://whitevinyldesign.com/'>Luke Twyman</a> </h3>
+        <br/>
         <p>Muzyke tworzymy, układając takie dziwne klocki. </p>
-        <p>Tags: tonejs</p>
+        <p class="tags"><a class='tag'>#tonejs</a></p>
+        
+        
+        
         </div>
         
         <div class="webapp DIY openSource">
-        <h2><a href="https://citizen-dj.labs.loc.gov target="_blank">Citizen DJ</a></h2>
+        <h2><a href="https://citizen-dj.labs.loc.gov" target="_blank">Citizen DJ</a></h2>
         <h3>Authors: <a href='https://brianfoo.com/'>Brian Foo</a> </h3>
+        <br/>
         <p>Aplikacja pozwalająca darmowe zbiory Biblioteki Kongresu zamienić w beaty.</p>
-        <p>Tags: DIY openSource</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#openSource</a></p>
+        
+        <ul>More links:<li><a href='https://github.com/LibraryOfCongress/citizen-dj'>Kod źródłowy</a></li></ul>
+        
         </div>
         
         <div class="webapp DIY openSource">
-        <h2><a href="https://www.maxlaumeister.com/automatune/app target="_blank">Automatune</a></h2>
+        <h2><a href="https://www.maxlaumeister.com/automatune/app" target="_blank">Automatune</a></h2>
         <h3>Authors: <a href='https://www.maxlaumeister.com/'>Maximillian Laumeister</a> </h3>
+        <br/>
         <p>Czy zdarzyło ci się kiedyś tworzyć kompozycje proceduralne? Czy myślisz że to jest zbyt trudne? No to ta strona dowodzi, że jesteś w błędzie - prawym przyciskiem myszy dodajemy dźwięki na siatce, klikając lewym ustalamy kierunek przejścia między kratkami. I to tyle, właśnie zaprojektowałeś/zaprojektowałaś swoją pierwszą proceduralną kompozycję. </p>
-        <p>Tags: DIY openSource</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#openSource</a></p>
+        
+        <ul>More links:<li><a href='https://www.maxlaumeister.com/software/automatune/'>Informacje o projekcie</a></li><li><a href='https://github.com/MaxLaumeister/automatune'>Kod źródłowy</a></li></ul>
+        
         </div>
         
         <div class="webapp DIY openSource">
-        <h2><a href="https://codepen.io/teropa/full/rdoPbG target="_blank">Latent Cycles</a></h2>
+        <h2><a href="https://codepen.io/teropa/full/rdoPbG" target="_blank">Latent Cycles</a></h2>
         <h3>Authors: <a href='http://teropa.info'>Tero Parviainen</a> </h3>
+        <br/>
         <p>Generate a latent space of melodic loops using the artificial intelligence, and then play the loops against each other exploring the latent harmonic possibilities.</p>
-        <p>Tags: DIY openSource</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#openSource</a></p>
+        
+        <ul>More links:<li><a href='https://codepen.io/teropa/pen/rdoPbG'>Kod źródłowy</a></li></ul>
+        
         </div>
         
         <div class="webapp DIY mustCheck openSource">
-        <h2><a href="http://julianrosenblum.com/sharp11-client target="_blank">Sharp11 - pomocnik muzyków jazzowych</a></h2>
+        <h2><a href="http://julianrosenblum.com/sharp11-client" target="_blank">Sharp11 - pomocnik muzyków jazzowych</a></h2>
         <h3>Authors: <a href='http://julianrosenblum.com/'>Julian Rosenblum</a> </h3>
+        <br/>
         <p>Bardzo proste narzędzie, posiadające trzy tryby: silnik teorii, improwizator oraz automatyzacja jazzu. Pierwszy tryb pomaga w prostych transpozycjach różnych akordów w różnych skalach. Drugi tryb generuje nieskończony stream muzyki, opierając się na materiale wejściowym. Trzeci, według mnie najciekawszy, pozwala na interaktywne układanie progresji jazzowych. Użytkownik decyduje, gdzie chce dodać akord, a system generuje w danym miejscu progresje, która według niego jest najbardziej sensowna. </p>
-        <p>Tags: DIY mustCheck openSource</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#mustCheck</a> <a class='tag'>#openSource</a></p>
+        
+        <ul>More links:<li><a href='https://github.com/jsrmath/sharp11-jza'>Kod źródłowy</a></li><li><a href='https://markato.studio/'>Inny projekt autora - pomocnik songwriterów. Można łatwo pisać teksty, wraz z pomocniczą progresją akordów przy okazji.</a></li></ul>
+        
         </div>
         
         <div class="webapp DIY openSource">
-        <h2><a href="http://treblemaker.ai target="_blank">TrebleMaker - generator muzyki</a></h2>
+        <h2><a href="http://treblemaker.ai" target="_blank">TrebleMaker - generator muzyki</a></h2>
         <h3>Authors: <a href='https://github.com/shiehn'>Steve Hiehn</a> </h3>
+        <br/>
         <p>Prosta aplikacja: na środku mamy cztery przyciski: odtwarzaj, stop, losuj, pobierz. Klikając losuj, generujemy losowy utwór MIDI, z perkusją, akordami i melodią. Możemy go następnie pobrać i edytować poszczególne ścieżki u siebie lokalnie. </p>
-        <p>Tags: DIY openSource</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#openSource</a></p>
+        
+        <ul>More links:<li><a href='https://github.com/shiehn/TrebleMaker'>Kod źródłowy</a></li><li><a href='https://medium.com/@stevehiehn/how-might-daws-integrate-ai-ml-e08a8f026b5f'>Dłuższy opis działania aplikacji</a></li></ul>
+        
         </div>
         
         <div class="webapp DIY openSource">
-        <h2><a href="https://beatmachine.branchpanic.me target="_blank">The Beat Machine</a></h2>
+        <h2><a href="https://beatmachine.branchpanic.me" target="_blank">The Beat Machine</a></h2>
         <h3>Authors: <a href='https://twitter.com/branchpanic'>Joseph Savell</a> </h3>
+        <br/>
         <p>Wchodząc na stronę wita nas bardzo przejrzysty i dobrze przemyślany interfejs: najpierw musimy wybrać materiał źródłowy - plik z dysku lub link do piosenki na YouTube. Następnie określamy tempo i wybieramy efekty. Na koniec otrzymujemy wyrenderowany utwór, zgodnie z określonymi przez nas zmianami rytmicznymi. </p>
-        <p>Tags: DIY openSource</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#openSource</a></p>
+        
+        <ul>More links:<li><a href='https://github.com/beat-machine'>Kod źródłowy</a></li></ul>
+        
         </div>
         
         <div class="webapp DIY openSource">
-        <h2><a href="https://eternalbox.dev/canonizer_index.html) target="_blank">The Autocanonizer</a></h2>
+        <h2><a href="https://eternalbox.dev/canonizer_index.html)" target="_blank">The Autocanonizer</a></h2>
         <h3>Authors: <a href='https://musicmachinery.com/'>Paul Lamere</a> </h3>
+        <br/>
         <p>Prosta aplikacja, pobierająca utwór ze Spotify i tworząca (jako Autocanonizer) “musical canon by playing the song against a varying, time-offset copy of itself” lub (jako Eternal Jukebox) “This web app lets you search a song on Spotify and will then generate a never-ending and ever changing version of the song”. W ten sposób można słuchać jednej, dowolnie wybranej piosenki w nieskończoność. Te aplikacje mają te wadę, że może być uruchomiona tylko jedna podstrona serwisu w danym momencie. Otwierając dwie zakładki wyskakuje błąd, więc ostrożnie z klikaniem!</p>
-        <p>Tags: DIY openSource</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#openSource</a></p>
+        
+        <ul>More links:<li><a href='https://github.com/UnderMybrella/EternalJukebox'>Kod źródłowy</a></li><li><a href='https://musicmachinery.com/2012/11/12/the-infinite-jukebox/'>Opis działania</a></li><li><a href='https://github.com/plamere/autocanonizer'>Kod źródłowy</a></li><li><a href='https://musicmachinery.com/2014/03/18/how-the-autocanonizer-works/'>Opis działania</a></li><li><a href='http://static.echonest.com/bonhamizer/go.html?trid=TRSBVUT12F87DF0212'>Trzecia apka tego twórcy - Bonhamizer</a></li><li><a href='https://musicmachinery.com/2013/02/21/how-the-bonhamizer-works/'>Opis działania</a></li><li><a href='https://github.com/echonest/bonhamizer'>Kod źródłowy</a></li><li><a href='http://static.echonest.com/girltalkinabox/index.html'>I jest jeszcze czwarta apka - Girl Talk in a Box</a></li></ul>
+        
         </div>
         
         <div class="webapp DIY tonejs">
-        <h2><a href="https://typatone.com target="_blank">Typatone - Posłuchaj jak piszesz</a></h2>
+        <h2><a href="https://typatone.com" target="_blank">Typatone - Posłuchaj jak piszesz</a></h2>
         <h3>Authors: <a href='http://lullatone.com'>Lullatone</a> </h3>
+        <br/>
         <p>Każda wprowadzona litera odpowiada odpowiedniemu dźwiękowi. Możesz wklejać gotowe już wiadomości, napisać coś samemu oraz wysłać muzyczną wiadomość komuś.</p>
-        <p>Tags: DIY tonejs</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#tonejs</a></p>
+        
+        <ul>More links:<li><a href='https://typatone.com/stats.html'>Statystyki</a></li><li><a href='https://warmifaya.bandcamp.com/track/4-2'>Album muzyczny przeznaczony do wykonania na Typatone</a></li></ul>
+        
         </div>
         
         <div class="webapp AI bigTech">
-        <h2><a href="https://experiments.withgoogle.com/ai/ai-duet/view target="_blank">Zagraj w duecie z AI</a></h2>
+        <h2><a href="https://experiments.withgoogle.com/ai/ai-duet/view" target="_blank">Zagraj w duecie z AI</a></h2>
         <h3>Authors: <a href='https://experiments.withgoogle.com/'>Google</a> </h3>
+        <br/>
         <p>Webowa aplikacja, która generuje w czasie rzeczywistym drugi głos, korespondujący z tym co zagra użytkownik</p>
-        <p>Tags: AI bigTech</p>
+        <p class="tags"><a class='tag'>#AI</a> <a class='tag'>#bigTech</a></p>
+        
+        <ul>More links:<li><a href='https://github.com/googlecreativelab/aiexperiments-ai-duet'>Kod źródłowy</a></li></ul>
+        
         </div>
         
         <div class="webapp FreeSound openSource">
-        <h2><a href="http://5.2.16.88/Freesound-Trip target="_blank">Freesound trip</a></h2>
+        <h2><a href="http://5.2.16.88/Freesound-Trip" target="_blank">Freesound trip</a></h2>
         <h3>Authors: <a href='https://www.audiocommons.org/'>AudioCommons</a> </h3>
+        <br/>
         <p>Jesteśmy w kosmosie dźwięków z biblioteki freesound i mamy się w tej nieskończonej przestrzeni poruszać, tak jak nam to odpowiada. Fajne bardzo. </p>
-        <p>Tags: FreeSound openSource</p>
+        <p class="tags"><a class='tag'>#FreeSound</a> <a class='tag'>#openSource</a></p>
+        
+        <ul>More links:<li><a href='http://5.2.16.88/Freesound-Trip/SIC%202017%20audioCommons%20version3.pdf'>Wyjaśnienie projektu i użytych technologii</a></li><li><a href='https://github.com/dnlopez/Freesound-Trip'>Kod źródłowy</a></li></ul>
+        
         </div>
         
-        <div class="webapp DIY tonejs openSource">
-        <h2><a href="https://codepen.io/teropa/full/QxLrMp target="_blank">Steruj muzyką za pomocą swojej pozy</a></h2>
-        <h3>Authors: <a href='http://teropa.info'>Tero Parviainen</a>     **Trochę nudne, powtarzalne, teoretycznie mało ciekawe, ale jednak cieszące się sporą popularnością. Strony, które po prostu odtwarzają zdefiniowany kontekst dźwiękowy i raczej nie pozwalają na personalizację doświadczenia. Po prostu do tła, żeby się pouczyć albo popracować. Zainteresowanym polecam też sprawdzać linki poniżej opisu, ponieważ umieściłem tam kilka podobnych aplikacji, ale nie na tyle ciekawych, aby zasługiwały na osobny wpis.** 
-</h3>
+        <div class="webapp DIY openSource tonejs">
+        <h2><a href="https://codepen.io/teropa/full/QxLrMp" target="_blank">Steruj muzyką za pomocą swojej pozy</a></h2>
+        <h3>Authors: <a href='http://teropa.info'>Tero Parviainen</a> </h3>
+        <br/>
         <p>Pobierając ułożenie ciała użytkownika z kamery, aplikacja generuje odpowiednio dopasowaną melodię. </p>
-        <p>Tags: DIY tonejs openSource</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#openSource</a> <a class='tag'>#tonejs</a></p>
+        
+        <ul>More links:<li><a href='https://codepen.io/teropa/pen/QxLrMp'>Kod źródłowy</a></li></ul>
+        
         </div>
         
         <div class="webapp commercial">
-        <h2><a href="https://coffitivity.com target="_blank">Muzak kawiarniany</a></h2>
+        <h2><a href="https://coffitivity.com" target="_blank">Muzak kawiarniany</a></h2>
         <h3>Authors:     brak informacji
 </h3>
+        <br/>
         <p>Autorzy strony twierdzą, że dźwięki kawiani/restauracji pobudzają słuchacza kreatywnie i motywacyjnie. Stąd też możemy sobie sprecyzować jaki typ restauracji nas interesuje i sobie włączyć</p>
-        <p>Tags: commercial</p>
+        <p class="tags"><a class='tag'>#commercial</a></p>
+        
+        <ul>More links:<li><a href='https://www.jstor.org/stable/10.1086/665048?seq=1#metadata_info_tab_contents'>Praca, wyjaśniająca działanie tego typu aplikacji</a></li></ul>
+        
         </div>
         
         <div class="webapp DIY classic">
-        <h2><a href="https://mynoise.net target="_blank">MyNoise.net</a></h2>
+        <h2><a href="https://mynoise.net" target="_blank">MyNoise.net</a></h2>
         <h3>Authors: <a href='https://www.stephanepigeon.com/'>Stéphane Pigeon</a> </h3>
+        <br/>
         <p>Użytkownik definiuje czego mu potrzeba i strona dostarcza odpowiednich field recordingów. Można sobie je w jakiś tam ograniczony sposób regulować. Zdaje się, że to jedna z popularniejszych stron tego typu, która pozwala na więcej personalizacji niż inne</p>
-        <p>Tags: DIY classic</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#classic</a></p>
+        
+        <ul>More links:<li><a href='https://asoftmurmur.com/'>Podobna rzecz innego twórcy</a></li></ul>
+        
         </div>
         
         <div class="webapp DIY">
-        <h2><a href="https://noises.online target="_blank">noises.online</a></h2>
+        <h2><a href="https://noises.online" target="_blank">noises.online</a></h2>
         <h3>Authors: <a href='https://www.stephanepigeon.com/'>Stéphane Pigeon</a> </h3>
+        <br/>
         <p>Ta strona zaś pozwala na niestandardowe połączenia field recordingów. Można sobie połączyć na przykład ruchliwą kawiarnie i dżungle. Pozwala też na wybranie tonu (tak naprawdę to chyba po prostu EQ) oraz natężenia dźwieków. MyNoise.net i noisese.online są dziełami tego samego człowieka, Stéphane Pigeon.</p>
-        <p>Tags: DIY</p>
+        <p class="tags"><a class='tag'>#DIY</a></p>
+        
+        <ul>More links:<li><a href='https://calmyleon.com/'>Jeszcze jedno to samo tego człowieka.</a></li><li><a href='https://purrli.com/'>Symulator dźwięków kota, też tego samego typa xd</a></li><li><a href='https://rain.today/'>I jeszcze symulator deszczu zrobił</a></li><li><a href='https://www.audiocheck.net/index.php'>Audio test online od tego pana, gdzie można przetestować swój słuch i/lub sprzęt audio</a></li><li><a href='http://hearingtest.online/'>Ten sam twórca stworzył jeszcze hearing test, który generuje audiogram</a></li></ul>
+        
         </div>
         
         <div class="webapp DIY mustCheck openSource">
-        <h2><a href="http://alestsurko.by/microscale target="_blank">Muzyka generowana na podstawie losowych artykułów z Wikipedii</a></h2>
+        <h2><a href="http://alestsurko.by/microscale" target="_blank">Muzyka generowana na podstawie losowych artykułów z Wikipedii</a></h2>
         <h3>Authors: <a href='http://alestsurko.by'>Ales Tsurko</a> </h3>
+        <br/>
         <p>W czasie rzeczywistym strona wybiera parę losowych artykułów i ciąg znaków traktuje jako sekwencje muzyczne. Nie wklejam tego linka w kategorię aplikacji działających w czasie rzeczywistym, ponieważ autor tutaj miał ewidentny zamysł artystyczny. </p>
-        <p>Tags: DIY mustCheck openSource</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#mustCheck</a> <a class='tag'>#openSource</a></p>
+        
+        <ul>More links:<li><a href='https://github.com/ales-tsurko/microscale'>Kod źródłowy</a></li><li><a href='https://preservedsound.bandcamp.com/album/microscale'>Album w wydaniu fizycznym, zawierający zapis muzyki wygenerowanej przez ten projekt autorstwa twórcy</a></li></ul>
+        
         </div>
         
         <div class="webapp tonejs">
-        <h2><a href="https://odra.city target="_blank">"Odra" - muzyczny eksponat online</a></h2>
+        <h2><a href="https://odra.city" target="_blank">"Odra" - muzyczny eksponat online</a></h2>
         <h3>Authors: <a href='https://marpi.frb.io/about'>Marpi</a> <a href='https://www.standandmarvel.com/'>Stand & Marvel</a> <a href='https://huncwot.com/'>Huncwot</a> <a href='https://twitter.com/gbradleyfilms'>Garrett Bradley</a> </h3>
+        <br/>
         <p>Stronka generuje sobie muzyke z atrakcyjną wizualizacją jedynie. Ale jest dopracowana i pozwala na trochę interakcji, więc wrzucam</p>
-        <p>Tags: tonejs</p>
+        <p class="tags"><a class='tag'>#tonejs</a></p>
+        
+        <ul>More links:<li><a href='https://www.marpi.studio/exhibitions/odra'>O projekcie</a></li></ul>
+        
         </div>
         
         <div class="webapp tonejs">
-        <h2><a href="https://massmigrations.com/uth target="_blank">“Mass Migration”</a></h2>
+        <h2><a href="https://massmigrations.com/uth" target="_blank">“Mass Migration”</a></h2>
         <h3>Authors: <a href='https://marpi.frb.io/about'>Marpi</a> <a href='https://ahering.com/'>Angelique Hering</a> <a href='https://soundcloud.com/an_on_bast'>An On Bast</a> <a href='https://www.blueandkream.com/'>Khalid Farquhar</a> <a href='https://www.thecrucible.org/person/camille-macrae/'>Camille MacRae</a> <a href='https://nextart.tech/'>Next Art Night</a> </h3>
+        <br/>
         <p>Aplikacja bardzo podobna do powyższej “Odry”, tym razem jednak mniej interaktywna muzycznie. Ale w zamian za mniejszą interakcję, dostajemy świetną muzykę autorstwa wrocławskiej producentki, An On Bast.</p>
-        <p>Tags: tonejs</p>
+        <p class="tags"><a class='tag'>#tonejs</a></p>
+        
+        <ul>More links:<li><a href='https://www.marpi.studio/exhibitions/mass-migrations'>O projekcie</a></li></ul>
+        
         </div>
         
         <div class="webapp tonejs">
-        <h2><a href="https://demo.marpi.pl/ocean_desert target="_blank">“Terrarium”</a></h2>
+        <h2><a href="https://demo.marpi.pl/ocean_desert" target="_blank">“Terrarium”</a></h2>
         <h3>Authors: <a href='https://marpi.frb.io/about'>Marpi</a> <a href='https://twitter.com/gloom303'>Bent Stamnes</a> </h3>
+        <br/>
         <p>Za pomocą prostych narzędzi studio Marpi stworzyło proceduralne środowisko z wykreowanymi stworzeniami. Oraz generowaną na bieżąco muzyką ambient. Użytkownik może klikać, generując dźwięki lub wygenerować środowisko na nowo, klikając w pewien dziwny przedmiot na środku. </p>
-        <p>Tags: tonejs</p>
+        <p class="tags"><a class='tag'>#tonejs</a></p>
+        
+        <ul>More links:<li><a href='https://www.marpi.studio/exhibitions/terrarium'>O projekcie</a></li></ul>
+        
         </div>
         
-        <div class="webapp DIY tonejs openSource">
-        <h2><a href="https://wheelibin.github.io/synaesthesia target="_blank">“Synaesthesia” - Generuj sobie losową muzyke</a></h2>
+        <div class="webapp DIY openSource tonejs">
+        <h2><a href="https://wheelibin.github.io/synaesthesia" target="_blank">“Synaesthesia” - Generuj sobie losową muzyke</a></h2>
         <h3>Authors: <a href='https://soundcloud.com/wheelibin'>wheelibin</a> </h3>
+        <br/>
         <p>No po prostu. Nie wiem co więcej napisać, jest to zrobione wyjątkowo prosto i przejrzyście. Więc generujcie sobie, po prostu. Strona ma dwa tryby - funky down-tempo oraz ambient drone.</p>
-        <p>Tags: DIY tonejs openSource</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#openSource</a> <a class='tag'>#tonejs</a></p>
+        
+        <ul>More links:<li><a href='https://github.com/wheelibin/synaesthesia'>Kod źródłowy</a></li></ul>
+        
         </div>
         
         <div class="webapp DIY FreeSound">
-        <h2><a href="https://labs.freesound.org/28x28 target="_blank">“28x28”</a></h2>
+        <h2><a href="https://labs.freesound.org/28x28" target="_blank">“28x28”</a></h2>
         <h3>Authors:     Composed by Xavier Bonfill
     Designed by Tony Martínez
     Developed by Frederic Font
 </h3>
+        <br/>
         <p>Pozostawiam opis autorów, bo nie ma sensu, żebym przepisywał to po swojemu: “A room can be full of sounds, some from within, some from the outside, some that happen by choice, some that happen by chance. The possibilities of their combinations are almost endless, but all sounds can be put together and become music in our minds. 28x28 is a piece made of 28 fragments of 28 seconds each that are combined in a certain order according to a domino game. Nowadays, it feels like 28 seconds is a long time to be doing nothing but listening to a piece of music. However, 28 seconds are not enough even for replying to a text message or checking your Facebook feed.”</p>
-        <p>Tags: DIY FreeSound</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#FreeSound</a></p>
+        
+        
+        
         </div>
         
-        <div class="webapp DIY tonejs openSource">
-        <h2><a href="https://codepen.io/teropa/full/zpdwRY target="_blank">Diatonic Dreams</a></h2>
+        <div class="webapp DIY openSource tonejs">
+        <h2><a href="https://codepen.io/teropa/full/zpdwRY" target="_blank">Diatonic Dreams</a></h2>
         <h3>Authors: <a href='http://teropa.info'>Tero Parviainen</a> </h3>
+        <br/>
         <p>Prosta aplikacja, która generuje określone progresje po stronie użytkownika. Nie chcę wchodzić w szczegóły, bo nie znam się na tych rzeczach za bardzo, ale polecam ustawić powolne tempo i spokojnie sobie poklikać - fajnie się można wtedy zrelaksować. </p>
-        <p>Tags: DIY tonejs openSource</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#openSource</a> <a class='tag'>#tonejs</a></p>
+        
+        <ul>More links:<li><a href='https://codepen.io/teropa/pen/zpdwRY'>Kod źródłowy</a></li></ul>
+        
         </div>
         
-        <div class="webapp DIY tonejs openSource">
-        <h2><a href="https://codepen.io/teropa/full/opjrBE target="_blank">L-drones</a></h2>
+        <div class="webapp DIY openSource tonejs">
+        <h2><a href="https://codepen.io/teropa/full/opjrBE" target="_blank">L-drones</a></h2>
         <h3>Authors: <a href='http://teropa.info'>Tero Parviainen</a> </h3>
+        <br/>
         <p>Kolejna aplikacja autorstwa Tero Parviainena, której działania wytłumaczyć nie potrafię w sposób sensowny i rzeczowy - jedyne co rozumiem, że dość mocno opiera się na zasadach l-systemów. Ponownie więc zapraszam do relaksacji. </p>
-        <p>Tags: DIY tonejs openSource</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#openSource</a> <a class='tag'>#tonejs</a></p>
+        
+        <ul>More links:<li><a href='https://codepen.io/teropa/pen/opjrBE'>Kod źródłowy</a></li><li><a href='https://codepen.io/teropa/pen/LaLxNm'>FM drones, kolejna dronowa aplikacja autora</a></li><li><a href='https://codepen.io/teropa/details/vYLRBbV'>Noo i jeszcze jedna dronowa aplikacja autorstwa Tero Parviainena, która tym razem bazując na pobranym dźwięku generuje drony w oparciu o synteze granularną.</a></li></ul>
+        
         </div>
         
         <div class="webapp AI">
-        <h2><a href="https://www.youtube.com/watch?v=MwtVkPKx3RA) target="_blank">Niekończący się stream muzyki metalowej</a></h2>
+        <h2><a href="https://www.youtube.com/watch?v=MwtVkPKx3RA)" target="_blank">Niekończący się stream muzyki metalowej</a></h2>
         <h3>Authors: <a href='http://dadabots.com/music.php'>Dadabots</a> </h3>
+        <br/>
         <p>Od ponad roku w serwisie YouTube bez przerwy odtwarzany jest stream muzyki metalowej, której nikt nigdy nie nagrał - jest to dzieło sztucznej inteligencji, która bazując na opublikowanych już nagraniach generuje ciągle muzykę. Autorzy wcześniej wykonali podobny stream z muzyką jazzową i mają wielkie plany rozwoju swojego projektu. </p>
-        <p>Tags: AI</p>
+        <p class="tags"><a class='tag'>#AI</a></p>
+        
+        <ul>More links:<li><a href='https://www.vice.com/en_us/article/xwnzm7/this-youtube-channel-streams-ai-generated-black-metal-247'>Wywiad z autorami dla VICE</a></li><li><a href='https://www.youtube.com/watch?v=C0dOin79Hm0'>Zapis jazzowego streamu</a></li><li><a href='https://dadabots.bandcamp.com/'>BandCamp Dadabots, gdzie możemy posłuchać na przykład jak brzmiała sztuczna inteligencja w kolejnych iteracjach nauki muzyki The Beetles</a></li></ul>
+        
         </div>
         
         <div class="webapp DIY openSource">
-        <h2><a href="https://generative.fm target="_blank">Generative.fm</a></h2>
+        <h2><a href="https://generative.fm" target="_blank">Generative.fm</a></h2>
         <h3>Authors: <a href='https://alexbainter.com/'>Alex Bainter</a> </h3>
+        <br/>
         <p>Platforma pozwalająca na generowanie i dzielenie się wygenerowaną muzyką. Pomysł opiera się na tworzeniu prostych, ambientowych utworów, które docelowo powinny mieć muzakowe przeznaczenie. </p>
-        <p>Tags: DIY openSource</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#openSource</a></p>
+        
+        <ul>More links:<li><a href='https://github.com/generative-music/generative.fm'>Kod źródłowy</a></li></ul>
+        
         </div>
         
         <div class="webapp DIY openSource">
-        <h2><a href="http://unseen-music.com/yume target="_blank">“Yume”</a></h2>
+        <h2><a href="http://unseen-music.com/yume" target="_blank">“Yume”</a></h2>
         <h3>Authors: <a href='http://whitevinyldesign.com/#about'>Luke Twyman</a> </h3>
+        <br/>
         <p>Ze strony artysty: “YUME is an interactive web experience created to promote the album 'Yume' by ambient artist Helios. Floating rock shards become tactile music controllers, which also manipulate the environment. Different scenes can be freely explored, each one with a different feel/sound.”</p>
-        <p>Tags: DIY openSource</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#openSource</a></p>
+        
+        <ul>More links:<li><a href='https://store.unseen-music.com/album/yume'>Samplowany album</a></li><li><a href='https://github.com/Whitevinyl/Helios'>Kod źródłowy</a></li></ul>
+        
         </div>
         
         <div class="webapp DIY openSource">
-        <h2><a href="http://whitevinyldesign.com/floradrift target="_blank">“Flora Drift”</a></h2>
+        <h2><a href="http://whitevinyldesign.com/floradrift" target="_blank">“Flora Drift”</a></h2>
         <h3>Authors: <a href='http://whitevinyldesign.com/#about'>Luke Twyman</a> </h3>
+        <br/>
         <p>Za stroną artysty: “FLORA DRIFT is an interactive web experience which procedurally generates music on the fly, as well as generating an animated jungle/garden scene every 2 bars of music. Visitors can join in with a couple of inbuilt synth instruments - the Space Pan and Lazer Harp.”</p>
-        <p>Tags: DIY openSource</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#openSource</a></p>
+        
+        <ul>More links:<li><a href='https://github.com/Whitevinyl/Flora-Drift'>Kod źródłowy</a></li></ul>
+        
         </div>
         
         <div class="webapp DIY mustCheck openSource">
-        <h2><a href="https://pernyblom.github.io/abundant-music target="_blank">Abundant Music - generator utworów MIDI</a></h2>
+        <h2><a href="https://pernyblom.github.io/abundant-music" target="_blank">Abundant Music - generator utworów MIDI</a></h2>
         <h3>Authors: <a href='https://github.com/pernyblom'>Per Nyblom</a> </h3>
+        <br/>
         <p>Stworzony w 2017 roku Abudant Music jest takim sobie fajnym generatorem utworów MIDI. Na tyle mądrym i przemyślanym, że jednocześnie zostawia bardzo dużo miejsca użytkownikowi na wybór parametrów, z drugiej zaś strony proponuje, żeby wszędzie kliknąć ‘random’ i zobaczyć efekty. System potrafi stworzyć faktycznie sensowny utwór muzyczny, z dobrym podziałem na sekcje. </p>
-        <p>Tags: DIY mustCheck openSource</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#mustCheck</a> <a class='tag'>#openSource</a></p>
+        
+        <ul>More links:<li><a href='https://github.com/pernyblom/pernyblom.github.io/tree/master/abundant-music'>Kod źródłowy</a></li></ul>
+        
         </div>
         
         <div class="webapp commercial">
-        <h2><a href="https://www.conversion-tool.com/audiotomidi target="_blank">Konwerter audio-MIDI</a></h2>
+        <h2><a href="https://www.conversion-tool.com/audiotomidi" target="_blank">Konwerter audio-MIDI</a></h2>
         <h3>Authors: <a href='https://www.conversion-tool.com/'>Conversion-Tool.com</a> </h3>
+        <br/>
         <p>Nie działa zbyt dobrze xd Raczej to jest coś na poziomie black MIDI, ale zaznaczam, że istnieje takie narzędzie w przeglądarce.</p>
-        <p>Tags: commercial</p>
+        <p class="tags"><a class='tag'>#commercial</a></p>
+        
+        <ul>More links:<li><a href='https://gist.github.com/natowi/d26c7e97443ec97e8032fb7e7596f0b0'>Lista takich narzędzie do zainstalowania lokalnie</a></li></ul>
+        
         </div>
         
-        <div class="webapp classic FreeSound openSource">
-        <h2><a href="https://freesound.org target="_blank">Freesound - agregator sampli online</a></h2>
+        <div class="webapp FreeSound classic openSource">
+        <h2><a href="https://freesound.org" target="_blank">Freesound - agregator sampli online</a></h2>
         <h3>Authors: <a href='https://freesound.org/help/about/'>FreeSound team</a> </h3>
+        <br/>
         <p>Myślę, że nikomu nie trzeba tej strony przedstawiać. Niemniej warto zaznaczyć, że jest to projekt open source i przy tej okazji chciałem wkleić kilka podobnych stron.</p>
-        <p>Tags: classic FreeSound openSource</p>
+        <p class="tags"><a class='tag'>#FreeSound</a> <a class='tag'>#classic</a> <a class='tag'>#openSource</a></p>
+        
+        <ul>More links:<li><a href='http://ccmixter.org/'>Baza utworów, sampli i remiksów oparta na licencji Creative Commons</a></li><li><a href='https://opengameart.org/'>Analogiczna stronka, tylko dla twórców gier, niemniej są tutaj też utwory i sample muzyczne</a></li><li><a href='https://samplefocus.com/'>Ładniejsza alternatywa dla Freesound, i lepiej opisana baza</a></li><li><a href='https://labs.freesound.org/apps/2019/05/02/strampler.html'>Moduł do syntezatora modularnego, pozwalający na pobieranie sampli z freesound</a></li><li><a href='https://github.com/MTG/freesound'>Kod źródłowy</a></li></ul>
+        
         </div>
         
         <div class="webapp DIY openSource">
-        <h2><a href="https://nicroto.github.io/viktor target="_blank">Syntezator online - Viktor NV-1</a></h2>
+        <h2><a href="https://nicroto.github.io/viktor" target="_blank">Syntezator online - Viktor NV-1</a></h2>
         <h3>Authors: <a href='https://twitter.com/nikolaytsenkov'>Nikolay Tsenkov</a> </h3>
+        <br/>
         <p>Zwykły polifoniczny syntezator w przeglądarce, który wspiera wczytywanie presetów i ma sporo funkcji w ogóle. </p>
-        <p>Tags: DIY openSource</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#openSource</a></p>
+        
+        <ul>More links:<li><a href='https://github.com/nicroto/viktor'>Kod źródłowy</a></li></ul>
+        
         </div>
         
         <div class="webapp DIY openSource">
-        <h2><a href="http://outputchannel.com/glowsynth target="_blank">Glowsynth</a></h2>
+        <h2><a href="http://outputchannel.com/glowsynth" target="_blank">Glowsynth</a></h2>
         <h3>Authors: <a href='https://github.com/edwardball'>Ed Ball</a> </h3>
+        <br/>
         <p>Syntezator w przeglądarce o magiczno-tajemniczej barwie z wizualizacjami. Pozwala na odgrywanie dźwięków za pomocą klawiatury, ale i również poprzez klikanie w ekran. </p>
-        <p>Tags: DIY openSource</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#openSource</a></p>
+        
+        <ul>More links:<li><a href='https://codepen.io/edball/pen/GoYeQZ'>Kod źródłowy</a></li></ul>
+        
         </div>
         
         <div class="webapp commercial">
-        <h2><a href="https://melobytes.com/en target="_blank">Melobytes - zbiór narzędzi</a></h2>
+        <h2><a href="https://melobytes.com/en" target="_blank">Melobytes - zbiór narzędzi</a></h2>
         <h3>Authors: <a href='https://gardos-software.com/'>gardos-software</a> </h3>
+        <br/>
         <p>Proste narzędzia typu generowanie akordów, partii wokalnych, ścieżek MIDI, w większości wykorzystujące (jakieś?) AI. Dopóki akceptujemy ograniczenia ilości przetworzonych danych oraz niższą jakość wygenerowanych obiektów, to strona jest darmowa. </p>
-        <p>Tags: commercial</p>
+        <p class="tags"><a class='tag'>#commercial</a></p>
+        
+        
+        
         </div>
         
         <div class="webapp DIY mustCheck openSource">
-        <h2><a href="https://audiomass.co/\ target="_blank">Audiomass</a></h2>
+        <h2><a href="https://audiomass.co/\" target="_blank">Audiomass</a></h2>
         <h3>Authors: <a href='https://github.com/pkalogiros'>Pantelis Kalogiros</a> </h3>
+        <br/>
         <p>Przeglądarkowy edytor fali dźwiękowych. Kilka prostych efektów oraz możliwości analizy sprawiają, że apka ta może być bardzo przydatna, kiedy zachodzi potrzeba szybkiej edycji na komputerze, który nie ma zainstalowanego Audacity.</p>
-        <p>Tags: DIY mustCheck openSource</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#mustCheck</a> <a class='tag'>#openSource</a></p>
+        
+        <ul>More links:<li><a href='https://github.com/pkalogiros/audiomass'>Kod źródłowy</a></li></ul>
+        
         </div>
         
-        <div class="webapp DIY AI openSource">
-        <h2><a href="https://codepen.io/teropa/full/JLjXGK target="_blank">Neuronowa maszyna perkusyjna</a></h2>
+        <div class="webapp AI DIY openSource">
+        <h2><a href="https://codepen.io/teropa/full/JLjXGK" target="_blank">Neuronowa maszyna perkusyjna</a></h2>
         <h3>Authors: <a href='http://teropa.info'>Tero Parviainen</a> </h3>
+        <br/>
         <p>Po napisaniu rytmu przez użytkownika program go analizuje i generuje kontynuację według własnych modeli opartych na sieciach neuronowych. </p>
-        <p>Tags: DIY AI openSource</p>
+        <p class="tags"><a class='tag'>#AI</a> <a class='tag'>#DIY</a> <a class='tag'>#openSource</a></p>
+        
+        <ul>More links:<li><a href='https://codepen.io/teropa/pen/JLjXGK'>Kod źródłowy</a></li></ul>
+        
         </div>
         
         <div class="webapp DIY openSource">
-        <h2><a href="https://codepen.io/teropa/full/PoZprMo target="_blank">Generator breakbeatów</a></h2>
+        <h2><a href="https://codepen.io/teropa/full/PoZprMo" target="_blank">Generator breakbeatów</a></h2>
         <h3>Authors: <a href='http://teropa.info'>Tero Parviainen</a> </h3>
+        <br/>
         <p>Ot po prostu aplikacja bazując na materiale audio (który w pierwszych liniach kodu źródłowego można łatwo podmienić) tworzy glitchowe wariacje rytmiczne. </p>
-        <p>Tags: DIY openSource</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#openSource</a></p>
+        
+        <ul>More links:<li><a href='https://codepen.io/teropa/pen/PoZprMo'>Kod źródłowy</a></li></ul>
+        
         </div>
         
         <div class="webapp AI openSource">
-        <h2><a href="https://piano-scribe.glitch.me target="_blank">Piano Scribe - transkrypcja audio do MIDI</a></h2>
+        <h2><a href="https://piano-scribe.glitch.me" target="_blank">Piano Scribe - transkrypcja audio do MIDI</a></h2>
         <h3>Authors:     autorstwa zespołu Google
 </h3>
+        <br/>
         <p>Za pomocą sieci neuronowych, konkretniej przy użyciu technologii Magenta. Można wrzucić własne audio lub spróbować zaśpiewać. Sztuczna inteligencja była trenowana na muzyce fortepianowej, stąd też taki materiał wejściowy ma przynieść najbardziej korzystne efekty. Wyniki MIDI można pobrać lub odtworzyć w przeglądarce. </p>
-        <p>Tags: AI openSource</p>
+        <p class="tags"><a class='tag'>#AI</a> <a class='tag'>#openSource</a></p>
+        
+        <ul>More links:<li><a href='https://glitch.com/edit/#!/piano-scribe?path=README.md%3A1%3A0'>Kod źródłowy</a></li></ul>
+        
         </div>
         
         <div class="webapp DIY openSource">
-        <h2><a href="https://spectrum.surge.sh target="_blank">Spectrum</a></h2>
+        <h2><a href="https://spectrum.surge.sh" target="_blank">Spectrum</a></h2>
         <h3>Authors: <a href='https://twitter.com/mattdesl'>Matt DesLauriers</a> </h3>
+        <br/>
         <p>Prosty spektogram online. Wrzucamy plik audio i wyświetla nam się w czasie rzeczywistym analiza utworu. </p>
-        <p>Tags: DIY openSource</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#openSource</a></p>
+        
+        <ul>More links:<li><a href='https://github.com/mattdesl/spectrum'>Kod źródłowy</a></li></ul>
+        
         </div>
         
         <div class="webapp DIY openSource">
-        <h2><a href="https://www.femurdesign.com/theremin target="_blank">Theremin</a></h2>
+        <h2><a href="https://www.femurdesign.com/theremin" target="_blank">Theremin</a></h2>
         <h3>Authors: <a href='https://femurdesign.com/'>Luke Phillips</a> </h3>
+        <br/>
         <p>Najprostsza w świecie imitacja theremina online. Z ładnym GUI w prezencie. </p>
-        <p>Tags: DIY openSource</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#openSource</a></p>
+        
+        <ul>More links:<li><a href='https://github.com/lukephills/Theremin'>Kod źródłowy</a></li></ul>
+        
         </div>
         
         <div class="webapp commercial">
-        <h2><a href="https://www.soundtrap.com target="_blank">Soundtrap</a></h2>
+        <h2><a href="https://www.soundtrap.com" target="_blank">Soundtrap</a></h2>
         <h3>Authors: </h3>
+        <br/>
         <p>Pierwszy DAW przeglądarkowy. Ma płatne plany (dodatkowe usługi), ale w darmowej wersji można nagrać ścieżki audio i MIDI oraz dodać sobie efekty dźwiękowe. Soundtrap stawia na kolaboracje w czasie rzeczywistym i nauke tworzenia muzyki zdalnie. </p>
-        <p>Tags: commercial</p>
+        <p class="tags"><a class='tag'>#commercial</a></p>
+        
+        
+        
         </div>
         
         <div class="webapp commercial">
-        <h2><a href="https://ampedstudio.com target="_blank">Amped Studio</a></h2>
+        <h2><a href="https://ampedstudio.com" target="_blank">Amped Studio</a></h2>
         <h3>Authors: </h3>
+        <br/>
         <p>Amped Studio również posiada plan płatny. Program ten stawia zaś bardziej na bycie miejscem, gdzie można szybko coś stworzyć, przykładowo ma funkcje tworzenia rytmów i melodii MIDI za pomocą dźwięku z mikrofonu. </p>
-        <p>Tags: commercial</p>
+        <p class="tags"><a class='tag'>#commercial</a></p>
+        
+        
+        
         </div>
         
         <div class="webapp commercial">
-        <h2><a href="https://soundation.com target="_blank">Soundation</a></h2>
+        <h2><a href="https://soundation.com" target="_blank">Soundation</a></h2>
         <h3>Authors: </h3>
+        <br/>
         <p>Ten DAW zaś skupia się na tworzeniu prostej muzyki tanecznej. Wersja darmowa pozwala na stworzenie ograniczonej liczby utworów oraz blokuje wiele funkcji. Niemniej plany płatne kosztują 2$ i 6$ miesięcznie, więc myślę że jeśli ktoś jest zainteresowany, to warto spróbować, to nie są duże pieniądze. </p>
-        <p>Tags: commercial</p>
+        <p class="tags"><a class='tag'>#commercial</a></p>
+        
+        
+        
         </div>
         
-        <div class="webapp  ">
-        <h2><a href="https://www.audiotool.com target="_blank">Audiotool</a></h2>
+        <div class="webapp DAW">
+        <h2><a href="https://www.audiotool.com" target="_blank">Audiotool</a></h2>
         <h3>Authors: </h3>
+        <br/>
         <p>Wreszcie jakiś darmowy program. Dodatkowo, tutaj autorzy zastosowali modularną budowę programu. Możemy łączyć ze sobą różne imitacje prawdziwych efektów i syntezatorów. Społeczność Audiotool aktywnie tworzy nowe presety oraz zbiera sample. Projekt zarabia na współpracy z firmami, oferującymi płatne sample oraz przez serwis Patreon. Jedyną funkcją wyłączoną dla darmowych użytkowników jest eksport projektów w formacie .wav. </p>
-        <p>Tags:  </p>
+        <p class="tags"><a class='tag'>#DAW</a></p>
+        
+        <ul>More links:<li><a href='https://www.patreon.com/audiotool'>Wsparcie dla twórców projektu</a></li></ul>
+        
         </div>
         
         <div class="webapp bigTech">
-        <h2><a href="https://www.bandlab.com target="_blank">BandLab</a></h2>
+        <h2><a href="https://www.bandlab.com" target="_blank">BandLab</a></h2>
         <h3>Authors: <a href='https://bandlabtechnologies.com/'>BandLab Technologies</a> </h3>
+        <br/>
         <p>Również w pełni darmowy, ze sporą społecznością. To, co wyróżnia BandLab od innych programów to zintegrowana do przeglądarkowego programu aplikacja mobilna oraz dedykowane interfejsy audio. Prawdę mówiąc BandLab przekonuje mnie najbardziej ze wszystkich powyższych aplikacji - wprowadza faktycznie nowe pomysły i wykorzystuje fakt bycia aplikacją webową, bez próby zastąpienia aplikacji desktopowych. </p>
-        <p>Tags: bigTech</p>
+        <p class="tags"><a class='tag'>#bigTech</a></p>
+        
+        
+        
         </div>
         
-        <div class="webapp  ">
-        <h2><a href="http://www.audiosauna.com target="_blank">AudioSauna</a></h2>
+        <div class="webapp DAW">
+        <h2><a href="http://www.audiosauna.com" target="_blank">AudioSauna</a></h2>
         <h3>Authors: <a href='https://github.com/Xaviaro'>Aaro Väänänen</a> </h3>
+        <br/>
         <p>Kolejny darmowy program. Napisany w archaicznym flashu, więc raczej odradzałbym próbę nauki. Niemniej warto oddać fakt, że był to protoplasta tego typu rozwiązań, nie udało mi się znaleźć starszego programu tego typu, tak rozwiniętego i działającego (wciąż jeszcze) w sieci. Projekt nie jest już wspierany conajmniej od 2014 roku. </p>
-        <p>Tags:  </p>
+        <p class="tags"><a class='tag'>#DAW</a></p>
+        
+        
+        
         </div>
         
         <div class="webapp DIY openSource">
-        <h2><a href="http://beepbox.co target="_blank">Beepbox</a></h2>
+        <h2><a href="http://beepbox.co" target="_blank">Beepbox</a></h2>
         <h3>Authors: <a href='http://www.johnnesky.com/'>John Nesky</a> </h3>
+        <br/>
         <p>Autor podpisuje ten projekt jako przeglądarkowy program do tworzenia prostych szkiców melodii lub utworów i dzielenia się nimi z innymi (każda konfiguracja aplikacji posiada swój unikalny adres URL, więc żeby pokazać dzieło znajomemu, wystarczy skopiować link z paska adresu w przeglądarce). Aczkolwiek patrząc na to, jak mocno ten open-sourcowy projekt się rozwinął, możemy powiedzieć że to już coś więcej niż tylko aplikacja do szybkich szkiców. Poza możliwością komponowania utworów na siatce zaimplementowana jest też funkcja zmiany różnych parametrów syntezy przygotowanych już przez twórcę presetów. </p>
-        <p>Tags: DIY openSource</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#openSource</a></p>
+        
+        <ul>More links:<li><a href='https://github.com/johnnesky/beepbox#readme'>Kod źródłowy</a></li><li><a href='https://twitter.com/beepboxco'>Utwory w Beepboxie stworzone przez społeczność</a></li></ul>
+        
         </div>
         
         <div class="webapp DIY mustCheck">
-        <h2><a href="https://www.patatap.com target="_blank">Ciekawy sampler z ładnymi wizualizacjami</a></h2>
+        <h2><a href="https://www.patatap.com" target="_blank">Ciekawy sampler z ładnymi wizualizacjami</a></h2>
         <h3>Authors: <a href='http://lullatone.com/'>Lullatone</a> </h3>
+        <br/>
         <p>Bank brzmień i animacji, które można odtwarzać dowolnym klawiszem z klawiatury. Bardzo dopracowane graficznie.</p>
-        <p>Tags: DIY mustCheck</p>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#mustCheck</a></p>
+        
+        
+        
         </div>
         
         <div class="webapp bigTech">
-        <h2><a href="https://semiconductor.withgoogle.com target="_blank">Zostań dyrygentem nie ruszając się sprzed komputera</a></h2>
+        <h2><a href="https://semiconductor.withgoogle.com" target="_blank">Zostań dyrygentem nie ruszając się sprzed komputera</a></h2>
         <h3>Authors: <a href='https://experiments.withgoogle.com/'>Google</a> </h3>
+        <br/>
         <p>Dyryguj orkiestrą za pomocą kamerki</p>
-        <p>Tags: bigTech</p>
+        <p class="tags"><a class='tag'>#bigTech</a></p>
+        
+        <ul>More links:<li><a href='https://medium.com/tensorflow/real-time-human-pose-estimation-in-the-browser-with-tensorflow-js-7dd0bc881cd5'>Wyjaśnienie działania</a></li></ul>
+        
         </div>
         
         <div class="webapp DIY tonejs">
-        <h2><a href="https://fonserbc.itch.io/poly-60 target="_blank">Prosta gierka muzyczna</a></h2>
+        <h2><a href="https://fonserbc.itch.io/poly-60" target="_blank">Prosta gierka muzyczna</a></h2>
         <h3>Authors: <a href='https://fonserbc.itch.io/'>Ferran Bertomeu</a> </h3>
+        <br/>
         <p>Masz do dyspozycji siedem wariantów polirytmicznych sekwencji i za ich pomocą musisz ułożyć puzzle wyświetlane na górze. Przyjemnie się gra i słucha, jak słyszysz swój postęp</p>
-        <p>Tags: DIY tonejs</p>
-        </div>
+        <p class="tags"><a class='tag'>#DIY</a> <a class='tag'>#tonejs</a></p>
         
-
-    </div>
-        <footer>
-            <a href="#pageTitle">Back to top</a>
-        </footer>
-    </body>
+        
+        
+        </div>
+        </div>
+  </div>
+  <footer>
+   <br/>
+   <a href="#pageTitle">
+    Back to top
+   </a>
+   <p>
+    Authors: Wojciech Węgrzyn, Dominik Oczoś
+   </p>
+  </footer>
+ </body>
 </html>
