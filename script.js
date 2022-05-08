@@ -1,5 +1,4 @@
-const CATEGORIES = ["classic", "physic", "openSource", "commercial", "FreeSound", "tonejs", "DIY", "AI", "ambient", "TeroParviainen", "descriptive", "math", "DAW", "bigTech", "classical", "mustCheck"]
-
+const CATEGORIES = ['AI', 'classic', '12+', 'openSource', 'FreeSound', 'classical', 'ambient', 'physic', 'bigTech', 'descriptive', 'tonejs', 'TeroParviainen', 'DAW', 'commercial', 'math', 'mustCheck', 'DIY'];
 function hideShowClassElement(className) {
     let currState = document.getElementsByClassName(`toggle-${className}`)[0].classList.toggle('toggle-on');
     const elements  = document.getElementsByClassName(className);
@@ -14,7 +13,7 @@ function renderFilteringButtons() {
         const btn = document.createElement("button");
         btn.innerHTML = "#" + category;
         btn.type = "button"
-        btn.classList = "button is-rounded  toggle toggle-on toggle-" + category
+        btn.classList = "button btn-link is-rounded toggle toggle-on toggle-" + category
         btn.onclick = function() { hideShowClassElement(category); };
         const filteringSpan = document.getElementsByClassName("filtering")[0]
         filteringSpan.appendChild(btn);
@@ -34,4 +33,26 @@ function toggleAll() {
     })
 }
 
-window.onload = renderFilteringButtons
+function changeFont(){
+    function getColorCode() {
+        var makeColorCode = '0123456789ABCDEF';
+        var code = '#';
+        for (var count = 0; count < 6; count++) {
+           code = code+ makeColorCode[Math.floor(Math.random() * 8)];
+        }
+        return code;
+     }
+    const fonts = ["Impact", "Comic Sans MS", "Georgia", "Courier New", "Bebas Neue"]
+    var x = document.getElementById("changable");
+    // x.style.fontFamily = fonts[Math.floor(Math.random()*fonts.length)];
+    x.style.color = getColorCode()
+}
+
+function collapseAllText(){
+    const elements  = document.getElementsByClassName("card-text");
+    for (let i=0; i<elements.length; i++) {
+        elements[i].classList.toggle('d-inline-block text-truncate');
+    }
+}
+
+window.onload = renderFilteringButtons, collapseAllText
