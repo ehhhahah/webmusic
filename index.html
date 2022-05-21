@@ -26,11 +26,25 @@
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"/>
  </head>
- <body onclick="changeFont()">
+ <body id="body" onclick="changeFont()">
   <section>
    <script src="script.js">
    </script>
-   <div id="container">
+   <div class="navbary is-black is-spaced has-shadow">
+    <a class="onblack onblack-current" href="/">
+     Home
+    </a>
+    <a class="onblack" href="/about.html">
+     About
+    </a>
+    <a class="onblack" href="/evaluation.html">
+     Evaluate
+    </a>
+    <a class="onblack" href="/submit.html">
+     Submit new
+    </a>
+   </div>
+   <div id="container has-navbar-fixed-top">
     <header>
      <noscript>
       Sorry, your browser does not support JavaScript! Due to this fact, no filtering of apps is possible.
@@ -1133,7 +1147,7 @@
   </section>
   <footer>
    <br/>
-   <a href="#pageTitle">
+   <a href="#body">
     Back to top
    </a>
    <p>

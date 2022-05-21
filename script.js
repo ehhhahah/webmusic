@@ -1,4 +1,4 @@
-const CATEGORIES = ['seizureWarning', 'bigTech', 'openSource', 'kidsFriendly', 'classical', 'physic', 'descriptive', 'DIY', 'math', 'commercial', 'accessible', 'tonejs', 'mustCheck', 'ambient', 'AI', 'game', 'DAW', 'TeroParviainen', 'classic', '12+', 'FreeSound', 'tool'];
+const CATEGORIES = ['game', 'classic', 'ambient', 'mustCheck', 'bigTech', 'tool', 'physic', 'descriptive', 'math', 'openSource', 'DAW', 'TeroParviainen', 'kidsFriendly', 'FreeSound', 'commercial', 'AI', 'accessible', '12+', 'classical', 'seizureWarning', 'tonejs', 'DIY'];
 function hideShowClassElement(className) {
     let currState = document.getElementsByClassName(`toggle-${className}`)[0].classList.toggle('toggle-on');
     const elements  = document.getElementsByClassName(className);
