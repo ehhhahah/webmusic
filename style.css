@@ -1,12 +1,14 @@
-body { 
-    background-color: rgb(235, 235, 235);
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
+html {
+    background-color: #ffffff00 !important;
 }
 
-#container {
-    padding-left: 5%;
-    padding-right: 5%;
+body { 
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+	background: linear-gradient(-45deg, #ffffff, #cee4dd, #e8f9ff, #d1e6c8);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh !important;
 }
 
 .evaluation {
@@ -16,8 +18,10 @@ body {
     text-align: center;
 }
 
-iframe {
-    border-style:none;
+.webapps {
+    padding: 1%;
+    /* align-items: center; */
+    justify-content: center !important;
 }
 
 /* For Mobile */
@@ -57,20 +61,42 @@ iframe {
 button {
     border: 1.5px solid white;
     border-radius: 1.5%;
-    padding: 1%;
-    margin: 1%;
     cursor: pointer;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.filtering {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    padding-bottom: 2%;
+.buttons {
+    align-items: center;
+    justify-content: center !important;
+    padding: 1%;
+}
+
+
+/* For Mobile */
+@media screen and (max-width: 600px) {
+    .filtering {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1100px) {
+    .filtering {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+}
+
+/* For computer */
+@media screen and (min-width: 1100px) {
+    .filtering {
+        display: grid;
+        grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% ;
+    }
 }
 
 .toggle {
-    background-color: rgb(235, 235, 235) !important;
+    background-color: #ffffff00 !important;
     color: black !important;
     border: 1px solid rgb(197, 70, 70) !important;
 }
@@ -85,6 +111,7 @@ button:active, button:focus, toggle-all {
     box-shadow: none !important;
     border: 1 white !important;
     outline: 0 !important;
+    background-color: #ffffff33 !important;
   }
 
 h1 { 
@@ -96,15 +123,13 @@ h1 {
 }
 
 header {
-    padding-top: 5%;
-    margin-bottom: 5%;
     font-family: Bebas Neue;
     font-size: 300%;
 }
 
 ::selection {
     color: white;
-    background: rgb(63, 44, 18);
+    background: rgb(0, 100, 0);
   }
 
 h2 {
@@ -116,12 +141,12 @@ div {
 }
 
 a:link {
-    color: rgb(112, 65, 0);
+    color: rgb(0, 100, 0);
     font-weight: bold;
 }
 
 a:visited {
-    color: rgb(63, 44, 18);
+    color: rgb(0, 50, 0);
     font-weight: bold;
 }
 
@@ -138,22 +163,6 @@ ul {
 .tags {
     margin-top: 5%;
 
-}
-
-footer {
-    margin-top: 5%;
-    background-color: black;
-    text-align: center;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: white;
-    padding-bottom: 5%;
-    height: 20vh;
-}
-
-section {
-    min-height: 80vh;
 }
 
 .info {
@@ -210,5 +219,25 @@ h3.info {
 
 .onblack-current {
     color: white !important;
-    background-color: rgb(63, 44, 18) !important;
+    background-color: rgb(20, 63, 18) !important;
+}
+
+.hide-all-off {
+    display: none !important;
+}
+
+.show-tags-container {
+    padding: 0%;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }

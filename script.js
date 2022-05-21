@@ -1,4 +1,4 @@
-const CATEGORIES = ['game', 'classic', 'ambient', 'mustCheck', 'bigTech', 'tool', 'physic', 'descriptive', 'math', 'openSource', 'DAW', 'TeroParviainen', 'kidsFriendly', 'FreeSound', 'commercial', 'AI', 'accessible', '12+', 'classical', 'seizureWarning', 'tonejs', 'DIY'];
+const CATEGORIES = ['12+', 'AI', 'DAW', 'DIY', 'FreeSound', 'accessible', 'ambient', 'bigTech', 'classic', 'classical', 'commercial', 'descriptive', 'drumMachine', 'forKids', 'game', 'learn', 'longRead', 'math', 'mustCheck', 'openSource', 'physic', 'realTime', 'seizureWarning', 'sequencer', 'tool', 'visual'];
 function hideShowClassElement(className) {
     let currState = document.getElementsByClassName(`toggle-${className}`)[0].classList.toggle('toggle-on');
     const elements  = document.getElementsByClassName(className);
@@ -18,6 +18,7 @@ function renderFilteringButtons() {
         const filteringSpan = document.getElementsByClassName("filtering")[0]
         filteringSpan.appendChild(btn);
     })
+    hideTags()
 }
 
 function toggleAll() {
@@ -31,6 +32,20 @@ function toggleAll() {
             elements[i].style.display = currState ? "block" : "none"
         }
     })
+}
+
+function hideTags() {
+    let currState = document.getElementsByClassName("hide-tags")[0].classList.toggle('hide-all-off');
+    document.getElementsByClassName("show-tags")[0].classList.toggle('hide-all-off');
+
+    CATEGORIES.forEach((className) => {
+        const elements = document.getElementsByClassName("filtering");
+
+        for (let i=0; i<elements.length; i++) {
+            elements[i].style.display = currState ? "grid" : "none"
+        }
+    })
+    
 }
 
 function changeFont(){
@@ -48,11 +63,4 @@ function changeFont(){
     x.style.color = getColorCode()
 }
 
-function collapseAllText(){
-    const elements  = document.getElementsByClassName("card-text");
-    for (let i=0; i<elements.length; i++) {
-        elements[i].classList.toggle('d-inline-block text-truncate');
-    }
-}
-
-window.onload = renderFilteringButtons, collapseAllText
+window.onload = renderFilteringButtons

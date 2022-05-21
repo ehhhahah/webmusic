@@ -51,85 +51,88 @@
      </noscript>
      <h1 id="pageTitle">
       WEB MUSIC APPS FOR
-      <span id="changable" style="color:rgb(99, 33, 13)">
+      <span id="changable" style="color:rgb(30, 99, 13)">
        EVERYBODY
       </span>
      </h1>
     </header>
     <nav>
-     <span class="filtering buttons">
-      <button class="button is-rounded toggle-all toggle-all-off" onclick="toggleAll()" type="button">
-       Toggle all
-      </button>
+     <span class="buttons">
+        <button class="button is-rounded hide-tags hide-all-off" onclick="hideTags()" type="button">Tags ▼</button>
+        <button class="button is-rounded show-tags" onclick="hideTags()" type="button">Tags ▲</button>
+        <button class="button is-rounded toggle-all toggle-all-off" onclick="toggleAll()" type="button">Toggle all</button>
+        <a href="tagsinfo.html"><button class="button is-rounded">Tags info</button></a>
      </span>
+     <span class="buttons filtering"></span>
+
     </nav>
     <div id="webapps" class="webapps g-4">
-        <div class="card h-100 text-center webapp TeroParviainen mustCheck 12+">
+        <div class="card h-100 text-center webapp mustCheck 12+ longRead">
         <h5 class="card-title"><a href="https://teropa.info/loop/#/title" target="_blank">How Generative Music Works</a></h5>
         <h6 class="card-subtitle mb-2 text-muted">Authors: <a href='http://teropa.info'>Tero Parviainenn</a></h6>
         <br/>
         <p class="card-text">Web guide with a multitude of interactive examples from the history of contemporary music. Probably the biggest application in the registry, going through it all takes around an hour or two. The size of it, combined with practical uses of learned concepts makes it worth at least a couple of professional lessons. The guide collects various apps created by Parviainen, some of which will pop up in our registry in different variations/extentions.</p>
-        <p class="tags"><span class='tag'>#TeroParviainen</span> <span class='tag'>#mustCheck</span> <span class='tag'>#12+</span></p>
+        <p class="tags"><span class='tag'>#mustCheck</span> <span class='tag'>#12+</span> <span class='tag'>#longRead</span></p>
         
         </div>
         
-        <div class="card h-100 text-center webapp TeroParviainen">
+        <div class="card h-100 text-center webapp DAW drumMachine">
         <h5 class="card-title"><a href="https://roland50.studio/" target="_blank">Roland synthesizers online</a></h5>
         <h6 class="card-subtitle mb-2 text-muted">Authors: <a href='https://ctpt.co/'>Studio Counterpoint</a></h6>
         <br/>
         <p class="card-text">Online version of three popular Roland synths/drum machines: TR-808, TB-303 and SH-101, made for the 50th anniversary of the company.</p>
-        <p class="tags"><span class='tag'>#TeroParviainen</span></p>
+        <p class="tags"><span class='tag'>#DAW</span> <span class='tag'>#drumMachine</span></p>
         
         </div>
         
-        <div class="card h-100 text-center webapp TeroParviainen">
+        <div class="card h-100 text-center webapp realTime sequencer">
         <h5 class="card-title"><a href="https://globalsequencer.com/" target="_blank">Global sequencer</a></h5>
         <h6 class="card-subtitle mb-2 text-muted">Authors: <a href='https://ctpt.co/'>Studio Counterpoint</a></h6>
         <br/>
         <p class="card-text">Version of a digital sequencer commisioned by UNESCO, which lets every visitor on the page post their own recording and become a part of a global track.</p>
-        <p class="tags"><span class='tag'>#TeroParviainen</span></p>
+        <p class="tags"><span class='tag'>#realTime</span> <span class='tag'>#sequencer</span></p>
         
         </div>
         
-        <div class="card h-100 text-center webapp bigTech mustCheck tonejs">
+        <div class="card h-100 text-center webapp bigTech mustCheck learn">
         <h5 class="card-title"><a href="https://learningsynths.ableton.com" target="_blank">Interactive web app explaining the basics of sound synthesis</a></h5>
         <h6 class="card-subtitle mb-2 text-muted">Authors: <a href='https://www.ableton.com/'>Ableton team</a></h6>
         <br/>
         <p class="card-text">Web app curated by the creators of Ableton (one of the most popular music editing and creation softwares) that introduces most important concepts and provides a sandbox enviroment for users to try them in practice.</p>
-        <p class="tags"><span class='tag'>#bigTech</span> <span class='tag'>#mustCheck</span> <span class='tag'>#tonejs</span></p>
+        <p class="tags"><span class='tag'>#bigTech</span> <span class='tag'>#mustCheck</span> <span class='tag'>#learn</span></p>
         <div class="card-footer">
         <ul class="list-group list-group-flush">More links:
         <li class="list-group-item">- <a href='https://learningmusic.ableton.com/'></a></li></ul></div>
         </div>
         
-        <div class="card h-100 text-center webapp bigTech openSource">
+        <div class="card h-100 text-center webapp bigTech openSource learn forKids">
         <h5 class="card-title"><a href="https://musiclab.chromeexperiments.com/Experiments" target="_blank">Chrome Music Lab - collection of simple music applications</a></h5>
         <h6 class="card-subtitle mb-2 text-muted">Authors: <a href='https://experiments.withgoogle.com/'>Google Experiments team</a></h6>
         <br/>
         <p class="card-text">Most of the apps here are educational and aimed at a younger audience, examples include a spectogram or a simple melody editor. Nevertheless, everyone should be able to find something interesting to play with, no matter their age.</p>
-        <p class="tags"><span class='tag'>#bigTech</span> <span class='tag'>#openSource</span></p>
+        <p class="tags"><span class='tag'>#bigTech</span> <span class='tag'>#openSource</span> <span class='tag'>#learn</span> <span class='tag'>#forKids</span></p>
         <div class="card-footer">
         <ul class="list-group list-group-flush">More links:
         <li class="list-group-item">- <a href='https://github.com/googlecreativelab/chrome-music-lab'></a></li></ul></div>
         </div>
         
-        <div class="card h-100 text-center webapp DIY descriptive openSource">
+        <div class="card h-100 text-center webapp DIY descriptive openSource learn">
         <h5 class="card-title"><a href="https://femurdesign.com/omni" target="_blank">Omni - discover different musical scales</a></h5>
         <h6 class="card-subtitle mb-2 text-muted">Authors: <a href='http://femurdesign.com/'>Luke Phillips</a></h6>
         <br/>
         <p class="card-text">A tool useful for discovering more obscure musical scales such as Japanese Hirajōshi or Iwato. It also lets the user record a short track and loop it.</p>
-        <p class="tags"><span class='tag'>#DIY</span> <span class='tag'>#descriptive</span> <span class='tag'>#openSource</span></p>
+        <p class="tags"><span class='tag'>#DIY</span> <span class='tag'>#descriptive</span> <span class='tag'>#openSource</span> <span class='tag'>#learn</span></p>
         <div class="card-footer">
         <ul class="list-group list-group-flush">More links:
-        <li class="list-group-item">- <a href='https://github.com/lukephills/omni'></a></li></ul></div>
+        <li class="list-group-item">- <a href='https://github.com/lukephills/omni'>Source code</a></li></ul></div>
         </div>
         
-        <div class="card h-100 text-center webapp bigTech">
+        <div class="card h-100 text-center webapp bigTech forKids">
         <h5 class="card-title"><a href="https://www.concerthotels.com/got-rhythm" target="_blank">Got rhythm?</a></h5>
         <h6 class="card-subtitle mb-2 text-muted">Authors: <a href='https://www.concerthotels.com/'>concerthotels.com</a></h6>
         <br/>
         <p class="card-text">The user has only one task: press the spacebar 20 times in 120 bpm tempo. Later the site scores their performance on a scale from 0 to 1000.</p>
-        <p class="tags"><span class='tag'>#bigTech</span></p>
+        <p class="tags"><span class='tag'>#bigTech</span> <span class='tag'>#forKids</span></p>
         
         </div>
         
@@ -141,35 +144,35 @@
         <p class="tags"><span class='tag'>#descriptive</span> <span class='tag'>#math</span></p>
         <div class="card-footer">
         <ul class="list-group list-group-flush">More links:
-        <li class="list-group-item">- <a href='https://github.com/edwardball/academo.org/tree/master/demos/19-tet-keyboard'></a></li></ul></div>
+        <li class="list-group-item">- <a href='https://github.com/edwardball/academo.org/tree/master/demos/19-tet-keyboard'>Source code</a></li></ul></div>
         </div>
         
-        <div class="card h-100 text-center webapp DIY classic physic">
+        <div class="card h-100 text-center webapp DIY classic physic learn forKids">
         <h5 class="card-title"><a href="https://dood.al/pinktrombone" target="_blank">[TODO TRANSLATE] Symulacja modulacji ludzkiego głosu</a></h5>
         <h6 class="card-subtitle mb-2 text-muted">Authors: <a href='http://venuspatrol.nfshost.com/'>Neil Thapen</a></h6>
         <br/>
         <p class="card-text">[TODO TRANSLATE] Można se poklikać i się dowiedzieć jak to działa trochę. Aplikacja nie posiada kodu źródłowego, mimo że została stworzona przez niezależnego twórcę gier przeglądarkowych i jednocześnie wykładowcę akademickiego. </p>
-        <p class="tags"><span class='tag'>#DIY</span> <span class='tag'>#classic</span> <span class='tag'>#physic</span></p>
+        <p class="tags"><span class='tag'>#DIY</span> <span class='tag'>#classic</span> <span class='tag'>#physic</span> <span class='tag'>#learn</span> <span class='tag'>#forKids</span></p>
         
         </div>
         
-        <div class="card h-100 text-center webapp DIY openSource physic">
+        <div class="card h-100 text-center webapp DIY openSource physic learn forKids">
         <h5 class="card-title"><a href="https://harmony.brianfoo.com" target="_blank">[TODO TRANSLATE] Informacje na temat świata przedstawione dźwiękowo</a></h5>
         <h6 class="card-subtitle mb-2 text-muted">Authors: <a href='https://brianfoo.com/'>Brian Foo</a></h6>
         <br/>
         <p class="card-text">[TODO TRANSLATE] Każda szerokość geograficzna opisana jest przez jej zbiorcze PKB, emisje CO2, temperaturę i inne, gdzie każda z tych informacji wpływa na głosność instrumentu, tworząc ścianę dźwięku, zmieniającą się wraz z przeglądaną przez nas szerokością geograficzną. </p>
-        <p class="tags"><span class='tag'>#DIY</span> <span class='tag'>#openSource</span> <span class='tag'>#physic</span></p>
+        <p class="tags"><span class='tag'>#DIY</span> <span class='tag'>#openSource</span> <span class='tag'>#physic</span> <span class='tag'>#learn</span> <span class='tag'>#forKids</span></p>
         <div class="card-footer">
         <ul class="list-group list-group-flush">More links:
-        <li class="list-group-item">- <a href='https://github.com/beefoo/latitude'></a></li></ul></div>
+        <li class="list-group-item">- <a href='https://github.com/beefoo/latitude'>Source code</a></li></ul></div>
         </div>
         
-        <div class="card h-100 text-center webapp bigTech descriptive mustCheck">
+        <div class="card h-100 text-center webapp bigTech descriptive longRead mustCheck">
         <h5 class="card-title"><a href="http://everynoise.com" target="_blank">[TODO TRANSLATE] Wszystkie możliwe statystyki Spotify zebrane w jednym miejscu</a></h5>
         <h6 class="card-subtitle mb-2 text-muted">Authors: <a href='https://twitter.com/glenn_mcdonald'>Glenn McDonald</a></h6>
         <br/>
         <p class="card-text">[TODO TRANSLATE] Można sprawdzić czego słuchają ludzie w Twoim mieście albo na uczelni. Choć zdaje się, że autorzy pokusili się o jakieś dzikie odsiewanie rzeczy bardziej popularnych, żeby wskazać dane bardziej charakterystyczne dla wyszukiwania.</p>
-        <p class="tags"><span class='tag'>#bigTech</span> <span class='tag'>#descriptive</span> <span class='tag'>#mustCheck</span></p>
+        <p class="tags"><span class='tag'>#bigTech</span> <span class='tag'>#descriptive</span> <span class='tag'>#longRead</span> <span class='tag'>#mustCheck</span></p>
         <div class="card-footer">
         <ul class="list-group list-group-flush">More links:
         <li class="list-group-item">- <a href='http://everynoise.com/everyplace.cgi'></a></li>
@@ -183,12 +186,12 @@
         <li class="list-group-item">- <a href='http://everynoise.com/gender_tldr.html'></a></li></ul></div>
         </div>
         
-        <div class="card h-100 text-center webapp TeroParviainen descriptive tonejs">
+        <div class="card h-100 text-center webapp descriptive learn">
         <h5 class="card-title"><a href="https://teropa.info/blog/2016/07/28/javascript-systems-music.html" target="_blank">[TODO TRANSLATE] Poradnik tworzenia webowych aplikacji muzycznych w JavaScript</a></h5>
         <h6 class="card-subtitle mb-2 text-muted">Authors: <a href='http://teropa.info'>Tero Parviainen</a></h6>
         <br/>
         <p class="card-text">[TODO TRANSLATE] Przejrzysty poradnik jak łatwo można zrobić swoją własną aplikację webową z przykładami działających już apek imitujących dzieła m.in. Briana Eno. Wklejam, ponieważ nawet osoba nie do końca zainteresowana pisaniem takich aplikacji może w interaktywny sposób podejrzeć co się dzieje w kodzie. </p>
-        <p class="tags"><span class='tag'>#TeroParviainen</span> <span class='tag'>#descriptive</span> <span class='tag'>#tonejs</span></p>
+        <p class="tags"><span class='tag'>#descriptive</span> <span class='tag'>#learn</span></p>
         
         </div>
         
@@ -212,21 +215,12 @@
         
         </div>
         
-        <div class="card h-100 text-center webapp DIY">
-        <h5 class="card-title"><a href="http://www.pianophase.com" target="_blank">[TODO TRANSLATE] "Piano Phase" Steve Reich</a></h5>
-        <h6 class="card-subtitle mb-2 text-muted">Authors: <a href='http://www.chenalexander.com/'>Alexander Chen</a></h6>
-        <br/>
-        <p class="card-text">[TODO TRANSLATE] Nigdy się nie kończy i ma wizualizacje też. Aplikacja pozwala na interakcję użytkownika. </p>
-        <p class="tags"><span class='tag'>#DIY</span></p>
-        
-        </div>
-        
-        <div class="card h-100 text-center webapp DIY math physic">
+        <div class="card h-100 text-center webapp DIY math physic classical forKids">
         <h5 class="card-title"><a href="http://www.baroque.me" target="_blank">[TODO TRANSLATE] Suita nr 1, G-dur, BWV 1007, J.S. Bach</a></h5>
         <h6 class="card-subtitle mb-2 text-muted">Authors: <a href='http://www.chenalexander.com/'>Alexander Chen</a></h6>
         <br/>
         <p class="card-text">[TODO TRANSLATE] Aplikacja jest interaktywna. Bazując na matematycznych powiązaniach długości struny i wysokości dźwięku strona prezentuje kolejne nuty jako struny. </p>
-        <p class="tags"><span class='tag'>#DIY</span> <span class='tag'>#math</span> <span class='tag'>#physic</span></p>
+        <p class="tags"><span class='tag'>#DIY</span> <span class='tag'>#math</span> <span class='tag'>#physic</span> <span class='tag'>#classical</span> <span class='tag'>#forKids</span></p>
         
         </div>
         
@@ -238,41 +232,41 @@
         <p class="tags"><span class='tag'>#ambient</span> <span class='tag'>#classical</span></p>
         <div class="card-footer">
         <ul class="list-group list-group-flush">More links:
-        <li class="list-group-item">- <a href='https://codepen.io/teropa/pen/YgRayV'></a></li></ul></div>
+        <li class="list-group-item">- <a href='https://codepen.io/teropa/pen/YgRayV'>Source code</a></li></ul></div>
         </div>
         
-        <div class="card h-100 text-center webapp ambient">
+        <div class="card h-100 text-center webapp ambient forKids">
         <h5 class="card-title"><a href="https://mezoistvan.github.io/discreetmusic" target="_blank">[TODO TRANSLATE] “Discreet music" Brian Eno</a></h5>
         <h6 class="card-subtitle mb-2 text-muted">Authors: brak autora?</h6>
         <br/>
         <p class="card-text">[TODO TRANSLATE] W formie audiowizualnej strony internetowej.</p>
-        <p class="tags"><span class='tag'>#ambient</span></p>
+        <p class="tags"><span class='tag'>#ambient</span> <span class='tag'>#forKids</span></p>
         <div class="card-footer">
         <ul class="list-group list-group-flush">More links:
-        <li class="list-group-item">- <a href='https://github.com/teropa/discreetmusic.js'></a></li></ul></div>
+        <li class="list-group-item">- <a href='https://github.com/teropa/discreetmusic.js'>Source code of other developer, that is based on the same piece</a></li></ul></div>
         </div>
         
-        <div class="card h-100 text-center webapp DIY openSource">
+        <div class="card h-100 text-center webapp DIY openSource classical forKids">
         <h5 class="card-title"><a href="https://eclipticalis.brianfoo.com/" target="_blank">[TODO TRANSLATE] “Music eclipticalis” John Cage</a></h5>
         <h6 class="card-subtitle mb-2 text-muted">Authors: <a href='https://brianfoo.com/'>Brian Foo</a></h6>
         <br/>
         <p class="card-text">[TODO TRANSLATE] Dzieło polegające na nałożeniu pięciolinii na gwieździste niebo, gdzie gwiazdy reprezentują nuty. John Cage napisał swój utwór na bazie atlasu, tutaj interpretowane jest niebo według danych z bazy gwiazd HYG</p>
-        <p class="tags"><span class='tag'>#DIY</span> <span class='tag'>#openSource</span></p>
+        <p class="tags"><span class='tag'>#DIY</span> <span class='tag'>#openSource</span> <span class='tag'>#classical</span> <span class='tag'>#forKids</span></p>
         <div class="card-footer">
         <ul class="list-group list-group-flush">More links:
-        <li class="list-group-item">- <a href='https://github.com/beefoo/eclipticalis'></a></li>
+        <li class="list-group-item">- <a href='https://github.com/beefoo/eclipticalis'>Source code</a></li>
         <li class="list-group-item">- <a href='http://www.astronexus.com/hyg'></a></li></ul></div>
         </div>
         
-        <div class="card h-100 text-center webapp DIY openSource">
+        <div class="card h-100 text-center webapp DIY openSource forKids">
         <h5 class="card-title"><a href="https://blossom.alexbainter.com" target="_blank">[TODO TRANSLATE] Blossom (oparte na “Bloom” Briana Eno)</a></h5>
         <h6 class="card-subtitle mb-2 text-muted">Authors: <a href='https://alexbainter.com/'>Alex Bainter</a></h6>
         <br/>
-        <p class="card-text">[TODO TRANSLATE] Można sobie kliknąć lub pozwolić komputerowi klikać za nas :) Inspirowane ostatnimi dziełami Briana Eno, wydanymi w formie aplikacji na iPhony.  </p>
-        <p class="tags"><span class='tag'>#DIY</span> <span class='tag'>#openSource</span></p>
+        <p class="card-text">[TODO TRANSLATE] Można sobie kliknąć gdziekolwiek lub pozwolić komputerowi klikać za nas :) Inspirowane ostatnimi dziełami Briana Eno, wydanymi w formie aplikacji na iPhony. Należy chwilę zaczekać, zanim będzie można zacząć grać</p>
+        <p class="tags"><span class='tag'>#DIY</span> <span class='tag'>#openSource</span> <span class='tag'>#forKids</span></p>
         <div class="card-footer">
         <ul class="list-group list-group-flush">More links:
-        <li class="list-group-item">- <a href='https://github.com/generative-music/blossom'></a></li></ul></div>
+        <li class="list-group-item">- <a href='https://github.com/generative-music/blossom'>Source code</a></li></ul></div>
         </div>
         
         <div class="card h-100 text-center webapp DIY openSource">
@@ -283,60 +277,60 @@
         <p class="tags"><span class='tag'>#DIY</span> <span class='tag'>#openSource</span></p>
         <div class="card-footer">
         <ul class="list-group list-group-flush">More links:
-        <li class="list-group-item">- <a href='https://github.com/metalex9/corruption-loops'></a></li></ul></div>
+        <li class="list-group-item">- <a href='https://github.com/metalex9/corruption-loops'>Source code</a></li></ul></div>
         </div>
         
-        <div class="card h-100 text-center webapp classic">
+        <div class="card h-100 text-center webapp classical longRead 12+">
         <h5 class="card-title"><a href="http://player.cageconcert.org" target="_blank">[TODO TRANSLATE] “Concert for Orchestra and Piano” John Cage</a></h5>
         <h6 class="card-subtitle mb-2 text-muted">Authors: pracownicy Universities of Huddersfield and Leeds</h6>
         <br/>
-        <p class="card-text">[TODO TRANSLATE] Znane i lubiane dzieło do odtworzenia w przeglądarce. Można zdecydować o chyba wszystkich parametrach utworu, a sam utwór można odtworzyć w estetycznej oprawie wizualnej. </p>
-        <p class="tags"><span class='tag'>#classic</span></p>
+        <p class="card-text">[TODO TRANSLATE] Znane i lubiane dzieło do odtworzenia w przeglądarce. Można zdecydować o chyba wszystkich parametrach utworu, a sam utwór można odtworzyć w estetycznej oprawie wizualnej. Aplikacja ładuje się dłuższą chwile</p>
+        <p class="tags"><span class='tag'>#classical</span> <span class='tag'>#longRead</span> <span class='tag'>#12+</span></p>
         <div class="card-footer">
         <ul class="list-group list-group-flush">More links:
         <li class="list-group-item">- <a href='https://cageconcert.org/wp-content/uploads/2019/11/John-Cage-Concert-Player-Guide-1.pdf'></a></li></ul></div>
         </div>
         
-        <div class="card h-100 text-center webapp DIY tonejs">
+        <div class="card h-100 text-center webapp DIY">
         <h5 class="card-title"><a href="https://teropa.info/musicmouse" target="_blank">[TODO TRANSLATE] “Music Mouse” Laurie Spiegel</a></h5>
         <h6 class="card-subtitle mb-2 text-muted">Authors: <a href='http://teropa.info'>Tero Parviainen</a></h6>
         <br/>
         <p class="card-text">[TODO TRANSLATE] Implementacja dzieła Laurie Spiegel, które podejmowało znany problem grania muzyki za pomocą myszki komputerowej. Więcej informacji w linku poniżej. Program może generować muzykę lub przekazywać informację MIDI do wybranego przez nas programu. </p>
-        <p class="tags"><span class='tag'>#DIY</span> <span class='tag'>#tonejs</span></p>
+        <p class="tags"><span class='tag'>#DIY</span></p>
         <div class="card-footer">
         <ul class="list-group list-group-flush">More links:
         <li class="list-group-item">- <a href='http://retiary.org/ls/programs.html'></a></li></ul></div>
         </div>
         
-        <div class="card h-100 text-center webapp DIY openSource tonejs">
+        <div class="card h-100 text-center webapp DIY openSource">
         <h5 class="card-title"><a href="https://teropa.info/in-c" target="_blank">[TODO TRANSLATE] “In C” Terry Riley</a></h5>
         <h6 class="card-subtitle mb-2 text-muted">Authors: <a href='http://teropa.info'>Tero Parviainen</a></h6>
         <br/>
         <p class="card-text">[TODO TRANSLATE] Audiowizualna interpretacja klasycznego dzieła muzyki generatywnej. </p>
-        <p class="tags"><span class='tag'>#DIY</span> <span class='tag'>#openSource</span> <span class='tag'>#tonejs</span></p>
+        <p class="tags"><span class='tag'>#DIY</span> <span class='tag'>#openSource</span></p>
         <div class="card-footer">
         <ul class="list-group list-group-flush">More links:
         <li class="list-group-item">- <a href='https://github.com/teropa/in-c'></a></li></ul></div>
         </div>
         
-        <div class="card h-100 text-center webapp DIY openSource">
+        <div class="card h-100 text-center webapp DIY openSource math">
         <h5 class="card-title"><a href="https://codepen.io/swallez/full/zVdarx" target="_blank">[TODO TRANSLATE] Gymnopedie 1-3, Erik Satie</a></h5>
         <h6 class="card-subtitle mb-2 text-muted">Authors: <a href='http://teropa.info'>Tero Parviainen</a></h6>
         <br/>
         <p class="card-text">[TODO TRANSLATE] Klasyczne dzieło zwizualizowane za pomocą grafów, gdzie każdy wierzchołek reprezentuje kolejno pojawiające się nuty. </p>
-        <p class="tags"><span class='tag'>#DIY</span> <span class='tag'>#openSource</span></p>
+        <p class="tags"><span class='tag'>#DIY</span> <span class='tag'>#openSource</span> <span class='tag'>#math</span></p>
         <div class="card-footer">
         <ul class="list-group list-group-flush">More links:
         <li class="list-group-item">- <a href='https://codepen.io/swallez/pen/zVdarx'></a></li>
         <li class="list-group-item">- <a href='https://codepen.io/teropa/full/JJNKxW'></a></li></ul></div>
         </div>
         
-        <div class="card h-100 text-center webapp classic">
+        <div class="card h-100 text-center webapp classical">
         <h5 class="card-title"><a href="http://www.playonlinedicegames.com/mozart" target="_blank">[TODO TRANSLATE] Mozart Dice Game</a></h5>
         <h6 class="card-subtitle mb-2 text-muted">Authors: <a href='http://www.playonlinedicegames.com/'>PlayOnlineDiceGames.com</a></h6>
         <br/>
         <p class="card-text">[TODO TRANSLATE] Z opisu strony: “Mozart Dice Game more commonly known as Musical Dice Game is a system in which dice is used to generate music from precomposed options. In 1787, Wolfgang Amadeus Mozart published a musical composition entitled "Musikalisches Würfelspiel". This composition allows one, as Mozart puts it, "to compose, without the least knowledge of music, so many German waltzes or ländler as one pleases, by throwing a certain number with two dice."”</p>
-        <p class="tags"><span class='tag'>#classic</span></p>
+        <p class="tags"><span class='tag'>#classical</span></p>
         <div class="card-footer">
         <ul class="list-group list-group-flush">More links:
         <li class="list-group-item">- <a href='https://en.wikipedia.org/wiki/Musikalisches_W%C3%BCrfelspiel'></a></li></ul></div>
@@ -354,6 +348,24 @@
         <li class="list-group-item">- <a href='https://github.com/generative-music/pieces-alex-bainter/blob/master/packages/piece-aisatsana/src/piece.js'></a></li></ul></div>
         </div>
         
+        <div class="card h-100 text-center webapp realTime sequencer">
+        <h5 class="card-title"><a href="https://intersymmetric.xyz/aaa/room1/" target="_blank">AAA - the preconfigured synthesizer and sequencer</a></h5>
+        <h6 class="card-subtitle mb-2 text-muted">Authors: <a href='http://www.markfell.com/wiki/'>Mark Fell</a>, <a href='http://www.riantreanor.com/'>Rian Treanor</a>, <a href='https://www.jamesbradbury.net/'>James Bradbury</a></h6>
+        <br/>
+        <p class="card-text">Pretty impressive and original way of thinking of sequencer. Authors preconfigured the app for the users, leaving only some options available to change. The app works real time, so few people in one room can play together</p>
+        <p class="tags"><span class='tag'>#realTime</span> <span class='tag'>#sequencer</span></p>
+        
+        </div>
+        
+        <div class="card h-100 text-center webapp realTime sequencer">
+        <h5 class="card-title"><a href="https://intersymmetric.xyz/seq-1/idx/" target="_blank">Intersymmetric: Sequencer 01</a></h5>
+        <h6 class="card-subtitle mb-2 text-muted">Authors: <a href='http://www.markfell.com/wiki/'>Mark Fell</a>, <a href='http://www.riantreanor.com/'>Rian Treanor</a>, <a href='https://www.jamesbradbury.net/'>James Bradbury</a>, <a href='https://qubik.com/'>Joe Gilmore</a></h6>
+        <br/>
+        <p class="card-text">Actually, the same idea as the AAA sequencer, but executed differently. The app works real time, so few people in one room can play together</p>
+        <p class="tags"><span class='tag'>#realTime</span> <span class='tag'>#sequencer</span></p>
+        
+        </div>
+        
         <div class="card h-100 text-center webapp DIY mustCheck openSource">
         <h5 class="card-title"><a href="https://the.wubmachine.com" target="_blank">[TODO TRANSLATE] The Wub Machine</a></h5>
         <h6 class="card-subtitle mb-2 text-muted">Authors: <a href='http://blog.petersobot.com/'>Peter Sobot</a></h6>
@@ -366,46 +378,34 @@
         <li class="list-group-item">- <a href='https://github.com/psobot/wub-machine#readme'></a></li></ul></div>
         </div>
         
-        <div class="card h-100 text-center webapp DIY tonejs">
+        <div class="card h-100 text-center webapp DIY forKids">
         <h5 class="card-title"><a href="https://www.halloweensoundboard.com" target="_blank">[TODO TRANSLATE] Generator Halloweenowej muzyki</a></h5>
         <h6 class="card-subtitle mb-2 text-muted">Authors: <a href='https://www.mattmccorkle.com/'>Matt McCorkle</a></h6>
         <br/>
         <p class="card-text">[TODO TRANSLATE] Znajduję to całkiem zabawnym prawdę mówiąc :} Muzyka oparta na utworze "The Skeleton Rag" autorstwa Sama Reidera.</p>
-        <p class="tags"><span class='tag'>#DIY</span> <span class='tag'>#tonejs</span></p>
+        <p class="tags"><span class='tag'>#DIY</span> <span class='tag'>#forKids</span></p>
         
         </div>
         
-        <div class="card h-100 text-center webapp DIY">
+        <div class="card h-100 text-center webapp DIY forKids">
         <h5 class="card-title"><a href="http://www.mta.me" target="_blank">[TODO TRANSLATE] Jak brzmi nowojorskie metro?</a></h5>
         <h6 class="card-subtitle mb-2 text-muted">Authors: <a href='http://www.chenalexander.com/'>Alexander Chen</a></h6>
         <br/>
         <p class="card-text">[TODO TRANSLATE] Strona internetowa w rzeczywistym czasie wyświetla przejazdy metra, które interpretowane są jako różnej długości struny.</p>
-        <p class="tags"><span class='tag'>#DIY</span></p>
+        <p class="tags"><span class='tag'>#DIY</span> <span class='tag'>#forKids</span></p>
         <div class="card-footer">
         <ul class="list-group list-group-flush">More links:
         <li class="list-group-item">- <a href='https://datadrivendj.com/tracks/subway/'></a></li>
         <li class="list-group-item">- <a href='https://codepen.io/teropa/pen/mBbPEe'></a></li></ul></div>
         </div>
         
-        <div class="card h-100 text-center webapp DIY">
+        <div class="card h-100 text-center webapp DIY realTime sequencer">
         <h5 class="card-title"><a href="http://www.cappel-nord.de/webaudio/public-sequencer-matrix" target="_blank">[TODO TRANSLATE] A gdyby tak stworzyć sekwencer muzyczny do którego może mieć dostęp każdy?</a></h5>
         <h6 class="card-subtitle mb-2 text-muted">Authors: <a href='http://www.cappel-nord.de/webaudio/'>Patrick Borgeat</a></h6>
         <br/>
         <p class="card-text">[TODO TRANSLATE] Say no more. Sekwencer w czasie rzeczywistym może edytować każda osoba, która go wyświetla. Taki hehe "eksperyment społeczny". Strona wyświetla też lokalizację uczestników projektu.</p>
-        <p class="tags"><span class='tag'>#DIY</span></p>
+        <p class="tags"><span class='tag'>#DIY</span> <span class='tag'>#realTime</span> <span class='tag'>#sequencer</span></p>
         
-        </div>
-        
-        <div class="card h-100 text-center webapp DIY openSource">
-        <h5 class="card-title"><a href="https://tweet-fm.herokuapp.com" target="_blank">[TODO TRANSLATE] Tweet FM</a></h5>
-        <h6 class="card-subtitle mb-2 text-muted">Authors: <a href='https://twitter.com/innernets'>Mike Mitchell</a></h6>
-        <br/>
-        <p class="card-text">[TODO TRANSLATE] Strona wyświetla dodawane tweety w czasie rzeczywistym (choć pewnie nie jest w stanie zarejestrować wszystkich, bo cos malo mi sie wydaje) i odtwarza do nich dzwieki, no spoko.</p>
-        <p class="tags"><span class='tag'>#DIY</span> <span class='tag'>#openSource</span></p>
-        <div class="card-footer">
-        <ul class="list-group list-group-flush">More links:
-        <li class="list-group-item">- <a href='https://github.com/m10l/tweet-fm'></a></li>
-        <li class="list-group-item">- <a href='https://maratropa.com/marpistudio#'></a></li></ul></div>
         </div>
         
         <div class="card h-100 text-center webapp DIY openSource">
@@ -533,12 +533,12 @@
         <li class="list-group-item">- <a href='https://github.com/xoxwaw/euclidean-sequencer'></a></li></ul></div>
         </div>
         
-        <div class="card h-100 text-center webapp TeroParviainen">
+        <div class="card h-100 text-center webapp sequencer">
         <h5 class="card-title"><a href="https://codepen.io/teropa/full/zPEYbY" target="_blank">[TODO TRANSLATE] Generator euklidesowych sekwencji rytmicznych</a></h5>
         <h6 class="card-subtitle mb-2 text-muted">Authors: <a href='http://teropa.info'>Tero Parviainen</a></h6>
         <br/>
         <p class="card-text">[TODO TRANSLATE] Tym razem z sympatycznymi animacjami i lekkim brzmieniem.</p>
-        <p class="tags"><span class='tag'>#TeroParviainen</span></p>
+        <p class="tags"><span class='tag'>#sequencer</span></p>
         <div class="card-footer">
         <ul class="list-group list-group-flush">More links:
         <li class="list-group-item">- <a href='https://codepen.io/teropa/pen/zPEYbY'></a></li>
@@ -612,12 +612,12 @@
         <li class="list-group-item">- <a href='https://github.com/stuartkeith/keyseq'></a></li></ul></div>
         </div>
         
-        <div class="card h-100 text-center webapp tonejs">
+        <div class="card h-100 text-center webapp DAW">
         <h5 class="card-title"><a href="https://blokdust.com" target="_blank">[TODO TRANSLATE] Blokdust - niestandardowy DAW</a></h5>
         <h6 class="card-subtitle mb-2 text-muted">Authors: <a href='http://whitevinyldesign.com/'>Luke Twyman</a></h6>
         <br/>
         <p class="card-text">[TODO TRANSLATE] Muzyke tworzymy, układając takie dziwne klocki. </p>
-        <p class="tags"><span class='tag'>#tonejs</span></p>
+        <p class="tags"><span class='tag'>#DAW</span></p>
         
         </div>
         
@@ -694,12 +694,12 @@
         <li class="list-group-item">- <a href='https://github.com/echonest/bonhamizer'></a></li></ul></div>
         </div>
         
-        <div class="card h-100 text-center webapp DIY tonejs">
+        <div class="card h-100 text-center webapp DIY">
         <h5 class="card-title"><a href="https://typatone.com" target="_blank">[TODO TRANSLATE] Typatone - Posłuchaj jak piszesz</a></h5>
         <h6 class="card-subtitle mb-2 text-muted">Authors: <a href='http://lullatone.com'>Lullatone</a></h6>
         <br/>
         <p class="card-text">[TODO TRANSLATE] Każda wprowadzona litera odpowiada odpowiedniemu dźwiękowi. Możesz wklejać gotowe już wiadomości, napisać coś samemu oraz wysłać muzyczną wiadomość komuś.</p>
-        <p class="tags"><span class='tag'>#DIY</span> <span class='tag'>#tonejs</span></p>
+        <p class="tags"><span class='tag'>#DIY</span></p>
         <div class="card-footer">
         <ul class="list-group list-group-flush">More links:
         <li class="list-group-item">- <a href='https://typatone.com/stats.html'></a></li>
@@ -718,12 +718,12 @@
         <li class="list-group-item">- <a href='https://github.com/dnlopez/Freesound-Trip'></a></li></ul></div>
         </div>
         
-        <div class="card h-100 text-center webapp DIY openSource tonejs">
+        <div class="card h-100 text-center webapp DIY openSource">
         <h5 class="card-title"><a href="https://codepen.io/teropa/full/QxLrMp" target="_blank">[TODO TRANSLATE] Steruj muzyką za pomocą swojej pozy</a></h5>
         <h6 class="card-subtitle mb-2 text-muted">Authors: <a href='http://teropa.info'>Tero Parviainen</a></h6>
         <br/>
         <p class="card-text">[TODO TRANSLATE] Pobierając ułożenie ciała użytkownika z kamery, aplikacja generuje odpowiednio dopasowaną melodię. </p>
-        <p class="tags"><span class='tag'>#DIY</span> <span class='tag'>#openSource</span> <span class='tag'>#tonejs</span></p>
+        <p class="tags"><span class='tag'>#DIY</span> <span class='tag'>#openSource</span></p>
         <div class="card-footer">
         <ul class="list-group list-group-flush">More links:
         <li class="list-group-item">- <a href='https://codepen.io/teropa/pen/QxLrMp'></a></li></ul></div>
@@ -779,45 +779,45 @@
         <li class="list-group-item">- <a href='https://preservedsound.bandcamp.com/album/microscale'></a></li></ul></div>
         </div>
         
-        <div class="card h-100 text-center webapp tonejs">
+        <div class="card h-100 text-center webapp visual">
         <h5 class="card-title"><a href="https://odra.city" target="_blank">[TODO TRANSLATE] "Odra" - muzyczny eksponat online</a></h5>
         <h6 class="card-subtitle mb-2 text-muted">Authors: <a href='https://marpi.frb.io/about'>Marpi</a>, <a href='https://www.standandmarvel.com/'>Stand & Marvel</a>, <a href='https://huncwot.com/'>Huncwot</a>, <a href='https://twitter.com/gbradleyfilms'>Garrett Bradley</a></h6>
         <br/>
         <p class="card-text">[TODO TRANSLATE] Stronka generuje sobie muzyke z atrakcyjną wizualizacją jedynie. Ale jest dopracowana i pozwala na trochę interakcji, więc wrzucam</p>
-        <p class="tags"><span class='tag'>#tonejs</span></p>
+        <p class="tags"><span class='tag'>#visual</span></p>
         <div class="card-footer">
         <ul class="list-group list-group-flush">More links:
         <li class="list-group-item">- <a href='https://www.marpi.studio/exhibitions/odra'></a></li></ul></div>
         </div>
         
-        <div class="card h-100 text-center webapp tonejs">
+        <div class="card h-100 text-center webapp visual">
         <h5 class="card-title"><a href="https://massmigrations.com/uth" target="_blank">[TODO TRANSLATE] “Mass Migration”</a></h5>
         <h6 class="card-subtitle mb-2 text-muted">Authors: <a href='https://marpi.frb.io/about'>Marpi</a>, Angelique Hering, <a href='https://soundcloud.com/an_on_bast'>An On Bast</a>, <a href='https://www.blueandkream.com/'>Khalid Farquhar</a>, <a href='https://www.thecrucible.org/person/camille-macrae/'>Camille MacRae</a>, Next Art Night</h6>
         <br/>
         <p class="card-text">[TODO TRANSLATE] Aplikacja bardzo podobna do powyższej “Odry”, tym razem jednak mniej interaktywna muzycznie. Ale w zamian za mniejszą interakcję, dostajemy świetną muzykę autorstwa wrocławskiej producentki, An On Bast.</p>
-        <p class="tags"><span class='tag'>#tonejs</span></p>
+        <p class="tags"><span class='tag'>#visual</span></p>
         <div class="card-footer">
         <ul class="list-group list-group-flush">More links:
         <li class="list-group-item">- <a href='https://www.marpi.studio/exhibitions/mass-migrations'></a></li></ul></div>
         </div>
         
-        <div class="card h-100 text-center webapp tonejs">
+        <div class="card h-100 text-center webapp ambient visual">
         <h5 class="card-title"><a href="https://demo.marpi.pl/ocean_desert" target="_blank">[TODO TRANSLATE] “Terrarium”</a></h5>
         <h6 class="card-subtitle mb-2 text-muted">Authors: <a href='https://marpi.frb.io/about'>Marpi</a>, <a href='https://twitter.com/gloom303'>Bent Stamnes</a></h6>
         <br/>
         <p class="card-text">[TODO TRANSLATE] Za pomocą prostych narzędzi studio Marpi stworzyło proceduralne środowisko z wykreowanymi stworzeniami. Oraz generowaną na bieżąco muzyką ambient. Użytkownik może klikać, generując dźwięki lub wygenerować środowisko na nowo, klikając w pewien dziwny przedmiot na środku. </p>
-        <p class="tags"><span class='tag'>#tonejs</span></p>
+        <p class="tags"><span class='tag'>#ambient</span> <span class='tag'>#visual</span></p>
         <div class="card-footer">
         <ul class="list-group list-group-flush">More links:
         <li class="list-group-item">- <a href='https://www.marpi.studio/exhibitions/terrarium'></a></li></ul></div>
         </div>
         
-        <div class="card h-100 text-center webapp DIY openSource tonejs">
+        <div class="card h-100 text-center webapp DIY openSource">
         <h5 class="card-title"><a href="https://wheelibin.github.io/synaesthesia" target="_blank">[TODO TRANSLATE] “Synaesthesia” - Generuj sobie losową muzyke</a></h5>
         <h6 class="card-subtitle mb-2 text-muted">Authors: <a href='https://soundcloud.com/wheelibin'>wheelibin</a></h6>
         <br/>
         <p class="card-text">[TODO TRANSLATE] No po prostu. Nie wiem co więcej napisać, jest to zrobione wyjątkowo prosto i przejrzyście. Więc generujcie sobie, po prostu. Strona ma dwa tryby - funky down-tempo oraz ambient drone.</p>
-        <p class="tags"><span class='tag'>#DIY</span> <span class='tag'>#openSource</span> <span class='tag'>#tonejs</span></p>
+        <p class="tags"><span class='tag'>#DIY</span> <span class='tag'>#openSource</span></p>
         <div class="card-footer">
         <ul class="list-group list-group-flush">More links:
         <li class="list-group-item">- <a href='https://github.com/wheelibin/synaesthesia'></a></li></ul></div>
@@ -835,23 +835,23 @@
         
         </div>
         
-        <div class="card h-100 text-center webapp DIY openSource tonejs">
+        <div class="card h-100 text-center webapp DIY openSource">
         <h5 class="card-title"><a href="https://codepen.io/teropa/full/zpdwRY" target="_blank">[TODO TRANSLATE] Diatonic Dreams</a></h5>
         <h6 class="card-subtitle mb-2 text-muted">Authors: <a href='http://teropa.info'>Tero Parviainen</a></h6>
         <br/>
         <p class="card-text">[TODO TRANSLATE] Prosta aplikacja, która generuje określone progresje po stronie użytkownika. Nie chcę wchodzić w szczegóły, bo nie znam się na tych rzeczach za bardzo, ale polecam ustawić powolne tempo i spokojnie sobie poklikać - fajnie się można wtedy zrelaksować. </p>
-        <p class="tags"><span class='tag'>#DIY</span> <span class='tag'>#openSource</span> <span class='tag'>#tonejs</span></p>
+        <p class="tags"><span class='tag'>#DIY</span> <span class='tag'>#openSource</span></p>
         <div class="card-footer">
         <ul class="list-group list-group-flush">More links:
         <li class="list-group-item">- <a href='https://codepen.io/teropa/pen/zpdwRY'></a></li></ul></div>
         </div>
         
-        <div class="card h-100 text-center webapp DIY openSource tonejs">
+        <div class="card h-100 text-center webapp DIY openSource">
         <h5 class="card-title"><a href="https://codepen.io/teropa/full/opjrBE" target="_blank">[TODO TRANSLATE] L-drones</a></h5>
         <h6 class="card-subtitle mb-2 text-muted">Authors: <a href='http://teropa.info'>Tero Parviainen</a></h6>
         <br/>
         <p class="card-text">[TODO TRANSLATE] Kolejna aplikacja autorstwa Tero Parviainena, której działania wytłumaczyć nie potrafię w sposób sensowny i rzeczowy - jedyne co rozumiem, że dość mocno opiera się na zasadach l-systemów. Ponownie więc zapraszam do relaksacji. </p>
-        <p class="tags"><span class='tag'>#DIY</span> <span class='tag'>#openSource</span> <span class='tag'>#tonejs</span></p>
+        <p class="tags"><span class='tag'>#DIY</span> <span class='tag'>#openSource</span></p>
         <div class="card-footer">
         <ul class="list-group list-group-flush">More links:
         <li class="list-group-item">- <a href='https://codepen.io/teropa/pen/opjrBE'></a></li>
@@ -1105,12 +1105,12 @@
         <li class="list-group-item">- <a href='https://twitter.com/beepboxco'></a></li></ul></div>
         </div>
         
-        <div class="card h-100 text-center webapp DIY mustCheck accessible kidsFriendly">
+        <div class="card h-100 text-center webapp DIY mustCheck accessible forKids">
         <h5 class="card-title"><a href="https://www.patatap.com" target="_blank">[TODO TRANSLATE] Ciekawy sampler z ładnymi wizualizacjami</a></h5>
         <h6 class="card-subtitle mb-2 text-muted">Authors: <a href='http://lullatone.com/'>Lullatone</a></h6>
         <br/>
         <p class="card-text">[TODO TRANSLATE] Bank brzmień i animacji, które można odtwarzać dowolnym klawiszem z klawiatury. Bardzo dopracowane graficznie. Żeby zacząć, wystarczy kliknąć dowolny klawisz.</p>
-        <p class="tags"><span class='tag'>#DIY</span> <span class='tag'>#mustCheck</span> <span class='tag'>#accessible</span> <span class='tag'>#kidsFriendly</span></p>
+        <p class="tags"><span class='tag'>#DIY</span> <span class='tag'>#mustCheck</span> <span class='tag'>#accessible</span> <span class='tag'>#forKids</span></p>
         
         </div>
         
@@ -1134,25 +1134,16 @@
         
         </div>
         
-        <div class="card h-100 text-center webapp DIY tonejs">
+        <div class="card h-100 text-center webapp DIY">
         <h5 class="card-title"><a href="https://fonserbc.itch.io/poly-60" target="_blank">[TODO TRANSLATE] Prosta gierka muzyczna</a></h5>
         <h6 class="card-subtitle mb-2 text-muted">Authors: <a href='https://fonserbc.itch.io/'>Ferran Bertomeu</a></h6>
         <br/>
         <p class="card-text">[TODO TRANSLATE] Masz do dyspozycji siedem wariantów polirytmicznych sekwencji i za ich pomocą musisz ułożyć puzzle wyświetlane na górze. Przyjemnie się gra i słucha, jak słyszysz swój postęp</p>
-        <p class="tags"><span class='tag'>#DIY</span> <span class='tag'>#tonejs</span></p>
+        <p class="tags"><span class='tag'>#DIY</span></p>
         
         </div>
         </div>
    </div>
   </section>
-  <footer>
-   <br/>
-   <a href="#body">
-    Back to top
-   </a>
-   <p>
-    Authors: Wojciech Węgrzyn, Dominik Oczoś
-   </p>
-  </footer>
  </body>
 </html>
