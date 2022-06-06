@@ -136,7 +136,7 @@ def generate_navbar_and_head():
   <meta content="Wojtek Węgrzyn, Dominik Oczoś" name="author"/>
   <!-- technical meta -->
   <meta content="width=device-width, initial-scale=1" name="viewport"/>
-  <base href="https://webmusic.pages.dev/" target="_blank">
+  <base href="https://webmusic.pages.dev/">
   <meta charset="utf-8"/>
   <!-- representation meta -->
   <title>
@@ -149,7 +149,6 @@ def generate_navbar_and_head():
   <link href="style.css" rel="stylesheet"/>
   <link href="site.webmanifest" rel="manifest"/>
   <!-- external hrefs -->
-  <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> TODO https://www.w3schools.com/html/html_responsive.asp -->
   <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com" rel="preconnect"/>
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
