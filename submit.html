@@ -7,7 +7,7 @@
   <meta content="Wojtek Węgrzyn, Dominik Oczoś" name="author"/>
   <!-- technical meta -->
   <meta content="width=device-width, initial-scale=1" name="viewport"/>
-  <!-- <base href="http://webmusic.apps.dj/" target="_blank"> -->
+  <base href="https://webmusic.pages.dev/" target="_blank">
   <meta charset="utf-8"/>
   <!-- representation meta -->
   <title>
@@ -26,21 +26,18 @@
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"/>
  </head>
- <body onclick="changeFont()" id="body">
+ <body id="body" onclick="changeFont()">
   <section>
    <script src="script.js">
    </script>
    <div class="navbary is-black is-spaced has-shadow">
-    <a class="onblack" href="/">Home</a>
-    <a class="onblack" href="/about.html">About</a>
-    <a class="onblack" href="/evaluation.html">Evaluate</a>
-    <a class="onblack onblack-current" href="/submit.html">Submit new</a>
-   </div>
+        <a class="onblack" href="/apps.html">Apps</a>
+        <a class="onblack" href="/">About</a>
+        <a class="onblack" href="/evaluation.html">Evaluate</a>
+        <a class="onblack onblack-current" href="/submit.html">Submit new</a>
+    </div>
    <div id="container">
     <header>
-     <noscript>
-      Sorry, your browser does not support JavaScript! Due to this fact, no filtering of apps is possible.
-     </noscript>
      <h1 id="pageTitle">
       WEB MUSIC APPS FOR
       <span id="changable" style="color:rgb(30, 99, 13)">
@@ -48,20 +45,25 @@
       </span>
      </h1>
     </header>
-    <div class="evaluation">
-        <h2 class="info">Submit new app</h2>
-        <p class="info">
-            If you found any cool app that you would wish to be included on this site, please leave its link and information below. App will be manually checked by the authors, so it will for sure take some time before your addition will be visible here...
-        </p>
-        <p class="info">
-            In case of problems with displaying the form on this page, you can open it in Google Forms - <a href="https://forms.gle/f5WCYpUtAXTUh7z2A">https://forms.gle/f5WCYpUtAXTUh7z2A</a>
-        </p>
-        <br/>
-        <div class="evaluation">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdvNxCKq-WO5wzpIRygBY9GGkLE60wo-h34RNq9criNmDrJLA/viewform?embedded=true" width="640" height="1200" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-        </div>
+    <div class="generic-container">
+     <h2 class="info">
+      Submit new app
+     </h2>
+     <p class="info">
+      If you found any cool app that you would wish to be included on this site, please leave its link and information below. App will be manually checked by the authors, so it will for sure take some time before your addition will be visible here...
+     </p>
+     <p class="info">
+      In case of problems with displaying the form on this page, you can open it in Google Forms -
+      <a href="https://forms.gle/f5WCYpUtAXTUh7z2A">
+       https://forms.gle/f5WCYpUtAXTUh7z2A
+      </a>
+     </p>
+     <br/>
+     <iframe class="gform" frameborder="0" marginwidth="0" src="https://docs.google.com/forms/d/e/1FAIpQLSdvNxCKq-WO5wzpIRygBY9GGkLE60wo-h34RNq9criNmDrJLA/viewform?embedded=true">
+      Loading...
+     </iframe>
     </div>
    </div>
   </section>
-</body>
+ </body>
 </html>
