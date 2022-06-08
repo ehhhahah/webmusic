@@ -3,7 +3,8 @@ import requests
 from bs4 import BeautifulSoup
 import datetime
 
-HTML_OUTPUT = '/Users/Guested/Codes/webmusic/webmusic/assets/original_article/output.html'
+HTML_OUTPUT = '/Users/Guested/Documents/GitHub/webmusic/assets/original_article/output.html'
+TAGS = '/Users/Guested/Documents/GitHub/webmusic/assets/original_article/tags.json'
 APPS_PAGE_PATH = 'apps.html'
 ALL_PAGES = ['index.html', 'apps.html', 'evaluation.html', 'submit.html', 'tagsinfo.html']
 JS_PATH = 'script.js'
@@ -32,7 +33,7 @@ def generate_tags(OUTPUT):
         except AttributeError:
             print(f"ATTRIBUTE HERE? {i}")
 
-    with open('/Users/Guested/Codes/webmusic/webmusic/assets/original_article/tags.json', 'w') as fp:
+    with open(TAGS, 'w') as fp:
         json.dump(sorted(all_tags), fp, default=handle_set_default)
     # with open(JS_PATH, 'w') as fp:
     #     json.dump(list(all_tags), fp, default=handle_set_default)
