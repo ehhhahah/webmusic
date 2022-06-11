@@ -72,6 +72,7 @@ div {
   }
   
   .flex-item-left {
+    margin-bottom: 5%;
     padding: 5px;
     flex: 50%;
   }
@@ -297,6 +298,12 @@ h2.info {
 h3.info {
     font-family: Bebas Neue;
     font-size: 150% !important;
+}
+
+.emoji {
+    font-size: 900% !important;
+  vertical-align: middle;
+  line-height: 2;
 }
 
 /* JAVASCRIPT THINGS */

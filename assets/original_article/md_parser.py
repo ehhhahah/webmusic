@@ -113,10 +113,10 @@ def generate_navbar_and_head():
 
             navbar_html = f"""
 <div class="navbary is-black is-spaced has-shadow">
-        <a class="onblack{' onblack-current' if page.startswith('apps') else ''}" href="/apps.html">Apps</a>
+        <a class="onblack{' onblack-current' if page.startswith('apps') else ''}" href="/apps">Apps</a>
         <a class="onblack{' onblack-current' if page.startswith('about') or page.startswith('index') else ''}" href="/">About</a>
-        <a class="onblack{' onblack-current' if page.startswith('evaluation') else ''}" href="/evaluation.html">Evaluate</a>
-        <a class="onblack{' onblack-current' if page.startswith('submit') else ''}" href="/submit.html">Submit new</a>
+        <a class="onblack{' onblack-current' if page.startswith('evaluation') else ''}" href="/evaluation">Evaluate</a>
+        <a class="onblack{' onblack-current' if page.startswith('submit') else ''}" href="/submit">Submit new</a>
     </div>"""
             header_html = """
             <header>
