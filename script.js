@@ -13,8 +13,15 @@ function renderFilteringButtons() {
         const btn = document.createElement("button");
         btn.innerHTML = "#" + category;
         btn.type = "button"
-        btn.classList = "button btn-link is-rounded toggle toggle-on toggle-" + category
+        btn.classList = "tooltip button btn-link is-rounded toggle toggle-on toggle-" + category
         btn.onclick = function() { hideShowClassElement(category); };
+
+        const tooltiptext = document.createElement("span");
+        tooltiptext.innerHTML = "TODO add tooltips over tags, currently please refer to /tagsinfo page"
+        tooltiptext.type = "span"
+        tooltiptext.classList = "tooltiptext"
+        btn.appendChild(tooltiptext)
+
         const filteringSpan = document.getElementsByClassName("filtering")[0]
         filteringSpan.appendChild(btn);
     })
@@ -46,21 +53,6 @@ function hideTags() {
         }
     })
     
-}
-
-function changeFont(){
-    function getColorCode() {
-        var makeColorCode = '0123456789ABCDEF';
-        var code = '#';
-        for (var count = 0; count < 6; count++) {
-           code = code+ makeColorCode[Math.floor(Math.random() * 8)];
-        }
-        return code;
-     }
-    const fonts = ["Impact", "Comic Sans MS", "Georgia", "Courier New", "Bebas Neue"]
-    var x = document.getElementById("changable");
-    // x.style.fontFamily = fonts[Math.floor(Math.random()*fonts.length)];
-    x.style.color = getColorCode()
 }
 
 window.onload = renderFilteringButtons
