@@ -67,7 +67,7 @@ def create_html(parsed_json, lang="eng"):
         hashtags = " ".join(["<span class='tag'>#" + tag + "</span>" for tag in tags.split(" ")])
 
         more_links = """<div class="card-footer">
-        <ul class="list-group list-group-flush">More links:""" + "".join(f"""
+        <ul class="list-group list-group-flush">Related links:""" + "".join(f"""
         <li class="list-group-item">- <a href='{link['link']}'>{link['name'][lang]}</a></li>""" 
         for link in app["more_links"]) + "</ul></div>" if app["more_links"] else ""
         # TODO add collapsing with accessibility for more links https://getbootstrap.com/docs/5.1/components/collapse/
