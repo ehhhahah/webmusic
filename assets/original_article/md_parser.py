@@ -62,6 +62,7 @@ def create_html(parsed_json, lang="eng"):
         pass
 
     html_content = '<div id="webapps" class="webapps g-4">'
+    id=0
     for app in parsed_json:
         tags = " ".join(app["tags"]) if "tags" in app else " "
         hashtags = " ".join(["<span class='tag'>#" + tag + "</span>" for tag in tags.split(" ")])
@@ -82,11 +83,15 @@ def create_html(parsed_json, lang="eng"):
         if lang == "eng" and not description:
             description = "[TODO TRANSLATE] " + app['description']['pl']
 
+        id+=1
+
         html_content += f"""
-        <div class="card h-100 text-center webapp {tags}">
+        <div class="card h-100 text-center webapp {tags} {id}">
+        <div style="display: flex; justify-content: space-between;">
         <h5 class="card-title"><a href="{app['link']}" target="_blank">{title}</a></h5>
+        <p class="card-text idinfo">#{id}</p>
+        </div>
         <h6 class="card-subtitle mb-2 text-muted">Authors: {get_authors(app['authors'])}</h6>
-        <br/>
         <p class="card-text">{description}</p>
         <p class="tags">{hashtags}</p>
         {more_links}

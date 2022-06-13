@@ -319,6 +319,11 @@ h3.info {
   line-height: 2;
 }
 
+.idinfo {
+    opacity: 50%;
+    font-size: 75%;
+}
+
 /* JAVASCRIPT THINGS */
 
 .hide-all-off {
