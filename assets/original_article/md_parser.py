@@ -9,6 +9,68 @@ APPS_PAGE_PATH = 'apps.html'
 ALL_PAGES = ['index.html', 'apps.html', 'evaluation.html', 'submit.html', 'tagsinfo.html']
 JS_PATH = 'script.js'
 
+TAGS_DESCRIPTORS = {
+"12+":"For users older than 12.",
+
+"AI":"Artificial intelligence technologies used.",
+
+"DAW":"Digital audio workstation, a lot of audio modulation/creating functionality.",
+
+"DIY":"Do it yourself, app made by single person and/or low-budget.",
+
+"FreeSound":"Use of FreeSound samples library.",
+
+"accessible":"General accessible app - for users with any impairment.",
+
+"ambient":"Relaxing, soft or slow-paced music.",
+
+"backgroundMuzak":"Music to be put in background, low listening effort expected.",
+
+"bigTech":"Created by big technological company.",
+
+"classic":"Well-known, popular project, gained huge audacity.",
+
+"classical":"Related to classical music.",
+
+"commercial":"App made for profit purposes.",
+
+"composing":"Apps that allow to compose a new and unique piece of music by user.",
+
+"descriptive":"Reading description or attached text is needed, app is mainly based on text.",
+
+"forKids":"Good for kids in any age.",
+
+"game":"Playful, focused on having fun.",
+
+"learn":"App that shares some knowledge.",
+
+"longRead":"A lot of reading is needed.",
+
+"marpi":"With use of Marpi platform (Web3GL engine, not accessible for screen readers).",
+
+"math":"Some math knowledge is required.",
+
+"mustCheck":"The best apps selection.",
+
+"noveltyArt": "New and unique piece of art, presented in a form of website.",
+
+"openSource":"Source code is publicly available.",
+
+"physic":"Some physic knowledge is required.",
+
+"realTime":"Works on real time data.",
+
+"reconstruction":"Previously published piece, reconstructed in the form of webstie.",
+
+"seizureWarning":"May contain flashing lights.",
+
+"sequencer":"App based on simple sound sequences.",
+
+"tool":"Useful to musicians and producers.",
+
+"visual":"Nice for people with limited hearing, focused more on visual aspect.",
+}
+
 def handle_set_default(obj):
         if isinstance(obj, set):
             return list(obj)
@@ -19,7 +81,7 @@ def generate_tags(OUTPUT):
         with open(JS_PATH) as f:
             lines = f.readlines()
         lines # ['This is the first line.\n', 'This is the second line.\n']
-        lines[0] = f"const CATEGORIES = {tags};\n".replace("{", "[").replace("}", "]")
+        lines[0] = f"const CATEGORIES = {tags};\n"
         lines # ["This is the line that's replaced.\n", 'This is the second line.\n']
         with open(JS_PATH, "w") as f:
             f.writelines(lines)
@@ -33,12 +95,16 @@ def generate_tags(OUTPUT):
         except AttributeError:
             print(f"ATTRIBUTE HERE? {i}")
 
+    tags_with_description = []
+    for tag in sorted(all_tags):
+        tags_with_description.append({"tag": tag, "desc": TAGS_DESCRIPTORS[tag]})
+
     with open(TAGS, 'w') as fp:
-        json.dump(sorted(all_tags), fp, default=handle_set_default)
+        json.dump(tags_with_description, fp, default=handle_set_default)
     # with open(JS_PATH, 'w') as fp:
     #     json.dump(list(all_tags), fp, default=handle_set_default)
-    change_first_file_line(sorted(all_tags))
-    return sorted(all_tags)
+    change_first_file_line(tags_with_description)
+    return tags_with_description
 
 def create_html(parsed_json, lang="eng"):
     def get_authors(authors):
@@ -65,7 +131,7 @@ def create_html(parsed_json, lang="eng"):
     id=0
     for app in parsed_json:
         tags = " ".join(app["tags"]) if "tags" in app else " "
-        hashtags = " ".join(["<span class='tag'>#" + tag + "</span>" for tag in tags.split(" ")])
+        hashtags = " ".join([f"<span class='tag' title='{TAGS_DESCRIPTORS[tag]}'>#" + tag + "</span>" for tag in tags.split(" ")])
 
         more_links = """<div class="card-footer">
         <ul class="list-group list-group-flush">Related links:""" + "".join(f"""

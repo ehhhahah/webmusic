@@ -209,7 +209,7 @@ button:active, button:focus, toggle-all {
 }
 
 .tag {
-    cursor: default !important;
+    cursor: help !important;
     background-color: #22222255 !important;
     color: #DEE3E3 !important;
     text-decoration: none !important;
@@ -217,7 +217,7 @@ button:active, button:focus, toggle-all {
 
 .onblack {
     border-radius: 5px;
-    background-color: #00000044;
+    background-color: #00000066;
     margin: 2%;
     text-align: center;
     padding: auto;
@@ -225,7 +225,7 @@ button:active, button:focus, toggle-all {
 
 .onblack-current {
     color: white !important;
-    background-color:  #ffffff44 !important;
+    background-color: #00000022 !important;
 }
 
 /* TYPOGRAPHY */
@@ -258,11 +258,11 @@ a {
 }
 
 a:link {
-    color: white;
+    color: rgb(210, 255, 210);
 }
 
 a:visited {
-    color: rgb(200, 255, 200);
+    color: rgb(140, 210, 140);
 }
 
 a:hover {
@@ -331,36 +331,43 @@ h3.info {
 }
 
 /* TOOLTPIP */
-
 .tooltip {
     position: relative;
     display: inline-block;
     border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
   }
   
-  /* Tooltip text */
-  .tooltip .tooltiptext {
+/* Tooltip text */
+.tooltip .tooltiptext {
     visibility: hidden;
-    width: 120px;
     background-color: black;
     color: #fff;
     text-align: center;
-    padding: 5px 0;
+    inline-size: 100%;
+    overflow-wrap: break-word;
     border-radius: 6px;
-   
+    margin-top: 30%;
+    padding: 4%;
     /* Position the tooltip text - see examples below! */
     position: absolute;
     z-index: 1;
+    /* transition */
+    opacity: 0;
+    transition: opacity 100ms;
   }
   
-  /* Show the tooltip text when you mouse over the tooltip container */
-  .tooltip:hover .tooltiptext {
+.tooltip:hover .tooltiptext, .tooltip:focus .tooltiptext {
     visibility: visible;
+    opacity: 1;
   }
 
-  .tooltip .tooltiptext {
-    width: 120px;
-    bottom: 100%;
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
     left: 50%;
-    margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
-  }
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
