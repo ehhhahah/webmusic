@@ -121,10 +121,7 @@ def generate_navbar_and_head():
             header_html = """
             <header>
      <h1 id="pageTitle">
-      WEB MUSIC APPS FOR
-      <span id="changable" style="color:rgb(30, 99, 13)">
-       EVERYBODY
-      </span>
+      WEB MUSIC APPS FOR EVERYBODY
      </h1>
     </header>
             """
@@ -147,7 +144,7 @@ def generate_navbar_and_head():
   <link href="images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
   <link href="images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
   <!-- internal hrefs -->
-  <link href="style.css" rel="stylesheet"/>
+  <link href="styledark.css" rel="stylesheet"/>
   <link href="site.webmanifest" rel="manifest"/>
   <!-- external hrefs -->
   <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet"/>
