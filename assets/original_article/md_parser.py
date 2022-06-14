@@ -6,6 +6,7 @@ import datetime
 HTML_OUTPUT = '/Users/Guested/Documents/GitHub/webmusic/assets/original_article/output.html'
 TAGS = '/Users/Guested/Documents/GitHub/webmusic/assets/original_article/tags.json'
 APPS_PAGE_PATH = 'apps.html'
+TAGS_PAGE_PATH = 'tagsinfo.html'
 ALL_PAGES = ['index.html', 'apps.html', 'evaluation.html', 'submit.html', 'tagsinfo.html']
 JS_PATH = 'script.js'
 
@@ -167,6 +168,44 @@ def create_html(parsed_json, lang="eng"):
     with open(HTML_OUTPUT, 'w') as file:
         file.write(html_content)
 
+def replace_tags_html():
+    with open('/Users/Guested/Documents/GitHub/webmusic/assets/original_article/db-fixed.json') as f:
+        database = json.load(f)
+        ids_taken = []
+    def get_example_tag_app(tag):
+        potential_apps = []
+        for app in database:
+            if tag in app["tags"]:
+                potential_apps.append(app)
+            
+        found_app = None
+        if len(potential_apps) <= len(ids_taken):
+            found_app = potential_apps[0] 
+        else:
+            for app in potential_apps:
+                if app in ids_taken:
+                    continue
+                found_app = app
+        ids_taken.append(found_app["id"])
+        return found_app["title"]["eng"], found_app["link"]
+
+    def make_tag_html(tag_key, tag_desc):
+        app_name, app_link = get_example_tag_app(tag_key)
+        return f'<h3 class="info">#{tag_key} </h3> <p class="info" style="font-size: 125%;">{tag_desc}</p><p class="info">Example app: <a href={app_link}>{app_name}</a></p>'
+    tags = [make_tag_html(tag, tag_desc) for tag, tag_desc in TAGS_DESCRIPTORS.items()]
+    half = len(tags)//2
+
+    tags_first_half = " ".join(tags[half:])
+    tags_last_half =  " ".join(tags[:half])
+    with open(TAGS_PAGE_PATH, 'r+') as html:
+        soup = BeautifulSoup(html.read(), 'html.parser')
+        webapps = soup.find(class_="flex-item-left")
+        webapps.replace_with(f"<div class='flex-item-left'>{tags_last_half}</div>")
+        webapps = soup.find(class_="flex-item-right")
+        webapps.replace_with(f"<div class='flex-item-right'>{tags_first_half}</div>")
+    with open(TAGS_PAGE_PATH, 'w', encoding='utf-8') as html:
+        html.write(soup.prettify(formatter=None))
+
 def replace_apps_html():
     with open(APPS_PAGE_PATH, 'r+') as html:
         soup = BeautifulSoup(html.read(), 'html.parser')
@@ -248,6 +287,8 @@ def generate_website():
     log_info(f"Created new HTML on path: {HTML_OUTPUT}")
     replace_apps_html()
     log_info(f"Replaced apps.html path: {APPS_PAGE_PATH}")
+    replace_tags_html()
+    log_info("Generated tagsinfo page")
     generate_navbar_and_head()
     log_info(f"Replaced the navbar and head for: {ALL_PAGES}")
     log_info("Script finished")
@@ -255,12 +296,8 @@ def generate_website():
 def prettify_db():
     with open('/Users/Guested/Documents/GitHub/webmusic/assets/original_article/db-fixed.json') as f:
         json_file = json.load(f)
-    id = 0
     for app in json_file:
-        # app['tags'].sort()
         app['tags'] = sorted(app['tags'], key=str.lower)
-        id += 1
-        app['id'] = id
 
     sorted_dict = sorted(
         json_file,
