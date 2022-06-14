@@ -1,4 +1,5 @@
 import json
+from tempfile import tempdir
 import requests
 from bs4 import BeautifulSoup
 import datetime
@@ -96,7 +97,7 @@ def generate_tags(OUTPUT):
             print(f"ATTRIBUTE HERE? {i}")
 
     tags_with_description = []
-    for tag in sorted(all_tags):
+    for tag in sorted(all_tags, key=str.lower):
         tags_with_description.append({"tag": tag, "desc": TAGS_DESCRIPTORS[tag]})
 
     with open(TAGS, 'w') as fp:
@@ -239,94 +240,40 @@ def generate_navbar_and_head():
 def log_info(message):
     print(f"[INFO | {datetime.datetime.now()}] {message}")
 
-# OUTPUT = parse_md_to_json()  # old code to parse original .md can be found on the bottom of file
-log_info("Script started, calling for database API")
-OUTPUT = requests.get("https://api.npoint.io/aaf125b03660592f839a").json()
-log_info(f"Database JSON received. Got {len(OUTPUT)} objects")
-tags = generate_tags(OUTPUT)
-log_info(f"Generated {len(tags)} tags and saved them to {JS_PATH}")
-create_html(OUTPUT, lang="eng")
-log_info(f"Created new HTML on path: {HTML_OUTPUT}")
-replace_apps_html()
-log_info(f"Replaced apps.html path: {APPS_PAGE_PATH}")
-generate_navbar_and_head()
-log_info(f"Replaced the navbar and head for: {ALL_PAGES}")
-log_info("Script finished")
+def generate_website():
+    with open('/Users/Guested/Documents/GitHub/webmusic/assets/original_article/db-fixed.json') as f:
+        OUTPUT = json.load(f)
+    log_info(f"Database JSON received. Got {len(OUTPUT)} objects")
+    tags = generate_tags(OUTPUT)
+    log_info(f"Generated {len(tags)} tags and saved them to {JS_PATH}")
+    create_html(OUTPUT, lang="eng")
+    log_info(f"Created new HTML on path: {HTML_OUTPUT}")
+    replace_apps_html()
+    log_info(f"Replaced apps.html path: {APPS_PAGE_PATH}")
+    generate_navbar_and_head()
+    log_info(f"Replaced the navbar and head for: {ALL_PAGES}")
+    log_info("Script finished")
 
+def prettify_db():
+    with open('/Users/Guested/Documents/GitHub/webmusic/assets/original_article/db.json') as f:
+        json_file = json.load(f)
+    id = 0
+    for app in json_file:
+        # app['tags'].sort()
+        app['tags'] = sorted(app['tags'], key=str.lower)
+        id += 1
+        app['id'] = id
 
+    sorted_dict = sorted(
+        json_file,
+        key=lambda value: tuple((not c.isalpha(), c) for c in value)
+    )
 
+    with open('/Users/Guested/Documents/GitHub/webmusic/assets/original_article/db-fixed.json', 'w') as file:
+        file.write(json.dumps(sorted_dict, indent=4))
 
+if __name__ == "__main__":
+    prettify_db()
+    generate_website()
 
-
-# EMPTY_SCHEMA = {"authors": [], "more_links": []}
-# 
-# def split_link(link):
-#     splitted = link.split("[")
-#     if len(splitted) < 2:
-#         return {"name": {"pl": link, "eng": ""}}
-#     new_link = splitted[1]
-#     return {
-#         "name": {"pl": new_link.split("](")[0], "eng": ""},
-#         "link": new_link.split("](")[1].split(")")[0] if len(new_link) > 0 else None
-#         }
-
-# def parse_md_to_json():
-#     return_dict = []
-#     with open('/home/wojtek/FrontEnd/webmusic-apps/assets/original_article/WEB_APPKI_dla_Glissando-TO_PARSE.md') as apps:
-#         new_app = EMPTY_SCHEMA
-#         for line in apps:
-#             if line[3:5].isnumeric():
-#                 if new_app != {}:
-#                     return_dict.append(new_app)
-                
-#                 new_app = {"authors": [], "more_links": []}
-#                 app_link_and_title = line[7:].split("](")
-#                 new_app["title"] = {"pl": app_link_and_title[0], "eng": ""}
-#                 new_app["link"]  = app_link_and_title[1].split('/)')[0].split(")\n")[0].split(" ")[0]
-#             if line.startswith("#") and line[1].isalpha():
-#                 tags = line.split(" ")
-#                 new_app["tags"] = set()
-#                 for tag in tags:
-#                     if tag.startswith("#"):
-#                         new_app["tags"].add(tag.replace("\n", "")[1:])
-#                 new_app["tags"] = list(set(new_app["tags"]))
-#                 new_app["tags"].sort()
-#             if line[0].isalpha():
-#                 new_app["description"] = {"pl": line.replace("\n", ""), "eng": ""}
-#             if line.startswith("    "):
-#                 new_app["authors"].append(split_link(line))
-#             if line.startswith("+ ["):
-#                 new_app["more_links"].append(split_link(line))
-    
-#     with open('/home/wojtek/FrontEnd/webmusic-apps/assets/original_article/parsed_data.json', 'w') as fp:
-#         json.dump(return_dict, fp, default=handle_set_default)
-#     return return_dict
-
-# def printer(OUTPUT):
-#     pprint.PrettyPrinter().pprint(OUTPUT)
-
-#     all_tags = set()
-#     all_titles = set()
-#     all_links = set()
-#     all_desc = set()
-#     for i in OUTPUT:
-#         try:
-#             [all_tags.add(tag) for tag in i["tags"]]
-#             # all_titles.add(i["title"])
-#             all_links.add(i["link"])
-#             # all_desc.add(i["description"])
-#         except KeyError:
-#             continue
-#         except AttributeError:
-#             print("ATTRIBUTE HERE?")
-#             print(i)
-
-#     print("TAGS")
-#     [print("- " + i) for i in all_tags]
-#     # print("TITLES")
-#     # [print("- " + i) for i in all_titles]
-#     # print("LINKS")
-#     # [print("- " + i) for i in all_links]
-#     # print("DESC")
-#     # [print("- " + i) for i in all_desc]
-#     pass
+prettify_db()
