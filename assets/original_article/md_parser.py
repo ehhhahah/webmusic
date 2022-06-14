@@ -129,7 +129,6 @@ def create_html(parsed_json, lang="eng"):
         pass
 
     html_content = '<div id="webapps" class="webapps g-4">'
-    id=0
     for app in parsed_json:
         tags = " ".join(app["tags"]) if "tags" in app else " "
         hashtags = " ".join([f"<span class='tag' title='{TAGS_DESCRIPTORS[tag]}'>#" + tag + "</span>" for tag in tags.split(" ")])
@@ -150,13 +149,13 @@ def create_html(parsed_json, lang="eng"):
         if lang == "eng" and not description:
             description = "[TODO TRANSLATE] " + app['description']['pl']
 
-        id+=1
+        id = app['id']
 
         html_content += f"""
         <div class="card h-100 text-center webapp {tags}" id="{id}">
         <div style="display: flex; justify-content: space-between;">
         <h5 class="card-title"><a href="{app['link']}" target="_blank">{title}</a></h5>
-        <p class="card-text idinfo">#{id}</p>
+        <p class="card-text idinfo"><a href="https://webmusic.pages.dev/apps#{id}">#{id}</a></p>
         </div>
         <h6 class="card-subtitle mb-2 text-muted">Authors: {get_authors(app['authors'])}</h6>
         <p class="card-text">{description}</p>
@@ -255,7 +254,7 @@ def generate_website():
     log_info("Script finished")
 
 def prettify_db():
-    with open('/Users/Guested/Documents/GitHub/webmusic/assets/original_article/db.json') as f:
+    with open('/Users/Guested/Documents/GitHub/webmusic/assets/original_article/db-fixed.json') as f:
         json_file = json.load(f)
     id = 0
     for app in json_file:
