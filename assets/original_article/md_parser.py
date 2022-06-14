@@ -152,7 +152,7 @@ def create_html(parsed_json, lang="eng"):
         id+=1
 
         html_content += f"""
-        <div class="card h-100 text-center webapp {tags} {id}">
+        <div class="card h-100 text-center webapp {tags}" id="{id}">
         <div style="display: flex; justify-content: space-between;">
         <h5 class="card-title"><a href="{app['link']}" target="_blank">{title}</a></h5>
         <p class="card-text idinfo">#{id}</p>
