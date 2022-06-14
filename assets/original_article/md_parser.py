@@ -114,7 +114,6 @@ def create_html(parsed_json, lang="eng"):
             out += ", " if out != "" else ""
             author_name = author['name'][lang] if lang in author['name'] else author['name']
 
-            # TODO temp code
             if lang == 'eng' and not author_name:
                 author_name = author['name']['pl']
 
@@ -124,9 +123,6 @@ def create_html(parsed_json, lang="eng"):
             else:
                 out += author_name
         return out
-    def get_more_links(more_links):
-        # TODO ? what is this ?
-        pass
 
     html_content = '<div id="webapps" class="webapps g-4">'
     for app in parsed_json:
@@ -213,7 +209,7 @@ def replace_apps_html():
             webapps = soup.find(id="webapps")
             webapps.replace_with(file.read())
     with open(APPS_PAGE_PATH, 'w', encoding='utf-8') as html:
-        html.write(soup.prettify(formatter=None))
+        html.write(str(soup))
 
 def generate_navbar_and_head():
     for page in ALL_PAGES:
@@ -310,5 +306,3 @@ def prettify_db():
 if __name__ == "__main__":
     prettify_db()
     generate_website()
-
-prettify_db()
