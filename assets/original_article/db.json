@@ -1,0 +1,2956 @@
+[
+    {
+      "authors": [
+        {
+          "name": "Tero Parviainenn",
+          "link": "http://teropa.info"
+        }
+      ],
+      "more_links": [],
+      "title": {
+        "pl": "Jak działa muzyka generatywna?",
+        "eng": "How Generative Music Works"
+      },
+      "link": "https://teropa.info/loop/#/title",
+      "description": {
+        "pl": "Webowy przewodnik z wieloma interaktywnymi przykładami z historii muzyki nowej. Jest to chyba najbardziej rozbudowana aplikacja w całym wpisie. Przejrzenie jej całej zajmuje około 1-2godzin, według mnie jest to wartość conajmniej kilku dobrych lekcji od razu z praktycznym wypróbowaniem nauczonych konceptów. Przewodnik zbiera wiele różnych aplikacji stworzonych przez Parviainena, które w różnych wariacjach/rozwinięciach pojawią się jeszcze w tym spisie.",
+        "eng": "Web guide with a multitude of interactive examples from the history of contemporary music. Probably the biggest application in the registry, going through it all takes around an hour or two. The size of it, combined with practical uses of learned concepts makes it worth at least a couple of professional lessons. The guide collects various apps created by Parviainen, some of which will pop up in our registry in different variations/extentions."
+      },
+      "tags": [
+        "mustCheck",
+        "12+",
+        "longRead",
+        "learn"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": {
+            "pl": "Studio Counterpoint",
+            "eng": ""
+          },
+          "link": "https://ctpt.co/"
+        }
+      ],
+      "more_links": [],
+      "title": {
+        "pl": "Syntezatory Roland online",
+        "eng": "Roland synthesizers online"
+      },
+      "link": "https://roland50.studio/",
+      "description": {
+        "pl": "Internetowa wersja trzech popularnych syntezatorów/maszyn perkusyjnych: TR-808, TB-303 oraz SH-101, stworzona z okazji 50-lecia firmy.",
+        "eng": "Online version of three popular Roland synths/drum machines: TR-808, TB-303 and SH-101, made for the 50th anniversary of the company."
+      },
+      "tags": [
+        "DAW",
+        "sequencer"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": {
+            "pl": "Studio Counterpoint",
+            "eng": "Studio Counterpoint"
+          },
+          "link": "https://ctpt.co/"
+        }
+      ],
+      "more_links": [],
+      "title": {
+        "pl": "Globalny sekwencer",
+        "eng": "Global sequencer"
+      },
+      "link": "https://globalsequencer.com/",
+      "description": {
+        "pl": "Stworzona na zamówienie UNESCO specjalna wersja cyfrowego sekwencera, która pozwala każdemu odwiedzającemu stronę wrzucić swoje własne nagranie i być częścią globalnego utworu.",
+        "eng": "Version of a digital sequencer commisioned by UNESCO, which lets every visitor on the page post their own recording and become a part of a global track."
+      },
+      "tags": [
+        "realTime",
+        "sequencer"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": {
+            "pl": "",
+            "eng": "Ableton team"
+          },
+          "link": "https://www.ableton.com/"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Nauka tworzenia muzyki w ogóle, też od Abletona",
+            "eng": "Learn how to create music, made by the same authors"
+          },
+          "link": "https://learningmusic.ableton.com/"
+        }
+      ],
+      "title": {
+        "pl": "Aplikacja webowa tłumacząca w interakrywny sposób podstawy syntezy dźwięku",
+        "eng": "Interactive web app explaining the basics of sound synthesis"
+      },
+      "link": "https://learningsynths.ableton.com",
+      "description": {
+        "pl": "Zrobiona przez Ableton (twórców jednego z najpopularniejszych programów do tworzenia i obróbki muzyki) aplikacja webowa w bardzo barwny sposób przedstawia najważniejsze koncepty i udostępnia świetną ‘piaskownicę’, żeby każdy mógł na spokojnie spróbować w praktyce przeczytane wcześniej informacje. Poniżej wklejam również podobną stronę, która tłumaczy tworzenie muzyki i różne podstawowe koncepty z tym związane. ",
+        "eng": "Web app curated by the creators of Ableton (one of the most popular music editing and creation softwares) that introduces most important concepts and provides a sandbox enviroment for users to try them in practice."
+      },
+      "tags": [
+        "bigTech",
+        "mustCheck",
+        "learn"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": {
+            "pl": "",
+            "eng": "Google Experiments team"
+          },
+          "link": "https://experiments.withgoogle.com/"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://github.com/googlecreativelab/chrome-music-lab"
+        }
+      ],
+      "title": {
+        "pl": "Chrome Music Lab - zbiór prostych aplikacji muzycznych",
+        "eng": "Chrome Music Lab - collection of simple music applications"
+      },
+      "link": "https://musiclab.chromeexperiments.com/Experiments",
+      "description": {
+        "pl": "Można na przykład zobaczyć sobie ładny spektogram albo napisać ładne melodie. W większości aplikacje mają przeznaczenie edukacyjne, raczej dla młodszych odbiorców, choć wydaje mi się że każdy znajdzie na tej stronie przynajmniej jedną miłą rzecz.",
+        "eng": "Most of the apps here are educational and aimed at a younger audience, examples include a spectogram or a simple melody editor. Nevertheless, everyone should be able to find something interesting to play with, no matter their age."
+      },
+      "tags": [
+        "bigTech",
+        "openSource",
+        "learn",
+        "forKids"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Luke Phillips",
+          "link": "http://femurdesign.com/"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://github.com/lukephills/omni"
+        }
+      ],
+      "title": {
+        "pl": "Omni - poznaj różne skale muzyczne",
+        "eng": "Omni - discover different musical scales"
+      },
+      "link": "https://femurdesign.com/omni",
+      "description": {
+        "pl": "Kilka skal do wyboru, sympatyczne efekty dźwiękowe, ładny design. Naprawdę polecam osobom zainteresowanym poznaniem niestandardowych skal muzycznych typu japońskich Hirajōshi czy Iwato. Można też nagrać krótki fragment swojego wykonu i go zapętlić. ",
+        "eng": "A tool useful for discovering more obscure musical scales such as Japanese Hirajōshi or Iwato. It also lets the user record a short track and loop it."
+      },
+      "tags": [
+        "DIY",
+        "descriptive",
+        "openSource",
+        "learn"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "concerthotels.com",
+          "link": "https://www.concerthotels.com/"
+        }
+      ],
+      "more_links": [],
+      "title": {
+        "pl": "Tester wyczucia rytmu",
+        "eng": "Got rhythm?"
+      },
+      "link": "https://www.concerthotels.com/got-rhythm",
+      "description": {
+        "pl": "Użytkownik ma proste zadanie: musi 20 razy wcisnąć spację w tempe 120bpm. Na podstawie tego testu jest oceniony wynikiem w przedziale 0-1000. Mimo, że aplikacja została stworzona w celach reklamowych i trochę odstaje poziomem od innych aplikacji tutaj, to jednak ją wklejam, bo znam ją sprzed lat i pamiętam z jakim ciepłym odbiorem się spotkała. ",
+        "eng": "The user has only one task: press the spacebar 20 times in 120 bpm tempo. Later the site scores their performance on a scale from 0 to 1000."
+      },
+      "tags": [
+        "bigTech",
+        "forKids", "learn"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Ed Ball",
+          "link": "https://github.com/edwardball"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://github.com/edwardball/academo.org/tree/master/demos/19-tet-keyboard"
+        }
+      ],
+      "title": {
+        "pl": "Klawiatura muzyczna, pozwalająca sprawdzić jak brzmi oktawa podzielona na 19, zamiast 12 części",
+        "eng": "19 TET keayboard demonstration"
+      },
+      "link": "https://academo.org/demos/19-tet-keyboard",
+      "description": {
+        "pl": "Bonus to wartościowe wytłumaczenie procederu oraz dodatkowe tłumaczenia niejasności w komentarzach. Jest to bardzo prosta strona, na dosłownie 5 minut, ale chciałem zaznaczyć jej obecność tutaj, bo można tam znaleźć wiele więcej podobnych tematów, już niekoniecznie związane z dźwiękiem. ",
+        "eng": "A simple demonstration of how would an octave sound like when divided into 19 equal parts instead of the usual 12. A welcome explanation of the music theory behind it is included."
+      },
+      "tags": [
+        "descriptive",
+        "math", "learn"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Neil Thapen",
+          "link": "http://venuspatrol.nfshost.com/"
+        }
+      ],
+      "more_links": [],
+      "title": {
+        "pl": "Symulacja modulacji ludzkiego głosu",
+        "eng": "Human voice modulation"
+      },
+      "link": "https://dood.al/pinktrombone",
+      "description": {
+        "pl": "Można se poklikać i się dowiedzieć jak to działa trochę. Aplikacja nie posiada kodu źródłowego, mimo że została stworzona przez niezależnego twórcę gier przeglądarkowych i jednocześnie wykładowcę akademickiego. ",
+        "eng": "The app simulates voice modulation, lets the user control the position of the tongue, closure of the throat, opening of the nasal cavity etc."
+      },
+      "tags": [
+        "DIY",
+        "classic",
+        "physic",
+        "learn",
+        "forKids"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Brian Foo",
+          "link": "https://brianfoo.com/"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://github.com/beefoo/latitude"
+        }
+      ],
+      "title": {
+        "pl": "Informacje na temat świata przedstawione dźwiękowo",
+        "eng": "Musical infographic about our planet"
+      },
+      "link": "https://harmony.brianfoo.com",
+      "description": {
+        "pl": "Każda szerokość geograficzna opisana jest przez jej zbiorcze PKB, emisje CO2, temperaturę i inne, gdzie każda z tych informacji wpływa na głosność instrumentu, tworząc ścianę dźwięku, zmieniającą się wraz z przeglądaną przez nas szerokością geograficzną. ",
+        "eng": "Every latitude is expressed by various metrics such as combined GDP, CO2 emissions, or temperature. Every metric has a musical instrument assigned, so the bigger the number, the louder the sound. All of them combined create a wall of sound that changes with the selected latitude."
+      },
+      "tags": [
+        "DIY",
+        "openSource",
+        "physic",
+        "learn",
+        "forKids"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Glenn McDonald",
+          "link": "https://twitter.com/glenn_mcdonald"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Czego słucha się w danym mieście?",
+            "eng": "Spotify trends in different cities"
+          },
+          "link": "http://everynoise.com/everyplace.cgi"
+        },
+        {
+          "name": {
+            "pl": "Najpopularniejsze gatunki w danym roku",
+            "eng": "Most popular genres yearly"
+          },
+          "link": "http://everynoise.com/retromatic.html"
+        },
+        {
+          "name": {
+            "pl": "Nowe wydania z danego gatunku muzycznego",
+            "eng": "New releases by genre"
+          },
+          "link": "http://everynoise.com/new_releases_by_genre.cgi"
+        },
+        {
+          "name": {
+            "pl": "Powiązania gatunków z miastami",
+            "eng": "Genres by place of origin"
+          },
+          "link": "http://everynoise.com/cities.html"
+        },
+        {
+          "name": {
+            "pl": "Przegląd autorskich playlist Spotify z różnych krajów",
+            "eng": "Collection of Spotify playlists by country"
+          },
+          "link": "http://everynoise.com/worldbrowser.cgi"
+        },
+        {
+          "name": {
+            "pl": "Czego słucha się na danej uczelni?",
+            "eng": "Spotify trends in different universities"
+          },
+          "link": "http://everynoise.com/everyschool.cgi"
+        },
+        {
+          "name": {
+            "pl": "Zbiór wyrazów używanych najczęściej w tytułach piosenek z danego gatunku",
+            "eng": "Most used words by genre"
+          },
+          "link": "http://everynoise.com/genrewords.html"
+        },
+        {
+          "name": {
+            "pl": "Szczegółowe dane demograficzne",
+            "eng": "Detailed demographic data"
+          },
+          "link": "http://everynoise.com/everydemo.cgi"
+        },
+        {
+          "name": {
+            "pl": "Gender bias w muzyce",
+            "eng": "Gender bias in music"
+          },
+          "link": "http://everynoise.com/gender_tldr.html"
+        }
+      ],
+      "title": {
+        "pl": "Wszystkie możliwe statystyki Spotify zebrane w jednym miejscu",
+        "eng": "Comprehensive colletion of Spotify stats"
+      },
+      "link": "http://everynoise.com",
+      "description": {
+        "pl": "Można sprawdzić czego słuchają ludzie w Twoim mieście albo na uczelni. Choć zdaje się, że autorzy pokusili się o jakieś dzikie odsiewanie rzeczy bardziej popularnych, żeby wskazać dane bardziej charakterystyczne dla wyszukiwania.",
+        "eng": "The page lets users look up various Spotify trends and stats like the most popular music in their city or on their campus. It seems like to make the stats more representative of a given place, the authors filtered off most popular music worldwide."
+      },
+      "tags": [
+        "bigTech",
+        "descriptive",
+        "longRead",
+        "mustCheck"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Tero Parviainen",
+          "link": "http://teropa.info"
+        }
+      ],
+      "more_links": [],
+      "title": {
+        "pl": "Poradnik tworzenia webowych aplikacji muzycznych w JavaScript",
+        "eng": "Guide to creating web apps in JavaScript"
+      },
+      "link": "https://teropa.info/blog/2016/07/28/javascript-systems-music.html",
+      "description": {
+        "pl": "Przejrzysty poradnik jak łatwo można zrobić swoją własną aplikację webową z przykładami działających już apek imitujących dzieła m.in. Briana Eno. Wklejam, ponieważ nawet osoba nie do końca zainteresowana pisaniem takich aplikacji może w interaktywny sposób podejrzeć co się dzieje w kodzie. ",
+        "eng": "Clear, simple guide to creating your own web app with examples of already completed ones. Even people who aren't interested in writing such apps can interactively 'look under the hood' of the code."
+      },
+      "tags": [
+        "descriptive",
+        "learn"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": {
+            "pl": "MetaBrainz",
+            "eng": "MetaBrainz"
+          },
+          "link": "https://metabrainz.org/"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Swoją drogą, może warto też spojrzeć na listę encyklopedii muzycznych online i się nad tym pochylić",
+            "eng": "List of online music databases"
+          },
+          "link": "https://en.wikipedia.org/wiki/List_of_online_music_databases"
+        }
+      ],
+      "title": {
+        "pl": "OpenSource muzyczna encyklopedia - MusicBrainz",
+        "eng": "OpenSource music database - MusicBrainz"
+      },
+      "link": "https://musicbrainz.org",
+      "description": {
+        "pl": "Choć projekt chyba upadł albo nie jest tak aktywny jak inne encyklopedie, zarządzane już przez konkretne podmioty jak RateYourMusic przez Sonemic czy Discogs przez Zink Media. Niemniej myślę, że jest to pomysł warty do conajmniej przemyślenia. ",
+        "eng": "MusicBrainz is an open music encyclopedia that collects music metadata and makes it available to the public."
+      },
+      "tags": [
+        "descriptive"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": {
+            "pl": "Bronze",
+            "eng": "Bronze"
+          },
+          "link": "https://twitter.com/bronzemuzic"
+        }
+      ],
+      "more_links": [],
+      "title": {
+        "pl": "“Jasmine” Jai Paul",
+        "eng": "“Jasmine” Jai Paul"
+      },
+      "link": "https://jaipaul.bronze.ai",
+      "description": {
+        "pl": "Stworzone za pomocą autorskiego systemu Bronze AI we współpracy z twórcą oryginału, Jaiem Paulem. Strona internetowa na bieżąco odtwarza niekończącą się aranżację wcześniej wydanego utworu “Jasmine”. Zespół Bronze przygotował również wystawę we współpracy z Philippe Parreno, Arca oraz Nicolasem Beckerem w nowojorskim MoMA. ",
+        "eng": "Created via Bronze AI in collaboration with the original's creator, Jai Paul. The site infinitely plays an arrangement of a song called “Jasmine”. The Bronze team also prepared an exhibition in MoMA in collaboration with Philippe Parreno, Arca and Nicolas Becker."
+      },
+      "tags": [
+        "AI", "reconstruction", "accessible"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Alexander Chen",
+          "link": "http://www.chenalexander.com/"
+        }
+      ],
+      "more_links": [],
+      "title": {
+        "pl": "Suita nr 1, G-dur, BWV 1007, J.S. Bach",
+        "eng": "Suite no. 1 in G major, BWV 1007, J.S. Bach"
+      },
+      "link": "http://www.baroque.me",
+      "description": {
+        "pl": "Aplikacja jest interaktywna. Bazując na matematycznych powiązaniach długości struny i wysokości dźwięku strona prezentuje kolejne nuty jako struny. ",
+        "eng": "Interactive app that shows consequent notes as strings based on mathematical links between the strings' length and the sound's pitch."
+      },
+      "tags": [
+        "DIY",
+        "math",
+        "physic",
+        "classical",
+        "forKids", "reconstruction"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Tero Parviainen",
+          "link": "http://teropa.info"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://codepen.io/teropa/pen/YgRayV"
+        }
+      ],
+      "title": {
+        "pl": "Neural Bach Slowly",
+        "eng": "Neural Bach Slowly"
+      },
+      "link": "https://codepen.io/teropa/full/YgRayV",
+      "description": {
+        "pl": "Sieć neuronowa, która generuje utwory Bacha to temat znany już od kilku dekad. Tym razem jednak jest mała wariacja w postaci bardzo powolnego tempa. ",
+        "eng": "Neural network generating Bach's pieces is a topic widely known for a few decades. This one in particular is a little different because of it's slow tempo."
+      },
+      "tags": [
+        "ambient",
+        "classical", "reconstruction"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": {
+            "pl": "brak autora?",
+            "eng": "author missing"
+          }
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Kod źródłowy innego dewelopera, ale opierający się na tym samym utworze",
+            "eng": "Source code of other developer, that is based on the same piece"
+          },
+          "link": "https://github.com/teropa/discreetmusic.js"
+        }
+      ],
+      "title": {
+        "pl": "“Discreet music” Brian Eno",
+        "eng": "“Discreet music” Brian Eno"
+      },
+      "link": "https://mezoistvan.github.io/discreetmusic",
+      "description": {
+        "pl": "W formie audiowizualnej strony internetowej.",
+        "eng": "Audiovisual website."
+      },
+      "tags": [
+        "ambient",
+        "forKids", "reconstruction", "accessible", "visual"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Brian Foo",
+          "link": "https://brianfoo.com/"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://github.com/beefoo/eclipticalis"
+        },
+        {
+          "name": {
+            "pl": "Otwarta baza danych dotyczących gwiazd",
+            "eng": "Open database on stars"
+          },
+          "link": "http://www.astronexus.com/hyg"
+        }
+      ],
+      "title": {
+        "pl": "“Music eclipticalis” John Cage",
+        "eng": "“Music eclipticalis” John Cage"
+      },
+      "link": "https://eclipticalis.brianfoo.com/",
+      "description": {
+        "pl": "Dzieło polegające na nałożeniu pięciolinii na gwieździste niebo, gdzie gwiazdy reprezentują nuty. John Cage napisał swój utwór na bazie atlasu, tutaj interpretowane jest niebo według danych z bazy gwiazd HYG",
+        "eng": "Staff overlayed on the celestial sphere, where stars represent notes. John Cage wrote his piece based on the atlas, here the sky is interpreted based on the HYG database."
+      },
+      "tags": [
+        "DIY",
+        "openSource",
+        "classical",
+        "forKids", "reconstruction"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Alex Bainter",
+          "link": "https://alexbainter.com/"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://github.com/generative-music/blossom"
+        }
+      ],
+      "title": {
+        "pl": "Blossom (oparte na “Bloom” Briana Eno)",
+        "eng": "Blossom (based on Brian Eno's “Bloom”)"
+      },
+      "link": "https://blossom.alexbainter.com",
+      "description": {
+        "pl": "Można sobie kliknąć gdziekolwiek lub pozwolić komputerowi klikać za nas :) Inspirowane ostatnimi dziełami Briana Eno, wydanymi w formie aplikacji na iPhony. Należy chwilę zaczekać, zanim będzie można zacząć grać",
+        "eng": "You can click wherever or let the computer click for you. Inspired by recent works of Brian Eno released in app form on iPhones."
+      },
+      "tags": [
+        "DIY",
+        "openSource",
+        "forKids", "reconstruction"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Alex Bainter",
+          "link": "https://alexbainter.com/"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://github.com/metalex9/corruption-loops"
+        }
+      ],
+      "title": {
+        "pl": "Corruption Loops (oparte na “Desintegration Loops” Williama Basinskiego)",
+        "eng": "Corruption Loops (based on William Basinski's “Desintegration Loops”)"
+      },
+      "link": "https://corruptionloops.alexbainter.com",
+      "description": {
+        "pl": "Corruption Loops to strona napisana przez Alexa Baintera, która generuje unikalny fragment muzyczny, a następnie go dekonstruuje.",
+        "eng": "Corruption Loops is a page written by Alex Bainter which generates a unique music piece and the deconstructs it."
+      },
+      "tags": [
+        "DIY",
+        "openSource", "reconstruction"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": {
+            "pl": "pracownicy Universities of Huddersfield and Leeds",
+            "eng": "Academic Personnel of Universities of Huddersfield and Leeds"
+          }
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "User guide",
+            "eng": "User guide"
+          },
+          "link": "https://cageconcert.org/wp-content/uploads/2019/11/John-Cage-Concert-Player-Guide-1.pdf"
+        }
+      ],
+      "title": {
+        "pl": "“Concert for Orchestra and Piano” John Cage",
+        "eng": "“Concert for Orchestra and Piano” John Cage"
+      },
+      "link": "http://player.cageconcert.org",
+      "description": {
+        "pl": "Znane i lubiane dzieło do odtworzenia w przeglądarce. Można zdecydować o chyba wszystkich parametrach utworu, a sam utwór można odtworzyć w estetycznej oprawie wizualnej. Aplikacja ładuje się dłuższą chwile",
+        "eng": "Widely known and liked piece for streaming in the browser. You can set almost all parameters of the piece, and it can be played alongside eye-catching visuals."
+      },
+      "tags": [
+        "classical",
+        "longRead",
+        "12+", "reconstruction"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Tero Parviainen",
+          "link": "http://teropa.info"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Podstrona na temat Music Mouse na stronie samej Laurie Spiegel",
+            "eng": "Subpage about Music Mouse on Laurie Spiegel's page"
+          },
+          "link": "http://retiary.org/ls/programs.html"
+        }
+      ],
+      "title": {
+        "pl": "“Music Mouse” Laurie Spiegel",
+        "eng": "“Music Mouse” Laurie Spiegel"
+      },
+      "link": "https://teropa.info/musicmouse",
+      "description": {
+        "pl": "Implementacja dzieła Laurie Spiegel, które podejmowało znany problem grania muzyki za pomocą myszki komputerowej. Więcej informacji w linku poniżej. Program może generować muzykę lub przekazywać informację MIDI do wybranego przez nas programu. ",
+        "eng": "Reconstruction of pioneer work of Laurie Spiegel, that was an experiment about designing a music composing system that could be oparated with computer mouse only."
+      },
+      "tags": [
+        "DIY", "reconstruction"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Tero Parviainen",
+          "link": "http://teropa.info"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://github.com/teropa/in-c"
+        }
+      ],
+      "title": {
+        "pl": "“In C” Terry Riley",
+        "eng": "Terry Riley's 'In C'"
+      },
+      "link": "https://teropa.info/in-c",
+      "description": {
+        "pl": "Audiowizualna interpretacja klasycznego dzieła muzyki generatywnej. ",
+        "eng": "Audiovisual interpretation of classical generative music piece."
+      },
+      "tags": [
+        "DIY",
+        "openSource", "classical", "reconstruction"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Tero Parviainen",
+          "link": "http://teropa.info"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://codepen.io/swallez/pen/zVdarx"
+        },
+        {
+          "name": {
+            "pl": "Wizualizacja za pomocą grafu nut zagranych przez użytkownika",
+            "eng": "Graph visualization of notes played by user"
+          },
+          "link": "https://codepen.io/teropa/full/JJNKxW"
+        }
+      ],
+      "title": {
+        "pl": "Gymnopedie 1-3, Erik Satie",
+        "eng": "Erik Satie's 'Gymnopedie 1-3'"
+      },
+      "link": "https://codepen.io/swallez/full/zVdarx",
+      "description": {
+        "pl": "Klasyczne dzieło zwizualizowane za pomocą grafów, gdzie każdy wierzchołek reprezentuje kolejno pojawiające się nuty. ",
+        "eng": "Well known work of Erik Satie visualized by the graphs, where each unique note is represented by verticle."
+      },
+      "tags": [
+        "DIY",
+        "openSource",
+        "math", "classical", "visual", "reconstruction"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "PlayOnlineDiceGames.com",
+          "link": "http://www.playonlinedicegames.com/"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Artykuł na Wikipedii o dziele",
+            "eng": "Wikipedia article about the piece"
+          },
+          "link": "https://en.wikipedia.org/wiki/Musikalisches_W%C3%BCrfelspiel"
+        }
+      ],
+      "title": {
+        "pl": "Mozart Dice Game",
+        "eng": "Mozart's 'Dice Game'"
+      },
+      "link": "http://www.playonlinedicegames.com/mozart",
+      "description": {
+        "pl": "Z opisu strony: “Mozart Dice Game more commonly known as Musical Dice Game is a system in which dice is used to generate music from precomposed options. In 1787, Wolfgang Amadeus Mozart published a musical composition entitled \"Musikalisches Würfelspiel\". This composition allows one, as Mozart puts it, \"to compose, without the least knowledge of music, so many German waltzes or ländler as one pleases, by throwing a certain number with two dice.\"”",
+        "eng": "Mozart Dice Game more commonly known as Musical Dice Game is a system in which dice is used to generate music from precomposed options. In 1787, Wolfgang Amadeus Mozart published a musical composition entitled 'Musikalisches Würfelspiel'. This composition allows one, as Mozart puts it, 'to compose, without the least knowledge of music, so many German waltzes or ländler as one pleases, by throwing a certain number with two dice'"
+      },
+      "tags": [
+        "classical", "reconstruction"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Alex Bainter",
+          "link": "https://alexbainter.com/"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Opis algorytmu",
+            "eng": "Algorithm explained"
+          },
+          "link": "https://medium.com/@metalex9/generating-more-of-my-favorite-aphex-twin-track-cde9b7ecda3a"
+        },
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://github.com/generative-music/pieces-alex-bainter/blob/master/packages/piece-aisatsana/src/piece.js"
+        }
+      ],
+      "title": {
+        "pl": "“aisatsana” Aphex Twin",
+        "eng": "Aphex Twin's 'aistsana'"
+      },
+      "link": "https://generative.fm/music/alex-bainter-aisatsana",
+      "description": {
+        "pl": "Alex Bainter, którego inne dzieła są również opisane niżej i wyżej tym razem zabrał się za generatywną interpretację utworu z relatywnie niedawno wydanego albumu “Syro” Aphexa Twina. Prawdę mówiąc jestem nieco zdziwiony, że sam Aphex Twin nie doczekał się jeszcze zbyt wielu bardziej zaawansowanych technologicznie interpretacji, ta jest jedyna, którą udało mi się znaleźć. ",
+        "eng": "Generative interpretation of a song made by electronic music legend. It's only one web interpretation of Aphex Twin song that we could find."
+      },
+      "tags": [
+        "DIY",
+        "openSource", "reconstruction", "accessible"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Peter Sobot",
+          "link": "http://blog.petersobot.com/"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Opis działania",
+            "eng": "How it works"
+          },
+          "link": "http://blog.petersobot.com/the-wub-machine-v20"
+        },
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://github.com/psobot/wub-machine#readme"
+        }
+      ],
+      "title": {
+        "pl": "The Wub Machine",
+        "eng": "The Wub Machine"
+      },
+      "link": "https://the.wubmachine.com",
+      "description": {
+        "pl": "Nie jest to wprost rekonstrukcja, ale nie mogłem się nie pokusić wrzucić tutaj tego cuda. Aplikacja jest ultra prosta - wrzucamy po prostu utwór, wybieramy w jakim gatunku chcemy remiks i po momencie ładowania mamy gotowe. Co więcej, na testowanych przeze mnie piosenkach działało to naprawdę bardzo dobrze. Jestem pod wrażeniem tej aplikacji. Dodam tylko, że ta aplikacja w przeciwieństwie do zdecydowanej większości programów tutaj została napisana w języku Python, co widać - wysyłamy materiał źródłowy i czekamy na output, nie otrzymujemy efektów na bieżąco.",
+        "eng": "Super simple app. User has only to upload a song and choose a musical genre of song remix that will be created. Works surprisingly well on songs tested by us."
+      },
+      "tags": [
+        "DIY",
+        "mustCheck",
+        "openSource"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Matt McCorkle",
+          "link": "https://www.mattmccorkle.com/"
+        }
+      ],
+      "more_links": [],
+      "title": {
+        "pl": "Generator Halloweenowej muzyki",
+        "eng": "Halloween music generator"
+      },
+      "link": "https://www.halloweensoundboard.com",
+      "description": {
+        "pl": "Znajduję to całkiem zabawnym prawdę mówiąc :} Muzyka oparta na utworze \"The Skeleton Rag\" autorstwa Sama Reidera.",
+        "eng": "Fun app based on Sam Reider's 'The Skeleton Rag'."
+      },
+      "tags": [
+        "DIY",
+        "forKids", "reconstruction"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": {
+            "pl": "Alexander Chen",
+            "eng": "Alexander Chen"
+          },
+          "link": "http://www.chenalexander.com/"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Podobne dzieło napisane przez Briana Foo z dokładnym tłumaczeniem i źródłami tego pomysłu",
+            "eng": "Similar app made by Brian Foo, with more detailed explanation and source of the idea"
+          },
+          "link": "https://datadrivendj.com/tracks/subway/"
+        },
+        {
+          "name": {
+            "pl": "Analogicznie, jak brzmią tramwaje w Helsinkach, z kodem źródłowym",
+            "eng": "Similar app, but based on Helsinki city"
+          },
+          "link": "https://codepen.io/teropa/pen/mBbPEe"
+        }
+      ],
+      "title": {
+        "pl": "Jak brzmi nowojorskie metro?",
+        "eng": "How sounds the Ney York's underground?"
+      },
+      "link": "http://www.mta.me",
+      "description": {
+        "pl": "Strona internetowa w rzeczywistym czasie wyświetla przejazdy metra, które interpretowane są jako różnej długości struny.",
+        "eng": "Each crossing of underground's route is interpreted as a string sound, so all lines create an composition."
+      },
+      "tags": [
+        "DIY",
+        "forKids", "realTime", "accessible"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Patrick Borgeat",
+          "link": "http://www.cappel-nord.de/webaudio/"
+        }
+      ],
+      "more_links": [],
+      "title": {
+        "pl": "A gdyby tak stworzyć sekwencer muzyczny do którego może mieć dostęp każdy?",
+        "eng": "Sound sequencer that everybody has acess to"
+      },
+      "link": "http://www.cappel-nord.de/webaudio/public-sequencer-matrix",
+      "description": {
+        "pl": "Say no more. Sekwencer w czasie rzeczywistym może edytować każda osoba, która go wyświetla. Taki hehe \"eksperyment społeczny\". Strona wyświetla też lokalizację uczestników projektu.",
+        "eng": "Every page visitor can edit the sequence in real time. Website provides a localization of each user as well."
+      },
+      "tags": [
+        "DIY",
+        "realTime",
+        "sequencer"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Sudhanshu Mishra",
+          "link": "https://github.com/debugger22"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://github.com/debugger22/github-audio"
+        },
+        {
+          "name": {
+            "pl": "Projekt “listen to Wikipedia”, na którym opierał się autor",
+            "eng": "'Listen to Wikipedia' project that author was inspired by"
+          },
+          "link": "http://listen.hatnote.com/"
+        }
+      ],
+      "title": {
+        "pl": "Github audio",
+        "eng": "GitHub audio"
+      },
+      "link": "https://github.audio",
+      "description": {
+        "pl": "GitHub to najpopularniejsza strona, agregująca projekty oparte na kontroli wersji (lub też po prostu kody źródłowe projektów). Powyższy link przedstawia kolejne ‘commity’ użytkowników w formie dźwiękowej. “There are three types of sounds(bell, string pluck and string swell) based on four types of events(PushEvent, PullRequestEvent, IssuesEvent and IssueCommentEvent). Bells represent PushEvents, string plucks represent IssuesEvents and IssueCommentEvents whereas string swells represent PullRequestEvents.”",
+        "eng": "GitHub is a popular website to host source code and its history online. This app interprets different type of actions from GitHub by sound of bell, string pluc or string swell."
+      },
+      "tags": [
+        "DIY",
+        "openSource", "realTime", "accessible", "ambient"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Maximillian Laumeister",
+          "link": "https://www.maxlaumeister.com/"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://github.com/MaxLaumeister/bitlisten"
+        }
+      ],
+      "title": {
+        "pl": "Listen to Bitcoin",
+        "eng": "Listen to Bitcoin"
+      },
+      "link": "https://www.bitlisten.com",
+      "description": {
+        "pl": "Projekt analogiczny do Tweet FM czy Github audio - strona interpretuje dźwiękowo zmiany w Wikipedii z całego świata, dodatkowo pobierając informacje dotyczące wielokości w bajtach usuniętych/dodanych informacji.",
+        "eng": "Each action based on bitcoin is interpreted by sound in real time."
+      },
+      "tags": [
+        "DIY", "realTime", "accessible"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Erkam Şeker",
+          "link": "https://www.buymeacoffee.com/erkam?ref=dnl0"
+        }
+      ],
+      "more_links": [],
+      "title": {
+        "pl": "Jedź i słuchaj",
+        "eng": "Drive and listen"
+      },
+      "link": "https://driveandlisten.herokuapp.com",
+      "description": {
+        "pl": "Aplikacja odtwarza film nagrany z perspektywy pasażera samochodu, który jeździ ulicami wybranego miasta oraz słucha lokalnych stacji radiowych. ",
+        "eng": "App plays a first-person perspective video of driving around a selected city and plays a radio station of user choice from that place."
+      },
+      "tags": [
+        "DIY"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Wolfram",
+          "link": "https://www.wolfram.com/"
+        }
+      ],
+      "more_links": [],
+      "title": {
+        "pl": "WolframTones - twórz proste kompozycje za pomocą algorytmów",
+        "eng": "WolframTones - tool for creating music with use of algorithms"
+      },
+      "link": "http://tones.wolfram.com",
+      "description": {
+        "pl": "Można regulować styl, instrumenty, zakres wysokości, tempo i tak dalej. Generowanie podstawowych melodii oparte jest na automacie komórkowym (podobnym do ‘gry w życie’). Każda kombinacja parametrów reprezentowana jest przez unikalny adres URL, tak więc dzielenie się swoimi rezultatami ze znajomymi wymaga jedynie skopiowanie linka z przeglądarki. Polecam też lekturę działania systemu, jest bardzo dobrze opisana. ",
+        "eng": "User is asked to choose a style, instrument, tempo and other parameters. Music generation is based on cellural automata algorithm. Each unqiue combination has its URL address."
+      },
+      "tags": [
+        "descriptive",
+        "math",
+        "mustCheck", "composing", "tool"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Google Experiments Team",
+          "link": "https://experiments.withgoogle.com/"
+        }
+      ],
+      "more_links": [],
+      "title": {
+        "pl": "Mapa dźwięków od Google",
+        "eng": "Sounds map made by Google"
+      },
+      "link": "https://experiments.withgoogle.com/ai/drum-machine/view",
+      "description": {
+        "pl": "Posortowana przez AI, bez żadnych tagów, na podstawie samego audio. Strona posiada funkcję odtwarzania sekwencji.",
+        "eng": "The map is sorted and categorized with use of AI, that processed only raw audio. User can play a sequence of selected sounds."
+      },
+      "tags": [
+        "AI",
+        "bigTech", "sequencer"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "AudioCommons",
+          "link": "https://www.audiocommons.org/"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://github.com/AudioCommons/timbral_models"
+        }
+      ],
+      "title": {
+        "pl": "Mapa dźwięków open source",
+        "eng": "Sounds map, but an open source one"
+      },
+      "link": "https://andyp103.github.io/FreesoundTimbralSearch",
+      "description": {
+        "pl": "W odróżnieniu od wersji Googla, ta mapa bardziej skupia się na poszukiwaniu podobnych dźwięków i eksplorowaniu powiązań.",
+        "eng": "Map of categorized sounds. Helpful for finding alike sounds and exploring them."
+      },
+      "tags": [
+        "FreeSound",
+        "openSource", "sequencer"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Google Experiments Team",
+          "link": "https://experiments.withgoogle.com/"
+        }
+      ],
+      "more_links": [],
+      "title": {
+        "pl": "Melody Mixer",
+        "eng": "Melody Mixer"
+      },
+      "link": "https://g.co/melodymixer",
+      "description": {
+        "pl": "Stronka, która pozwala na mieszanie dwóch różnych melodii przy pomocy AI.",
+        "eng": "Given two different melodies, AI merges them together, creating a new one melody line."
+      },
+      "tags": [
+        "AI",
+        "bigTech", "tool"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Tero Parviainen",
+          "link": "http://teropa.info"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://codepen.io/teropa/pen/zPEYbY"
+        },
+        {
+          "name": {
+            "pl": "Lekka modyfikacja innego autora",
+            "eng": "Slight modification"
+          },
+          "link": "https://codepen.io/shaunlebron/full/rYGmRv/"
+        }
+      ],
+      "title": {
+        "pl": "Generator euklidesowych sekwencji rytmicznych",
+        "eng": "Euclidean sequences generator"
+      },
+      "link": "https://codepen.io/teropa/full/zPEYbY",
+      "description": {
+        "pl": "Tym razem z sympatycznymi animacjami i lekkim brzmieniem.",
+        "eng": "But with nice animations and lightweight sounding."
+      },
+      "tags": [
+        "sequencer", "math"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Javi Agenjo",
+          "link": "http://www.dtic.upf.edu/~jagenjo/"
+        },
+        {
+          "name": "Bram de Jong",
+          "link": "http://www.dtic.upf.edu/~ffont/"
+        },
+        {
+          "name": "Javi Agenjo, Bram de Jong, Frederic Font",
+          "link": ""
+        },
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://github.com/ffont/freesound-loop-generator"
+        },
+        {
+          "name": {
+            "pl": "Jakiś inny sekwencer, ale jest tak zagmatwany że nie wiem jak działa do końca",
+            "eng": "Similar sequencer, but way more sophisticated"
+          },
+          "link": "https://tamats.com/apps/idradio/"
+        }
+      ],
+      "title": {
+        "pl": "Freesound loop generator",
+        "eng": "FreeSound loop generator"
+      },
+      "link": "https://ffont.github.io/freesound-loop-generator",
+      "description": {
+        "pl": "Aplikacja bazując na bibliotece sampli freesound pozwala na tworzenie pętli perkusyjnych w sieci. Można sobie importować losowe sample z biblioteki oraz randomizować rytm, tworząc zupełnie niedeterministyczny sekwencer.",
+        "eng": "App generates great sound sequences with use of FreeSound library. It has nice functionalities of exporting sounds and MIDI files of created sequences."
+      },
+      "tags": [
+        "FreeSound",
+        "mustCheck",
+        "openSource", "sequencer"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Evan Feenstra",
+          "link": "https://github.com/Evanfeenstra"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://github.com/Evanfeenstra/beatpush"
+        }
+      ],
+      "title": {
+        "pl": "Mocno zaawansowany sekwencer online",
+        "eng": "Advanced online sequencer"
+      },
+      "link": "https://beatpush.com",
+      "description": {
+        "pl": "Działa mobilnie, pozwala na umieszczenie w utworze jednego syntezatora, z kilkoma efektami oraz na pobieranie sampli z biblioteki freesound. ",
+        "eng": "Works well on mobile devices, allows to create synthesizer voices and use FreeSound samples."
+      },
+      "tags": [
+        "DIY",
+        "FreeSound",
+        "mustCheck",
+        "openSource", "sequencer"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Stuart Keith",
+          "link": "https://stuartkeith.com/"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://github.com/stuartkeith/micthing"
+        }
+      ],
+      "title": {
+        "pl": "Sekwencer oparty na nagraniach z mikrofonu",
+        "eng": "Sequencer based on microphone recordings"
+      },
+      "link": "https://micthing.stuartkeith.com",
+      "description": {
+        "pl": "Dzięki dobrze zaprojektowanemu interfejsowi bardzo łatwo i przyjemnie można zrobić sobie szybki utwór. ",
+        "eng": "Thanks to the nice user interface, it allows for creating songs really quickly."
+      },
+      "tags": [
+        "DIY",
+        "openSource", "sequencer"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Stuart Keith",
+          "link": "https://stuartkeith.com/"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://github.com/stuartkeith/webaudiosequencer/"
+        }
+      ],
+      "title": {
+        "pl": "I jeszcze jeden całkiem fajny sekwencer",
+        "eng": "Another cool sequencer"
+      },
+      "link": "https://webaudiosequencer.stuartkeith.com",
+      "description": {
+        "pl": "Ten zaś pozwala na samplowanie z freesound oraz soundcloud (obecnie działa jedynie freesound).",
+        "eng": "This one on the other hand lets you sample tracks from freesound and souncloud."
+      },
+      "tags": [
+        "DIY",
+        "FreeSound",
+        "openSource", "sequencer"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": {
+            "pl": "Stuart Keith",
+            "eng": "Stuart Keith"
+          },
+          "link": "https://stuartkeith.com/"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "http://github.com/stuartkeith/reasonml-sequencer"
+        }
+      ],
+      "title": {
+        "pl": "No i jeszcze jeden sekwencer tego samego autora.",
+        "eng": "Another sequencer made by the same author" 
+      },
+      "link": "https://reasonml-sequencer.stuartkeith.com",
+      "description": {
+        "pl": "Tym razem oparty na polirytmach oraz randomizacji parametrów. Fajny do poeksperymentowania sobie. ",
+        "eng": "This time it's based on polirhytms and parameter randomization. Neat to experiment with."
+      },
+      "tags": [
+        "DIY",
+        "FreeSound",
+        "openSource", "sequencer"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": {
+            "pl": "Stuart Keith",
+            "eng": "Stuart Keith"
+          },
+          "link": "https://stuartkeith.com/"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source"
+          },
+          "link": "https://github.com/stuartkeith/keyseq"
+        }
+      ],
+      "title": {
+        "pl": "Dobra, to już ostatni sekwencer tego samego autora",
+        "eng": "Ok, this one is the last one made by Stuart"
+      },
+      "link": "https://keyseq.stuartkeith.com",
+      "description": {
+        "pl": "Zasadniczo, jest to jedynie rozwinięcie poprzednich pomysłów. Warto poklikać sobie random i posłuchać różnych kombinacji.",
+        "eng": "In general it's a development of his previous ideas. Try clicking random and listen to different combinations"
+      },
+      "tags": [
+        "DIY",
+        "FreeSound",
+        "openSource", "sequencer"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": {
+            "pl": "Brian Foo",
+            "eng": "Brian Foo"
+          },
+          "link": "https://brianfoo.com/"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://github.com/LibraryOfCongress/citizen-dj"
+        }
+      ],
+      "title": {
+        "pl": "Citizen DJ",
+        "eng": "Citizen DJ"
+      },
+      "link": "https://citizen-dj.labs.loc.gov",
+      "description": {
+        "pl": "Aplikacja pozwalająca darmowe zbiory Biblioteki Kongresu zamienić w beaty.",
+        "eng": "App that lets users create beats out of the Library of Congress' catalog."
+      },
+      "tags": [
+        "DIY",
+        "openSource", "sequencer"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": {
+            "pl": "Tero Parviainen",
+            "eng": "Tero Parviainen"
+          },
+          "link": "http://teropa.info"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://codepen.io/teropa/pen/rdoPbG"
+        }
+      ],
+      "title": {
+        "pl": "Latent Cycles",
+        "eng": "Latent Cycles"
+      },
+      "link": "https://codepen.io/teropa/full/rdoPbG",
+      "description": {
+        "pl": "Generate a latent space of melodic loops using the artificial intelligence, and then play the loops against each other exploring the latent harmonic possibilities.",
+        "eng": "Generate a latent space of melodic loops using the artificial intelligence, and then play the loops against each other exploring the latent harmonic possibilities."
+      },
+      "tags": [
+        "DIY",
+        "openSource", "AI", "sequencer"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": {
+            "pl": "Julian Rosenblum",
+            "eng": "Julian Rosenblum"
+          },
+          "link": "http://julianrosenblum.com/"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://github.com/jsrmath/sharp11-jza"
+        },
+        {
+          "name": {
+            "pl": "Inny projekt autora - pomocnik songwriterów. Można łatwo pisać teksty, wraz z pomocniczą progresją akordów przy okazji.",
+            "eng": "Another one of the author's projects - songwriting assistant. It lets you easily write lyrics along with the chord progression."
+          },
+          "link": "https://markato.studio/"
+        }
+      ],
+      "title": {
+        "pl": "Sharp11 - pomocnik muzyków jazzowych",
+        "eng": "Sharp11 - jazz musician's assistant"
+      },
+      "link": "http://julianrosenblum.com/sharp11-client",
+      "description": {
+        "pl": "Bardzo proste narzędzie, posiadające trzy tryby: silnik teorii, improwizator oraz automatyzacja jazzu. Pierwszy tryb pomaga w prostych transpozycjach różnych akordów w różnych skalach. Drugi tryb generuje nieskończony stream muzyki, opierając się na materiale wejściowym. Trzeci, według mnie najciekawszy, pozwala na interaktywne układanie progresji jazzowych. Użytkownik decyduje, gdzie chce dodać akord, a system generuje w danym miejscu progresje, która według niego jest najbardziej sensowna. ",
+        "eng": "Simple tool that has three modes: theory engine, improviser and jazz automatization. First mode helps with easy transpositions of different chords in different scales. Second mode generates an infinite stream of music based on the input. Third - most interesting in our opinion - lets users interactively create jazz progressions. The user decides where they want to place the chord and the system generates a progression there that makes the most sense."
+      },
+      "tags": [
+        "DIY",
+        "mustCheck",
+        "openSource", "composing", "tool"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": {
+            "pl": "Joseph Savell",
+            "eng": "Joseph Savell"
+          },
+          "link": "https://twitter.com/branchpanic"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://github.com/beat-machine"
+        }
+      ],
+      "title": {
+        "pl": "The Beat Machine",
+        "eng": "The Beat Machine"
+      },
+      "link": "https://beatmachine.branchpanic.me",
+      "description": {
+        "pl": "Wchodząc na stronę wita nas bardzo przejrzysty i dobrze przemyślany interfejs: najpierw musimy wybrać materiał źródłowy - plik z dysku lub link do piosenki na YouTube. Następnie określamy tempo i wybieramy efekty. Na koniec otrzymujemy wyrenderowany utwór, zgodnie z określonymi przez nas zmianami rytmicznymi. ",
+        "eng": "The site greets the user with a crystal clear and well thought-out interface: first the user picks the source material from their hard drive or they provide a link to a song on YouTube. Next they pick the tempo and effects. Finally we get a track rendered based on rhythm changes defined by us."
+      },
+      "tags": [
+        "DIY",
+        "openSource", "composing"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": {
+            "pl": "Lullatone",
+            "eng": "Lullatone"
+          },
+          "link": "http://lullatone.com"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Statystyki",
+            "eng": "Stats"
+          },
+          "link": "https://typatone.com/stats.html"
+        },
+        {
+          "name": {
+            "pl": "Album muzyczny przeznaczony do wykonania na Typatone",
+            "eng": "Music album made to be performed on Typatone"
+          },
+          "link": "https://warmifaya.bandcamp.com/track/4-2"
+        }
+      ],
+      "title": {
+        "pl": "Typatone - Posłuchaj jak piszesz",
+        "eng": "Typatone - Type sounds"
+      },
+      "link": "https://typatone.com",
+      "description": {
+        "pl": "Każda wprowadzona litera odpowiada odpowiedniemu dźwiękowi. Możesz wklejać gotowe już wiadomości, napisać coś samemu oraz wysłać muzyczną wiadomość komuś.",
+        "eng": "Every letter input corresponds to a sound. Users can paste in messages, type something in, or send someone a musical message."
+      },
+      "tags": [
+        "DIY"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": {
+            "pl": "AudioCommons",
+            "eng": "AudioCommons"
+          },
+          "link": "https://www.audiocommons.org/"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Wyjaśnienie projektu i użytych technologii",
+            "eng": "Project and tech stack explained"
+          },
+          "link": "http://5.2.16.88/Freesound-Trip/SIC%202017%20audioCommons%20version3.pdf"
+        },
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://github.com/dnlopez/Freesound-Trip"
+        }
+      ],
+      "title": {
+        "pl": "Freesound trip",
+        "eng": "Freesound Trip"
+      },
+      "link": "http://5.2.16.88/Freesound-Trip",
+      "description": {
+        "pl": "Jesteśmy w kosmosie dźwięków z biblioteki freesound i mamy się w tej nieskończonej przestrzeni poruszać, tak jak nam to odpowiada. Fajne bardzo. ",
+        "eng": "Explore the infinite cosmos with sounds taken from the freesound library as stars."
+      },
+      "tags": [
+        "FreeSound",
+        "openSource", "sequencer"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": {
+            "pl": "Tero Parviainen",
+            "eng": "Tero Parviainen"
+          },
+          "link": "http://teropa.info"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://codepen.io/teropa/pen/QxLrMp"
+        }
+      ],
+      "title": {
+        "pl": "Steruj muzyką za pomocą swojej pozy",
+        "eng": "Contol music with your stance"
+      },
+      "link": "https://codepen.io/teropa/full/QxLrMp",
+      "description": {
+        "pl": "Pobierając ułożenie ciała użytkownika z kamery, aplikacja generuje odpowiednio dopasowaną melodię. ",
+        "eng": "App generates a melody based on the user's stance seen through his camera."
+      },
+      "tags": [
+        "DIY",
+        "openSource"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": {
+            "pl": "    brak informacji\n",
+            "eng": "no info provided\n"
+          }
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Praca, wyjaśniająca działanie tego typu aplikacji",
+            "eng": "Paper explaining how such apps work"
+          },
+          "link": "https://www.jstor.org/stable/10.1086/665048?seq=1#metadata_info_tab_contents"
+        }
+      ],
+      "title": {
+        "pl": "Muzak kawiarniany",
+        "eng": "Coffee shop music"
+      },
+      "link": "https://coffitivity.com",
+      "description": {
+        "pl": "Autorzy strony twierdzą, że dźwięki kawiani/restauracji pobudzają słuchacza kreatywnie i motywacyjnie. Stąd też możemy sobie sprecyzować jaki typ restauracji nas interesuje i sobie włączyć",
+        "eng": "Authors of the page claim that coffee/tea shop music stimulates people creatively. The user can pick the type of restaurant and listen to corresponding music."
+      },
+      "tags": [
+        "commercial",
+        "backgroundMuzak"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": {
+            "pl": "Stéphane Pigeon",
+            "eng": "Stéphane Pigeon"
+          },
+          "link": "https://www.stephanepigeon.com/"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Podobna rzecz innego twórcy",
+            "eng": "Similar work of another author"
+          },
+          "link": "https://asoftmurmur.com/"
+        }
+      ],
+      "title": {
+        "pl": "MyNoise.net",
+        "eng": "MyNoise.net"
+      },
+      "link": "https://mynoise.net",
+      "description": {
+        "pl": "Użytkownik definiuje czego mu potrzeba i strona dostarcza odpowiednich field recordingów. Można sobie je w jakiś tam ograniczony sposób regulować. Zdaje się, że to jedna z popularniejszych stron tego typu, która pozwala na więcej personalizacji niż inne",
+        "eng": "The user defines what he needs and the page provides them with corresponding field recordings, with limited configuration. It seems that this is one of the more popular pages of such type that lets users personalize it more than other ones."
+      },
+      "tags": [
+        "DIY",
+        "classic",
+        "backgroundMuzak"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": {
+            "pl": "Stéphane Pigeon",
+            "eng": "Stéphane Pigeon"
+          },
+          "link": "https://www.stephanepigeon.com/"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Jeszcze jedno to samo tego człowieka.",
+            "eng": "Another work of the same author"
+          },
+          "link": "https://calmyleon.com/"
+        },
+        {
+          "name": {
+            "pl": "Symulator dźwięków kota, też tego samego typa xd",
+            "eng": "And another one - this time it's cat noises"
+          },
+          "link": "https://purrli.com/"
+        },
+        {
+          "name": {
+            "pl": "I jeszcze symulator deszczu zrobił",
+            "eng": "And this time it's raining! No cat though"
+          },
+          "link": "https://rain.today/"
+        },
+        {
+          "name": {
+            "pl": "Audio test online od tego pana, gdzie można przetestować swój słuch i/lub sprzęt audio",
+            "eng": "Audio test online for benchmarking your audio setup and/or hearing ability"
+          },
+          "link": "https://www.audiocheck.net/index.php"
+        },
+        {
+          "name": {
+            "pl": "Ten sam twórca stworzył jeszcze hearing test, który generuje audiogram",
+            "eng": "The same person created a hearing test that generates an audiogram"
+          },
+          "link": "http://hearingtest.online/"
+        }
+      ],
+      "title": {
+        "pl": "noises.online",
+        "eng": "noises.online"
+      },
+      "link": "https://noises.online",
+      "description": {
+        "pl": "Ta strona zaś pozwala na niestandardowe połączenia field recordingów. Można sobie połączyć na przykład ruchliwą kawiarnie i dżungle. Pozwala też na wybranie tonu (tak naprawdę to chyba po prostu EQ) oraz natężenia dźwieków. MyNoise.net i noisese.online są dziełami tego samego człowieka, Stéphane Pigeon.",
+        "eng": "This page on the other hand lets users create unusual combinations of field recordings, such as a busy coffee shop with jungle noises. It also has controls for EQ and sound intensity. Both MyNoise.net and noises.online were created by Stéphane Pigeon."
+      },
+      "tags": [
+        "DIY",
+        "backgroundMuzak"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Mark Fell",
+          "link": "http://www.markfell.com/wiki/"
+        },
+        {
+          "name": "Rian Treanor",
+          "link": "http://www.riantreanor.com/"
+        },
+        {
+          "name": "James Bradbury",
+          "link": "https://www.jamesbradbury.net/"
+        }
+      ],
+      "title": {
+        "pl": "",
+        "eng": "AAA - the preconfigured synthesizer and sequencer"
+      },
+      "link": "https://intersymmetric.xyz/aaa/room1/",
+      "description": {
+        "pl": "",
+        "eng": "Pretty impressive and original way of thinking of sequencer. Authors preconfigured the app for the users, leaving only some options available to change. The app works real time, so few people in one room can play together"
+      },
+      "tags": [
+        "realTime",
+        "sequencer", "noveltyArt"
+      ],
+      "more_links": []
+    },
+    {
+      "authors": [
+        {
+          "name": "Mark Fell",
+          "link": "http://www.markfell.com/wiki/"
+        },
+        {
+          "name": "Rian Treanor",
+          "link": "http://www.riantreanor.com/"
+        },
+        {
+          "name": "James Bradbury",
+          "link": "https://www.jamesbradbury.net/"
+        },
+        {
+          "name": "Joe Gilmore",
+          "link": "https://qubik.com/"
+        }
+      ],
+      "title": {
+        "pl": "",
+        "eng": "Intersymmetric: Sequencer 01"
+      },
+      "link": "https://intersymmetric.xyz/seq-1/idx/",
+      "description": {
+        "pl": "",
+        "eng": "Actually, the same idea as the AAA sequencer, but executed differently. The app works real time, so few people in one room can play together"
+      },
+      "tags": [
+        "realTime",
+        "sequencer", "noveltyArt"
+      ],
+      "more_links": []
+    },
+    {
+      "authors": [
+        {
+          "name": {
+            "pl": "Ales Tsurko",
+            "eng": "Ales Tsurko"
+          },
+          "link": "http://alestsurko.by"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://github.com/ales-tsurko/microscale"
+        },
+        {
+          "name": {
+            "pl": "Album w wydaniu fizycznym, zawierający zapis muzyki wygenerowanej przez ten projekt autorstwa twórcy",
+            "eng": "Physical copy of an album containing music generated by the authors project"
+          },
+          "link": "https://preservedsound.bandcamp.com/album/microscale"
+        }
+      ],
+      "title": {
+        "pl": "Muzyka generowana na podstawie losowych artykułów z Wikipedii",
+        "eng": "Music generated based on random Wikipedia articles"
+      },
+      "link": "http://alestsurko.by/microscale",
+      "description": {
+        "pl": "W czasie rzeczywistym strona wybiera parę losowych artykułów i ciąg znaków traktuje jako sekwencje muzyczne. Nie wklejam tego linka w kategorię aplikacji działających w czasie rzeczywistym, ponieważ autor tutaj miał ewidentny zamysł artystyczny. ",
+        "eng": "In real time the page picks a couple of random articles and interprets a string of characters as musical sequences."
+      },
+      "tags": [
+        "DIY",
+        "mustCheck",
+        "openSource", "noveltyArt"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": {
+            "pl": "Marpi",
+            "eng": "Marpi"
+          },
+          "link": "https://marpi.frb.io/about"
+        },
+        {
+          "name": {
+            "pl": "Stand & Marvel",
+            "eng": "Stand & Marvel"
+          },
+          "link": "https://www.standandmarvel.com/"
+        },
+        {
+          "name": {
+            "pl": "Huncwot",
+            "eng": "Huncwot"
+          },
+          "link": "https://huncwot.com/"
+        },
+        {
+          "name": {
+            "pl": "Garrett Bradley",
+            "eng": "Garrett Bradley"
+          },
+          "link": "https://twitter.com/gbradleyfilms"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "O projekcie",
+            "eng": "About"
+          },
+          "link": "https://www.marpi.studio/exhibitions/odra"
+        }
+      ],
+      "title": {
+        "pl": "\"Odra\" - muzyczny eksponat online",
+        "eng": "\"Odra\" - musical exhibit online"
+      },
+      "link": "https://odra.city",
+      "description": {
+        "pl": "Stronka generuje sobie muzyke z atrakcyjną wizualizacją jedynie. Ale jest dopracowana i pozwala na trochę interakcji, więc wrzucam",
+        "eng": "The page generates music with attractive visuals. Simple, but well made and interactive."
+      },
+      "tags": [
+        "visual",
+        "marpi", "noveltyArt"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": {
+            "pl": "Marpi",
+            "eng": "Marpi"
+          },
+          "link": "https://marpi.frb.io/about"
+        },
+        {
+          "name": {
+            "pl": "Angelique Hering",
+            "eng": "Angelique Hering"
+          },
+          "link": ""
+        },
+        {
+          "name": {
+            "pl": "An On Bast",
+            "eng": "An On Bast"
+          },
+          "link": "https://soundcloud.com/an_on_bast"
+        },
+        {
+          "name": {
+            "pl": "Khalid Farquhar",
+            "eng": "Khalid Farquhar"
+          },
+          "link": "https://www.blueandkream.com/"
+        },
+        {
+          "name": {
+            "pl": "Camille MacRae",
+            "eng": "Camille MacRae"
+          },
+          "link": "https://www.thecrucible.org/person/camille-macrae/"
+        },
+        {
+          "name": {
+            "pl": "Next Art Night",
+            "eng": "Next Art Night"
+          },
+          "link": ""
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "O projekcie",
+            "eng": "About"
+          },
+          "link": "https://www.marpi.studio/exhibitions/mass-migrations"
+        }
+      ],
+      "title": {
+        "pl": "“Mass Migration”",
+        "eng": "“Mass Migration”"
+      },
+      "link": "https://massmigrations.com/uth",
+      "description": {
+        "pl": "Aplikacja bardzo podobna do powyższej “Odry”, tym razem jednak mniej interaktywna muzycznie. Ale w zamian za mniejszą interakcję, dostajemy świetną muzykę autorstwa wrocławskiej producentki, An On Bast.",
+        "eng": "App similar to “Odra” above, this time less interactive musically. In return we get great music by Wrocław based producer An On Bast."
+      },
+      "tags": [
+        "visual",
+        "marpi", "noveltyArt"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": {
+            "pl": "Marpi",
+            "eng": "Marpi"
+          },
+          "link": "https://marpi.frb.io/about"
+        },
+        {
+          "name": {
+            "pl": "Bent Stamnes",
+            "eng": "Bent Stamnes"
+          },
+          "link": "https://twitter.com/gloom303"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "O projekcie",
+            "eng": "About"
+          },
+          "link": "https://www.marpi.studio/exhibitions/terrarium"
+        }
+      ],
+      "title": {
+        "pl": "“Terrarium”",
+        "eng": "“Terrarium”"
+      },
+      "link": "https://demo.marpi.pl/ocean_desert",
+      "description": {
+        "pl": "Za pomocą prostych narzędzi studio Marpi stworzyło proceduralne środowisko z wykreowanymi stworzeniami. Oraz generowaną na bieżąco muzyką ambient. Użytkownik może klikać, generując dźwięki lub wygenerować środowisko na nowo, klikając w pewien dziwny przedmiot na środku. ",
+        "eng": "Using simple tools Marpi created a procedurally generated environment populated with creatures. Alongside, there's ambient music generated in real time. The user can click, generating sounds, or generate the environment again by clicking a certain weird item in the middle."
+      },
+      "tags": [
+        "ambient",
+        "visual",
+        "marpi", "noveltyArt"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": {
+            "pl": "wheelibin",
+            "eng": "wheelibin"
+          },
+          "link": "https://soundcloud.com/wheelibin"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://github.com/wheelibin/synaesthesia"
+        }
+      ],
+      "title": {
+        "pl": "“Synaesthesia” - Generuj sobie losową muzyke",
+        "eng": "“Synaesthesia” - Generate random music"
+      },
+      "link": "https://wheelibin.github.io/synaesthesia",
+      "description": {
+        "pl": "No po prostu. Nie wiem co więcej napisać, jest to zrobione wyjątkowo prosto i przejrzyście. Więc generujcie sobie, po prostu. Strona ma dwa tryby - funky down-tempo oraz ambient drone.",
+        "eng": "Literally just generate random music, it's done really simply and clearly. Tho styles to choose from - funky down-tempo and ambient drone."
+      },
+      "tags": [
+        "DIY",
+        "openSource", "noveltyArt"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": {
+            "pl": "    Composed by Xavier Bonfill\n",
+            "eng": "Composed by Xavier Bonfill\n"
+          }
+        },
+        {
+          "name": {
+            "pl": "    Designed by Tony Martínez\n",
+            "eng": "Designed by Tony Martínez\n"
+          }
+        },
+        {
+          "name": {
+            "pl": "    Developed by Frederic Font\n",
+            "eng": "Developed by Frederic Font\n"
+          }
+        }
+      ],
+      "more_links": [],
+      "title": {
+        "pl": "“28x28”",
+        "eng": "“28x28”"
+      },
+      "link": "https://labs.freesound.org/28x28",
+      "description": {
+        "pl": "Pozostawiam opis autorów, bo nie ma sensu, żebym przepisywał to po swojemu: “A room can be full of sounds, some from within, some from the outside, some that happen by choice, some that happen by chance. The possibilities of their combinations are almost endless, but all sounds can be put together and become music in our minds. 28x28 is a piece made of 28 fragments of 28 seconds each that are combined in a certain order according to a domino game. Nowadays, it feels like 28 seconds is a long time to be doing nothing but listening to a piece of music. However, 28 seconds are not enough even for replying to a text message or checking your Facebook feed.”",
+        "eng": "A room can be full of sounds, some from within, some from the outside, some that happen by choice, some that happen by chance. The possibilities of their combinations are almost endless, but all sounds can be put together and become music in our minds. 28x28 is a piece made of 28 fragments of 28 seconds each that are combined in a certain order according to a domino game. Nowadays, it feels like 28 seconds is a long time to be doing nothing but listening to a piece of music. However, 28 seconds are not enough even for replying to a text message or checking your Facebook feed."
+      },
+      "tags": [
+        "DIY",
+        "FreeSound", "noveltyArt"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": {
+            "pl": "Tero Parviainen",
+            "eng": "Tero Parviainen"
+          },
+          "link": "http://teropa.info"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://codepen.io/teropa/pen/zpdwRY"
+        }
+      ],
+      "title": {
+        "pl": "Diatonic Dreams",
+        "eng": "Diatonic Dreams"
+      },
+      "link": "https://codepen.io/teropa/full/zpdwRY",
+      "description": {
+        "pl": "Prosta aplikacja, która generuje określone progresje po stronie użytkownika. Nie chcę wchodzić w szczegóły, bo nie znam się na tych rzeczach za bardzo, ale polecam ustawić powolne tempo i spokojnie sobie poklikać - fajnie się można wtedy zrelaksować. ",
+        "eng": "Simple app that generates certain progressions client-side. We recommend setting a mellow tempo and clicking around - really relaxing."
+      },
+      "tags": [
+        "DIY",
+        "openSource", "noveltyArt", "ambient"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": {
+            "pl": "Tero Parviainen",
+            "eng": "Tero Parviainen"
+          },
+          "link": "http://teropa.info"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://codepen.io/teropa/pen/opjrBE"
+        },
+        {
+          "name": {
+            "pl": "FM drones, kolejna dronowa aplikacja autora",
+            "eng": "FM drones, another one of Tero's drone apps"
+          },
+          "link": "https://codepen.io/teropa/pen/LaLxNm"
+        },
+        {
+          "name": {
+            "pl": "Noo i jeszcze jedna dronowa aplikacja autorstwa Tero Parviainena, która tym razem bazując na pobranym dźwięku generuje drony w oparciu o synteze granularną.",
+            "eng": "Another drone app by Tero Parviainen, this time based on input sound it generates drones based on granular synthesis."
+          },
+          "link": "https://codepen.io/teropa/details/vYLRBbV"
+        }
+      ],
+      "title": {
+        "pl": "L-drones",
+        "eng": "L-drones"
+      },
+      "link": "https://codepen.io/teropa/full/opjrBE",
+      "description": {
+        "pl": "Kolejna aplikacja autorstwa Tero Parviainena, której działania wytłumaczyć nie potrafię w sposób sensowny i rzeczowy - jedyne co rozumiem, że dość mocno opiera się na zasadach l-systemów. Ponownie więc zapraszam do relaksacji. ",
+        "eng": "Another one of Tero's hard to explain, but very relaxing apps. Enjoy."
+      },
+      "tags": [
+        "DIY",
+        "openSource", "noveltyArt"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": {
+            "pl": "Dadabots",
+            "eng": "Dadabots"
+          },
+          "link": "http://dadabots.com/music.php"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Wywiad z autorami dla VICE",
+            "eng": "VICE interview with authors"
+          },
+          "link": "https://www.vice.com/en_us/article/xwnzm7/this-youtube-channel-streams-ai-generated-black-metal-247"
+        },
+        {
+          "name": {
+            "pl": "Zapis jazzowego streamu",
+            "eng": "Archived jazz lifestream"
+          },
+          "link": "https://www.youtube.com/watch?v=C0dOin79Hm0"
+        },
+        {
+          "name": {
+            "pl": "BandCamp Dadabots, gdzie możemy posłuchać na przykład jak brzmiała sztuczna inteligencja w kolejnych iteracjach nauki muzyki The Beetles",
+            "eng": "Dadabots' BandCamp, where we can check out consecutive iterations of The Beatles machine learning AI"
+          },
+          "link": "https://dadabots.bandcamp.com/"
+        }
+      ],
+      "title": {
+        "pl": "Niekończący się stream muzyki metalowej",
+        "eng": "Unending stream of black metal"
+      },
+      "link": "https://www.youtube.com/watch?v=MwtVkPKx3RA)",
+      "description": {
+        "pl": "Od ponad roku w serwisie YouTube bez przerwy odtwarzany jest stream muzyki metalowej, której nikt nigdy nie nagrał - jest to dzieło sztucznej inteligencji, która bazując na opublikowanych już nagraniach generuje ciągle muzykę. Autorzy wcześniej wykonali podobny stream z muzyką jazzową i mają wielkie plany rozwoju swojego projektu. ",
+        "eng": "It has been streaming on YouTube for a couple of years now, never before recorded, AI generated, heavy as hell."
+      },
+      "tags": [
+        "AI", "noveltyArt", "reconstruction"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Alex Bainter",
+          "link": "https://alexbainter.com/"
+        }
+      ],
+      "more_links": [],
+      "link": "https://slowedandreverb.studio/",
+      "title": {
+        "pl": "",
+        "eng": "Slowed + reverb music generator"
+      },
+      "description": {
+        "pl": "",
+        "eng": "Simple tool that regenerates the given song with two effects added - slowed audio and reverb, making it more 'atmospheric'."
+      },
+      "tags": [
+        "tool"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Alex Bainter",
+          "link": "https://alexbainter.com/"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://github.com/generative-music/generative.fm"
+        }
+      ],
+      "title": {
+        "pl": "Generative.fm",
+        "eng": "Generative.fm"
+      },
+      "link": "https://generative.fm",
+      "description": {
+        "pl": "Platforma pozwalająca na generowanie i dzielenie się wygenerowaną muzyką. Pomysł opiera się na tworzeniu prostych, ambientowych utworów, które docelowo powinny mieć muzakowe przeznaczenie. ",
+        "eng": "Platform that lets users create and share generated music. The idea is creating simple, ambient tracks, which are generally meant to be listened to as muzak."
+      },
+      "tags": [
+        "DIY",
+        "openSource", "noveltyArt"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Luke Twyman",
+          "link": "http://whitevinyldesign.com/#about"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://github.com/Whitevinyl/Helios"
+        }
+      ],
+      "title": {
+        "pl": "“Yume”",
+        "eng": "“Yume”"
+      },
+      "link": "http://unseen-music.com/yume",
+      "description": {
+        "pl": "Ze strony artysty: “YUME is an interactive web experience created to promote the album 'Yume' by ambient artist Helios. Floating rock shards become tactile music controllers, which also manipulate the environment. Different scenes can be freely explored, each one with a different feel/sound.”",
+        "eng": "YUME is an interactive web experience created to promote the album 'Yume' by ambient artist Helios. Floating rock shards become tactile music controllers, which also manipulate the environment. Different scenes can be freely explored, each one with a different feel/sound."
+      },
+      "tags": [
+        "DIY",
+        "openSource",
+        "visual", "noveltyArt"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Per Nyblom",
+          "link": "https://github.com/pernyblom"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://github.com/pernyblom/pernyblom.github.io/tree/master/abundant-music"
+        }
+      ],
+      "title": {
+        "pl": "Abundant Music - generator utworów MIDI",
+        "eng": "Abundant Music - MIDI track generator"
+      },
+      "link": "https://pernyblom.github.io/abundant-music",
+      "description": {
+        "pl": "Stworzony w 2017 roku Abudant Music jest takim sobie fajnym generatorem utworów MIDI. Na tyle mądrym i przemyślanym, że jednocześnie zostawia bardzo dużo miejsca użytkownikowi na wybór parametrów, z drugiej zaś strony proponuje, żeby wszędzie kliknąć ‘random’ i zobaczyć efekty. System potrafi stworzyć faktycznie sensowny utwór muzyczny, z dobrym podziałem na sekcje. ",
+        "eng": "Made in 2017, Abundant Music is a neat MIDI track generator that is well thought-out and smart enough to simultanously let the user control a lot of parameters, and encourage them to just click 'random' and see what happens. The system is able to create genuine music tracks with good divisions."
+      },
+      "tags": [
+        "DIY",
+        "mustCheck",
+        "openSource", "noveltyArt"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Conversion-Tool.com",
+          "link": "https://www.conversion-tool.com/"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Lista takich narzędzie do zainstalowania lokalnie",
+            "eng": "List of similar tools to install locally"
+          },
+          "link": "https://gist.github.com/natowi/d26c7e97443ec97e8032fb7e7596f0b0"
+        }
+      ],
+      "title": {
+        "pl": "Konwerter audio-MIDI",
+        "eng": "Audio to MIDI converter"
+      },
+      "link": "https://www.conversion-tool.com/audiotomidi",
+      "description": {
+        "pl": "Nie działa zbyt dobrze, ale jest ciekawe. Raczej to jest coś na poziomie black MIDI, ale zaznaczam, że istnieje takie narzędzie w przeglądarce.",
+        "eng": "Doesn't perform particularily well, is still interesting nevertheless. It's something along the lines of black MIDI, but let it be pointed out that such tool exists in the browser."
+      },
+      "tags": [
+        "commercial", "tool"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": {
+            "pl": "",
+            "eng": "FreeSound team"
+          },
+          "link": "https://freesound.org/help/about/"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Baza utworów, sampli i remiksów oparta na licencji Creative Commons",
+            "eng": "Track, sample and remix database based on Creative Commons license"
+          },
+          "link": "http://ccmixter.org/"
+        },
+        {
+          "name": {
+            "pl": "Analogiczna stronka, tylko dla twórców gier, niemniej są tutaj też utwory i sample muzyczne",
+            "eng": "Parallel site, but for game designers"
+          },
+          "link": "https://opengameart.org/"
+        },
+        {
+          "name": {
+            "pl": "Ładniejsza alternatywa dla Freesound, i lepiej opisana baza",
+            "eng": "Prettier alternative to Freesound with better described database"
+          },
+          "link": "https://samplefocus.com/"
+        },
+        {
+          "name": {
+            "pl": "Moduł do syntezatora modularnego, pozwalający na pobieranie sampli z freesound",
+            "eng": "Module for a modular synth, enabling sample downloading from Freesound"
+          },
+          "link": "https://labs.freesound.org/apps/2019/05/02/strampler.html"
+        },
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://github.com/MTG/freesound"
+        }
+      ],
+      "title": {
+        "pl": "Freesound - agregator sampli online",
+        "eng": "Freesound - online sample aggregator"
+      },
+      "link": "https://freesound.org",
+      "description": {
+        "pl": "Myślę, że nikomu nie trzeba tej strony przedstawiać. Niemniej warto zaznaczyć, że jest to projekt open source i przy tej okazji chciałem wkleić kilka podobnych stron.",
+        "eng": "Most user are probably familiar with this site. Nevertheless let it be pointed out that it is an open source project, on this occasion we would like to link to a couple of similar sites."
+      },
+      "tags": [
+        "FreeSound",
+        "classic",
+        "openSource", "tool"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Nikolay Tsenkov",
+          "link": "https://twitter.com/nikolaytsenkov"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://github.com/nicroto/viktor"
+        }
+      ],
+      "title": {
+        "pl": "Syntezator online - Viktor NV-1",
+        "eng": "Online synth - Viktor NV-1"
+      },
+      "link": "https://nicroto.github.io/viktor",
+      "description": {
+        "pl": "Zwykły polifoniczny syntezator w przeglądarce, który wspiera wczytywanie presetów i ma sporo funkcji w ogóle. ",
+        "eng": "A regular polyphonic synth inside the browser, that supports preset preloading and has a multitude of functions in general."
+      },
+      "tags": [
+        "DIY",
+        "openSource", "tool"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Ed Ball",
+          "link": "https://github.com/edwardball"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://codepen.io/edball/pen/GoYeQZ"
+        }
+      ],
+      "title": {
+        "pl": "Glowsynth",
+        "eng": "Glowsynth"
+      },
+      "link": "http://outputchannel.com/glowsynth",
+      "description": {
+        "pl": "Syntezator w przeglądarce o magiczno-tajemniczej barwie z wizualizacjami. Pozwala na odgrywanie dźwięków za pomocą klawiatury, ale i również poprzez klikanie w ekran. ",
+        "eng": "Browser based synth that lets users play sound using their keyboard or by clicking the screen. Has some eerie visuals."
+      },
+      "tags": [
+        "DIY",
+        "openSource",
+        "visual", "tool"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "gardos-software",
+          "link": "https://gardos-software.com/"
+        }
+      ],
+      "more_links": [],
+      "title": {
+        "pl": "Melobytes - zbiór narzędzi",
+        "eng": "Melobytes - collection of tools"
+      },
+      "link": "https://melobytes.com/en",
+      "description": {
+        "pl": "Proste narzędzia typu generowanie akordów, partii wokalnych, ścieżek MIDI, w większości wykorzystujące (jakieś?) AI. Dopóki akceptujemy ograniczenia ilości przetworzonych danych oraz niższą jakość wygenerowanych obiektów, to strona jest darmowa. ",
+        "eng": "Simple tools such as generation of chords, vocal parts, MIDI tracks; mostly using AI. As long as we accept the limits for processed data and lower quality of generated objects, the site is free to use."
+      },
+      "tags": [
+        "commercial", "tool"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Pantelis Kalogiros",
+          "link": "https://github.com/pkalogiros"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://github.com/pkalogiros/audiomass"
+        }
+      ],
+      "title": {
+        "pl": "Audiomass",
+        "eng": "Audiomass"
+      },
+      "link": "https://audiomass.co/",
+      "description": {
+        "pl": "Przeglądarkowy edytor fali dźwiękowych. Kilka prostych efektów oraz możliwości analizy sprawiają, że apka ta może być bardzo przydatna, kiedy zachodzi potrzeba szybkiej edycji na komputerze, który nie ma zainstalowanego Audacity.",
+        "eng": "Browser based sound wave editor. A couple of simple effects and the option of analysis make this app extremely useful when the user needs to edit something quickly and has no adequate program installed."
+      },
+      "tags": [
+        "DIY",
+        "mustCheck",
+        "openSource", "tool"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Tero Parviainen",
+          "link": "http://teropa.info"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://codepen.io/teropa/pen/JLjXGK"
+        }
+      ],
+      "title": {
+        "pl": "Neuronowa maszyna perkusyjna",
+        "eng": "Neural drum machine"
+      },
+      "link": "https://codepen.io/teropa/full/JLjXGK",
+      "description": {
+        "pl": "Po napisaniu rytmu przez użytkownika program go analizuje i generuje kontynuację według własnych modeli opartych na sieciach neuronowych. ",
+        "eng": "After the user writes a rhythm, the program analyses it and generates it's continuation via it's own models based on neural networks."
+      },
+      "tags": [
+        "AI",
+        "DIY",
+        "openSource", "tool"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Tero Parviainen",
+          "link": "http://teropa.info"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://codepen.io/teropa/pen/PoZprMo"
+        }
+      ],
+      "title": {
+        "pl": "Generator breakbeatów",
+        "eng": "Breakbeat generator"
+      },
+      "link": "https://codepen.io/teropa/full/PoZprMo",
+      "description": {
+        "pl": "Ot po prostu aplikacja bazując na materiale audio (który w pierwszych liniach kodu źródłowego można łatwo podmienić) tworzy glitchowe wariacje rytmiczne. ",
+        "eng": "A simple app that takes audio material and creates glitchy rhythmic variations based on it."
+      },
+      "tags": [
+        "DIY",
+        "openSource", "tool"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": {
+            "pl": "zespół Google",
+            "eng": "Google team"
+          }
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://glitch.com/edit/#!/piano-scribe?path=README.md%3A1%3A0"
+        }
+      ],
+      "title": {
+        "pl": "Piano Scribe - transkrypcja audio do MIDI",
+        "eng": "Piano Scribe - transcryption of audio to MIDI"
+      },
+      "link": "https://piano-scribe.glitch.me",
+      "description": {
+        "pl": "Za pomocą sieci neuronowych, konkretniej przy użyciu technologii Magenta. Można wrzucić własne audio lub spróbować zaśpiewać. Sztuczna inteligencja była trenowana na muzyce fortepianowej, stąd też taki materiał wejściowy ma przynieść najbardziej korzystne efekty. Wyniki MIDI można pobrać lub odtworzyć w przeglądarce. ",
+        "eng": "Transcryption of audio to MIDI using neural networks (Magenta technology to be exact). Users can upload their own audio or try to sing right there and then. The AI was trained on piano music, so similar input material is supposed to bring the best results. The output can be downloaded or streamed in the browser."
+      },
+      "tags": [
+        "AI",
+        "openSource", "tool"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Matt DesLauriers",
+          "link": "https://twitter.com/mattdesl"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://github.com/mattdesl/spectrum"
+        }
+      ],
+      "title": {
+        "pl": "Spectrum",
+        "eng": "Spectrum spectogram"
+      },
+      "link": "https://spectrum.surge.sh",
+      "description": {
+        "pl": "Prosty spektogram online. Wrzucamy plik audio i wyświetla nam się w czasie rzeczywistym analiza utworu. ",
+        "eng": "Simple spectogram tool to visualize the music or sound of user choice."
+      },
+      "tags": [
+        "DIY",
+        "openSource", "tool", "visual"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Luke Phillips",
+          "link": "https://femurdesign.com/"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://github.com/lukephills/Theremin"
+        }
+      ],
+      "title": {
+        "pl": "Theremin",
+        "eng": "Theremin"
+      },
+      "link": "https://www.femurdesign.com/theremin",
+      "description": {
+        "pl": "Najprostsza w świecie imitacja theremina online. Z ładnym GUI w prezencie. ",
+        "eng": "Simple implementation of classic theremin intrument. It has nice graphical user interface."
+      },
+      "tags": [
+        "DIY",
+        "openSource"
+      ]
+    },
+    {
+      "authors": [{
+          "name": "Soundtrap company",
+          "link": ""
+        }],
+      "more_links": [],
+      "title": {
+        "pl": "Soundtrap",
+        "eng": "Soundtrap"
+      },
+      "link": "https://www.soundtrap.com",
+      "description": {
+        "pl": "DAW przeglądarkowy. Ma płatne plany (dodatkowe usługi), ale w darmowej wersji można nagrać ścieżki audio i MIDI oraz dodać sobie efekty dźwiękowe. Soundtrap stawia na kolaboracje w czasie rzeczywistym i nauke tworzenia muzyki zdalnie. ",
+        "eng": "Online DAW that has many paid plans (that offer more functionalities), but can be used for free to record some audio or MIDI tracks and add some effects. It offers many options of realtime collaboration and learning music production."
+      },
+      "tags": [
+        "commercial",
+        "DAW"
+      ]
+    },
+    {
+      "authors": [],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Wsparcie dla twórców projektu",
+            "eng": "Authors Patreon"
+          },
+          "link": "https://www.patreon.com/audiotool"
+        }
+      ],
+      "title": {
+        "pl": "Audiotool",
+        "eng": "Audiotool"
+      },
+      "link": "https://www.audiotool.com",
+      "description": {
+        "pl": "Wreszcie jakiś darmowy program. Dodatkowo, tutaj autorzy zastosowali modularną budowę programu. Możemy łączyć ze sobą różne imitacje prawdziwych efektów i syntezatorów. Społeczność Audiotool aktywnie tworzy nowe presety oraz zbiera sample. Projekt zarabia na współpracy z firmami, oferującymi płatne sample oraz przez serwis Patreon. Jedyną funkcją wyłączoną dla darmowych użytkowników jest eksport projektów w formacie .wav. ",
+        "eng": "Free online DAW, that's architecture is modular, so we can combine different sound modules together. Its community constantly create new presets and samples. Export to .wav files is restricted for users with paid plan."
+      },
+      "tags": [
+        "DAW"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": {
+            "pl": "firma BandLab Technologies",
+            "eng": "BandLab Technologies"
+          },
+          "link": "https://bandlabtechnologies.com/"
+        }
+      ],
+      "more_links": [],
+      "title": {
+        "pl": "BandLab",
+        "eng": "BandLab"
+      },
+      "link": "https://www.bandlab.com",
+      "description": {
+        "pl": "Również w pełni darmowy, ze sporą społecznością. To, co wyróżnia BandLab od innych programów to zintegrowana do przeglądarkowego programu aplikacja mobilna oraz dedykowane interfejsy audio. Prawdę mówiąc BandLab przekonuje mnie najbardziej ze wszystkich powyższych aplikacji - wprowadza faktycznie nowe pomysły i wykorzystuje fakt bycia aplikacją webową, bez próby zastąpienia aplikacji desktopowych. ",
+        "eng": "Free DAW with huge community. Its authors offer integrated mobile app as well. It has nice user interface and several intersting fresh features."
+      },
+      "tags": [
+        "DAW"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Aaro Väänänen",
+          "link": "https://github.com/Xaviaro"
+        }
+      ],
+      "more_links": [],
+      "title": {
+        "pl": "AudioSauna",
+        "eng": "AudioSauna"
+      },
+      "link": "http://www.audiosauna.com",
+      "description": {
+        "pl": "Kolejny darmowy program. Napisany w archaicznym flashu, więc raczej odradzałbym próbę nauki. Niemniej warto oddać fakt, że był to protoplasta tego typu rozwiązań, nie udało mi się znaleźć starszego programu tego typu, tak rozwiniętego i działającego (wciąż jeszcze) w sieci. Projekt nie jest już wspierany conajmniej od 2014 roku. ",
+        "eng": "Free DAW made in old technology, Flash, that is no longer maintained. We couldn't find older online DAW project, that was developed that much. It is no longer maintained at least from 2014."
+      },
+      "tags": [
+        "DAW", "classic"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "John Nesky",
+          "link": "http://www.johnnesky.com/"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Kod źródłowy",
+            "eng": "Source code"
+          },
+          "link": "https://github.com/johnnesky/beepbox#readme"
+        },
+        {
+          "name": {
+            "pl": "Utwory w Beepboxie stworzone przez społeczność",
+            "eng": "Beepbox songs made by its users"
+          },
+          "link": "https://twitter.com/beepboxco"
+        }
+      ],
+      "title": {
+        "pl": "Beepbox",
+        "eng": "Beepbox"
+      },
+      "link": "http://beepbox.co",
+      "description": {
+        "pl": "Autor podpisuje ten projekt jako przeglądarkowy program do tworzenia prostych szkiców melodii lub utworów i dzielenia się nimi z innymi (każda konfiguracja aplikacji posiada swój unikalny adres URL, więc żeby pokazać dzieło znajomemu, wystarczy skopiować link z paska adresu w przeglądarce). Aczkolwiek patrząc na to, jak mocno ten open-sourcowy projekt się rozwinął, możemy powiedzieć że to już coś więcej niż tylko aplikacja do szybkich szkiców. Poza możliwością komponowania utworów na siatce zaimplementowana jest też funkcja zmiany różnych parametrów syntezy przygotowanych już przez twórcę presetów. ",
+        "eng": "Browser program made for creating simple drafts of melodies or songs and sharing them with others (each configuration within an app has its own unique URL address). It has pretty strong community, that shares their work made with this tool."
+      },
+      "tags": [
+        "DIY",
+        "openSource", "tool"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Lullatone",
+          "link": "http://lullatone.com/"
+        }
+      ],
+      "more_links": [],
+      "title": {
+        "pl": "Ciekawy sampler z ładnymi wizualizacjami",
+        "eng": "Nice sampler with pretty visualization"
+      },
+      "link": "https://www.patatap.com",
+      "description": {
+        "pl": "Bank brzmień i animacji, które można odtwarzać dowolnym klawiszem z klawiatury. Bardzo dopracowane graficznie. Żeby zacząć, wystarczy kliknąć dowolny klawisz.",
+        "eng": "Bank of sounds and animations, that can be played with computer keyboard (you can just start rhythmically typing when page is loaded)."
+      },
+      "tags": [
+        "DIY",
+        "mustCheck",
+        "accessible",
+        "forKids",
+        "visual"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": {
+            "pl": "",
+            "eng": "Google Experiments team"
+          },
+          "link": "https://experiments.withgoogle.com/"
+        }
+      ],
+      "more_links": [
+        {
+          "name": {
+            "pl": "Wyjaśnienie działania",
+            "eng": "Explanation of how it works"
+          },
+          "link": "https://medium.com/tensorflow/real-time-human-pose-estimation-in-the-browser-with-tensorflow-js-7dd0bc881cd5"
+        }
+      ],
+      "title": {
+        "pl": "Zostań dyrygentem nie ruszając się sprzed komputera",
+        "eng": "Having a camera is enought to conduct an orchestra"
+      },
+      "link": "https://semiconductor.withgoogle.com",
+      "description": {
+        "pl": "Dyryguj orkiestrą za pomocą kamerki",
+        "eng": "Be an orchestra conductor with use of your camera."
+      },
+      "tags": [
+        "bigTech", "forKids"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "YenTing Lo",
+          "link": "http://yentinglo.net/"
+        },
+        {
+          "name": "Vanja Mrgan",
+          "link": ""
+        },
+        {
+          "name": "Ferran Bertomeu Castells",
+          "link": "https://fonserbc.itch.io/"
+        }
+      ],
+      "more_links": [],
+      "title": {
+        "pl": "Interaktywny album muzyczny",
+        "eng": "Offscore - interactive music album"
+      },
+      "link": "https://offscore.itch.io/",
+      "description": {
+        "pl": "Album muzyczny w formie interaktywnej gry. Na czas dodawania go do spisu, zawiera dwa utwory.",
+        "eng": "Music album made as an interactive game. Currently it has two songs, more to come."
+      },
+      "tags": [
+        "seizureWarning",
+        "game"
+      ]
+    },
+    {
+      "authors": [
+        {
+          "name": "Ferran Bertomeu",
+          "link": "https://fonserbc.itch.io/"
+        }
+      ],
+      "more_links": [],
+      "title": {
+        "pl": "Prosta gierka muzyczna",
+        "eng": "Poly 60 - simple musical rhythmic game"
+      },
+      "link": "https://fonserbc.itch.io/poly-60",
+      "description": {
+        "pl": "Masz do dyspozycji siedem wariantów polirytmicznych sekwencji i za ich pomocą musisz ułożyć puzzle wyświetlane na górze. Przyjemnie się gra i słucha, jak słyszysz swój postęp",
+        "eng": "Having seven polyrhythmic sequences user has to complete puzzle shown on the top. Quite pleasant and challenging."
+      },
+      "tags": [
+        "DIY", "12+", "game"
+      ]
+    },
+    {
+      "authors": [{"name": "Qosmo", "link": "https://qosmo.jp/en/"}],
+      "more_links": [],
+      "title": {"pl": "", "eng": "Neural Beatbox"},
+      "link": "https://neuralbeatbox.net/",
+      "description": {"pl": "", "eng": "Neural Beatbox is a website where the AI analyzes voices and claps recorded by the user with a webcam, and generates new rhythms."},
+      "tags": ["AI", "sequencer", "forKids"]
+    },
+    {
+      "authors": [{"name": "Qosmo", "link": "https://qosmo.jp/en/"}],
+      "more_links": [{"name": {"pl": "", "eng": "Used sounds library"}, "link": "https://imaginarysoundscape.net/soundfiles.txt"}],
+      "title": {"pl": "", "eng": "Imaginary Soundscape"},
+      "link": "https://imaginarysoundscape.net/",
+      "description": {"pl": "", "eng": "Select any place from map or upload the image and wait for AI to find a sound that describes input the best."},
+      "tags": ["AI", "accessible", "mustCheck"]
+    },
+    {
+      "authors": [{"name": "Alex Chen", "link": "http://chenalexander.com/"}, {"name": "Yotam Mann", "link": "https://yotammann.info/"}],
+      "more_links": [],
+      "title": {"pl": "", "eng": "Dot Piano"},
+      "link": "https://dotpiano.com/",
+      "description": {"pl": "", "eng": "Dot Piano is a visual musical instrument that lives on the web. Use your computer keys or MIDI keyboard to record a song, then share it simply by sending a link."},
+      "tags": ["forKids", "visual"]
+    }
+  ]
