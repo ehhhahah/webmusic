@@ -1,6 +1,5 @@
 import json
-from tempfile import tempdir
-import requests
+import re
 from bs4 import BeautifulSoup
 import datetime
 
@@ -265,7 +264,7 @@ def prettify_db():
 
     sorted_dict = sorted(
         json_file,
-        key=lambda value: tuple((not c.isalpha(), c) for c in value)
+        key=lambda x: re.sub('[^A-Za-z]+', '', x["title"]["eng"]).lower()
     )
 
     with open('/Users/Guested/Documents/GitHub/webmusic/assets/original_article/db-fixed.json', 'w') as file:
