@@ -130,7 +130,7 @@ def create_html(parsed_json, lang="eng"):
         hashtags = " ".join([f"<span class='tag' title='{TAGS_DESCRIPTORS[tag]}'>#" + tag + "</span>" for tag in tags.split(" ")])
 
         more_links = """<div class="card-footer">
-        <ul class="list-group list-group-flush">Related links:""" + "".join(f"""
+        <ul class="list-group list-group-flush"><li class="list-group-item">Related links:</li>""" + "".join(f"""
         <li class="list-group-item">- <a href='{link['link']}'>{link['name'][lang]}</a></li>""" 
         for link in app["more_links"]) + "</ul></div>" if app["more_links"] else ""
         # TODO add collapsing with accessibility for more links https://getbootstrap.com/docs/5.1/components/collapse/
@@ -150,10 +150,10 @@ def create_html(parsed_json, lang="eng"):
         html_content += f"""
         <div class="card h-100 text-center webapp {tags}" id="{id}">
         <div style="display: flex; justify-content: space-between;">
-        <h5 class="card-title"><a href="{app['link']}" target="_blank">{title}</a></h5>
+        <h2 class="card-title"><a href="{app['link']}" target="_blank">{title}</a></h2>
         <p class="card-text idinfo"><a href="https://webmusic.pages.dev/apps#{id}">#{id}</a></p>
         </div>
-        <h6 class="card-subtitle mb-2 text-muted">Authors: {get_authors(app['authors'])}</h6>
+        <p class="card-subtitle mb-2 text-muted">Authors: {get_authors(app['authors'])}</p>
         <p class="card-text">{description}</p>
         <p class="tags">{hashtags}</p>
         {more_links}
