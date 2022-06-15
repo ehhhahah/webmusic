@@ -70,6 +70,10 @@ TAGS_DESCRIPTORS = {
 "tool":"Useful to musicians and producers.",
 
 "visual":"Nice for people with limited hearing, focused more on visual aspect.",
+
+"limitedVision": "Accessible for users with vision impairment (for example good contrast ratios, font size is big enought).",
+
+"smallBandwidth": "Slow network shouldn't have issues with opening and using the app."
 }
 
 def handle_set_default(obj):

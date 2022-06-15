@@ -26,7 +26,8 @@
         "tags": [
             "noveltyArt",
             "realTime",
-            "sequencer"
+            "sequencer",
+            "smallBandwidth"
         ],
         "more_links": [],
         "id": 1
@@ -92,6 +93,7 @@
         "tags": [
             "DIY",
             "FreeSound",
+            "limitedVision",
             "mustCheck",
             "openSource",
             "sequencer"
@@ -162,8 +164,10 @@
         "tags": [
             "DIY",
             "FreeSound",
+            "limitedVision",
             "openSource",
-            "sequencer"
+            "sequencer",
+            "smallBandwidth"
         ],
         "id": 5
     },
@@ -202,8 +206,10 @@
         "tags": [
             "accessible",
             "DIY",
+            "limitedVision",
             "openSource",
-            "reconstruction"
+            "reconstruction",
+            "smallBandwidth"
         ],
         "id": 6
     },
@@ -259,7 +265,8 @@
         },
         "tags": [
             "classic",
-            "DAW"
+            "DAW",
+            "tool"
         ],
         "id": 8
     },
@@ -315,7 +322,8 @@
             "eng": "Free online DAW, that's architecture is modular, so we can combine different sound modules together. Its community constantly create new presets and samples. Export to .wav files is restricted for users with paid plan."
         },
         "tags": [
-            "DAW"
+            "DAW",
+            "tool"
         ],
         "id": 10
     },
@@ -340,7 +348,8 @@
             "eng": "Free DAW with huge community. Its authors offer integrated mobile app as well. It has nice user interface and several intersting fresh features."
         },
         "tags": [
-            "DAW"
+            "DAW",
+            "tool"
         ],
         "id": 11
     },
@@ -379,6 +388,7 @@
         "tags": [
             "DIY",
             "openSource",
+            "smallBandwidth",
             "tool"
         ],
         "id": 12
@@ -411,8 +421,10 @@
         "tags": [
             "DIY",
             "forKids",
+            "limitedVision",
             "openSource",
-            "reconstruction"
+            "reconstruction",
+            "smallBandwidth"
         ],
         "id": 13
     },
@@ -443,7 +455,9 @@
         },
         "tags": [
             "DIY",
+            "limitedVision",
             "openSource",
+            "smallBandwidth",
             "tool"
         ],
         "id": 14
@@ -480,6 +494,7 @@
             "bigTech",
             "forKids",
             "learn",
+            "limitedVision",
             "openSource"
         ],
         "id": 15
@@ -671,6 +686,7 @@
         "tags": [
             "12+",
             "classical",
+            "limitedVision",
             "longRead",
             "reconstruction"
         ],
@@ -706,6 +722,7 @@
         },
         "tags": [
             "DIY",
+            "limitedVision",
             "openSource"
         ],
         "id": 20
@@ -737,8 +754,10 @@
         },
         "tags": [
             "DIY",
+            "limitedVision",
             "openSource",
-            "reconstruction"
+            "reconstruction",
+            "smallBandwidth"
         ],
         "id": 21
     },
@@ -773,6 +792,7 @@
         "tags": [
             "ambient",
             "DIY",
+            "limitedVision",
             "noveltyArt",
             "openSource"
         ],
@@ -809,7 +829,9 @@
             "accessible",
             "ambient",
             "forKids",
+            "limitedVision",
             "reconstruction",
+            "smallBandwidth",
             "visual"
         ],
         "id": 23
@@ -837,6 +859,8 @@
         },
         "tags": [
             "forKids",
+            "limitedVision",
+            "smallBandwidth",
             "visual"
         ],
         "id": 24
@@ -898,6 +922,7 @@
         "tags": [
             "classical",
             "DIY",
+            "limitedVision",
             "math",
             "openSource",
             "reconstruction",
@@ -938,8 +963,10 @@
             "eng": "But with nice animations and lightweight sounding."
         },
         "tags": [
+            "limitedVision",
             "math",
-            "sequencer"
+            "sequencer",
+            "smallBandwidth"
         ],
         "id": 27
     },
@@ -985,6 +1012,7 @@
         },
         "tags": [
             "FreeSound",
+            "limitedVision",
             "mustCheck",
             "openSource",
             "sequencer"
@@ -1092,6 +1120,7 @@
         },
         "tags": [
             "FreeSound",
+            "limitedVision",
             "openSource",
             "sequencer"
         ],
@@ -1124,6 +1153,7 @@
         },
         "tags": [
             "DIY",
+            "limitedVision",
             "noveltyArt",
             "openSource"
         ],
@@ -1165,6 +1195,7 @@
             "accessible",
             "ambient",
             "DIY",
+            "limitedVision",
             "openSource",
             "realTime"
         ],
@@ -1191,6 +1222,7 @@
             "eng": "Version of a digital sequencer commisioned by UNESCO, which lets every visitor on the page post their own recording and become a part of a global track."
         },
         "tags": [
+            "limitedVision",
             "realTime",
             "sequencer"
         ],
@@ -1224,6 +1256,7 @@
         "tags": [
             "DIY",
             "openSource",
+            "smallBandwidth",
             "tool",
             "visual"
         ],
@@ -1249,7 +1282,9 @@
         "tags": [
             "bigTech",
             "forKids",
-            "learn"
+            "learn",
+            "limitedVision",
+            "smallBandwidth"
         ],
         "id": 35
     },
@@ -1272,7 +1307,8 @@
         },
         "tags": [
             "descriptive",
-            "learn"
+            "learn",
+            "smallBandwidth"
         ],
         "id": 36
     },
@@ -1296,7 +1332,9 @@
         "tags": [
             "DIY",
             "forKids",
-            "reconstruction"
+            "limitedVision",
+            "reconstruction",
+            "smallBandwidth"
         ],
         "id": 37
     },
@@ -2485,7 +2523,8 @@
         },
         "tags": [
             "DAW",
-            "sequencer"
+            "sequencer",
+            "tool"
         ],
         "id": 71
     },
@@ -2686,7 +2725,8 @@
         },
         "tags": [
             "commercial",
-            "DAW"
+            "DAW",
+            "tool"
         ],
         "id": 78
     },
