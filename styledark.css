@@ -2,7 +2,7 @@
 
 html {
     color: white;
-    background-color: #ffffff00 !important;
+    background-color: #00000000 !important;
 }
 
 body { 
@@ -241,6 +241,10 @@ h1 {
     line-height: 1.5;
 }
 
+h2 {
+    text-align: left !important;
+}
+
 header {
     font-family: Bebas Neue;
     font-size: 300%;
@@ -265,7 +269,7 @@ a:link {
 }
 
 a:visited {
-    color: rgb(140, 210, 140);
+    color: rgb(90, 190, 90);
 }
 
 a:hover {
