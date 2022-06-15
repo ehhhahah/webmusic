@@ -241,10 +241,6 @@ h1 {
     line-height: 1.5;
 }
 
-h2 {
-    text-align: left !important;
-}
-
 header {
     font-family: Bebas Neue;
     font-size: 300%;
@@ -256,7 +252,7 @@ header {
   }
 
 h2 {
-    text-align: center !important;
+    text-align: left !important;
 }
 
 a {
