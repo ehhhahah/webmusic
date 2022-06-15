@@ -69,7 +69,7 @@ TAGS_DESCRIPTORS = {
 
 "sequencer":"App based on simple sound sequences.",
 
-"smallBandwidth": "Slow network shouldn't have issues with opening and using the app.",
+"smallBandwidth": "Slow network users should not have issues with opening and using the app.",
 
 "tool":"Useful to musicians and producers.",
 
