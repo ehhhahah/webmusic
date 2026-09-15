@@ -26,7 +26,7 @@ source .venv/bin/activate
 python assets/original_article/generate_site.py
 ```
 
-CI: GitHub Actions runs `pytest` on every push (`.github/workflows/unit-tests.yml`).
+CI: GitHub Actions runs `pytest` and Cypress smoke tests on every push (`.github/workflows/tests.yml`).
 
 ## Content model
 
@@ -72,7 +72,9 @@ Related generated files:
 ### Tooling / versions
 - `.mise.toml`: `node = "22"`, `python = "3.12"`
 - Python deps: `requirements.txt` → `beautifulsoup4`, `pydantic`, `pytest` (use `.venv`)
-- Unit tests: `tests/` → `pytest -q` (also via `.github/workflows/unit-tests.yml` on push)
+- Unit tests: `tests/` → `pytest -q`
+- Cypress smoke: `cypress-tests` → `npm run test:ci`
+- CI: `.github/workflows/tests.yml` runs both on every push
 - Cypress lives in `cypress-tests/` only (not a monorepo app)
   - Cypress **16**, config: `cypress.config.js`
   - Specs: `cypress/e2e/smoke.cy.js`, `cypress/e2e/links.cy.js`
