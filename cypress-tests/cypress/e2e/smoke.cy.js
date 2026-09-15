@@ -11,16 +11,17 @@ describe('site smoke', () => {
     cy.get('.filtering button.toggle').should('have.length.at.least', 1)
   })
 
-  it('hides multi-tag apps when any of their tags is turned off (AND)', () => {
+  it('shows apps that contain all selected tags (AND)', () => {
     cy.visit('/apps.html')
     cy.get('.hide-tags').click()
-    cy.get('#2').should('be.visible')
+    cy.get('.toggle-all').click()
+    cy.get('.toggle-ambient').click()
+    cy.get('.toggle-ambient').should('have.class', 'toggle-on')
+    cy.get('#22').should('be.visible')
+    cy.get('#23').should('be.visible')
     cy.get('.toggle-DIY').click()
-    cy.get('.toggle-DIY').should('not.have.class', 'toggle-on')
-    cy.get('.toggle-mustCheck').should('have.class', 'toggle-on')
-    cy.get('#2').should('not.be.visible')
-    cy.get('.toggle-DIY').click()
-    cy.get('#2').should('be.visible')
+    cy.get('#22').should('be.visible')
+    cy.get('#23').should('not.be.visible')
   })
 
   it('loads evaluation, submit, and tags pages', () => {
