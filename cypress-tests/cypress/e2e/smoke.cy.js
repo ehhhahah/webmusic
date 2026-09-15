@@ -11,6 +11,20 @@ describe('site smoke', () => {
     cy.get('.filtering button.toggle').should('have.length.at.least', 1)
   })
 
+  it('keeps multi-tag apps visible when any selected tag still matches', () => {
+    cy.visit('/apps.html')
+    cy.get('.hide-tags').click()
+    cy.get('#2').should('be.visible')
+    cy.get('.toggle-DIY').click()
+    cy.get('.toggle-DIY').should('not.have.class', 'toggle-on')
+    cy.get('.toggle-mustCheck').should('have.class', 'toggle-on')
+    cy.get('#2').should('be.visible')
+    cy.get('.toggle-mustCheck').click()
+    cy.get('.toggle-noveltyArt').click()
+    cy.get('.toggle-openSource').click()
+    cy.get('#2').should('not.be.visible')
+  })
+
   it('loads evaluation, submit, and tags pages', () => {
     cy.visit('/evaluation.html')
     cy.get('body').should('be.visible')
