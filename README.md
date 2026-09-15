@@ -74,7 +74,7 @@ Related files (mostly build artifacts / legacy):
   - `baseUrl`: `http://127.0.0.1:5500`
   - Scripts: `test` / `test:ci` = smoke; `test:links` / `test:ci:all` = include links
 - `npm audit` expected clean on current lockfile (devDependencies only)
-- Pretty URLs: Cloudflare `_redirects` + `serve.json` (`/apps` → `apps.html`, etc.)
+- Pretty URLs: Cloudflare Pages serves `apps.html` at `/apps` natively — **do not** add a `_redirects` rule mapping `/apps` → `/apps.html` (that fights CF’s `/apps.html` → `/apps` redirect and causes `ERR_TOO_MANY_REDIRECTS`). Local pretty URLs are handled by `cypress-tests/local-serve.mjs` (and optional `serve.json` for the `serve` CLI only).
 
 ### Tests caveats
 - **Smoke tests** assert local pages load, `#webapps` has cards, filter buttons render
@@ -95,7 +95,7 @@ Related files (mostly build artifacts / legacy):
 - **Don’t** “upgrade” to Bulma 1 or add a SPA stack unless explicitly asked
 
 ### Hosting notes
-- Cloudflare Pages project; `_redirects` for extensionless routes
+- Cloudflare Pages project; extensionless routes are built-in (no `_redirects` needed for `.html` pages)
 - OG/Twitter meta image: `assets/webmusic-screenshot1.png`
 - `robots.txt`, `site.webmanifest`, Google site verification HTML present
 
