@@ -13,7 +13,7 @@ function renderFilteringButtons() {
         const btn = document.createElement("button");
         btn.innerHTML = "#" + category['tag'];
         btn.type = "button"
-        btn.classList = "tooltip button btn-link is-rounded toggle toggle-on toggle-" + category['tag']
+        btn.classList = "button btn-link is-rounded toggle toggle-on toggle-" + category['tag']
         btn.title = category["desc"]
         btn.onclick = function() { hideShowClassElement(category['tag']); };
 

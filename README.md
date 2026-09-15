@@ -21,13 +21,13 @@ Regenerate HTML from the JSON DB:
 
 ```bash
 source .venv/bin/activate
-python assets/original_article/md_parser.py
+python assets/original_article/generate_site.py
 ```
 
 ## Content model
 
 - Source of truth: `assets/original_article/db-fixed.json` (93 apps)
-- Generator: `assets/original_article/md_parser.py` → `apps.html`, `tagsinfo.html`, nav/head, `script.js`
+- Generator: `assets/original_article/generate_site.py` → `apps.html`, `tagsinfo.html`, nav/head, `script.js`
 - Site is plain HTML/CSS/JS; no app runtime besides Cypress (dev) and BeautifulSoup (build)
 
 ---
@@ -42,24 +42,22 @@ python assets/original_article/md_parser.py
 - Local override: `cypress-tests/local-serve.mjs` rewrites that base to `/` only in HTTP responses so assets resolve locally. `npm run serve` uses this. `npm run serve:raw` serves without rewrite.
 
 ### JSON DB schema (`db-fixed.json`)
+Validated by Pydantic models in `generate_site.py` (`App`, `Catalog`) on every generate.
 Array of app objects. Required keys per app:
-- `id` (number)
-- `link` (string URL)
+- `id` (number, unique, ≥ 1)
+- `link` (non-empty string URL)
 - `title`: `{ "pl": string, "eng": string }`
 - `description`: `{ "pl": string, "eng": string }`
 - `authors`: `[{ "name": string | {pl, eng}, "link"?: string }]`
-- `tags`: `string[]` (must exist in `TAGS_DESCRIPTORS` in `md_parser.py`)
+- `tags`: `string[]` (each must exist in `TAGS_DESCRIPTORS`)
 - `more_links`: `[{ "name": {pl, eng}, "link": string }]` (may be `[]`)
 
-Related files (mostly build artifacts / legacy):
-- `db.json` — older/rawer dump; **not** what the generator reads
+Related generated files:
 - `tags.json` — generated tag list with descriptions
 - `output.html` — intermediate fragment injected into `apps.html`
-- `parsed_data.json` — legacy; may be empty/unused
-- Markdown under `assets/original_article/` — original article source for parsing history
 
-### Generator (`md_parser.py`)
-- Paths are repo-relative via `Path(__file__).resolve().parents[2]` (no machine-specific absolute paths)
+### Generator (`generate_site.py`)
+- Reads and validates `db-fixed.json` via Pydantic (`load_db`); paths are repo-relative via `Path(__file__).resolve().parents[2]`
 - `prettify_db()` sorts tags + apps, then `generate_website()` rebuilds pages
 - Running it rewrites HTML heads/navbars via BeautifulSoup — expect formatting churn
 - Tag button data is written as first line of `script.js`: `const CATEGORIES = [...]`
@@ -67,7 +65,7 @@ Related files (mostly build artifacts / legacy):
 
 ### Tooling / versions
 - `.mise.toml`: `node = "22"`, `python = "3.12"`
-- Python deps: `requirements.txt` → `beautifulsoup4==4.15.0` (use `.venv`)
+- Python deps: `requirements.txt` → `beautifulsoup4==4.15.0`, `pydantic==2.13.5` (use `.venv`)
 - Cypress lives in `cypress-tests/` only (not a monorepo app)
   - Cypress **16**, config: `cypress.config.js`
   - Specs: `cypress/e2e/smoke.cy.js`, `cypress/e2e/links.cy.js`
@@ -87,10 +85,10 @@ Related files (mostly build artifacts / legacy):
 - No bundler, no framework
 
 ### Do / don’t for agents
-- **Do** edit `db-fixed.json` then run `md_parser.py` to refresh listing pages
+- **Do** edit `db-fixed.json` then run `generate_site.py` to refresh listing pages
 - **Do** keep production `<base href="https://webmusic.pages.dev/">` in HTML + generator template
 - **Do** use `local-serve.mjs` for local verification
-- **Don’t** reintroduce hardcoded `/Users/...` paths in `md_parser.py`
+- **Don’t** reintroduce hardcoded `/Users/...` paths in `generate_site.py`
 - **Don’t** commit `.venv/`, `node_modules/`, Cypress videos/screenshots (see `.gitignore`)
 - **Don’t** “upgrade” to Bulma 1 or add a SPA stack unless explicitly asked
 

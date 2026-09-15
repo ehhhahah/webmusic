@@ -39,15 +39,6 @@
                 "link": "https://github.com/pernyblom"
             }
         ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Kod \u017ar\u00f3d\u0142owy",
-                    "eng": "Source code"
-                },
-                "link": "https://github.com/pernyblom/pernyblom.github.io/tree/master/abundant-music"
-            }
-        ],
         "title": {
             "pl": "Abundant Music - generator utwor\u00f3w MIDI",
             "eng": "Abundant Music - MIDI track generator"
@@ -63,6 +54,15 @@
             "noveltyArt",
             "openSource"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy",
+                    "eng": "Source code"
+                },
+                "link": "https://github.com/pernyblom/pernyblom.github.io/tree/master/abundant-music"
+            }
+        ],
         "id": 2
     },
     {
@@ -70,15 +70,6 @@
             {
                 "name": "Evan Feenstra",
                 "link": "https://github.com/Evanfeenstra"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Kod \u017ar\u00f3d\u0142owy",
-                    "eng": "Source code"
-                },
-                "link": "https://github.com/Evanfeenstra/beatpush"
             }
         ],
         "title": {
@@ -98,6 +89,15 @@
             "openSource",
             "sequencer"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy",
+                    "eng": "Source code"
+                },
+                "link": "https://github.com/Evanfeenstra/beatpush"
+            }
+        ],
         "id": 3
     },
     {
@@ -105,15 +105,6 @@
             {
                 "name": "Stuart Keith",
                 "link": "https://stuartkeith.com/"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Kod \u017ar\u00f3d\u0142owy",
-                    "eng": "Source code"
-                },
-                "link": "https://github.com/stuartkeith/webaudiosequencer/"
             }
         ],
         "title": {
@@ -131,6 +122,15 @@
             "openSource",
             "sequencer"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy",
+                    "eng": "Source code"
+                },
+                "link": "https://github.com/stuartkeith/webaudiosequencer/"
+            }
+        ],
         "id": 4
     },
     {
@@ -141,15 +141,6 @@
                     "eng": "Stuart Keith"
                 },
                 "link": "https://stuartkeith.com/"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Kod \u017ar\u00f3d\u0142owy",
-                    "eng": "Source code"
-                },
-                "link": "http://github.com/stuartkeith/reasonml-sequencer"
             }
         ],
         "title": {
@@ -169,6 +160,15 @@
             "sequencer",
             "smallBandwidth"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy",
+                    "eng": "Source code"
+                },
+                "link": "http://github.com/stuartkeith/reasonml-sequencer"
+            }
+        ],
         "id": 5
     },
     {
@@ -176,22 +176,6 @@
             {
                 "name": "Alex Bainter",
                 "link": "https://alexbainter.com/"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Opis algorytmu",
-                    "eng": "Algorithm explained"
-                },
-                "link": "https://medium.com/@metalex9/generating-more-of-my-favorite-aphex-twin-track-cde9b7ecda3a"
-            },
-            {
-                "name": {
-                    "pl": "Kod \u017ar\u00f3d\u0142owy",
-                    "eng": "Source code"
-                },
-                "link": "https://github.com/generative-music/pieces-alex-bainter/blob/master/packages/piece-aisatsana/src/piece.js"
             }
         ],
         "title": {
@@ -211,6 +195,22 @@
             "reconstruction",
             "smallBandwidth"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Opis algorytmu",
+                    "eng": "Algorithm explained"
+                },
+                "link": "https://medium.com/@metalex9/generating-more-of-my-favorite-aphex-twin-track-cde9b7ecda3a"
+            },
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy",
+                    "eng": "Source code"
+                },
+                "link": "https://github.com/generative-music/pieces-alex-bainter/blob/master/packages/piece-aisatsana/src/piece.js"
+            }
+        ],
         "id": 6
     },
     {
@@ -218,15 +218,6 @@
             {
                 "name": "Pantelis Kalogiros",
                 "link": "https://github.com/pkalogiros"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Kod \u017ar\u00f3d\u0142owy",
-                    "eng": "Source code"
-                },
-                "link": "https://github.com/pkalogiros/audiomass"
             }
         ],
         "title": {
@@ -244,6 +235,15 @@
             "openSource",
             "tool"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy",
+                    "eng": "Source code"
+                },
+                "link": "https://github.com/pkalogiros/audiomass"
+            }
+        ],
         "id": 7
     },
     {
@@ -253,7 +253,6 @@
                 "link": "https://github.com/Xaviaro"
             }
         ],
-        "more_links": [],
         "title": {
             "pl": "AudioSauna",
             "eng": "AudioSauna"
@@ -268,6 +267,7 @@
             "DAW",
             "tool"
         ],
+        "more_links": [],
         "id": 8
     },
     {
@@ -275,15 +275,6 @@
             {
                 "name": "Conversion-Tool.com",
                 "link": "https://www.conversion-tool.com/"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Lista takich narz\u0119dzie do zainstalowania lokalnie",
-                    "eng": "List of similar tools to install locally"
-                },
-                "link": "https://gist.github.com/natowi/d26c7e97443ec97e8032fb7e7596f0b0"
             }
         ],
         "title": {
@@ -299,19 +290,19 @@
             "commercial",
             "tool"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Lista takich narz\u0119dzie do zainstalowania lokalnie",
+                    "eng": "List of similar tools to install locally"
+                },
+                "link": "https://gist.github.com/natowi/d26c7e97443ec97e8032fb7e7596f0b0"
+            }
+        ],
         "id": 9
     },
     {
         "authors": [],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Wsparcie dla tw\u00f3rc\u00f3w projektu",
-                    "eng": "Authors Patreon"
-                },
-                "link": "https://www.patreon.com/audiotool"
-            }
-        ],
         "title": {
             "pl": "Audiotool",
             "eng": "Audiotool"
@@ -325,6 +316,15 @@
             "DAW",
             "tool"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Wsparcie dla tw\u00f3rc\u00f3w projektu",
+                    "eng": "Authors Patreon"
+                },
+                "link": "https://www.patreon.com/audiotool"
+            }
+        ],
         "id": 10
     },
     {
@@ -337,7 +337,6 @@
                 "link": "https://bandlabtechnologies.com/"
             }
         ],
-        "more_links": [],
         "title": {
             "pl": "BandLab",
             "eng": "BandLab"
@@ -351,6 +350,7 @@
             "DAW",
             "tool"
         ],
+        "more_links": [],
         "id": 11
     },
     {
@@ -390,6 +390,21 @@
                 "link": "http://www.johnnesky.com/"
             }
         ],
+        "title": {
+            "pl": "Beepbox",
+            "eng": "Beepbox"
+        },
+        "link": "http://beepbox.co",
+        "description": {
+            "pl": "Autor podpisuje ten projekt jako przegl\u0105darkowy program do tworzenia prostych szkic\u00f3w melodii lub utwor\u00f3w i dzielenia si\u0119 nimi z innymi (ka\u017cda konfiguracja aplikacji posiada sw\u00f3j unikalny adres URL, wi\u0119c \u017ceby pokaza\u0107 dzie\u0142o znajomemu, wystarczy skopiowa\u0107 link z paska adresu w przegl\u0105darce). Aczkolwiek patrz\u0105c na to, jak mocno ten open-sourcowy projekt si\u0119 rozwin\u0105\u0142, mo\u017cemy powiedzie\u0107 \u017ce to ju\u017c co\u015b wi\u0119cej ni\u017c tylko aplikacja do szybkich szkic\u00f3w. Poza mo\u017cliwo\u015bci\u0105 komponowania utwor\u00f3w na siatce zaimplementowana jest te\u017c funkcja zmiany r\u00f3\u017cnych parametr\u00f3w syntezy przygotowanych ju\u017c przez tw\u00f3rc\u0119 preset\u00f3w. ",
+            "eng": "Browser program made for creating simple drafts of melodies or songs and sharing them with others (each configuration within an app has its own unique URL address). It has pretty strong community, that shares their work made with this tool."
+        },
+        "tags": [
+            "DIY",
+            "openSource",
+            "smallBandwidth",
+            "tool"
+        ],
         "more_links": [
             {
                 "name": {
@@ -406,21 +421,6 @@
                 "link": "https://twitter.com/beepboxco"
             }
         ],
-        "title": {
-            "pl": "Beepbox",
-            "eng": "Beepbox"
-        },
-        "link": "http://beepbox.co",
-        "description": {
-            "pl": "Autor podpisuje ten projekt jako przegl\u0105darkowy program do tworzenia prostych szkic\u00f3w melodii lub utwor\u00f3w i dzielenia si\u0119 nimi z innymi (ka\u017cda konfiguracja aplikacji posiada sw\u00f3j unikalny adres URL, wi\u0119c \u017ceby pokaza\u0107 dzie\u0142o znajomemu, wystarczy skopiowa\u0107 link z paska adresu w przegl\u0105darce). Aczkolwiek patrz\u0105c na to, jak mocno ten open-sourcowy projekt si\u0119 rozwin\u0105\u0142, mo\u017cemy powiedzie\u0107 \u017ce to ju\u017c co\u015b wi\u0119cej ni\u017c tylko aplikacja do szybkich szkic\u00f3w. Poza mo\u017cliwo\u015bci\u0105 komponowania utwor\u00f3w na siatce zaimplementowana jest te\u017c funkcja zmiany r\u00f3\u017cnych parametr\u00f3w syntezy przygotowanych ju\u017c przez tw\u00f3rc\u0119 preset\u00f3w. ",
-            "eng": "Browser program made for creating simple drafts of melodies or songs and sharing them with others (each configuration within an app has its own unique URL address). It has pretty strong community, that shares their work made with this tool."
-        },
-        "tags": [
-            "DIY",
-            "openSource",
-            "smallBandwidth",
-            "tool"
-        ],
         "id": 12
     },
     {
@@ -428,15 +428,6 @@
             {
                 "name": "Alex Bainter",
                 "link": "https://alexbainter.com/"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Kod \u017ar\u00f3d\u0142owy",
-                    "eng": "Source code"
-                },
-                "link": "https://github.com/generative-music/blossom"
             }
         ],
         "title": {
@@ -456,6 +447,15 @@
             "reconstruction",
             "smallBandwidth"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy",
+                    "eng": "Source code"
+                },
+                "link": "https://github.com/generative-music/blossom"
+            }
+        ],
         "id": 13
     },
     {
@@ -463,15 +463,6 @@
             {
                 "name": "Tero Parviainen",
                 "link": "http://teropa.info"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Kod \u017ar\u00f3d\u0142owy",
-                    "eng": "Source code"
-                },
-                "link": "https://codepen.io/teropa/pen/PoZprMo"
             }
         ],
         "title": {
@@ -490,6 +481,15 @@
             "smallBandwidth",
             "tool"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy",
+                    "eng": "Source code"
+                },
+                "link": "https://codepen.io/teropa/pen/PoZprMo"
+            }
+        ],
         "id": 14
     },
     {
@@ -500,15 +500,6 @@
                     "eng": "Google Experiments team"
                 },
                 "link": "https://experiments.withgoogle.com/"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Kod \u017ar\u00f3d\u0142owy",
-                    "eng": "Source code"
-                },
-                "link": "https://github.com/googlecreativelab/chrome-music-lab"
             }
         ],
         "title": {
@@ -527,6 +518,15 @@
             "limitedVision",
             "openSource"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy",
+                    "eng": "Source code"
+                },
+                "link": "https://github.com/googlecreativelab/chrome-music-lab"
+            }
+        ],
         "id": 15
     },
     {
@@ -537,15 +537,6 @@
                     "eng": "Brian Foo"
                 },
                 "link": "https://brianfoo.com/"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Kod \u017ar\u00f3d\u0142owy",
-                    "eng": "Source code"
-                },
-                "link": "https://github.com/LibraryOfCongress/citizen-dj"
             }
         ],
         "title": {
@@ -562,6 +553,15 @@
             "openSource",
             "sequencer"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy",
+                    "eng": "Source code"
+                },
+                "link": "https://github.com/LibraryOfCongress/citizen-dj"
+            }
+        ],
         "id": 16
     },
     {
@@ -571,15 +571,6 @@
                     "pl": "    brak informacji\n",
                     "eng": "no info provided\n"
                 }
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Praca, wyja\u015bniaj\u0105ca dzia\u0142anie tego typu aplikacji",
-                    "eng": "Paper explaining how such apps work"
-                },
-                "link": "https://www.jstor.org/stable/10.1086/665048?seq=1#metadata_info_tab_contents"
             }
         ],
         "title": {
@@ -595,6 +586,15 @@
             "backgroundMuzak",
             "commercial"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Praca, wyja\u015bniaj\u0105ca dzia\u0142anie tego typu aplikacji",
+                    "eng": "Paper explaining how such apps work"
+                },
+                "link": "https://www.jstor.org/stable/10.1086/665048?seq=1#metadata_info_tab_contents"
+            }
+        ],
         "id": 17
     },
     {
@@ -603,6 +603,21 @@
                 "name": "Glenn McDonald",
                 "link": "https://twitter.com/glenn_mcdonald"
             }
+        ],
+        "title": {
+            "pl": "Wszystkie mo\u017cliwe statystyki Spotify zebrane w jednym miejscu",
+            "eng": "Comprehensive colletion of Spotify stats"
+        },
+        "link": "http://everynoise.com",
+        "description": {
+            "pl": "Mo\u017cna sprawdzi\u0107 czego s\u0142uchaj\u0105 ludzie w Twoim mie\u015bcie albo na uczelni. Cho\u0107 zdaje si\u0119, \u017ce autorzy pokusili si\u0119 o jakie\u015b dzikie odsiewanie rzeczy bardziej popularnych, \u017ceby wskaza\u0107 dane bardziej charakterystyczne dla wyszukiwania.",
+            "eng": "The page lets users look up various Spotify trends and stats like the most popular music in their city or on their campus. It seems like to make the stats more representative of a given place, the authors filtered off most popular music worldwide."
+        },
+        "tags": [
+            "bigTech",
+            "descriptive",
+            "longRead",
+            "mustCheck"
         ],
         "more_links": [
             {
@@ -662,21 +677,6 @@
                 "link": "http://everynoise.com/gender_tldr.html"
             }
         ],
-        "title": {
-            "pl": "Wszystkie mo\u017cliwe statystyki Spotify zebrane w jednym miejscu",
-            "eng": "Comprehensive colletion of Spotify stats"
-        },
-        "link": "http://everynoise.com",
-        "description": {
-            "pl": "Mo\u017cna sprawdzi\u0107 czego s\u0142uchaj\u0105 ludzie w Twoim mie\u015bcie albo na uczelni. Cho\u0107 zdaje si\u0119, \u017ce autorzy pokusili si\u0119 o jakie\u015b dzikie odsiewanie rzeczy bardziej popularnych, \u017ceby wskaza\u0107 dane bardziej charakterystyczne dla wyszukiwania.",
-            "eng": "The page lets users look up various Spotify trends and stats like the most popular music in their city or on their campus. It seems like to make the stats more representative of a given place, the authors filtered off most popular music worldwide."
-        },
-        "tags": [
-            "bigTech",
-            "descriptive",
-            "longRead",
-            "mustCheck"
-        ],
         "id": 18
     },
     {
@@ -686,15 +686,6 @@
                     "pl": "pracownicy Universities of Huddersfield and Leeds",
                     "eng": "Academic Personnel of Universities of Huddersfield and Leeds"
                 }
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "User guide",
-                    "eng": "User guide"
-                },
-                "link": "https://cageconcert.org/wp-content/uploads/2019/11/John-Cage-Concert-Player-Guide-1.pdf"
             }
         ],
         "title": {
@@ -713,6 +704,15 @@
             "longRead",
             "reconstruction"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "User guide",
+                    "eng": "User guide"
+                },
+                "link": "https://cageconcert.org/wp-content/uploads/2019/11/John-Cage-Concert-Player-Guide-1.pdf"
+            }
+        ],
         "id": 19
     },
     {
@@ -723,15 +723,6 @@
                     "eng": "Tero Parviainen"
                 },
                 "link": "http://teropa.info"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Kod \u017ar\u00f3d\u0142owy",
-                    "eng": "Source code"
-                },
-                "link": "https://codepen.io/teropa/pen/QxLrMp"
             }
         ],
         "title": {
@@ -748,6 +739,15 @@
             "limitedVision",
             "openSource"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy",
+                    "eng": "Source code"
+                },
+                "link": "https://codepen.io/teropa/pen/QxLrMp"
+            }
+        ],
         "id": 20
     },
     {
@@ -755,15 +755,6 @@
             {
                 "name": "Alex Bainter",
                 "link": "https://alexbainter.com/"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Kod \u017ar\u00f3d\u0142owy",
-                    "eng": "Source code"
-                },
-                "link": "https://github.com/metalex9/corruption-loops"
             }
         ],
         "title": {
@@ -782,6 +773,15 @@
             "reconstruction",
             "smallBandwidth"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy",
+                    "eng": "Source code"
+                },
+                "link": "https://github.com/metalex9/corruption-loops"
+            }
+        ],
         "id": 21
     },
     {
@@ -792,15 +792,6 @@
                     "eng": "Tero Parviainen"
                 },
                 "link": "http://teropa.info"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Kod \u017ar\u00f3d\u0142owy",
-                    "eng": "Source code"
-                },
-                "link": "https://codepen.io/teropa/pen/zpdwRY"
             }
         ],
         "title": {
@@ -819,6 +810,15 @@
             "noveltyArt",
             "openSource"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy",
+                    "eng": "Source code"
+                },
+                "link": "https://codepen.io/teropa/pen/zpdwRY"
+            }
+        ],
         "id": 22
     },
     {
@@ -828,15 +828,6 @@
                     "pl": "brak autora?",
                     "eng": "author missing"
                 }
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Kod \u017ar\u00f3d\u0142owy innego dewelopera, ale opieraj\u0105cy si\u0119 na tym samym utworze",
-                    "eng": "Source code of other developer, that is based on the same piece"
-                },
-                "link": "https://github.com/teropa/discreetmusic.js"
             }
         ],
         "title": {
@@ -857,6 +848,15 @@
             "smallBandwidth",
             "visual"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy innego dewelopera, ale opieraj\u0105cy si\u0119 na tym samym utworze",
+                    "eng": "Source code of other developer, that is based on the same piece"
+                },
+                "link": "https://github.com/teropa/discreetmusic.js"
+            }
+        ],
         "id": 23
     },
     {
@@ -870,7 +870,6 @@
                 "link": "https://yotammann.info/"
             }
         ],
-        "more_links": [],
         "title": {
             "pl": "",
             "eng": "Dot Piano"
@@ -886,6 +885,7 @@
             "smallBandwidth",
             "visual"
         ],
+        "more_links": [],
         "id": 24
     },
     {
@@ -895,7 +895,6 @@
                 "link": "https://www.buymeacoffee.com/erkam?ref=dnl0"
             }
         ],
-        "more_links": [],
         "title": {
             "pl": "Jed\u017a i s\u0142uchaj",
             "eng": "Drive and listen"
@@ -908,6 +907,7 @@
         "tags": [
             "DIY"
         ],
+        "more_links": [],
         "id": 25
     },
     {
@@ -915,22 +915,6 @@
             {
                 "name": "Tero Parviainen",
                 "link": "http://teropa.info"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Kod \u017ar\u00f3d\u0142owy",
-                    "eng": "Source code"
-                },
-                "link": "https://codepen.io/swallez/pen/zVdarx"
-            },
-            {
-                "name": {
-                    "pl": "Wizualizacja za pomoc\u0105 grafu nut zagranych przez u\u017cytkownika",
-                    "eng": "Graph visualization of notes played by user"
-                },
-                "link": "https://codepen.io/teropa/full/JJNKxW"
             }
         ],
         "title": {
@@ -951,6 +935,22 @@
             "reconstruction",
             "visual"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy",
+                    "eng": "Source code"
+                },
+                "link": "https://codepen.io/swallez/pen/zVdarx"
+            },
+            {
+                "name": {
+                    "pl": "Wizualizacja za pomoc\u0105 grafu nut zagranych przez u\u017cytkownika",
+                    "eng": "Graph visualization of notes played by user"
+                },
+                "link": "https://codepen.io/teropa/full/JJNKxW"
+            }
+        ],
         "id": 26
     },
     {
@@ -958,22 +958,6 @@
             {
                 "name": "Tero Parviainen",
                 "link": "http://teropa.info"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Kod \u017ar\u00f3d\u0142owy",
-                    "eng": "Source code"
-                },
-                "link": "https://codepen.io/teropa/pen/zPEYbY"
-            },
-            {
-                "name": {
-                    "pl": "Lekka modyfikacja innego autora",
-                    "eng": "Slight modification"
-                },
-                "link": "https://codepen.io/shaunlebron/full/rYGmRv/"
             }
         ],
         "title": {
@@ -990,6 +974,22 @@
             "math",
             "sequencer",
             "smallBandwidth"
+        ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy",
+                    "eng": "Source code"
+                },
+                "link": "https://codepen.io/teropa/pen/zPEYbY"
+            },
+            {
+                "name": {
+                    "pl": "Lekka modyfikacja innego autora",
+                    "eng": "Slight modification"
+                },
+                "link": "https://codepen.io/shaunlebron/full/rYGmRv/"
+            }
         ],
         "id": 27
     },
@@ -1008,22 +1008,6 @@
                 "link": ""
             }
         ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Kod \u017ar\u00f3d\u0142owy",
-                    "eng": "Source code"
-                },
-                "link": "https://github.com/ffont/freesound-loop-generator"
-            },
-            {
-                "name": {
-                    "pl": "Jaki\u015b inny sekwencer, ale jest tak zagmatwany \u017ce nie wiem jak dzia\u0142a do ko\u0144ca",
-                    "eng": "Similar sequencer, but way more sophisticated"
-                },
-                "link": "https://tamats.com/apps/idradio/"
-            }
-        ],
         "title": {
             "pl": "Freesound loop generator",
             "eng": "FreeSound loop generator"
@@ -1040,6 +1024,22 @@
             "openSource",
             "sequencer"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy",
+                    "eng": "Source code"
+                },
+                "link": "https://github.com/ffont/freesound-loop-generator"
+            },
+            {
+                "name": {
+                    "pl": "Jaki\u015b inny sekwencer, ale jest tak zagmatwany \u017ce nie wiem jak dzia\u0142a do ko\u0144ca",
+                    "eng": "Similar sequencer, but way more sophisticated"
+                },
+                "link": "https://tamats.com/apps/idradio/"
+            }
+        ],
         "id": 28
     },
     {
@@ -1051,6 +1051,21 @@
                 },
                 "link": "https://freesound.org/help/about/"
             }
+        ],
+        "title": {
+            "pl": "Freesound - agregator sampli online",
+            "eng": "Freesound - online sample aggregator"
+        },
+        "link": "https://freesound.org",
+        "description": {
+            "pl": "My\u015bl\u0119, \u017ce nikomu nie trzeba tej strony przedstawia\u0107. Niemniej warto zaznaczy\u0107, \u017ce jest to projekt open source i przy tej okazji chcia\u0142em wklei\u0107 kilka podobnych stron.",
+            "eng": "Most user are probably familiar with this site. Nevertheless let it be pointed out that it is an open source project, on this occasion we would like to link to a couple of similar sites."
+        },
+        "tags": [
+            "classic",
+            "FreeSound",
+            "openSource",
+            "tool"
         ],
         "more_links": [
             {
@@ -1089,21 +1104,6 @@
                 "link": "https://github.com/MTG/freesound"
             }
         ],
-        "title": {
-            "pl": "Freesound - agregator sampli online",
-            "eng": "Freesound - online sample aggregator"
-        },
-        "link": "https://freesound.org",
-        "description": {
-            "pl": "My\u015bl\u0119, \u017ce nikomu nie trzeba tej strony przedstawia\u0107. Niemniej warto zaznaczy\u0107, \u017ce jest to projekt open source i przy tej okazji chcia\u0142em wklei\u0107 kilka podobnych stron.",
-            "eng": "Most user are probably familiar with this site. Nevertheless let it be pointed out that it is an open source project, on this occasion we would like to link to a couple of similar sites."
-        },
-        "tags": [
-            "classic",
-            "FreeSound",
-            "openSource",
-            "tool"
-        ],
         "id": 29
     },
     {
@@ -1114,22 +1114,6 @@
                     "eng": "AudioCommons"
                 },
                 "link": "https://www.audiocommons.org/"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Wyja\u015bnienie projektu i u\u017cytych technologii",
-                    "eng": "Project and tech stack explained"
-                },
-                "link": "http://5.2.16.88/Freesound-Trip/SIC%202017%20audioCommons%20version3.pdf"
-            },
-            {
-                "name": {
-                    "pl": "Kod \u017ar\u00f3d\u0142owy",
-                    "eng": "Source code"
-                },
-                "link": "https://github.com/dnlopez/Freesound-Trip"
             }
         ],
         "title": {
@@ -1147,6 +1131,22 @@
             "openSource",
             "sequencer"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Wyja\u015bnienie projektu i u\u017cytych technologii",
+                    "eng": "Project and tech stack explained"
+                },
+                "link": "http://5.2.16.88/Freesound-Trip/SIC%202017%20audioCommons%20version3.pdf"
+            },
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy",
+                    "eng": "Source code"
+                },
+                "link": "https://github.com/dnlopez/Freesound-Trip"
+            }
+        ],
         "id": 30
     },
     {
@@ -1154,15 +1154,6 @@
             {
                 "name": "Alex Bainter",
                 "link": "https://alexbainter.com/"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Kod \u017ar\u00f3d\u0142owy",
-                    "eng": "Source code"
-                },
-                "link": "https://github.com/generative-music/generative.fm"
             }
         ],
         "title": {
@@ -1180,6 +1171,15 @@
             "noveltyArt",
             "openSource"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy",
+                    "eng": "Source code"
+                },
+                "link": "https://github.com/generative-music/generative.fm"
+            }
+        ],
         "id": 31
     },
     {
@@ -1187,22 +1187,6 @@
             {
                 "name": "Sudhanshu Mishra",
                 "link": "https://github.com/debugger22"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Kod \u017ar\u00f3d\u0142owy",
-                    "eng": "Source code"
-                },
-                "link": "https://github.com/debugger22/github-audio"
-            },
-            {
-                "name": {
-                    "pl": "Projekt \u201clisten to Wikipedia\u201d, na kt\u00f3rym opiera\u0142 si\u0119 autor",
-                    "eng": "'Listen to Wikipedia' project that author was inspired by"
-                },
-                "link": "http://listen.hatnote.com/"
             }
         ],
         "title": {
@@ -1222,6 +1206,22 @@
             "openSource",
             "realTime"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy",
+                    "eng": "Source code"
+                },
+                "link": "https://github.com/debugger22/github-audio"
+            },
+            {
+                "name": {
+                    "pl": "Projekt \u201clisten to Wikipedia\u201d, na kt\u00f3rym opiera\u0142 si\u0119 autor",
+                    "eng": "'Listen to Wikipedia' project that author was inspired by"
+                },
+                "link": "http://listen.hatnote.com/"
+            }
+        ],
         "id": 32
     },
     {
@@ -1234,7 +1234,6 @@
                 "link": "https://ctpt.co/"
             }
         ],
-        "more_links": [],
         "title": {
             "pl": "Globalny sekwencer",
             "eng": "Global sequencer"
@@ -1249,6 +1248,7 @@
             "realTime",
             "sequencer"
         ],
+        "more_links": [],
         "id": 33
     },
     {
@@ -1256,15 +1256,6 @@
             {
                 "name": "Ed Ball",
                 "link": "https://github.com/edwardball"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Kod \u017ar\u00f3d\u0142owy",
-                    "eng": "Source code"
-                },
-                "link": "https://codepen.io/edball/pen/GoYeQZ"
             }
         ],
         "title": {
@@ -1283,6 +1274,15 @@
             "tool",
             "visual"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy",
+                    "eng": "Source code"
+                },
+                "link": "https://codepen.io/edball/pen/GoYeQZ"
+            }
+        ],
         "id": 34
     },
     {
@@ -1292,7 +1292,6 @@
                 "link": "https://www.concerthotels.com/"
             }
         ],
-        "more_links": [],
         "title": {
             "pl": "Tester wyczucia rytmu",
             "eng": "Got rhythm?"
@@ -1309,6 +1308,7 @@
             "limitedVision",
             "smallBandwidth"
         ],
+        "more_links": [],
         "id": 35
     },
     {
@@ -1318,7 +1318,6 @@
                 "link": "http://teropa.info"
             }
         ],
-        "more_links": [],
         "title": {
             "pl": "Poradnik tworzenia webowych aplikacji muzycznych w JavaScript",
             "eng": "Guide to creating web apps in JavaScript"
@@ -1333,6 +1332,7 @@
             "learn",
             "smallBandwidth"
         ],
+        "more_links": [],
         "id": 36
     },
     {
@@ -1342,7 +1342,6 @@
                 "link": "https://www.mattmccorkle.com/"
             }
         ],
-        "more_links": [],
         "title": {
             "pl": "Generator Halloweenowej muzyki",
             "eng": "Halloween music generator"
@@ -1359,6 +1358,7 @@
             "reconstruction",
             "smallBandwidth"
         ],
+        "more_links": [],
         "id": 37
     },
     {
@@ -1369,15 +1369,6 @@
                     "eng": "Google Experiments team"
                 },
                 "link": "https://experiments.withgoogle.com/"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Wyja\u015bnienie dzia\u0142ania",
-                    "eng": "Explanation of how it works"
-                },
-                "link": "https://medium.com/tensorflow/real-time-human-pose-estimation-in-the-browser-with-tensorflow-js-7dd0bc881cd5"
             }
         ],
         "title": {
@@ -1393,6 +1384,15 @@
             "bigTech",
             "forKids"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Wyja\u015bnienie dzia\u0142ania",
+                    "eng": "Explanation of how it works"
+                },
+                "link": "https://medium.com/tensorflow/real-time-human-pose-estimation-in-the-browser-with-tensorflow-js-7dd0bc881cd5"
+            }
+        ],
         "id": 38
     },
     {
@@ -1402,7 +1402,6 @@
                 "link": "http://teropa.info"
             }
         ],
-        "more_links": [],
         "title": {
             "pl": "Jak dzia\u0142a muzyka generatywna?",
             "eng": "How Generative Music Works"
@@ -1418,6 +1417,7 @@
             "longRead",
             "mustCheck"
         ],
+        "more_links": [],
         "id": 39
     },
     {
@@ -1428,22 +1428,6 @@
                     "eng": "Alexander Chen"
                 },
                 "link": "http://www.chenalexander.com/"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Podobne dzie\u0142o napisane przez Briana Foo z dok\u0142adnym t\u0142umaczeniem i \u017ar\u00f3d\u0142ami tego pomys\u0142u",
-                    "eng": "Similar app made by Brian Foo, with more detailed explanation and source of the idea"
-                },
-                "link": "https://datadrivendj.com/tracks/subway/"
-            },
-            {
-                "name": {
-                    "pl": "Analogicznie, jak brzmi\u0105 tramwaje w Helsinkach, z kodem \u017ar\u00f3d\u0142owym",
-                    "eng": "Similar app, but based on Helsinki city"
-                },
-                "link": "https://codepen.io/teropa/pen/mBbPEe"
             }
         ],
         "title": {
@@ -1461,6 +1445,22 @@
             "forKids",
             "realTime"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Podobne dzie\u0142o napisane przez Briana Foo z dok\u0142adnym t\u0142umaczeniem i \u017ar\u00f3d\u0142ami tego pomys\u0142u",
+                    "eng": "Similar app made by Brian Foo, with more detailed explanation and source of the idea"
+                },
+                "link": "https://datadrivendj.com/tracks/subway/"
+            },
+            {
+                "name": {
+                    "pl": "Analogicznie, jak brzmi\u0105 tramwaje w Helsinkach, z kodem \u017ar\u00f3d\u0142owym",
+                    "eng": "Similar app, but based on Helsinki city"
+                },
+                "link": "https://codepen.io/teropa/pen/mBbPEe"
+            }
+        ],
         "id": 40
     },
     {
@@ -1470,7 +1470,6 @@
                 "link": "http://venuspatrol.nfshost.com/"
             }
         ],
-        "more_links": [],
         "title": {
             "pl": "Symulacja modulacji ludzkiego g\u0142osu",
             "eng": "Human voice modulation"
@@ -1487,6 +1486,7 @@
             "learn",
             "physic"
         ],
+        "more_links": [],
         "id": 41
     },
     {
@@ -1494,15 +1494,6 @@
             {
                 "name": "Qosmo",
                 "link": "https://qosmo.jp/en/"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "",
-                    "eng": "Used sounds library"
-                },
-                "link": "https://imaginarysoundscape.net/soundfiles.txt"
             }
         ],
         "title": {
@@ -1519,6 +1510,15 @@
             "AI",
             "mustCheck"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "",
+                    "eng": "Used sounds library"
+                },
+                "link": "https://imaginarysoundscape.net/soundfiles.txt"
+            }
+        ],
         "id": 42
     },
     {
@@ -1529,15 +1529,6 @@
                     "eng": "Ableton team"
                 },
                 "link": "https://www.ableton.com/"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Nauka tworzenia muzyki w og\u00f3le, te\u017c od Abletona",
-                    "eng": "Learn how to create music, made by the same authors"
-                },
-                "link": "https://learningmusic.ableton.com/"
             }
         ],
         "title": {
@@ -1553,6 +1544,15 @@
             "bigTech",
             "learn",
             "mustCheck"
+        ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Nauka tworzenia muzyki w og\u00f3le, te\u017c od Abletona",
+                    "eng": "Learn how to create music, made by the same authors"
+                },
+                "link": "https://learningmusic.ableton.com/"
+            }
         ],
         "id": 43
     },
@@ -1602,7 +1602,6 @@
                 "link": "https://twitter.com/bronzemuzic"
             }
         ],
-        "more_links": [],
         "title": {
             "pl": "\u201cJasmine\u201d Jai Paul",
             "eng": "\u201cJasmine\u201d Jai Paul"
@@ -1617,6 +1616,7 @@
             "AI",
             "reconstruction"
         ],
+        "more_links": [],
         "id": 45
     },
     {
@@ -1627,15 +1627,6 @@
                     "eng": "Tero Parviainen"
                 },
                 "link": "http://teropa.info"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Kod \u017ar\u00f3d\u0142owy",
-                    "eng": "Source code"
-                },
-                "link": "https://codepen.io/teropa/pen/rdoPbG"
             }
         ],
         "title": {
@@ -1653,6 +1644,15 @@
             "openSource",
             "sequencer"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy",
+                    "eng": "Source code"
+                },
+                "link": "https://codepen.io/teropa/pen/rdoPbG"
+            }
+        ],
         "id": 46
     },
     {
@@ -1664,6 +1664,20 @@
                 },
                 "link": "http://teropa.info"
             }
+        ],
+        "title": {
+            "pl": "L-drones",
+            "eng": "L-drones"
+        },
+        "link": "https://codepen.io/teropa/full/opjrBE",
+        "description": {
+            "pl": "Kolejna aplikacja autorstwa Tero Parviainena, kt\u00f3rej dzia\u0142ania wyt\u0142umaczy\u0107 nie potrafi\u0119 w spos\u00f3b sensowny i rzeczowy - jedyne co rozumiem, \u017ce do\u015b\u0107 mocno opiera si\u0119 na zasadach l-system\u00f3w. Ponownie wi\u0119c zapraszam do relaksacji. ",
+            "eng": "Another one of Tero's hard to explain, but very relaxing apps. Enjoy."
+        },
+        "tags": [
+            "DIY",
+            "noveltyArt",
+            "openSource"
         ],
         "more_links": [
             {
@@ -1688,20 +1702,6 @@
                 "link": "https://codepen.io/teropa/details/vYLRBbV"
             }
         ],
-        "title": {
-            "pl": "L-drones",
-            "eng": "L-drones"
-        },
-        "link": "https://codepen.io/teropa/full/opjrBE",
-        "description": {
-            "pl": "Kolejna aplikacja autorstwa Tero Parviainena, kt\u00f3rej dzia\u0142ania wyt\u0142umaczy\u0107 nie potrafi\u0119 w spos\u00f3b sensowny i rzeczowy - jedyne co rozumiem, \u017ce do\u015b\u0107 mocno opiera si\u0119 na zasadach l-system\u00f3w. Ponownie wi\u0119c zapraszam do relaksacji. ",
-            "eng": "Another one of Tero's hard to explain, but very relaxing apps. Enjoy."
-        },
-        "tags": [
-            "DIY",
-            "noveltyArt",
-            "openSource"
-        ],
         "id": 47
     },
     {
@@ -1709,15 +1709,6 @@
             {
                 "name": "Maximillian Laumeister",
                 "link": "https://lupine.dev/"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Kod \u017ar\u00f3d\u0142owy",
-                    "eng": "Source code"
-                },
-                "link": "https://github.com/MaxLaumeister/bitlisten"
             }
         ],
         "title": {
@@ -1733,6 +1724,15 @@
             "accessible",
             "DIY",
             "realTime"
+        ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy",
+                    "eng": "Source code"
+                },
+                "link": "https://github.com/MaxLaumeister/bitlisten"
+            }
         ],
         "id": 48
     },
@@ -1781,15 +1781,6 @@
                 "link": ""
             }
         ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "O projekcie",
-                    "eng": "About"
-                },
-                "link": "https://www.marpi.studio/exhibitions/mass-migrations"
-            }
-        ],
         "title": {
             "pl": "\u201cMass Migration\u201d",
             "eng": "\u201cMass Migration\u201d"
@@ -1804,6 +1795,15 @@
             "noveltyArt",
             "visual"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "O projekcie",
+                    "eng": "About"
+                },
+                "link": "https://www.marpi.studio/exhibitions/mass-migrations"
+            }
+        ],
         "id": 49
     },
     {
@@ -1813,7 +1813,6 @@
                 "link": "https://gardos-software.com/"
             }
         ],
-        "more_links": [],
         "title": {
             "pl": "Melobytes - zbi\u00f3r narz\u0119dzi",
             "eng": "Melobytes - collection of tools"
@@ -1827,6 +1826,7 @@
             "commercial",
             "tool"
         ],
+        "more_links": [],
         "id": 50
     },
     {
@@ -1836,7 +1836,6 @@
                 "link": "https://experiments.withgoogle.com/"
             }
         ],
-        "more_links": [],
         "title": {
             "pl": "Melody Mixer",
             "eng": "Melody Mixer"
@@ -1851,6 +1850,7 @@
             "bigTech",
             "tool"
         ],
+        "more_links": [],
         "id": 51
     },
     {
@@ -1858,15 +1858,6 @@
             {
                 "name": "PlayOnlineDiceGames.com",
                 "link": "http://www.playonlinedicegames.com/"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Artyku\u0142 na Wikipedii o dziele",
-                    "eng": "Wikipedia article about the piece"
-                },
-                "link": "https://en.wikipedia.org/wiki/Musikalisches_W%C3%BCrfelspiel"
             }
         ],
         "title": {
@@ -1882,6 +1873,15 @@
             "classical",
             "reconstruction"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Artyku\u0142 na Wikipedii o dziele",
+                    "eng": "Wikipedia article about the piece"
+                },
+                "link": "https://en.wikipedia.org/wiki/Musikalisches_W%C3%BCrfelspiel"
+            }
+        ],
         "id": 52
     },
     {
@@ -1889,15 +1889,6 @@
             {
                 "name": "Brian Foo",
                 "link": "https://brianfoo.com/"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Kod \u017ar\u00f3d\u0142owy",
-                    "eng": "Source code"
-                },
-                "link": "https://github.com/beefoo/latitude"
             }
         ],
         "title": {
@@ -1916,6 +1907,15 @@
             "openSource",
             "physic"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy",
+                    "eng": "Source code"
+                },
+                "link": "https://github.com/beefoo/latitude"
+            }
+        ],
         "id": 53
     },
     {
@@ -1923,22 +1923,6 @@
             {
                 "name": "Brian Foo",
                 "link": "https://brianfoo.com/"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Kod \u017ar\u00f3d\u0142owy",
-                    "eng": "Source code"
-                },
-                "link": "https://github.com/beefoo/eclipticalis"
-            },
-            {
-                "name": {
-                    "pl": "Otwarta baza danych dotycz\u0105cych gwiazd",
-                    "eng": "Open database on stars"
-                },
-                "link": "http://www.astronexus.com/hyg"
             }
         ],
         "title": {
@@ -1957,6 +1941,22 @@
             "openSource",
             "reconstruction"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy",
+                    "eng": "Source code"
+                },
+                "link": "https://github.com/beefoo/eclipticalis"
+            },
+            {
+                "name": {
+                    "pl": "Otwarta baza danych dotycz\u0105cych gwiazd",
+                    "eng": "Open database on stars"
+                },
+                "link": "http://www.astronexus.com/hyg"
+            }
+        ],
         "id": 54
     },
     {
@@ -1967,22 +1967,6 @@
                     "eng": "Ales Tsurko"
                 },
                 "link": "http://alestsurko.by"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Kod \u017ar\u00f3d\u0142owy",
-                    "eng": "Source code"
-                },
-                "link": "https://github.com/ales-tsurko/microscale"
-            },
-            {
-                "name": {
-                    "pl": "Album w wydaniu fizycznym, zawieraj\u0105cy zapis muzyki wygenerowanej przez ten projekt autorstwa tw\u00f3rcy",
-                    "eng": "Physical copy of an album containing music generated by the authors project"
-                },
-                "link": "https://preservedsound.bandcamp.com/album/microscale"
             }
         ],
         "title": {
@@ -2000,6 +1984,22 @@
             "noveltyArt",
             "openSource"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy",
+                    "eng": "Source code"
+                },
+                "link": "https://github.com/ales-tsurko/microscale"
+            },
+            {
+                "name": {
+                    "pl": "Album w wydaniu fizycznym, zawieraj\u0105cy zapis muzyki wygenerowanej przez ten projekt autorstwa tw\u00f3rcy",
+                    "eng": "Physical copy of an album containing music generated by the authors project"
+                },
+                "link": "https://preservedsound.bandcamp.com/album/microscale"
+            }
+        ],
         "id": 55
     },
     {
@@ -2007,15 +2007,6 @@
             {
                 "name": "Tero Parviainen",
                 "link": "http://teropa.info"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Podstrona na temat Music Mouse na stronie samej Laurie Spiegel",
-                    "eng": "Subpage about Music Mouse on Laurie Spiegel's page"
-                },
-                "link": "http://retiary.org/ls/programs.html"
             }
         ],
         "title": {
@@ -2031,6 +2022,15 @@
             "DIY",
             "reconstruction"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Podstrona na temat Music Mouse na stronie samej Laurie Spiegel",
+                    "eng": "Subpage about Music Mouse on Laurie Spiegel's page"
+                },
+                "link": "http://retiary.org/ls/programs.html"
+            }
+        ],
         "id": 56
     },
     {
@@ -2041,15 +2041,6 @@
                     "eng": "St\u00e9phane Pigeon"
                 },
                 "link": "https://www.stephanepigeon.com/"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Podobna rzecz innego tw\u00f3rcy",
-                    "eng": "Similar work of another author"
-                },
-                "link": "https://asoftmurmur.com/"
             }
         ],
         "title": {
@@ -2066,6 +2057,15 @@
             "classic",
             "DIY"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Podobna rzecz innego tw\u00f3rcy",
+                    "eng": "Similar work of another author"
+                },
+                "link": "https://asoftmurmur.com/"
+            }
+        ],
         "id": 57
     },
     {
@@ -2073,15 +2073,6 @@
             {
                 "name": "Tero Parviainen",
                 "link": "http://teropa.info"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Kod \u017ar\u00f3d\u0142owy",
-                    "eng": "Source code"
-                },
-                "link": "https://codepen.io/teropa/pen/YgRayV"
             }
         ],
         "title": {
@@ -2098,6 +2089,15 @@
             "classical",
             "reconstruction"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy",
+                    "eng": "Source code"
+                },
+                "link": "https://codepen.io/teropa/pen/YgRayV"
+            }
+        ],
         "id": 58
     },
     {
@@ -2107,7 +2107,6 @@
                 "link": "https://qosmo.jp/en/"
             }
         ],
-        "more_links": [],
         "title": {
             "pl": "",
             "eng": "Neural Beatbox"
@@ -2122,6 +2121,7 @@
             "forKids",
             "sequencer"
         ],
+        "more_links": [],
         "id": 59
     },
     {
@@ -2129,15 +2129,6 @@
             {
                 "name": "Tero Parviainen",
                 "link": "http://teropa.info"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Kod \u017ar\u00f3d\u0142owy",
-                    "eng": "Source code"
-                },
-                "link": "https://codepen.io/teropa/pen/JLjXGK"
             }
         ],
         "title": {
@@ -2155,6 +2146,15 @@
             "openSource",
             "tool"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy",
+                    "eng": "Source code"
+                },
+                "link": "https://codepen.io/teropa/pen/JLjXGK"
+            }
+        ],
         "id": 60
     },
     {
@@ -2164,7 +2164,6 @@
                 "link": "http://lullatone.com/"
             }
         ],
-        "more_links": [],
         "title": {
             "pl": "Ciekawy sampler z \u0142adnymi wizualizacjami",
             "eng": "Nice sampler with pretty visualization"
@@ -2181,6 +2180,7 @@
             "mustCheck",
             "visual"
         ],
+        "more_links": [],
         "id": 61
     },
     {
@@ -2192,6 +2192,19 @@
                 },
                 "link": "https://www.stephanepigeon.com/"
             }
+        ],
+        "title": {
+            "pl": "noises.online",
+            "eng": "noises.online"
+        },
+        "link": "https://noises.online",
+        "description": {
+            "pl": "Ta strona za\u015b pozwala na niestandardowe po\u0142\u0105czenia field recording\u00f3w. Mo\u017cna sobie po\u0142\u0105czy\u0107 na przyk\u0142ad ruchliw\u0105 kawiarnie i d\u017cungle. Pozwala te\u017c na wybranie tonu (tak naprawd\u0119 to chyba po prostu EQ) oraz nat\u0119\u017cenia d\u017awiek\u00f3w. MyNoise.net i noisese.online s\u0105 dzie\u0142ami tego samego cz\u0142owieka, St\u00e9phane Pigeon.",
+            "eng": "This page on the other hand lets users create unusual combinations of field recordings, such as a busy coffee shop with jungle noises. It also has controls for EQ and sound intensity. Both MyNoise.net and noises.online were created by St\u00e9phane Pigeon."
+        },
+        "tags": [
+            "backgroundMuzak",
+            "DIY"
         ],
         "more_links": [
             {
@@ -2230,19 +2243,6 @@
                 "link": "http://hearingtest.online/"
             }
         ],
-        "title": {
-            "pl": "noises.online",
-            "eng": "noises.online"
-        },
-        "link": "https://noises.online",
-        "description": {
-            "pl": "Ta strona za\u015b pozwala na niestandardowe po\u0142\u0105czenia field recording\u00f3w. Mo\u017cna sobie po\u0142\u0105czy\u0107 na przyk\u0142ad ruchliw\u0105 kawiarnie i d\u017cungle. Pozwala te\u017c na wybranie tonu (tak naprawd\u0119 to chyba po prostu EQ) oraz nat\u0119\u017cenia d\u017awiek\u00f3w. MyNoise.net i noisese.online s\u0105 dzie\u0142ami tego samego cz\u0142owieka, St\u00e9phane Pigeon.",
-            "eng": "This page on the other hand lets users create unusual combinations of field recordings, such as a busy coffee shop with jungle noises. It also has controls for EQ and sound intensity. Both MyNoise.net and noises.online were created by St\u00e9phane Pigeon."
-        },
-        "tags": [
-            "backgroundMuzak",
-            "DIY"
-        ],
         "id": 62
     },
     {
@@ -2276,15 +2276,6 @@
                 "link": "https://twitter.com/gbradleyfilms"
             }
         ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "O projekcie",
-                    "eng": "About"
-                },
-                "link": "https://www.marpi.studio/exhibitions/odra"
-            }
-        ],
         "title": {
             "pl": "\"Odra\" - muzyczny eksponat online",
             "eng": "\"Odra\" - musical exhibit online"
@@ -2298,6 +2289,15 @@
             "marpi",
             "noveltyArt",
             "visual"
+        ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "O projekcie",
+                    "eng": "About"
+                },
+                "link": "https://www.marpi.studio/exhibitions/odra"
+            }
         ],
         "id": 63
     },
@@ -2316,7 +2316,6 @@
                 "link": "https://fonserbc.itch.io/"
             }
         ],
-        "more_links": [],
         "title": {
             "pl": "Interaktywny album muzyczny",
             "eng": "Offscore - interactive music album"
@@ -2330,6 +2329,7 @@
             "game",
             "seizureWarning"
         ],
+        "more_links": [],
         "id": 64
     },
     {
@@ -2340,15 +2340,6 @@
                     "eng": "Stuart Keith"
                 },
                 "link": "https://stuartkeith.com/"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Kod \u017ar\u00f3d\u0142owy",
-                    "eng": "Source"
-                },
-                "link": "https://github.com/stuartkeith/keyseq"
             }
         ],
         "title": {
@@ -2366,6 +2357,15 @@
             "openSource",
             "sequencer"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy",
+                    "eng": "Source"
+                },
+                "link": "https://github.com/stuartkeith/keyseq"
+            }
+        ],
         "id": 65
     },
     {
@@ -2373,15 +2373,6 @@
             {
                 "name": "Luke Phillips",
                 "link": "http://femurdesign.com/"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Kod \u017ar\u00f3d\u0142owy",
-                    "eng": "Source code"
-                },
-                "link": "https://github.com/lukephills/omni"
             }
         ],
         "title": {
@@ -2399,6 +2390,15 @@
             "learn",
             "openSource"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy",
+                    "eng": "Source code"
+                },
+                "link": "https://github.com/lukephills/omni"
+            }
+        ],
         "id": 66
     },
     {
@@ -2406,15 +2406,6 @@
             {
                 "name": "Nikolay Tsenkov",
                 "link": "https://twitter.com/nikolaytsenkov"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Kod \u017ar\u00f3d\u0142owy",
-                    "eng": "Source code"
-                },
-                "link": "https://github.com/nicroto/viktor"
             }
         ],
         "title": {
@@ -2431,6 +2422,15 @@
             "openSource",
             "tool"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy",
+                    "eng": "Source code"
+                },
+                "link": "https://github.com/nicroto/viktor"
+            }
+        ],
         "id": 67
     },
     {
@@ -2441,15 +2441,6 @@
                     "eng": "MetaBrainz"
                 },
                 "link": "https://metabrainz.org/"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Swoj\u0105 drog\u0105, mo\u017ce warto te\u017c spojrze\u0107 na list\u0119 encyklopedii muzycznych online i si\u0119 nad tym pochyli\u0107",
-                    "eng": "List of online music databases"
-                },
-                "link": "https://en.wikipedia.org/wiki/List_of_online_music_databases"
             }
         ],
         "title": {
@@ -2464,6 +2455,15 @@
         "tags": [
             "descriptive"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Swoj\u0105 drog\u0105, mo\u017ce warto te\u017c spojrze\u0107 na list\u0119 encyklopedii muzycznych online i si\u0119 nad tym pochyli\u0107",
+                    "eng": "List of online music databases"
+                },
+                "link": "https://en.wikipedia.org/wiki/List_of_online_music_databases"
+            }
+        ],
         "id": 68
     },
     {
@@ -2473,15 +2473,6 @@
                     "pl": "zesp\u00f3\u0142 Google",
                     "eng": "Google team"
                 }
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Kod \u017ar\u00f3d\u0142owy",
-                    "eng": "Source code"
-                },
-                "link": "https://glitch.com/edit/#!/piano-scribe?path=README.md%3A1%3A0"
             }
         ],
         "title": {
@@ -2498,6 +2489,15 @@
             "openSource",
             "tool"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy",
+                    "eng": "Source code"
+                },
+                "link": "https://glitch.com/edit/#!/piano-scribe?path=README.md%3A1%3A0"
+            }
+        ],
         "id": 69
     },
     {
@@ -2507,7 +2507,6 @@
                 "link": "https://fonserbc.itch.io/"
             }
         ],
-        "more_links": [],
         "title": {
             "pl": "Prosta gierka muzyczna",
             "eng": "Poly 60 - simple musical rhythmic game"
@@ -2522,6 +2521,7 @@
             "DIY",
             "game"
         ],
+        "more_links": [],
         "id": 70
     },
     {
@@ -2534,7 +2534,6 @@
                 "link": "https://ctpt.co/"
             }
         ],
-        "more_links": [],
         "title": {
             "pl": "Syntezatory Roland online",
             "eng": "Roland synthesizers online"
@@ -2549,6 +2548,7 @@
             "sequencer",
             "tool"
         ],
+        "more_links": [],
         "id": 71
     },
     {
@@ -2556,15 +2556,6 @@
             {
                 "name": "Stuart Keith",
                 "link": "https://stuartkeith.com/"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Kod \u017ar\u00f3d\u0142owy",
-                    "eng": "Source code"
-                },
-                "link": "https://github.com/stuartkeith/micthing"
             }
         ],
         "title": {
@@ -2581,6 +2572,15 @@
             "openSource",
             "sequencer"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy",
+                    "eng": "Source code"
+                },
+                "link": "https://github.com/stuartkeith/micthing"
+            }
+        ],
         "id": 72
     },
     {
@@ -2591,22 +2591,6 @@
                     "eng": "Julian Rosenblum"
                 },
                 "link": "http://julianrosenblum.com/"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Kod \u017ar\u00f3d\u0142owy",
-                    "eng": "Source code"
-                },
-                "link": "https://github.com/jsrmath/sharp11-jza"
-            },
-            {
-                "name": {
-                    "pl": "Inny projekt autora - pomocnik songwriter\u00f3w. Mo\u017cna \u0142atwo pisa\u0107 teksty, wraz z pomocnicz\u0105 progresj\u0105 akord\u00f3w przy okazji.",
-                    "eng": "Another one of the author's projects - songwriting assistant. It lets you easily write lyrics along with the chord progression."
-                },
-                "link": "https://markato.studio/"
             }
         ],
         "title": {
@@ -2625,6 +2609,22 @@
             "openSource",
             "tool"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy",
+                    "eng": "Source code"
+                },
+                "link": "https://github.com/jsrmath/sharp11-jza"
+            },
+            {
+                "name": {
+                    "pl": "Inny projekt autora - pomocnik songwriter\u00f3w. Mo\u017cna \u0142atwo pisa\u0107 teksty, wraz z pomocnicz\u0105 progresj\u0105 akord\u00f3w przy okazji.",
+                    "eng": "Another one of the author's projects - songwriting assistant. It lets you easily write lyrics along with the chord progression."
+                },
+                "link": "https://markato.studio/"
+            }
+        ],
         "id": 73
     },
     {
@@ -2634,12 +2634,11 @@
                 "link": "https://alexbainter.com/"
             }
         ],
-        "more_links": [],
-        "link": "https://slowedandreverb.studio/",
         "title": {
             "pl": "",
             "eng": "Slowed + reverb music generator"
         },
+        "link": "https://slowedandreverb.studio/",
         "description": {
             "pl": "",
             "eng": "Simple tool that regenerates the given song with two effects added - slowed audio and reverb, making it more 'atmospheric'."
@@ -2647,6 +2646,7 @@
         "tags": [
             "tool"
         ],
+        "more_links": [],
         "id": 74
     },
     {
@@ -2656,7 +2656,6 @@
                 "link": "http://www.cappel-nord.de/webaudio/"
             }
         ],
-        "more_links": [],
         "title": {
             "pl": "A gdyby tak stworzy\u0107 sekwencer muzyczny do kt\u00f3rego mo\u017ce mie\u0107 dost\u0119p ka\u017cdy?",
             "eng": "Sound sequencer that everybody has acess to"
@@ -2671,6 +2670,7 @@
             "realTime",
             "sequencer"
         ],
+        "more_links": [],
         "id": 75
     },
     {
@@ -2678,15 +2678,6 @@
             {
                 "name": "AudioCommons",
                 "link": "https://www.audiocommons.org/"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Kod \u017ar\u00f3d\u0142owy",
-                    "eng": "Source code"
-                },
-                "link": "https://github.com/AudioCommons/timbral_models"
             }
         ],
         "title": {
@@ -2703,6 +2694,15 @@
             "openSource",
             "sequencer"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy",
+                    "eng": "Source code"
+                },
+                "link": "https://github.com/AudioCommons/timbral_models"
+            }
+        ],
         "id": 76
     },
     {
@@ -2712,7 +2712,6 @@
                 "link": "https://experiments.withgoogle.com/"
             }
         ],
-        "more_links": [],
         "title": {
             "pl": "Mapa d\u017awi\u0119k\u00f3w od Google",
             "eng": "Sounds map made by Google"
@@ -2727,6 +2726,7 @@
             "bigTech",
             "sequencer"
         ],
+        "more_links": [],
         "id": 77
     },
     {
@@ -2736,7 +2736,6 @@
                 "link": ""
             }
         ],
-        "more_links": [],
         "title": {
             "pl": "Soundtrap",
             "eng": "Soundtrap"
@@ -2751,6 +2750,7 @@
             "DAW",
             "tool"
         ],
+        "more_links": [],
         "id": 78
     },
     {
@@ -2758,15 +2758,6 @@
             {
                 "name": "Matt DesLauriers",
                 "link": "https://twitter.com/mattdesl"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Kod \u017ar\u00f3d\u0142owy",
-                    "eng": "Source code"
-                },
-                "link": "https://github.com/mattdesl/spectrum"
             }
         ],
         "title": {
@@ -2784,6 +2775,15 @@
             "tool",
             "visual"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy",
+                    "eng": "Source code"
+                },
+                "link": "https://github.com/mattdesl/spectrum"
+            }
+        ],
         "id": 79
     },
     {
@@ -2793,7 +2793,6 @@
                 "link": "http://www.chenalexander.com/"
             }
         ],
-        "more_links": [],
         "title": {
             "pl": "Suita nr 1, G-dur, BWV 1007, J.S. Bach",
             "eng": "Suite no. 1 in G major, BWV 1007, J.S. Bach"
@@ -2811,6 +2810,7 @@
             "physic",
             "reconstruction"
         ],
+        "more_links": [],
         "id": 80
     },
     {
@@ -2821,15 +2821,6 @@
                     "eng": "wheelibin"
                 },
                 "link": "https://soundcloud.com/wheelibin"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Kod \u017ar\u00f3d\u0142owy",
-                    "eng": "Source code"
-                },
-                "link": "https://github.com/wheelibin/synaesthesia"
             }
         ],
         "title": {
@@ -2845,6 +2836,15 @@
             "DIY",
             "noveltyArt",
             "openSource"
+        ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy",
+                    "eng": "Source code"
+                },
+                "link": "https://github.com/wheelibin/synaesthesia"
+            }
         ],
         "id": 81
     },
@@ -2865,15 +2865,6 @@
                 "link": "https://twitter.com/gloom303"
             }
         ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "O projekcie",
-                    "eng": "About"
-                },
-                "link": "https://www.marpi.studio/exhibitions/terrarium"
-            }
-        ],
         "title": {
             "pl": "\u201cTerrarium\u201d",
             "eng": "\u201cTerrarium\u201d"
@@ -2889,6 +2880,15 @@
             "noveltyArt",
             "visual"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "O projekcie",
+                    "eng": "About"
+                },
+                "link": "https://www.marpi.studio/exhibitions/terrarium"
+            }
+        ],
         "id": 82
     },
     {
@@ -2896,15 +2896,6 @@
             {
                 "name": "Tero Parviainen",
                 "link": "http://teropa.info"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Kod \u017ar\u00f3d\u0142owy",
-                    "eng": "Source code"
-                },
-                "link": "https://github.com/teropa/in-c"
             }
         ],
         "title": {
@@ -2922,6 +2913,15 @@
             "openSource",
             "reconstruction"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy",
+                    "eng": "Source code"
+                },
+                "link": "https://github.com/teropa/in-c"
+            }
+        ],
         "id": 83
     },
     {
@@ -2929,15 +2929,6 @@
             {
                 "name": "Ed Ball",
                 "link": "https://github.com/edwardball"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Kod \u017ar\u00f3d\u0142owy",
-                    "eng": "Source code"
-                },
-                "link": "https://github.com/edwardball/academo.org/tree/master/demos/19-tet-keyboard"
             }
         ],
         "title": {
@@ -2954,6 +2945,15 @@
             "learn",
             "math"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy",
+                    "eng": "Source code"
+                },
+                "link": "https://github.com/edwardball/academo.org/tree/master/demos/19-tet-keyboard"
+            }
+        ],
         "id": 84
     },
     {
@@ -2964,15 +2964,6 @@
                     "eng": "Joseph Savell"
                 },
                 "link": "https://twitter.com/branchpanic"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Kod \u017ar\u00f3d\u0142owy",
-                    "eng": "Source code"
-                },
-                "link": "https://github.com/beat-machine"
             }
         ],
         "title": {
@@ -2989,6 +2980,15 @@
             "DIY",
             "openSource"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy",
+                    "eng": "Source code"
+                },
+                "link": "https://github.com/beat-machine"
+            }
+        ],
         "id": 85
     },
     {
@@ -2996,15 +2996,6 @@
             {
                 "name": "Luke Phillips",
                 "link": "https://femurdesign.com/"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Kod \u017ar\u00f3d\u0142owy",
-                    "eng": "Source code"
-                },
-                "link": "https://github.com/lukephills/Theremin"
             }
         ],
         "title": {
@@ -3020,6 +3011,15 @@
             "DIY",
             "openSource"
         ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy",
+                    "eng": "Source code"
+                },
+                "link": "https://github.com/lukephills/Theremin"
+            }
+        ],
         "id": 86
     },
     {
@@ -3028,6 +3028,20 @@
                 "name": "Peter Sobot",
                 "link": "http://blog.petersobot.com/"
             }
+        ],
+        "title": {
+            "pl": "The Wub Machine",
+            "eng": "The Wub Machine"
+        },
+        "link": "https://the.wubmachine.com",
+        "description": {
+            "pl": "Nie jest to wprost rekonstrukcja, ale nie mog\u0142em si\u0119 nie pokusi\u0107 wrzuci\u0107 tutaj tego cuda. Aplikacja jest ultra prosta - wrzucamy po prostu utw\u00f3r, wybieramy w jakim gatunku chcemy remiks i po momencie \u0142adowania mamy gotowe. Co wi\u0119cej, na testowanych przeze mnie piosenkach dzia\u0142a\u0142o to naprawd\u0119 bardzo dobrze. Jestem pod wra\u017ceniem tej aplikacji. Dodam tylko, \u017ce ta aplikacja w przeciwie\u0144stwie do zdecydowanej wi\u0119kszo\u015bci program\u00f3w tutaj zosta\u0142a napisana w j\u0119zyku Python, co wida\u0107 - wysy\u0142amy materia\u0142 \u017ar\u00f3d\u0142owy i czekamy na output, nie otrzymujemy efekt\u00f3w na bie\u017c\u0105co.",
+            "eng": "Super simple app. User has only to upload a song and choose a musical genre of song remix that will be created. Works surprisingly well on songs tested by us."
+        },
+        "tags": [
+            "DIY",
+            "mustCheck",
+            "openSource"
         ],
         "more_links": [
             {
@@ -3045,20 +3059,6 @@
                 "link": "https://github.com/psobot/wub-machine#readme"
             }
         ],
-        "title": {
-            "pl": "The Wub Machine",
-            "eng": "The Wub Machine"
-        },
-        "link": "https://the.wubmachine.com",
-        "description": {
-            "pl": "Nie jest to wprost rekonstrukcja, ale nie mog\u0142em si\u0119 nie pokusi\u0107 wrzuci\u0107 tutaj tego cuda. Aplikacja jest ultra prosta - wrzucamy po prostu utw\u00f3r, wybieramy w jakim gatunku chcemy remiks i po momencie \u0142adowania mamy gotowe. Co wi\u0119cej, na testowanych przeze mnie piosenkach dzia\u0142a\u0142o to naprawd\u0119 bardzo dobrze. Jestem pod wra\u017ceniem tej aplikacji. Dodam tylko, \u017ce ta aplikacja w przeciwie\u0144stwie do zdecydowanej wi\u0119kszo\u015bci program\u00f3w tutaj zosta\u0142a napisana w j\u0119zyku Python, co wida\u0107 - wysy\u0142amy materia\u0142 \u017ar\u00f3d\u0142owy i czekamy na output, nie otrzymujemy efekt\u00f3w na bie\u017c\u0105co.",
-            "eng": "Super simple app. User has only to upload a song and choose a musical genre of song remix that will be created. Works surprisingly well on songs tested by us."
-        },
-        "tags": [
-            "DIY",
-            "mustCheck",
-            "openSource"
-        ],
         "id": 87
     },
     {
@@ -3070,6 +3070,18 @@
                 },
                 "link": "http://lullatone.com"
             }
+        ],
+        "title": {
+            "pl": "Typatone - Pos\u0142uchaj jak piszesz",
+            "eng": "Typatone - Type sounds"
+        },
+        "link": "https://typatone.com",
+        "description": {
+            "pl": "Ka\u017cda wprowadzona litera odpowiada odpowiedniemu d\u017awi\u0119kowi. Mo\u017cesz wkleja\u0107 gotowe ju\u017c wiadomo\u015bci, napisa\u0107 co\u015b samemu oraz wys\u0142a\u0107 muzyczn\u0105 wiadomo\u015b\u0107 komu\u015b.",
+            "eng": "Every letter input corresponds to a sound. Users can paste in messages, type something in, or send someone a musical message."
+        },
+        "tags": [
+            "DIY"
         ],
         "more_links": [
             {
@@ -3087,18 +3099,6 @@
                 "link": "https://warmifaya.bandcamp.com/track/4-2"
             }
         ],
-        "title": {
-            "pl": "Typatone - Pos\u0142uchaj jak piszesz",
-            "eng": "Typatone - Type sounds"
-        },
-        "link": "https://typatone.com",
-        "description": {
-            "pl": "Ka\u017cda wprowadzona litera odpowiada odpowiedniemu d\u017awi\u0119kowi. Mo\u017cesz wkleja\u0107 gotowe ju\u017c wiadomo\u015bci, napisa\u0107 co\u015b samemu oraz wys\u0142a\u0107 muzyczn\u0105 wiadomo\u015b\u0107 komu\u015b.",
-            "eng": "Every letter input corresponds to a sound. Users can paste in messages, type something in, or send someone a musical message."
-        },
-        "tags": [
-            "DIY"
-        ],
         "id": 88
     },
     {
@@ -3110,6 +3110,20 @@
                 },
                 "link": "http://dadabots.com/music.php"
             }
+        ],
+        "title": {
+            "pl": "Nieko\u0144cz\u0105cy si\u0119 stream muzyki metalowej",
+            "eng": "Unending stream of black metal"
+        },
+        "link": "https://www.youtube.com/watch?v=MwtVkPKx3RA)",
+        "description": {
+            "pl": "Od ponad roku w serwisie YouTube bez przerwy odtwarzany jest stream muzyki metalowej, kt\u00f3rej nikt nigdy nie nagra\u0142 - jest to dzie\u0142o sztucznej inteligencji, kt\u00f3ra bazuj\u0105c na opublikowanych ju\u017c nagraniach generuje ci\u0105gle muzyk\u0119. Autorzy wcze\u015bniej wykonali podobny stream z muzyk\u0105 jazzow\u0105 i maj\u0105 wielkie plany rozwoju swojego projektu. ",
+            "eng": "It has been streaming on YouTube for a couple of years now, never before recorded, AI generated, heavy as hell."
+        },
+        "tags": [
+            "AI",
+            "noveltyArt",
+            "reconstruction"
         ],
         "more_links": [
             {
@@ -3134,20 +3148,6 @@
                 "link": "https://dadabots.bandcamp.com/"
             }
         ],
-        "title": {
-            "pl": "Nieko\u0144cz\u0105cy si\u0119 stream muzyki metalowej",
-            "eng": "Unending stream of black metal"
-        },
-        "link": "https://www.youtube.com/watch?v=MwtVkPKx3RA)",
-        "description": {
-            "pl": "Od ponad roku w serwisie YouTube bez przerwy odtwarzany jest stream muzyki metalowej, kt\u00f3rej nikt nigdy nie nagra\u0142 - jest to dzie\u0142o sztucznej inteligencji, kt\u00f3ra bazuj\u0105c na opublikowanych ju\u017c nagraniach generuje ci\u0105gle muzyk\u0119. Autorzy wcze\u015bniej wykonali podobny stream z muzyk\u0105 jazzow\u0105 i maj\u0105 wielkie plany rozwoju swojego projektu. ",
-            "eng": "It has been streaming on YouTube for a couple of years now, never before recorded, AI generated, heavy as hell."
-        },
-        "tags": [
-            "AI",
-            "noveltyArt",
-            "reconstruction"
-        ],
         "id": 89
     },
     {
@@ -3157,7 +3157,6 @@
                 "link": "https://www.wolfram.com/"
             }
         ],
-        "more_links": [],
         "title": {
             "pl": "WolframTones - tw\u00f3rz proste kompozycje za pomoc\u0105 algorytm\u00f3w",
             "eng": "WolframTones - tool for creating music with use of algorithms"
@@ -3174,6 +3173,7 @@
             "mustCheck",
             "tool"
         ],
+        "more_links": [],
         "id": 90
     },
     {
@@ -3197,7 +3197,6 @@
                 }
             }
         ],
-        "more_links": [],
         "title": {
             "pl": "\u201c28x28\u201d",
             "eng": "\u201c28x28\u201d"
@@ -3212,6 +3211,7 @@
             "FreeSound",
             "noveltyArt"
         ],
+        "more_links": [],
         "id": 91
     },
     {
@@ -3219,15 +3219,6 @@
             {
                 "name": "Luke Twyman",
                 "link": "http://whitevinyldesign.com/#about"
-            }
-        ],
-        "more_links": [
-            {
-                "name": {
-                    "pl": "Kod \u017ar\u00f3d\u0142owy",
-                    "eng": "Source code"
-                },
-                "link": "https://github.com/Whitevinyl/Helios"
             }
         ],
         "title": {
@@ -3244,6 +3235,15 @@
             "noveltyArt",
             "openSource",
             "visual"
+        ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy",
+                    "eng": "Source code"
+                },
+                "link": "https://github.com/Whitevinyl/Helios"
+            }
         ],
         "id": 92
     }
