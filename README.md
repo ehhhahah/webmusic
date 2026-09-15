@@ -31,7 +31,7 @@ CI: GitHub Actions runs `pytest` and Cypress **smoke** tests on every push (`.gi
 
 ## Content model
 
-- Source of truth: `assets/original_article/db-fixed.json` (93 apps)
+- Source of truth: `assets/original_article/db-fixed.json` (~100 apps as of 2026)
 - Generator: `assets/original_article/generate_site.py` → `apps.html`, `tagsinfo.html`, nav/head, `script.js`
 - Site is plain HTML/CSS/JS; no app runtime besides Cypress (dev) and BeautifulSoup (build)
 

@@ -2802,6 +2802,32 @@
     {
         "authors": [
             {
+                "name": "ehh hahah",
+                "link": "https://linktr.ee/ehhhahah"
+            }
+        ],
+        "title": {
+            "pl": "Sound Pollution Game",
+            "eng": "Sound Pollution Game"
+        },
+        "link": "https://ehhhahah.github.io/sound-pollution-game/",
+        "description": {
+            "pl": "Gra o s\u0142uchaniu i rozpoznawaniu d\u017awi\u0119k\u00f3w t\u0142a (zanieczyszczenie d\u017awi\u0119kowe). Wybierasz grupy odbiorc\u00f3w z unikalnymi efektami, s\u0142uchasz losowych d\u017awi\u0119k\u00f3w przez ustawiony czas, potem masz 10 sekund na odgadni\u0119cie \u2014 cichsze d\u017awi\u0119ki daj\u0105 wi\u0119cej punkt\u00f3w, b\u0142\u0119dne odpowiedzi odejmuj\u0105. Uwaga: d\u017awi\u0119ki mog\u0105 by\u0107 bardzo g\u0142o\u015bne lub bardzo ciche!",
+            "eng": "Listening game about spotting background sound pollution. Pick audience groups with unique effects, listen to random ambience for a timed window, then guess what you heard in 10 seconds \u2014 quieter sounds score more, wrong answers cost points. Warning: sounds can be very loud or very quiet."
+        },
+        "tags": [
+            "DIY",
+            "game",
+            "learn"
+        ],
+        "more_links": [],
+        "id": 94,
+        "created_at": "2026-09-15",
+        "last_verified_at": "2026-09-15"
+    },
+    {
+        "authors": [
+            {
                 "name": "Patrick Borgeat",
                 "link": "http://www.cappel-nord.de/webaudio/"
             }

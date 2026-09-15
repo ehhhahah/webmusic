@@ -1,0 +1,51 @@
+---
+description: How to add a new app to the Web Music Apps catalog
+alwaysApply: false
+---
+
+# Adding an app
+
+When the user wants to add an app (URL, author, description, etc.), do this — do **not** build a form or edit HTML cards by hand.
+
+## Steps
+
+1. Open `assets/original_article/db-fixed.json`.
+2. Append one object with the next unused `id` (`max(id) + 1`).
+3. Fill required fields (see schema below). Infer a short English title/description if the user only gave Polish (or vice versa). Prefer concise catalog blurbs over pasting an entire instruction page unless the user asks to keep the full text.
+4. Pick tags only from `TAGS_DESCRIPTORS` in `assets/original_article/generate_site.py`. Typical DIY games: `DIY`, `game`, `learn` (add others only when clearly fitting).
+5. Run:
+   ```bash
+   .venv/bin/python assets/original_article/generate_site.py
+   ```
+6. Sanity-check: `pytest -q`. Commit only if the user asks.
+
+## Schema (required)
+
+```json
+{
+  "id": 94,
+  "link": "https://example.com/app/",
+  "title": { "pl": "", "eng": "App Name" },
+  "description": { "pl": "", "eng": "Short blurb." },
+  "authors": [{ "name": "Author", "link": "https://…" }],
+  "tags": ["DIY", "game"],
+  "more_links": []
+}
+```
+
+- `authors[].link` and `more_links` are optional (`more_links` may be `[]`).
+- Omit `created_at` / `last_verified_at` for new apps — the generator sets them.
+- Empty `eng` title/description shows as `[TODO TRANSLATE] …` on the site; fill English when you can.
+- **Never** hand-edit app cards in `apps.html` — they are regenerated.
+- **Never** invent new tags without updating `TAGS_DESCRIPTORS`.
+
+## User paste format (enough)
+
+```
+url: …
+author: …
+author link: …   (optional)
+title: …         (optional — infer from site/URL)
+description: …
+tags: …          (optional — pick sensible defaults)
+```
