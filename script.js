@@ -19,21 +19,22 @@ function getActiveTags() {
         .filter((tag) => document.getElementsByClassName(`toggle-${tag}`)[0].classList.contains('toggle-on'));
 }
 
-function getCardTags(card) {
-    return CATEGORIES
-        .map((category) => category.tag)
-        .filter((tag) => card.classList.contains(tag));
-}
-
 function applyTagFilter() {
-    const activeTags = new Set(getActiveTags());
+    const activeTags = getActiveTags();
     const cards = document.getElementsByClassName('webapp');
 
     for (let i = 0; i < cards.length; i++) {
         const card = cards[i];
-        // AND: show a card only while every one of its tags is still on.
-        // Turning a tag off excludes every app that has it, including multi-tag apps.
-        const matches = getCardTags(card).every((tag) => activeTags.has(tag));
+        // AND: app must contain every selected tag (and may have more).
+        // All on → full catalog; none on → empty; otherwise selected ⊆ card tags.
+        let matches;
+        if (activeTags.length === 0) {
+            matches = false;
+        } else if (activeTags.length === CATEGORIES.length) {
+            matches = true;
+        } else {
+            matches = activeTags.every((tag) => card.classList.contains(tag));
+        }
         card.style.display = matches ? 'block' : 'none';
     }
 }
