@@ -1,10 +1,21 @@
+import datetime
 import json
 import re
 from pathlib import Path
-from bs4 import BeautifulSoup
-import datetime
+from typing import Annotated
 
-# Repo root is two levels above this file: assets/original_article/md_parser.py
+from bs4 import BeautifulSoup
+from pydantic import (
+    BaseModel,
+    Field,
+    RootModel,
+    TypeAdapter,
+    ValidationError,
+    field_validator,
+    model_validator,
+)
+
+# Repo root is two levels above this file: assets/original_article/generate_site.py
 ROOT = Path(__file__).resolve().parents[2]
 ARTICLE_DIR = Path(__file__).resolve().parent
 
@@ -84,12 +95,82 @@ TAGS_DESCRIPTORS = {
 "visual":"Nice for people with limited hearing, focused more on visual aspect."
 }
 
-def handle_set_default(obj):
-        if isinstance(obj, set):
-            return list(obj)
-        raise TypeError
+KNOWN_TAGS = frozenset(TAGS_DESCRIPTORS)
 
-def generate_tags(OUTPUT):
+
+class LocalizedText(BaseModel):
+    pl: str = ""
+    eng: str = ""
+
+
+class Author(BaseModel):
+    name: str | LocalizedText
+    link: str | None = None
+
+
+class MoreLink(BaseModel):
+    name: LocalizedText
+    link: str
+
+
+class App(BaseModel):
+    authors: list[Author]
+    title: LocalizedText
+    link: str
+    description: LocalizedText
+    tags: list[str]
+    more_links: list[MoreLink] = Field(default_factory=list)
+    id: Annotated[int, Field(ge=1)]
+
+    @field_validator("link")
+    @classmethod
+    def link_must_be_nonempty(cls, value: str) -> str:
+        if not value.strip():
+            raise ValueError("link must be non-empty")
+        return value
+
+    @field_validator("tags")
+    @classmethod
+    def tags_must_be_known(cls, tags: list[str]) -> list[str]:
+        unknown = sorted({tag for tag in tags if tag not in KNOWN_TAGS})
+        if unknown:
+            raise ValueError(f"unknown tag(s): {', '.join(unknown)}")
+        return tags
+
+
+class Catalog(RootModel[list[App]]):
+    @model_validator(mode="after")
+    def ids_must_be_unique(self) -> "Catalog":
+        ids = [app.id for app in self.root]
+        duplicates = sorted({app_id for app_id in ids if ids.count(app_id) > 1})
+        if duplicates:
+            raise ValueError(f"duplicate app id(s): {', '.join(map(str, duplicates))}")
+        return self
+
+
+def load_db(path: Path = DB_PATH) -> list[App]:
+    raw = json.loads(path.read_text(encoding="utf-8"))
+    try:
+        return Catalog.model_validate(raw).root
+    except ValidationError as exc:
+        raise SystemExit(f"Invalid catalog in {path}:\n{exc}") from exc
+
+
+def dump_db(apps: list[App], path: Path = DB_PATH) -> None:
+    payload = TypeAdapter(list[App]).dump_python(apps, exclude_none=True)
+    path.write_text(json.dumps(payload, indent=4) + "\n", encoding="utf-8")
+
+
+def localized_value(value: str | LocalizedText, lang: str) -> str:
+    if isinstance(value, str):
+        return value
+    text = getattr(value, lang, "") or ""
+    if lang == "eng" and not text:
+        return value.pl
+    return text
+
+
+def generate_tags(apps: list[App]):
     def change_first_file_line(tags):
         with open(JS_PATH, encoding='utf-8') as f:
             lines = f.readlines()
@@ -97,73 +178,60 @@ def generate_tags(OUTPUT):
         with open(JS_PATH, "w", encoding='utf-8') as f:
             f.writelines(lines)
 
-    all_tags = set()
-    for i in OUTPUT:
-        try:
-            [all_tags.add(tag) for tag in i["tags"]]
-        except KeyError:
-            continue
-        except AttributeError:
-            print(f"ATTRIBUTE HERE? {i}")
-
-    tags_with_description = []
-    for tag in sorted(all_tags, key=str.lower):
-        tags_with_description.append({"tag": tag, "desc": TAGS_DESCRIPTORS[tag]})
+    all_tags = {tag for app in apps for tag in app.tags}
+    tags_with_description = [
+        {"tag": tag, "desc": TAGS_DESCRIPTORS[tag]}
+        for tag in sorted(all_tags, key=str.lower)
+    ]
 
     with open(TAGS, 'w', encoding='utf-8') as fp:
-        json.dump(tags_with_description, fp, default=handle_set_default)
-    # with open(JS_PATH, 'w') as fp:
-    #     json.dump(list(all_tags), fp, default=handle_set_default)
+        json.dump(tags_with_description, fp)
     change_first_file_line(tags_with_description)
     return tags_with_description
 
-def create_html(parsed_json, lang="eng"):
-    def get_authors(authors):
+def create_html(apps: list[App], lang="eng"):
+    def get_authors(authors: list[Author]):
         out = ""
         for author in authors:
             out += ", " if out != "" else ""
-            author_name = author['name'][lang] if lang in author['name'] else author['name']
+            author_name = localized_value(author.name, lang)
 
-            if lang == 'eng' and not author_name:
-                author_name = author['name']['pl']
-
-            is_link = 'link' in author and author['link']
+            is_link = bool(author.link)
             if is_link:
-                out += f"<a href='{author['link']}'>{author_name}</a>"
+                out += f"<a href='{author.link}'>{author_name}</a>"
             else:
                 out += author_name
         return out
 
     html_content = '<div id="webapps" class="webapps g-4">'
-    for app in parsed_json:
-        tags = " ".join(app["tags"]) if "tags" in app else " "
-        hashtags = " ".join([f"<span class='tag' title='{TAGS_DESCRIPTORS[tag]}'>#" + tag + "</span>" for tag in tags.split(" ")])
+    for app in apps:
+        tags = " ".join(app.tags)
+        hashtags = " ".join(
+            f"<span class='tag' title='{TAGS_DESCRIPTORS[tag]}'>#{tag}</span>"
+            for tag in app.tags
+        )
 
         more_links = """<div class="card-footer">
         <ul class="list-group list-group-flush"><li class="list-group-item">Related links:</li>""" + "".join(f"""
-        <li class="list-group-item">- <a href='{link['link']}'>{link['name'][lang]}</a></li>""" 
-        for link in app["more_links"]) + "</ul></div>" if app["more_links"] else ""
+        <li class="list-group-item">- <a href='{link.link}'>{localized_value(link.name, lang)}</a></li>""" 
+        for link in app.more_links) + "</ul></div>" if app.more_links else ""
         # TODO add collapsing with accessibility for more links https://getbootstrap.com/docs/5.1/components/collapse/
 
-        if not "link" in app or not "title" in app: continue
+        title = app.title.eng if lang == "eng" else app.title.pl
+        if lang == "eng" and not app.title.eng:
+            title = "[TODO TRANSLATE] " + app.title.pl
 
-        title = app['title'][lang]
-        if lang == "eng" and not title:
-            title = "[TODO TRANSLATE] " + app['title']['pl']
-
-        description = app['description'][lang]
-        if lang == "eng" and not description:
-            description = "[TODO TRANSLATE] " + app['description']['pl']
-
-        id = app['id']
+        description = app.description.eng if lang == "eng" else app.description.pl
+        if lang == "eng" and not app.description.eng:
+            description = "[TODO TRANSLATE] " + app.description.pl
 
         html_content += f"""
-        <div class="card h-100 text-center webapp {tags}" id="{id}">
+        <div class="card h-100 text-center webapp {tags}" id="{app.id}">
         <div style="display: flex; justify-content: space-between;">
-        <h2 class="card-title"><a href="{app['link']}" target="_blank">{title}</a></h2>
-        <p class="card-text idinfo"><a href="https://webmusic.pages.dev/apps#{id}">#{id}</a></p>
+        <h2 class="card-title"><a href="{app.link}" target="_blank">{title}</a></h2>
+        <p class="card-text idinfo"><a href="https://webmusic.pages.dev/apps#{app.id}">#{app.id}</a></p>
         </div>
-        <p class="card-subtitle mb-2 text-muted">Authors: {get_authors(app['authors'])}</p>
+        <p class="card-subtitle mb-2 text-muted">Authors: {get_authors(app.authors)}</p>
         <p class="card-text">{description}</p>
         <p class="tags">{hashtags}</p>
         {more_links}
@@ -174,26 +242,22 @@ def create_html(parsed_json, lang="eng"):
     with open(HTML_OUTPUT, 'w', encoding='utf-8') as file:
         file.write(html_content)
 
-def replace_tags_html():
-    with open(DB_PATH, encoding='utf-8') as f:
-        database = json.load(f)
-        ids_taken = []
+def replace_tags_html(database: list[App]):
+    ids_taken = []
     def get_example_tag_app(tag):
-        potential_apps = []
-        for app in database:
-            if tag in app["tags"]:
-                potential_apps.append(app)
+        potential_apps = [app for app in database if tag in app.tags]
             
         found_app = None
         if len(potential_apps) <= len(ids_taken):
             found_app = potential_apps[0] 
         else:
             for app in potential_apps:
-                if app in ids_taken:
+                if app.id in ids_taken:
                     continue
                 found_app = app
-        ids_taken.append(found_app["id"])
-        return found_app["title"]["eng"], found_app["link"]
+                break
+        ids_taken.append(found_app.id)
+        return found_app.title.eng, found_app.link
 
     def make_tag_html(tag_key, tag_desc):
         app_name, app_link = get_example_tag_app(tag_key)
@@ -304,34 +368,30 @@ def log_info(message):
     print(f"[INFO | {datetime.datetime.now()}] {message}")
 
 def generate_website():
-    with open(DB_PATH, encoding='utf-8') as f:
-        OUTPUT = json.load(f)
-    log_info(f"Database JSON received. Got {len(OUTPUT)} objects")
-    tags = generate_tags(OUTPUT)
+    apps = load_db()
+    log_info(f"Database JSON validated. Got {len(apps)} apps")
+    tags = generate_tags(apps)
     log_info(f"Generated {len(tags)} tags and saved them to {JS_PATH}")
-    create_html(OUTPUT, lang="eng")
+    create_html(apps, lang="eng")
     log_info(f"Created new HTML on path: {HTML_OUTPUT}")
     replace_apps_html()
     log_info(f"Replaced apps.html path: {APPS_PAGE_PATH}")
-    replace_tags_html()
+    replace_tags_html(apps)
     log_info("Generated tagsinfo page")
     generate_navbar_and_head()
     log_info(f"Replaced the navbar and head for: {ALL_PAGES}")
     log_info("Script finished")
 
 def prettify_db():
-    with open(DB_PATH, encoding='utf-8') as f:
-        json_file = json.load(f)
-    for app in json_file:
-        app['tags'] = sorted(app['tags'], key=str.lower)
+    apps = load_db()
+    for app in apps:
+        app.tags = sorted(app.tags, key=str.lower)
 
-    sorted_dict = sorted(
-        json_file,
-        key=lambda x: re.sub('[^A-Za-z]+', '', x["title"]["eng"]).lower()
+    apps = sorted(
+        apps,
+        key=lambda app: re.sub('[^A-Za-z]+', '', app.title.eng).lower()
     )
-
-    with open(DB_PATH, 'w', encoding='utf-8') as file:
-        file.write(json.dumps(sorted_dict, indent=4))
+    dump_db(apps)
 
 if __name__ == "__main__":
     prettify_db()
