@@ -14,7 +14,7 @@ const ROOT = path.resolve(__dirname, '..')
 const HOST = '127.0.0.1'
 const PORT = Number(process.env.PORT || 5500)
 
-const PROD_BASE = '<base href="https://webmusic.pages.dev/">'
+const PROD_BASE_RE = /<base href="https:\/\/webmusic\.pages\.dev\/"\s*\/?>/g
 const LOCAL_BASE = '<base href="/">'
 
 const PRETTY = {
@@ -79,7 +79,7 @@ const server = http.createServer((req, res) => {
   try {
     let body = fs.readFileSync(filePath)
     if (ext === '.html') {
-      const text = body.toString('utf8').replaceAll(PROD_BASE, LOCAL_BASE)
+      const text = body.toString('utf8').replace(PROD_BASE_RE, LOCAL_BASE)
       body = Buffer.from(text, 'utf8')
     }
     res.writeHead(200, { 'Content-Type': type, 'Cache-Control': 'no-store' })
