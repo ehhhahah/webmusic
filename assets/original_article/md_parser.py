@@ -1,14 +1,22 @@
 import json
 import re
+from pathlib import Path
 from bs4 import BeautifulSoup
 import datetime
 
-HTML_OUTPUT = '/Users/Guested/Documents/GitHub/webmusic/assets/original_article/output.html'
-TAGS = '/Users/Guested/Documents/GitHub/webmusic/assets/original_article/tags.json'
-APPS_PAGE_PATH = 'apps.html'
-TAGS_PAGE_PATH = 'tagsinfo.html'
-ALL_PAGES = ['index.html', 'apps.html', 'evaluation.html', 'submit.html', 'tagsinfo.html']
-JS_PATH = 'script.js'
+# Repo root is two levels above this file: assets/original_article/md_parser.py
+ROOT = Path(__file__).resolve().parents[2]
+ARTICLE_DIR = Path(__file__).resolve().parent
+
+HTML_OUTPUT = ARTICLE_DIR / 'output.html'
+TAGS = ARTICLE_DIR / 'tags.json'
+DB_PATH = ARTICLE_DIR / 'db-fixed.json'
+APPS_PAGE_PATH = ROOT / 'apps.html'
+TAGS_PAGE_PATH = ROOT / 'tagsinfo.html'
+ALL_PAGES = [ROOT / name for name in (
+    'index.html', 'apps.html', 'evaluation.html', 'submit.html', 'tagsinfo.html'
+)]
+JS_PATH = ROOT / 'script.js'
 
 TAGS_DESCRIPTORS = {
 "12+":"For users older than 12.",
@@ -83,12 +91,10 @@ def handle_set_default(obj):
 
 def generate_tags(OUTPUT):
     def change_first_file_line(tags):
-        with open(JS_PATH) as f:
+        with open(JS_PATH, encoding='utf-8') as f:
             lines = f.readlines()
-        lines # ['This is the first line.\n', 'This is the second line.\n']
         lines[0] = f"const CATEGORIES = {tags};\n"
-        lines # ["This is the line that's replaced.\n", 'This is the second line.\n']
-        with open(JS_PATH, "w") as f:
+        with open(JS_PATH, "w", encoding='utf-8') as f:
             f.writelines(lines)
 
     all_tags = set()
@@ -104,7 +110,7 @@ def generate_tags(OUTPUT):
     for tag in sorted(all_tags, key=str.lower):
         tags_with_description.append({"tag": tag, "desc": TAGS_DESCRIPTORS[tag]})
 
-    with open(TAGS, 'w') as fp:
+    with open(TAGS, 'w', encoding='utf-8') as fp:
         json.dump(tags_with_description, fp, default=handle_set_default)
     # with open(JS_PATH, 'w') as fp:
     #     json.dump(list(all_tags), fp, default=handle_set_default)
@@ -165,11 +171,11 @@ def create_html(parsed_json, lang="eng"):
         """
 
     html_content += "</div>"
-    with open(HTML_OUTPUT, 'w') as file:
+    with open(HTML_OUTPUT, 'w', encoding='utf-8') as file:
         file.write(html_content)
 
 def replace_tags_html():
-    with open('/Users/Guested/Documents/GitHub/webmusic/assets/original_article/db-fixed.json') as f:
+    with open(DB_PATH, encoding='utf-8') as f:
         database = json.load(f)
         ids_taken = []
     def get_example_tag_app(tag):
@@ -197,7 +203,7 @@ def replace_tags_html():
 
     tags_first_half = " ".join(tags[half:])
     tags_last_half =  " ".join(tags[:half])
-    with open(TAGS_PAGE_PATH, 'r+') as html:
+    with open(TAGS_PAGE_PATH, 'r+', encoding='utf-8') as html:
         soup = BeautifulSoup(html.read(), 'html.parser')
         webapps = soup.find(class_="flex-item-left")
         webapps.replace_with(f"<div class='flex-item-left'>{tags_last_half}</div>")
@@ -207,9 +213,9 @@ def replace_tags_html():
         html.write(soup.prettify(formatter=None))
 
 def replace_apps_html():
-    with open(APPS_PAGE_PATH, 'r+') as html:
+    with open(APPS_PAGE_PATH, 'r+', encoding='utf-8') as html:
         soup = BeautifulSoup(html.read(), 'html.parser')
-        with open(HTML_OUTPUT, 'r') as file:
+        with open(HTML_OUTPUT, 'r', encoding='utf-8') as file:
             webapps = soup.find(id="webapps")
             webapps.replace_with(file.read())
     with open(APPS_PAGE_PATH, 'w', encoding='utf-8') as html:
@@ -217,15 +223,16 @@ def replace_apps_html():
 
 def generate_navbar_and_head():
     for page in ALL_PAGES:
-        with open(page, 'r+') as html:
+        with open(page, 'r+', encoding='utf-8') as html:
             soup = BeautifulSoup(html.read(), 'html.parser')
 
+            page_name = page.name
             navbar_html = f"""
 <div class="navbary is-black is-spaced has-shadow">
-        <a class="onblack{' onblack-current' if page.startswith('apps') else ''}" href="/apps">Apps</a>
-        <a class="onblack{' onblack-current' if page.startswith('about') or page.startswith('index') else ''}" href="/">About</a>
-        <a class="onblack{' onblack-current' if page.startswith('evaluation') else ''}" href="/evaluation">Evaluate</a>
-        <a class="onblack{' onblack-current' if page.startswith('submit') else ''}" href="/submit">Submit new</a>
+        <a class="onblack{' onblack-current' if page_name.startswith('apps') else ''}" href="/apps">Apps</a>
+        <a class="onblack{' onblack-current' if page_name.startswith('about') or page_name.startswith('index') else ''}" href="/">About</a>
+        <a class="onblack{' onblack-current' if page_name.startswith('evaluation') else ''}" href="/evaluation">Evaluate</a>
+        <a class="onblack{' onblack-current' if page_name.startswith('submit') else ''}" href="/submit">Submit new</a>
     </div>"""
             header_html = """
             <header>
@@ -275,13 +282,13 @@ def generate_navbar_and_head():
   <link href="styledark.css" rel="stylesheet"/>
   <link href="site.webmanifest" rel="manifest"/>
   <!-- external hrefs -->
-  <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com" rel="preconnect"/>
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"/>
  </head>
             """
-            
+
             navbar = soup.find_all(class_="navbary")[0]
             navbar.replace_with(navbar_html)
 
@@ -297,7 +304,7 @@ def log_info(message):
     print(f"[INFO | {datetime.datetime.now()}] {message}")
 
 def generate_website():
-    with open('/Users/Guested/Documents/GitHub/webmusic/assets/original_article/db-fixed.json') as f:
+    with open(DB_PATH, encoding='utf-8') as f:
         OUTPUT = json.load(f)
     log_info(f"Database JSON received. Got {len(OUTPUT)} objects")
     tags = generate_tags(OUTPUT)
@@ -313,7 +320,7 @@ def generate_website():
     log_info("Script finished")
 
 def prettify_db():
-    with open('/Users/Guested/Documents/GitHub/webmusic/assets/original_article/db-fixed.json') as f:
+    with open(DB_PATH, encoding='utf-8') as f:
         json_file = json.load(f)
     for app in json_file:
         app['tags'] = sorted(app['tags'], key=str.lower)
@@ -323,7 +330,7 @@ def prettify_db():
         key=lambda x: re.sub('[^A-Za-z]+', '', x["title"]["eng"]).lower()
     )
 
-    with open('/Users/Guested/Documents/GitHub/webmusic/assets/original_article/db-fixed.json', 'w') as file:
+    with open(DB_PATH, 'w', encoding='utf-8') as file:
         file.write(json.dumps(sorted_dict, indent=4))
 
 if __name__ == "__main__":

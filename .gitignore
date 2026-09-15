@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+cypress-tests/node_modules/
+
+# Cypress
+cypress-tests/cypress/videos/
+cypress-tests/cypress/screenshots/
+cypress-tests/cypress/downloads/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
+
+# Env / secrets
+.env
+.env.*

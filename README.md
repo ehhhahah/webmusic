@@ -1,0 +1,102 @@
+# Web Music Apps For Everybody
+
+Static catalog of browser-based music apps, filterable by accessibility tags.  
+Live: [webmusic.pages.dev](https://webmusic.pages.dev/)
+
+## Quick start
+
+```bash
+# Node 22 + Python 3.12 via mise (see .mise.toml)
+mise install
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+
+cd cypress-tests && npm install
+npm run serve          # http://127.0.0.1:5500  (rewrites <base> for local)
+npm run test:ci        # smoke tests
+npm run test:ci:all    # smoke + homepage link check
+```
+
+Regenerate HTML from the JSON DB:
+
+```bash
+source .venv/bin/activate
+python assets/original_article/md_parser.py
+```
+
+## Content model
+
+- Source of truth: `assets/original_article/db-fixed.json` (93 apps)
+- Generator: `assets/original_article/md_parser.py` → `apps.html`, `tagsinfo.html`, nav/head, `script.js`
+- Site is plain HTML/CSS/JS; no app runtime besides Cypress (dev) and BeautifulSoup (build)
+
+---
+
+<details>
+<summary>AI agents info dump</summary>
+
+### What this repo is
+- Static multi-page site (Cloudflare Pages): `index.html`, `apps.html`, `evaluation.html`, `submit.html`, `tagsinfo.html`
+- Deployed at `https://webmusic.pages.dev/`
+- Each page includes `<base href="https://webmusic.pages.dev/">` — **keep this for production**. Do not change it to `/` in committed HTML.
+- Local override: `cypress-tests/local-serve.mjs` rewrites that base to `/` only in HTTP responses so assets resolve locally. `npm run serve` uses this. `npm run serve:raw` serves without rewrite.
+
+### JSON DB schema (`db-fixed.json`)
+Array of app objects. Required keys per app:
+- `id` (number)
+- `link` (string URL)
+- `title`: `{ "pl": string, "eng": string }`
+- `description`: `{ "pl": string, "eng": string }`
+- `authors`: `[{ "name": string | {pl, eng}, "link"?: string }]`
+- `tags`: `string[]` (must exist in `TAGS_DESCRIPTORS` in `md_parser.py`)
+- `more_links`: `[{ "name": {pl, eng}, "link": string }]` (may be `[]`)
+
+Related files (mostly build artifacts / legacy):
+- `db.json` — older/rawer dump; **not** what the generator reads
+- `tags.json` — generated tag list with descriptions
+- `output.html` — intermediate fragment injected into `apps.html`
+- `parsed_data.json` — legacy; may be empty/unused
+- Markdown under `assets/original_article/` — original article source for parsing history
+
+### Generator (`md_parser.py`)
+- Paths are repo-relative via `Path(__file__).resolve().parents[2]` (no machine-specific absolute paths)
+- `prettify_db()` sorts tags + apps, then `generate_website()` rebuilds pages
+- Running it rewrites HTML heads/navbars via BeautifulSoup — expect formatting churn
+- Tag button data is written as first line of `script.js`: `const CATEGORIES = [...]`
+- Client filtering: `script.js` (`hideShowClassElement`, `renderFilteringButtons`)
+
+### Tooling / versions
+- `.mise.toml`: `node = "22"`, `python = "3.12"`
+- Python deps: `requirements.txt` → `beautifulsoup4==4.15.0` (use `.venv`)
+- Cypress lives in `cypress-tests/` only (not a monorepo app)
+  - Cypress **16**, config: `cypress.config.js`
+  - Specs: `cypress/e2e/smoke.cy.js`, `cypress/e2e/links.cy.js`
+  - `baseUrl`: `http://127.0.0.1:5500`
+  - Scripts: `test` / `test:ci` = smoke; `test:links` / `test:ci:all` = include links
+- `npm audit` expected clean on current lockfile (devDependencies only)
+- Pretty URLs: Cloudflare `_redirects` + `serve.json` (`/apps` → `apps.html`, etc.)
+
+### Tests caveats
+- **Smoke tests** assert local pages load, `#webapps` has cards, filter buttons render
+- **Links test** visits homepage only (`/index.html`), requests each `<a href>`; logs 4xx as `FUCKERY` but **does not fail** the suite on bad status (legacy behavior). Ignore-list for Cloudflare/anti-bot sites lives in the spec.
+- First Cypress run downloads the binary; needs network
+
+### CDN / front-end deps
+- Bulma CSS via jsDelivr (`bulma@0.9.4`) — stay on 0.9.x; 1.x is breaking
+- Google Fonts: Bebas Neue
+- No bundler, no framework
+
+### Do / don’t for agents
+- **Do** edit `db-fixed.json` then run `md_parser.py` to refresh listing pages
+- **Do** keep production `<base href="https://webmusic.pages.dev/">` in HTML + generator template
+- **Do** use `local-serve.mjs` for local verification
+- **Don’t** reintroduce hardcoded `/Users/...` paths in `md_parser.py`
+- **Don’t** commit `.venv/`, `node_modules/`, Cypress videos/screenshots (see `.gitignore`)
+- **Don’t** “upgrade” to Bulma 1 or add a SPA stack unless explicitly asked
+
+### Hosting notes
+- Cloudflare Pages project; `_redirects` for extensionless routes
+- OG/Twitter meta image: `assets/webmusic-screenshot1.png`
+- `robots.txt`, `site.webmanifest`, Google site verification HTML present
+
+</details>

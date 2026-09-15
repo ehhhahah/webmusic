@@ -1,0 +1,21 @@
+{
+  "name": "webmusic-cypress-tests",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Link-check and smoke tests for the Web Music Apps static site",
+  "scripts": {
+    "serve": "node local-serve.mjs",
+    "serve:raw": "npx --yes serve .. -l tcp://127.0.0.1:5500",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "test": "cypress run --spec 'cypress/e2e/smoke.cy.js'",
+    "test:links": "cypress run --spec 'cypress/e2e/links.cy.js'",
+    "test:all": "cypress run",
+    "test:ci": "start-server-and-test serve http://127.0.0.1:5500 test",
+    "test:ci:all": "start-server-and-test serve http://127.0.0.1:5500 test:all"
+  },
+  "devDependencies": {
+    "cypress": "^16.0.0",
+    "start-server-and-test": "^2.1.2"
+  }
+}
