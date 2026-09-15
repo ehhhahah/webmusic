@@ -61,11 +61,15 @@ div {
 .webapp {
     background-color: var(--bg-elevated) !important;
     color: var(--text) !important;
-    border: 1px solid var(--border);
-    border-radius: 8px;
+    border: none !important;
+    border-radius: 0 !important;
     padding: 2%;
     margin: 2%;
-    box-shadow: var(--shadow);
+    box-shadow: none !important;
+}
+
+.webapp.card {
+    box-shadow: none !important;
 }
 
 .card-footer {
@@ -179,13 +183,16 @@ button,
     padding: 1%;
 }
 
-.toggle {
+.button.toggle,
+.toggle.is-rounded {
     background-color: transparent !important;
     color: var(--text) !important;
     border: 1px solid var(--danger) !important;
+    border-radius: 0 !important;
 }
 
-.toggle-on {
+.button.toggle.toggle-on,
+.toggle.is-rounded.toggle-on {
     background-color: var(--bg-muted) !important;
     color: var(--text) !important;
     border: 1px solid var(--green) !important;
@@ -236,7 +243,8 @@ button:active,
     background-color: #3a4240 !important;
     color: #e8eeea !important;
     text-decoration: none !important;
-    border: 1px solid #5a6560;
+    border: none !important;
+    border-radius: 0 !important;
 }
 
 /* TYPOGRAPHY */
