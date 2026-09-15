@@ -11,6 +11,8 @@ mise install
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 
+pytest -q               # unit tests for generate_site.py
+
 cd cypress-tests && npm install
 npm run serve          # http://127.0.0.1:5500  (rewrites <base> for local)
 npm run test:ci        # smoke tests
@@ -23,6 +25,8 @@ Regenerate HTML from the JSON DB:
 source .venv/bin/activate
 python assets/original_article/generate_site.py
 ```
+
+CI: GitHub Actions runs `pytest` on every push (`.github/workflows/unit-tests.yml`).
 
 ## Content model
 
@@ -51,6 +55,8 @@ Array of app objects. Required keys per app:
 - `authors`: `[{ "name": string | {pl, eng}, "link"?: string }]`
 - `tags`: `string[]` (each must exist in `TAGS_DESCRIPTORS`)
 - `more_links`: `[{ "name": {pl, eng}, "link": string }]` (may be `[]`)
+- `created_at` (`YYYY-MM-DD`; missing → treated as new on generate → today; schema fallback `2022-06-01`)
+- `last_verified_at` (`YYYY-MM-DD`; always set to today on each `generate_site.py` run)
 
 Related generated files:
 - `tags.json` — generated tag list with descriptions
@@ -65,7 +71,8 @@ Related generated files:
 
 ### Tooling / versions
 - `.mise.toml`: `node = "22"`, `python = "3.12"`
-- Python deps: `requirements.txt` → `beautifulsoup4==4.15.0`, `pydantic==2.13.5` (use `.venv`)
+- Python deps: `requirements.txt` → `beautifulsoup4`, `pydantic`, `pytest` (use `.venv`)
+- Unit tests: `tests/` → `pytest -q` (also via `.github/workflows/unit-tests.yml` on push)
 - Cypress lives in `cypress-tests/` only (not a monorepo app)
   - Cypress **16**, config: `cypress.config.js`
   - Specs: `cypress/e2e/smoke.cy.js`, `cypress/e2e/links.cy.js`

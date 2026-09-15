@@ -97,6 +97,9 @@ TAGS_DESCRIPTORS = {
 
 KNOWN_TAGS = frozenset(TAGS_DESCRIPTORS)
 
+# Fallback for catalog entries that predate explicit dating (original Glissando set).
+LEGACY_CATALOG_DATE = datetime.date(2022, 6, 1)
+
 
 class LocalizedText(BaseModel):
     pl: str = ""
@@ -121,6 +124,8 @@ class App(BaseModel):
     tags: list[str]
     more_links: list[MoreLink] = Field(default_factory=list)
     id: Annotated[int, Field(ge=1)]
+    created_at: datetime.date = LEGACY_CATALOG_DATE
+    last_verified_at: datetime.date = LEGACY_CATALOG_DATE
 
     @field_validator("link")
     @classmethod
@@ -148,17 +153,50 @@ class Catalog(RootModel[list[App]]):
         return self
 
 
-def load_db(path: Path = DB_PATH) -> list[App]:
-    raw = json.loads(path.read_text(encoding="utf-8"))
+def stamp_app_dates(raw_apps: list[dict], *, today: datetime.date | None = None) -> list[dict]:
+    """Stamp verification dates on raw app dicts before validation.
+
+    - Entire undated catalog → ``created_at`` = legacy date (one-time backfill).
+    - Individual apps missing ``created_at`` (while others have it) → newly added → today.
+    - ``last_verified_at`` is always set to today (verified on this generate run).
+    - Schema still falls back to ``LEGACY_CATALOG_DATE`` if a field is absent elsewhere.
+    """
+    verified_on = today or datetime.date.today()
+    catalog_has_created = any("created_at" in app for app in raw_apps)
+    for app in raw_apps:
+        if "created_at" not in app:
+            app["created_at"] = (
+                LEGACY_CATALOG_DATE.isoformat()
+                if not catalog_has_created
+                else verified_on.isoformat()
+            )
+        app["last_verified_at"] = verified_on.isoformat()
+    return raw_apps
+
+
+def format_display_date(value: datetime.date) -> str:
+    return f"{value.day} {value.strftime('%B %Y')}"
+
+
+def catalog_last_updated(apps: list[App]) -> datetime.date:
+    if not apps:
+        return datetime.date.today()
+    return max(app.last_verified_at for app in apps)
+
+
+def load_db(path: Path | None = None) -> list[App]:
+    db_path = path if path is not None else DB_PATH
+    raw = json.loads(db_path.read_text(encoding="utf-8"))
     try:
         return Catalog.model_validate(raw).root
     except ValidationError as exc:
-        raise SystemExit(f"Invalid catalog in {path}:\n{exc}") from exc
+        raise SystemExit(f"Invalid catalog in {db_path}:\n{exc}") from exc
 
 
-def dump_db(apps: list[App], path: Path = DB_PATH) -> None:
-    payload = TypeAdapter(list[App]).dump_python(apps, exclude_none=True)
-    path.write_text(json.dumps(payload, indent=4) + "\n", encoding="utf-8")
+def dump_db(apps: list[App], path: Path | None = None) -> None:
+    db_path = path if path is not None else DB_PATH
+    payload = TypeAdapter(list[App]).dump_python(apps, mode="json", exclude_none=True)
+    db_path.write_text(json.dumps(payload, indent=4) + "\n", encoding="utf-8")
 
 
 def localized_value(value: str | LocalizedText, lang: str) -> str:
@@ -285,7 +323,13 @@ def replace_apps_html():
     with open(APPS_PAGE_PATH, 'w', encoding='utf-8') as html:
         html.write(str(soup))
 
-def generate_navbar_and_head():
+def generate_navbar_and_head(apps: list[App]):
+    last_updated = format_display_date(catalog_last_updated(apps))
+    footer_html = f"""
+<footer class="site-footer">
+  <p>Last updated: {last_updated}</p>
+</footer>
+"""
     for page in ALL_PAGES:
         with open(page, 'r+', encoding='utf-8') as html:
             soup = BeautifulSoup(html.read(), 'html.parser')
@@ -361,6 +405,13 @@ def generate_navbar_and_head():
 
             head = soup.find("head")
             head.replace_with(head_html)
+
+            footer_tag = BeautifulSoup(footer_html, "html.parser").footer
+            existing_footer = soup.find("footer", class_="site-footer")
+            if existing_footer is not None:
+                existing_footer.replace_with(footer_tag)
+            elif soup.body is not None:
+                soup.body.append(footer_tag)
         with open(page, 'w', encoding='utf-8') as html:
             html.write(soup.prettify(formatter=None))
 
@@ -378,12 +429,20 @@ def generate_website():
     log_info(f"Replaced apps.html path: {APPS_PAGE_PATH}")
     replace_tags_html(apps)
     log_info("Generated tagsinfo page")
-    generate_navbar_and_head()
-    log_info(f"Replaced the navbar and head for: {ALL_PAGES}")
+    generate_navbar_and_head(apps)
+    log_info(f"Replaced the navbar, head, and footer for: {ALL_PAGES}")
     log_info("Script finished")
 
 def prettify_db():
-    apps = load_db()
+    raw = json.loads(DB_PATH.read_text(encoding="utf-8"))
+    if not isinstance(raw, list):
+        raise SystemExit(f"Invalid catalog in {DB_PATH}: expected a JSON array")
+    stamp_app_dates(raw)
+    try:
+        apps = Catalog.model_validate(raw).root
+    except ValidationError as exc:
+        raise SystemExit(f"Invalid catalog in {DB_PATH}:\n{exc}") from exc
+
     for app in apps:
         app.tags = sorted(app.tags, key=str.lower)
 
