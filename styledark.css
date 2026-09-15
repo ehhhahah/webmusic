@@ -1,48 +1,55 @@
+/* Dark-first shell. Load AFTER Bulma so these rules win. */
+
+:root {
+    --bg: #1c1e1d;
+    --bg-elevated: #262a28;
+    --bg-muted: #2e3331;
+    --text: #e4e8e6;
+    --text-muted: #b4bcb8;
+    --green: #8fd4a0;
+    --green-strong: #6fc484;
+    --green-soft: #a8dcb4;
+    --green-visited: #7ebf8e;
+    --danger: #e07a7a;
+    --border: #3a423e;
+    --focus: #8fd4a0;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
 /* WHOLE DOCUMENT */
 
 html {
-    color: white;
-    background-color: #00000000 !important;
+    color: var(--text);
+    background-color: var(--bg);
 }
 
-body { 
-    color: white;
+body {
+    color: var(--text);
     font-family: Arial, Helvetica, sans-serif;
-	background: linear-gradient(-45deg, #1D3E3B, #3E1D2B, #1d3e30, #3E2D1D, #1d3e30);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-	height: 100% !important;
+    background-color: var(--bg);
+    background-image: linear-gradient(160deg, #1c1e1d 0%, #222624 45%, #1a1c1b 100%);
+    background-attachment: fixed;
+    min-height: 100%;
 }
 
-iframe, form, .gform {
-    background-color: #00000000 !important;
+iframe,
+form,
+.gform {
+    background-color: transparent !important;
     box-shadow: none !important;
     width: 100%;
 }
 
 div {
-    /* background-color: black; */
     display: block;
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
 }
 
 /* CONTAINERS */
 
 .generic-container {
     display: block;
-    border-style:none;
-    margin:auto;
+    border-style: none;
+    margin: auto;
     text-align: center;
 }
 
@@ -52,17 +59,21 @@ div {
 }
 
 .webapp {
-    background-color: #404e4d22 !important;
-    color: white !important;
-    border: 1.5px solid #404e4d11;
-    border-radius: 1.5%;
+    background-color: var(--bg-elevated) !important;
+    color: var(--text) !important;
+    border: 1px solid var(--border);
+    border-radius: 8px;
     padding: 2%;
     margin: 2%;
-    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    box-shadow: var(--shadow);
 }
 
 .card-footer {
-    border-top: none !important; 
+    border-top: none !important;
+}
+
+.show-tags-container {
+    padding: 0%;
 }
 
 .tags {
@@ -72,25 +83,21 @@ div {
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-  }
-  
+}
 
-  .flex-item-left {
+.flex-item-left {
     margin-bottom: 5%;
     padding: 5px;
     flex: 50%;
-  }
-  
+}
 
-  .flex-item-right {
+.flex-item-right {
     padding: 5px;
     flex: 50%;
-  }
-
+}
 
 /* RESPONSIVE */
 
-/* For Mobile */
 @media screen and (max-width: 600px) {
     .webapps {
         display: grid;
@@ -102,16 +109,16 @@ div {
         grid-template-columns: 33% 33% 33%;
     }
 
-    .flex-item-right, .flex-item-left {
+    .flex-item-right,
+    .flex-item-left {
         flex: 100%;
-      }
+    }
 
     .photoinfo-right {
         display: none;
-      }
+    }
 }
 
-/* For tablet */
 @media screen and (min-width: 600px) and (max-width: 1200px) {
     .webapps {
         display: grid;
@@ -124,7 +131,6 @@ div {
     }
 }
 
-/* For computer */
 @media screen and (min-width: 1200px) {
     .webapps {
         display: grid;
@@ -133,27 +139,22 @@ div {
 
     .filtering {
         display: grid;
-        grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% ;
+        grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
     }
 }
 
-
-/* For Mobile */
 @media screen and (max-width: 800px) {
     .navbary {
-        /* margin: 1%; */
-        border-radius: 10px; 
+        border-radius: 10px;
         padding: 1%;
         display: grid;
         grid-template-columns: 50% 50%;
     }
 }
 
-/* For computer */
 @media screen and (min-width: 800px) {
     .navbary {
-        /* margin: 1%; */
-        border-radius: 10px; 
+        border-radius: 10px;
         padding: 1%;
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
@@ -162,13 +163,14 @@ div {
 
 /* BUTTONS AND TOGGLES */
 
-button {
-    border: 1.5px solid #00000022;
-    background-color: #00000022 !important;
-    color: white !important;
-    border-radius: 1.5%;
+button,
+.button {
+    border: 1px solid var(--border);
+    background-color: var(--bg-muted) !important;
+    color: var(--text) !important;
+    border-radius: 6px;
     cursor: pointer;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: none;
 }
 
 .buttons {
@@ -178,114 +180,123 @@ button {
 }
 
 .toggle {
-    background-color: #ffffff00 !important;
-    color: white !important;
-    border: 1px solid rgb(197, 70, 70) !important;
+    background-color: transparent !important;
+    color: var(--text) !important;
+    border: 1px solid var(--danger) !important;
 }
 
 .toggle-on {
-    background-color: #00000022 !important;
-    color: white !important;
-    border: 1px solid rgb(152, 204, 152) !important;
+    background-color: var(--bg-muted) !important;
+    color: var(--text) !important;
+    border: 1px solid var(--green) !important;
 }
 
 .bigbutton {
     font-size: 200%;
     padding: 5%;
     white-space: nowrap;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: var(--shadow);
 }
 
-button:active, button:focus, toggle-all {
+button:focus-visible,
+.button:focus-visible,
+a:focus-visible,
+.toggle-all:focus-visible {
+    outline: 2px solid var(--focus) !important;
+    outline-offset: 2px;
     box-shadow: none !important;
-    border: 1 white !important;
-    outline: 0 !important;
-    background-color: #ffffff33 !important;
-  }
-
-.onblack:hover {
-    background-color: #00;
 }
 
-.tag {
-    cursor: help !important;
-    background-color: #22222255 !important;
-    color: #DEE3E3 !important;
-    text-decoration: none !important;
+button:active,
+.button:active {
+    background-color: #343a37 !important;
 }
 
 .onblack {
     border-radius: 5px;
-    background-color: #00000066;
+    background-color: var(--bg-elevated);
     margin: 2%;
     text-align: center;
-    padding: auto;
+    color: var(--text);
+}
+
+.onblack:hover {
+    background-color: var(--bg-muted);
+    color: var(--green-soft) !important;
 }
 
 .onblack-current {
-    color: white !important;
-    background-color: #00000022 !important;
+    color: var(--text) !important;
+    background-color: var(--bg-muted) !important;
+    border: 1px solid var(--green);
+}
+
+.tag {
+    cursor: help !important;
+    background-color: #3a4240 !important;
+    color: #e8eeea !important;
+    text-decoration: none !important;
+    border: 1px solid #5a6560;
 }
 
 /* TYPOGRAPHY */
 
-h1 { 
-    color: white;
-    text-align:center;
+h1 {
+    color: var(--text);
+    text-align: center;
     vertical-align: text-bottom;
     height: 10%;
     line-height: 1.5;
 }
 
 header {
-    font-family: Bebas Neue;
+    font-family: Bebas Neue, sans-serif;
     font-size: 300%;
 }
 
 ::selection {
-    color: black;
-    background: rgb(200, 255, 200);
-  }
+    color: #121412;
+    background: var(--green-soft);
+}
 
 h2 {
     text-align: left !important;
 }
 
 a {
-    color: white;
+    color: var(--text);
     font-weight: bold;
 }
 
 a:link {
-    color: rgb(210, 255, 210);
+    color: var(--green-soft);
 }
 
 a:visited {
-    color: rgb(90, 190, 90);
+    color: var(--green-visited);
 }
 
 a:hover {
-    text-decoration: underline 1px green;
-    color: rgb(200, 255, 200) !important;
+    text-decoration: underline 1px var(--green-strong);
+    color: var(--green) !important;
 }
 
 ul {
-    margin-bottom: 100%;
     font-size: 70%;
 }
 
 .info {
     margin-top: 2%;
-    color: white;
+    color: var(--text);
     margin-left: 10%;
     margin-right: 10%;
 }
 
 .biginfo {
-    font-family: Arial;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 150%;
     text-align: justify;
-    color: white;
+    color: var(--text);
     margin-top: 2%;
     margin-left: 10%;
     width: 80%;
@@ -296,43 +307,97 @@ ul {
 
 .photoinfo-right {
     border-radius: 25% 75% / 50%;
-    opacity: 90%;
+    opacity: 0.9;
     z-index: -10;
     margin: 0;
     height: auto;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: var(--shadow);
 }
 
 h2.info {
-    font-family: Bebas Neue;
+    font-family: Bebas Neue, sans-serif;
     font-size: 200% !important;
 }
 
 h3.info {
-    font-family: Bebas Neue;
+    font-family: Bebas Neue, sans-serif;
     font-size: 150% !important;
 }
 
+.emoji {
+    font-size: 900% !important;
+    vertical-align: middle;
+    line-height: 2;
+}
+
 .idinfo {
-    opacity: 50%;
+    opacity: 0.65;
     font-size: 75%;
 }
 
-.site-footer {
-    text-align: center;
-    opacity: 0.55;
-    font-size: 85%;
-    padding: 2% 1% 3%;
-    margin-top: 2%;
+.card-subtitle,
+.text-muted {
+    color: var(--text-muted) !important;
 }
 
-.site-footer p {
-    margin: 0;
-	color: white;
+.site-footer {
+    margin-top: 2rem;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border);
+    font-size: 90%;
 }
 
 /* JAVASCRIPT THINGS */
 
 .hide-all-off {
     display: none !important;
+}
+
+/* TOOLTIP */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: #121412;
+    color: var(--text);
+    text-align: center;
+    inline-size: 100%;
+    overflow-wrap: break-word;
+    border-radius: 6px;
+    margin-top: 30%;
+    padding: 4%;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 100ms;
+    border: 1px solid var(--border);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .tooltip .tooltiptext {
+        transition: none;
+    }
+}
+
+.tooltip:hover .tooltiptext,
+.tooltip:focus .tooltiptext,
+.tooltip:focus-visible .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #121412 transparent;
 }

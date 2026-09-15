@@ -241,7 +241,7 @@ def create_html(apps: list[App], lang="eng"):
                 out += author_name
         return out
 
-    html_content = '<div id="webapps" class="webapps g-4">'
+    html_content = '<main id="webapps" class="webapps g-4">'
     for app in apps:
         tags = " ".join(app.tags)
         hashtags = " ".join(
@@ -276,7 +276,7 @@ def create_html(apps: list[App], lang="eng"):
         </div>
         """
 
-    html_content += "</div>"
+    html_content += "</main>"
     with open(HTML_OUTPUT, 'w', encoding='utf-8') as file:
         file.write(html_content)
 
