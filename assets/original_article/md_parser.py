@@ -134,7 +134,7 @@ def create_html(parsed_json, lang="eng"):
                 out += author_name
         return out
 
-    html_content = '<div id="webapps" class="webapps g-4">'
+    html_content = '<main id="webapps" class="webapps g-4">'
     for app in parsed_json:
         tags = " ".join(app["tags"]) if "tags" in app else " "
         hashtags = " ".join([f"<span class='tag' title='{TAGS_DESCRIPTORS[tag]}'>#" + tag + "</span>" for tag in tags.split(" ")])
@@ -160,7 +160,7 @@ def create_html(parsed_json, lang="eng"):
         html_content += f"""
         <div class="card h-100 text-center webapp {tags}" id="{id}">
         <div style="display: flex; justify-content: space-between;">
-        <h2 class="card-title"><a href="{app['link']}" target="_blank">{title}</a></h2>
+        <h2 class="card-title"><a href="{app['link']}" target="_blank" rel="noopener noreferrer">{title}</a></h2>
         <p class="card-text idinfo"><a href="https://webmusic.pages.dev/apps#{id}">#{id}</a></p>
         </div>
         <p class="card-subtitle mb-2 text-muted">Authors: {get_authors(app['authors'])}</p>
@@ -170,7 +170,7 @@ def create_html(parsed_json, lang="eng"):
         </div>
         """
 
-    html_content += "</div>"
+    html_content += "</main>"
     with open(HTML_OUTPUT, 'w', encoding='utf-8') as file:
         file.write(html_content)
 
@@ -221,6 +221,145 @@ def replace_apps_html():
     with open(APPS_PAGE_PATH, 'w', encoding='utf-8') as html:
         html.write(str(soup))
 
+SITE_ORIGIN = 'https://webmusic.pages.dev'
+OG_IMAGE = f'{SITE_ORIGIN}/assets/webmusic-screenshot1.png'
+KEYWORDS = 'music web apps kids accessible'
+AUTHOR = 'Wojtek Węgrzyn, Dominik Oczoś'
+
+PAGE_META = {
+    'index.html': {
+        'title': 'About | Web Music Apps For Everybody',
+        'description': (
+            'Online platform for musical apps available in the browser that lets users '
+            'filter them by accessibility for different groups of people. Applications '
+            'strictly related to creating, generating, learning or editing music.'
+        ),
+        'path': '/',
+    },
+    'apps.html': {
+        'title': 'Apps | Web Music Apps For Everybody',
+        'description': (
+            'Browse and filter browser-based music apps by accessibility and category '
+            'tags — for kids, limited vision, open source tools, sequencers, and more.'
+        ),
+        'path': '/apps',
+    },
+    'submit.html': {
+        'title': 'Submit | Web Music Apps For Everybody',
+        'description': (
+            'Suggest a new browser-based music app to add to the Web Music Apps For '
+            'Everybody catalog.'
+        ),
+        'path': '/submit',
+    },
+    'evaluation.html': {
+        'title': 'Evaluate | Web Music Apps For Everybody',
+        'description': (
+            'Share feedback on browser music apps to help improve accessibility for '
+            'users with visual impairment and other needs.'
+        ),
+        'path': '/evaluation',
+    },
+    'tagsinfo.html': {
+        'title': 'Tags info | Web Music Apps For Everybody',
+        'description': (
+            'Explanations of the accessibility and category tags used to filter apps '
+            'on Web Music Apps For Everybody.'
+        ),
+        'path': '/tagsinfo',
+    },
+}
+
+def make_head_html(page_name):
+    meta = PAGE_META[page_name]
+    title = meta['title']
+    description = meta['description']
+    url = f"{SITE_ORIGIN}{meta['path']}" if meta['path'] != '/' else f'{SITE_ORIGIN}/'
+    return f"""
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <base href="{SITE_ORIGIN}/"/>
+  <title>{title}</title>
+  <meta name="description" content="{description}"/>
+  <meta content="{KEYWORDS}" name="keywords"/>
+  <meta content="{AUTHOR}" name="author"/>
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="{url}"/>
+  <meta property="og:title" content="{title}"/>
+  <meta property="og:description" content="{description}"/>
+  <meta property="og:image" content="{OG_IMAGE}"/>
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image"/>
+  <meta property="twitter:url" content="{url}"/>
+  <meta property="twitter:title" content="{title}"/>
+  <meta property="twitter:description" content="{description}"/>
+  <meta property="twitter:image" content="{OG_IMAGE}"/>
+  <link href="images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+  <link href="images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+  <link href="images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+  <!-- external hrefs -->
+  <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"/>
+  <!-- internal hrefs (after Bulma so custom rules win) -->
+  <link href="styledark.css" rel="stylesheet"/>
+  <link href="site.webmanifest" rel="manifest"/>
+</head>
+"""
+
+def fix_page_markup(soup, page_name):
+    """Durable body/markup fixes that are not replaced by card injection."""
+    if page_name == 'apps.html':
+        container = soup.find(id=re.compile(r'^container'))
+        if container is not None:
+            # Invalid id with a space → split into id + class
+            bad_id = container.get('id', '')
+            if ' ' in bad_id:
+                parts = bad_id.split()
+                container['id'] = parts[0]
+                existing = container.get('class', [])
+                for cls in parts[1:]:
+                    if cls not in existing:
+                        existing.append(cls)
+                container['class'] = existing
+            elif 'has-navbar-fixed-top' not in container.get('class', []):
+                classes = container.get('class', [])
+                classes.append('has-navbar-fixed-top')
+                container['class'] = classes
+
+        # Avoid nested interactive controls: <a><button>…</button></a>
+        for button in soup.select('a > button.button'):
+            link = button.parent
+            if link.name != 'a':
+                continue
+            link['class'] = list(dict.fromkeys(
+                (link.get('class') or []) + (button.get('class') or [])
+            ))
+            href = link.get('href') or ''
+            if not href or href.endswith('tagsinfo.html'):
+                link['href'] = '/tagsinfo'
+            text = button.get_text(strip=True) or 'Tags info'
+            link.clear()
+            link.append(text)
+
+    if page_name == 'index.html':
+        for heading in soup.find_all(['h2', 'h3'], class_='info'):
+            if heading.get_text(strip=True) != 'About website':
+                continue
+            if heading.name != 'h2':
+                heading.name = 'h2'
+            sibling = heading.find_next_sibling()
+            if sibling is not None and sibling.name == 'h2' and 'biginfo' in (sibling.get('class') or []):
+                sibling.name = 'p'
+            break
+
+    if page_name == 'evaluation.html':
+        for link in soup.find_all('a', href='/apps.html'):
+            link['href'] = '/apps'
+
 def generate_navbar_and_head():
     for page in ALL_PAGES:
         with open(page, 'r+', encoding='utf-8') as html:
@@ -228,12 +367,12 @@ def generate_navbar_and_head():
 
             page_name = page.name
             navbar_html = f"""
-<div class="navbary is-black is-spaced has-shadow">
+<nav class="navbary is-black is-spaced has-shadow" aria-label="Primary">
         <a class="onblack{' onblack-current' if page_name.startswith('apps') else ''}" href="/apps">Apps</a>
         <a class="onblack{' onblack-current' if page_name.startswith('about') or page_name.startswith('index') else ''}" href="/">About</a>
         <a class="onblack{' onblack-current' if page_name.startswith('evaluation') else ''}" href="/evaluation">Evaluate</a>
         <a class="onblack{' onblack-current' if page_name.startswith('submit') else ''}" href="/submit">Submit new</a>
-    </div>"""
+    </nav>"""
             header_html = """
             <header>
      <h1 id="pageTitle">
@@ -242,61 +381,18 @@ def generate_navbar_and_head():
     </header>
             """
 
-            head_html = """
-            <head>
-  <!-- seo meta -->
-  <meta content="music web apps kids accesible" name="keywords"/>
-  <meta content="Online platform for musical apps available in the browser that lets users to filter them by its accessibility for different groups of people. Applications that fit the categories and are strictly related to creating, generating, learning or editing music." name="description"/>
-  <meta content="Wojtek Węgrzyn, Dominik Oczoś" name="author"/>
-
-  <!-- Primary Meta Tags -->
-  <title>Web Music Apps For Everybody</title>
-  <meta name="title" content="Web Music Apps For Everybody">
-  <meta name="description" content="Online platform for musical apps available in the browser that lets users to filter them by its accessibility for different groups of people. Applications that fit the categories and are strictly related to creating, generating, learning or editing music.">
-
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://webmusic.pages.dev/">
-  <meta property="og:title" content="Web Music Apps For Everybody">
-  <meta property="og:description" content="Online platform for musical apps available in the browser that lets users to filter them by its accessibility for different groups of people. Applications that fit the categories and are strictly related to creating, generating, learning or editing music.">
-  <meta property="og:image" content="https://webmusic.pages.dev/assets/webmusic-screenshot1.png">
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:title" content="Web Music Apps For Everybody">
-  <meta property="twitter:description" content="Online platform for musical apps available in the browser that lets users to filter them by its accessibility for different groups of people. Applications that fit the categories and are strictly related to creating, generating, learning or editing music.">
-  <meta property="twitter:image" content="https://webmusic.pages.dev/assets/webmusic-screenshot1.png">
-
-  <!-- technical meta -->
-  <meta content="width=device-width, initial-scale=1" name="viewport"/>
-  <base href="https://webmusic.pages.dev/">
-  <meta charset="utf-8"/>
-  <!-- representation meta -->
-  <title>
-   Web music apps for everybody
-  </title>
-  <link href="images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
-  <link href="images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
-  <link href="images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
-  <!-- internal hrefs -->
-  <link href="styledark.css" rel="stylesheet"/>
-  <link href="site.webmanifest" rel="manifest"/>
-  <!-- external hrefs -->
-  <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com" rel="preconnect"/>
-  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"/>
- </head>
-            """
+            head_html = make_head_html(page_name)
 
             navbar = soup.find_all(class_="navbary")[0]
-            navbar.replace_with(navbar_html)
+            navbar.replace_with(BeautifulSoup(navbar_html, 'html.parser'))
 
             header = soup.find("header")
-            header.replace_with(header_html)
+            header.replace_with(BeautifulSoup(header_html, 'html.parser'))
 
             head = soup.find("head")
-            head.replace_with(head_html)
+            head.replace_with(BeautifulSoup(head_html, 'html.parser'))
+
+            fix_page_markup(soup, page_name)
         with open(page, 'w', encoding='utf-8') as html:
             html.write(soup.prettify(formatter=None))
 
