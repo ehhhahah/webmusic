@@ -1,0 +1,46 @@
+name: Tests
+
+on:
+  push:
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run unit tests
+        run: pytest -q
+
+  cypress:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: cypress-tests/package-lock.json
+
+      # Smoke only — do not run links.cy.js here (external URLs; slow/flaky).
+      # Local full suite: cd cypress-tests && npm run test:ci:all
+      - name: Cypress smoke tests
+        uses: cypress-io/github-action@v6
+        with:
+          working-directory: cypress-tests
+          start: npm run serve
+          wait-on: http://127.0.0.1:5500
+          spec: cypress/e2e/smoke.cy.js
