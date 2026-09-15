@@ -68,7 +68,11 @@ Related generated files:
 - `prettify_db()` sorts tags + apps, then `generate_website()` rebuilds pages
 - Running it rewrites HTML heads/navbars via BeautifulSoup — expect formatting churn
 - Tag button data is written as first line of `script.js`: `const CATEGORIES = [...]`
-- Client filtering: `script.js` (`hideShowClassElement`, `renderFilteringButtons`)
+- Client filtering: `script.js` (`applyTagFilter`, `hideShowClassElement`, `renderFilteringButtons`)
+  - **AND semantics:** an app stays visible only while **every tag on that app** is still toggled on
+  - Turning a tag off hides every app that has it — including multi-tag apps that also have other still-on tags (e.g. Abundant Music `#DIY` + `#mustCheck` disappears when DIY is off)
+  - Turning the same tag back on restores those apps only if all of their other tags are still on
+  - All tags start on → full catalog; Toggle all off → empty list
 
 ### Tooling / versions
 - `.mise.toml`: `node = "22"`, `python = "3.12"`
@@ -86,7 +90,7 @@ Related generated files:
 - Pretty URLs: Cloudflare Pages serves `apps.html` at `/apps` natively — **do not** add a `_redirects` rule mapping `/apps` → `/apps.html` (that fights CF’s `/apps.html` → `/apps` redirect and causes `ERR_TOO_MANY_REDIRECTS`). Local pretty URLs are handled by `cypress-tests/local-serve.mjs` (and optional `serve.json` for the `serve` CLI only).
 
 ### Tests caveats
-- **Smoke tests** assert local pages load, `#webapps` has cards, filter buttons render
+- **Smoke tests** assert local pages load, `#webapps` has cards, filter buttons render, and AND tag filtering hides multi-tag apps when any of their tags is off
 - **Links test** visits homepage only (`/index.html`), requests each `<a href>`; logs 4xx as `FUCKERY` but **does not fail** the suite on bad status (legacy behavior). Ignore-list for Cloudflare/anti-bot sites lives in the spec.
 - First Cypress run downloads the binary; needs network
 
