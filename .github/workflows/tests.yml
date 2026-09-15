@@ -35,6 +35,8 @@ jobs:
           cache: npm
           cache-dependency-path: cypress-tests/package-lock.json
 
+      # Smoke only — do not run links.cy.js here (external URLs; slow/flaky).
+      # Local full suite: cd cypress-tests && npm run test:ci:all
       - name: Cypress smoke tests
         uses: cypress-io/github-action@v6
         with:

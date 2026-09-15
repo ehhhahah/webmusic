@@ -26,7 +26,8 @@ source .venv/bin/activate
 python assets/original_article/generate_site.py
 ```
 
-CI: GitHub Actions runs `pytest` and Cypress smoke tests on every push (`.github/workflows/tests.yml`).
+CI: GitHub Actions runs `pytest` and Cypress **smoke** tests on every push (`.github/workflows/tests.yml`).
+`links.cy.js` is **not** run in CI — it hits many external URLs (slow/flaky); use `npm run test:ci:all` locally when you want that check.
 
 ## Content model
 
@@ -73,13 +74,14 @@ Related generated files:
 - `.mise.toml`: `node = "22"`, `python = "3.12"`
 - Python deps: `requirements.txt` → `beautifulsoup4`, `pydantic`, `pytest` (use `.venv`)
 - Unit tests: `tests/` → `pytest -q`
-- Cypress smoke: `cypress-tests` → `npm run test:ci`
-- CI: `.github/workflows/tests.yml` runs both on every push
+- Cypress smoke: `cypress-tests` → `npm run test:ci` (CI runs this only)
+- CI: `.github/workflows/tests.yml` runs pytest + Cypress smoke on every push; **omits** `links.cy.js` (external link check — local via `test:ci:all`)
 - Cypress lives in `cypress-tests/` only (not a monorepo app)
   - Cypress **16**, config: `cypress.config.js`
   - Specs: `cypress/e2e/smoke.cy.js`, `cypress/e2e/links.cy.js`
   - `baseUrl`: `http://127.0.0.1:5500`
   - Scripts: `test` / `test:ci` = smoke; `test:links` / `test:ci:all` = include links
+  - CI intentionally runs smoke only (`spec: cypress/e2e/smoke.cy.js`); do not add `links.cy.js` to the workflow without accepting external-network flakiness
 - `npm audit` expected clean on current lockfile (devDependencies only)
 - Pretty URLs: Cloudflare Pages serves `apps.html` at `/apps` natively — **do not** add a `_redirects` rule mapping `/apps` → `/apps.html` (that fights CF’s `/apps.html` → `/apps` redirect and causes `ERR_TOO_MANY_REDIRECTS`). Local pretty URLs are handled by `cypress-tests/local-serve.mjs` (and optional `serve.json` for the `serve` CLI only).
 
