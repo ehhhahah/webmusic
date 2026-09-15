@@ -1,0 +1,6 @@
+[tools]
+node = "22"
+python = "3.12"
+
+[env]
+_.path = ["{{config_root}}/cypress-tests/node_modules/.bin"]

@@ -198,7 +198,7 @@
             "pl": "\u201caisatsana\u201d Aphex Twin",
             "eng": "Aphex Twin's 'aistsana'"
         },
-        "link": "https://generative.fm/music/alex-bainter-aisatsana",
+        "link": "https://play.generative.fm/generator/aisatsana",
         "description": {
             "pl": "Alex Bainter, kt\u00f3rego inne dzie\u0142a s\u0105 r\u00f3wnie\u017c opisane ni\u017cej i wy\u017cej tym razem zabra\u0142 si\u0119 za generatywn\u0105 interpretacj\u0119 utworu z relatywnie niedawno wydanego albumu \u201cSyro\u201d Aphexa Twina. Prawd\u0119 m\u00f3wi\u0105c jestem nieco zdziwiony, \u017ce sam Aphex Twin nie doczeka\u0142 si\u0119 jeszcze zbyt wielu bardziej zaawansowanych technologicznie interpretacji, ta jest jedyna, kt\u00f3r\u0105 uda\u0142o mi si\u0119 znale\u017a\u0107. ",
             "eng": "Generative interpretation of a song made by electronic music legend. It's only one web interpretation of Aphex Twin song that we could find."
@@ -352,6 +352,36 @@
             "tool"
         ],
         "id": 11
+    },
+    {
+        "authors": [
+            {
+                "name": "ehh hahah",
+                "link": "https://linktr.ee/ehhhahah"
+            },
+            {
+                "name": "Joanna Wabik",
+                "link": "https://yoxoko.wordpress.com/"
+            }
+        ],
+        "title": {
+            "pl": "",
+            "eng": "BeatMap"
+        },
+        "link": "https://beatmaps.pages.dev/nowa-huta/",
+        "description": {
+            "pl": "",
+            "eng": "Great-looking map of Nowa Huta, Krak\u00f3w that was transformed into a musical piece by different age participants during the workshops of recording and creating sounds."
+        },
+        "tags": [
+            "DIY",
+            "forKids",
+            "limitedVision",
+            "noveltyArt",
+            "visual"
+        ],
+        "more_links": [],
+        "id": 93
     },
     {
         "authors": [
@@ -588,13 +618,6 @@
                     "eng": "Most popular genres yearly"
                 },
                 "link": "http://everynoise.com/retromatic.html"
-            },
-            {
-                "name": {
-                    "pl": "Nowe wydania z danego gatunku muzycznego",
-                    "eng": "New releases by genre"
-                },
-                "link": "http://everynoise.com/new_releases_by_genre.cgi"
             },
             {
                 "name": {
@@ -1685,7 +1708,7 @@
         "authors": [
             {
                 "name": "Maximillian Laumeister",
-                "link": "https://www.maxlaumeister.com/"
+                "link": "https://lupine.dev/"
             }
         ],
         "more_links": [
