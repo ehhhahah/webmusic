@@ -150,9 +150,17 @@ div {
 @media screen and (max-width: 800px) {
     .navbary {
         border-radius: 10px;
-        padding: 1%;
+        padding: 0.75rem;
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.55rem;
+        box-sizing: border-box;
+    }
+
+    .navbary .onblack {
+        margin: 0;
+        padding: 0.7rem 0.55rem;
+        line-height: 1.25;
     }
 }
 
@@ -355,6 +363,54 @@ h3.info {
     color: var(--text-muted);
     border-top: 1px solid var(--border);
     font-size: 90%;
+}
+
+/* Mobile spacing / type — after base rules so these win */
+@media screen and (max-width: 800px) {
+    header {
+        font-size: 220%;
+        padding: 0.5rem 1.25rem 0;
+    }
+
+    h1 {
+        line-height: 1.25;
+        height: auto;
+    }
+
+    .info {
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+    }
+
+    .biginfo {
+        text-align: left;
+        font-size: 115%;
+        line-height: 1.65;
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+        width: auto;
+        margin-bottom: 1.5rem;
+    }
+
+    h2.info {
+        font-size: 165% !important;
+        margin-top: 0.75rem;
+    }
+
+    h3.info {
+        font-size: 130% !important;
+    }
+
+    .flex-item-left,
+    .flex-item-right {
+        padding: 0.5rem 0.25rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .bigbutton {
+        font-size: 150%;
+        padding: 0.85rem 1.25rem;
+    }
 }
 
 /* JAVASCRIPT THINGS */
