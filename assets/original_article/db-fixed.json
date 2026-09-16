@@ -32,7 +32,7 @@
         "more_links": [],
         "id": 1,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -67,7 +67,7 @@
         ],
         "id": 2,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -104,7 +104,7 @@
         ],
         "id": 3,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -139,7 +139,7 @@
         ],
         "id": 4,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -179,7 +179,7 @@
         ],
         "id": 5,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -223,7 +223,7 @@
         ],
         "id": 6,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -258,7 +258,7 @@
         ],
         "id": 7,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -284,7 +284,7 @@
         "more_links": [],
         "id": 8,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -317,7 +317,7 @@
         ],
         "id": 9,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [],
@@ -345,7 +345,7 @@
         ],
         "id": 10,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -373,7 +373,7 @@
         "more_links": [],
         "id": 11,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -405,7 +405,7 @@
         "more_links": [],
         "id": 93,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -447,7 +447,45 @@
         ],
         "id": 12,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
+    },
+    {
+        "authors": [
+            {
+                "name": {
+                    "pl": "Brian Foo",
+                    "eng": "Brian Foo"
+                },
+                "link": "https://brianfoo.com/"
+            }
+        ],
+        "title": {
+            "pl": "Blackout Music",
+            "eng": "Blackout Music"
+        },
+        "link": "https://blackoutmusic.brianfoo.com/",
+        "description": {
+            "pl": "Tw\u00f3rz now\u0105 muzyk\u0119, wymazuj\u0105c nuty z klasycznych utwor\u00f3w fortepianowych z domeny publicznej \u2014 pozosta\u0142e d\u017awi\u0119ki sk\u0142adaj\u0105 si\u0119 w nowy utw\u00f3r.",
+            "eng": "Create new music by blacking out notes from public-domain classical piano pieces \u2014 remaining notes collapse into a new composition."
+        },
+        "tags": [
+            "classical",
+            "DIY",
+            "openSource",
+            "tool"
+        ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Opis koncepcji",
+                    "eng": "Concept explained"
+                },
+                "link": "https://blog.brianfoo.com/blackout-music/"
+            }
+        ],
+        "id": 97,
+        "created_at": "2026-09-15",
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -484,7 +522,7 @@
         ],
         "id": 13,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -520,7 +558,7 @@
         ],
         "id": 14,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -559,7 +597,7 @@
         ],
         "id": 15,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -596,7 +634,7 @@
         ],
         "id": 16,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -631,7 +669,40 @@
         ],
         "id": 17,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
+    },
+    {
+        "authors": [
+            {
+                "name": "Ludovic Riffault"
+            }
+        ],
+        "title": {
+            "pl": "Commute",
+            "eng": "Commute"
+        },
+        "link": "https://commute.dataveyes.com/",
+        "description": {
+            "pl": "Wizualizacja i sonifikacja zanieczyszczenia ha\u0142asem w codziennych dojazdach. Pokazuje ambientowy ha\u0142as podczas podr\u00f3\u017cy metrem i pozwala pos\u0142ucha\u0107 algorytmicznie generowanej melodii.",
+            "eng": "Visualization and sonification of noise pollution in daily commutes. Explore ambient noise from subway journeys as waveforms and listen to an algorithmically generated melody."
+        },
+        "tags": [
+            "ambient",
+            "sonification",
+            "visual"
+        ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Sonification.design",
+                    "eng": "Sonification.design"
+                },
+                "link": "https://sonification.design/"
+            }
+        ],
+        "id": 95,
+        "created_at": "2026-09-15",
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -715,7 +786,7 @@
         ],
         "id": 18,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -753,7 +824,7 @@
         ],
         "id": 19,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -790,7 +861,7 @@
         ],
         "id": 20,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -826,7 +897,7 @@
         ],
         "id": 21,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -865,7 +936,7 @@
         ],
         "id": 22,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -905,7 +976,45 @@
         ],
         "id": 23,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
+    },
+    {
+        "authors": [
+            {
+                "name": {
+                    "pl": "Brian Foo",
+                    "eng": "Brian Foo"
+                },
+                "link": "https://brianfoo.com/"
+            }
+        ],
+        "title": {
+            "pl": "DJ Phonetic",
+            "eng": "DJ Phonetic"
+        },
+        "link": "https://djphonetic.brianfoo.com/",
+        "description": {
+            "pl": "Beatboxuj historyczn\u0105 mow\u0105 \u2014 fonemy z nagra\u0144 w domenie publicznej staj\u0105 si\u0119 kickami, snare\u2019ami i hi-hatami.",
+            "eng": "Beatbox with historical speech \u2014 turn phonemes from public-domain recordings into kicks, snares, and hi-hats."
+        },
+        "tags": [
+            "DIY",
+            "openSource",
+            "sequencer",
+            "visual"
+        ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Opis",
+                    "eng": "About"
+                },
+                "link": "https://djphonetic.brianfoo.com/about/"
+            }
+        ],
+        "id": 99,
+        "created_at": "2026-09-15",
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -936,7 +1045,7 @@
         "more_links": [],
         "id": 24,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -960,7 +1069,7 @@
         "more_links": [],
         "id": 25,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -1005,7 +1114,7 @@
         ],
         "id": 26,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -1047,7 +1156,7 @@
         ],
         "id": 27,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -1098,7 +1207,7 @@
         ],
         "id": 28,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -1164,7 +1273,7 @@
         ],
         "id": 29,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -1209,7 +1318,7 @@
         ],
         "id": 30,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -1244,7 +1353,42 @@
         ],
         "id": 31,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
+    },
+    {
+        "authors": [
+            {
+                "name": "The Pudding",
+                "link": "https://pudding.cool/author/the-pudding-team/"
+            }
+        ],
+        "title": {
+            "pl": "Get out of your geographic music bubble",
+            "eng": "Get out of your geographic music bubble"
+        },
+        "link": "https://pudding.cool/2021/04/music-bubble/",
+        "description": {
+            "pl": "O Twojej geograficznej ba\u0144ce muzycznej \u2014 hitach, kt\u00f3re dominuj\u0105 lokalnie, a daleko st\u0105d brzmi\u0105 zupe\u0142nie inaczej.",
+            "eng": "About your geographic music bubble \u2014 the hits that dominate nearby, and the ones that are huge far away from you."
+        },
+        "tags": [
+            "audioEssay",
+            "descriptive",
+            "learn",
+            "visual"
+        ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Mapa muzyczna",
+                    "eng": "Music map"
+                },
+                "link": "https://pudding.cool/2018/06/music-map/?date=202106"
+            }
+        ],
+        "id": 105,
+        "created_at": "2026-09-16",
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -1288,7 +1432,7 @@
         ],
         "id": 32,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -1317,7 +1461,7 @@
         "more_links": [],
         "id": 33,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -1353,7 +1497,7 @@
         ],
         "id": 34,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -1381,7 +1525,7 @@
         "more_links": [],
         "id": 35,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -1407,7 +1551,7 @@
         "more_links": [],
         "id": 36,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -1435,7 +1579,7 @@
         "more_links": [],
         "id": 37,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -1471,7 +1615,34 @@
         ],
         "id": 38,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
+    },
+    {
+        "authors": [
+            {
+                "name": "Vivian Li",
+                "link": "https://pudding.cool/author/vivian-li/"
+            }
+        ],
+        "title": {
+            "pl": "How do animals sound across languages?",
+            "eng": "How do animals sound across languages?"
+        },
+        "link": "https://pudding.cool/2025/03/language/",
+        "description": {
+            "pl": "Jak zwierz\u0119ta \u201ebrzmi\u0105\u201d w r\u00f3\u017cnych j\u0119zykach \u2014 por\u00f3wnanie onomatopei (meow, moo, oink) przez IPA i nagrania.",
+            "eng": "How animal sounds differ across languages \u2014 comparing onomatopoeia like meow, moo, and oink through IPA and audio."
+        },
+        "tags": [
+            "audioEssay",
+            "descriptive",
+            "learn",
+            "visual"
+        ],
+        "more_links": [],
+        "id": 103,
+        "created_at": "2026-09-16",
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -1498,7 +1669,61 @@
         "more_links": [],
         "id": 39,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
+    },
+    {
+        "authors": [
+            {
+                "name": "Michelle Pera-McGhee",
+                "link": "https://pudding.cool/author/michelle-pera-mcghee/"
+            }
+        ],
+        "title": {
+            "pl": "How musicals use motifs to tell stories",
+            "eng": "How musicals use motifs to tell stories"
+        },
+        "link": "https://pudding.cool/2025/12/motifs/",
+        "description": {
+            "pl": "Jak musicale u\u017cywaj\u0105 motyw\u00f3w do opowiadania historii \u2014 kr\u00f3tkich, rozpoznawalnych pomys\u0142\u00f3w muzycznych powracaj\u0105cych jak leitmotify w Wicked, Hamilton i Les Mis\u00e9rables.",
+            "eng": "How musicals use short, recurring musical ideas \u2014 motifs \u2014 to tell stories, with interactive charts from Wicked, Hamilton, and Les Mis\u00e9rables."
+        },
+        "tags": [
+            "audioEssay",
+            "descriptive",
+            "learn",
+            "visual"
+        ],
+        "more_links": [],
+        "id": 101,
+        "created_at": "2026-09-16",
+        "last_verified_at": "2026-09-16"
+    },
+    {
+        "authors": [
+            {
+                "name": "The Pudding",
+                "link": "https://pudding.cool/author/the-pudding-team/"
+            }
+        ],
+        "title": {
+            "pl": "How Sonic DNA Connects Generations of Music",
+            "eng": "How Sonic DNA Connects Generations of Music"
+        },
+        "link": "https://pudding.cool/2025/04/music-dna/",
+        "description": {
+            "pl": "Jak \u201eDNA\u201d d\u017awi\u0119ku \u0142\u0105czy pokolenia muzyki \u2014 ukryta historia sampli, gatunk\u00f3w i wp\u0142yw\u00f3w.",
+            "eng": "How sonic \u201cDNA\u201d connects generations of music \u2014 the hidden history of samples, genres, and influence across eras."
+        },
+        "tags": [
+            "audioEssay",
+            "descriptive",
+            "learn",
+            "visual"
+        ],
+        "more_links": [],
+        "id": 102,
+        "created_at": "2026-09-16",
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -1543,7 +1768,7 @@
         ],
         "id": 40,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -1571,7 +1796,34 @@
         "more_links": [],
         "id": 41,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
+    },
+    {
+        "authors": [
+            {
+                "name": "Matt Daniels",
+                "link": "https://pudding.cool/author/matt-daniels/"
+            }
+        ],
+        "title": {
+            "pl": "Identifying Generational Gaps in Music",
+            "eng": "Identifying Generational Gaps in Music"
+        },
+        "link": "https://pudding.cool/2020/04/music-challenge/",
+        "description": {
+            "pl": "Quiz o lukach pokoleniowych w muzyce \u2014 kt\u00f3re hity pami\u0119tasz, a kt\u00f3re znikn\u0119\u0142y z kulturowej pami\u0119ci.",
+            "eng": "A listening quiz on generational gaps in music \u2014 which hits you still know, and which have faded from cultural memory."
+        },
+        "tags": [
+            "audioEssay",
+            "descriptive",
+            "learn",
+            "visual"
+        ],
+        "more_links": [],
+        "id": 106,
+        "created_at": "2026-09-16",
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -1605,7 +1857,7 @@
         ],
         "id": 42,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -1642,7 +1894,7 @@
         ],
         "id": 43,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -1680,7 +1932,7 @@
         "more_links": [],
         "id": 44,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -1709,7 +1961,7 @@
         "more_links": [],
         "id": 45,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -1747,7 +1999,7 @@
         ],
         "id": 46,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -1798,7 +2050,7 @@
         ],
         "id": 47,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -1832,7 +2084,7 @@
         ],
         "id": 48,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -1904,7 +2156,7 @@
         ],
         "id": 49,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -1929,7 +2181,7 @@
         "more_links": [],
         "id": 50,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -1955,7 +2207,45 @@
         "more_links": [],
         "id": 51,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
+    },
+    {
+        "authors": [
+            {
+                "name": {
+                    "pl": "Brian Foo",
+                    "eng": "Brian Foo"
+                },
+                "link": "https://brianfoo.com/"
+            }
+        ],
+        "title": {
+            "pl": "Mixed Messages",
+            "eng": "Mixed Messages"
+        },
+        "link": "https://mixedmessages.brianfoo.com/",
+        "description": {
+            "pl": "Narz\u0119dzie online do zabawy cudzymi s\u0142owami.",
+            "eng": "Online tool for playing with people\u2019s words."
+        },
+        "tags": [
+            "composing",
+            "DIY",
+            "openSource",
+            "visual"
+        ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Kod \u017ar\u00f3d\u0142owy",
+                    "eng": "Source code"
+                },
+                "link": "https://github.com/beefoo/mixed-messages"
+            }
+        ],
+        "id": 98,
+        "created_at": "2026-09-15",
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -1988,7 +2278,7 @@
         ],
         "id": 52,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -2024,7 +2314,7 @@
         ],
         "id": 53,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -2067,7 +2357,43 @@
         ],
         "id": 54,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
+    },
+    {
+        "authors": [
+            {
+                "name": {
+                    "pl": "Brian Foo",
+                    "eng": "Brian Foo"
+                },
+                "link": "https://brianfoo.com/"
+            }
+        ],
+        "title": {
+            "pl": "Music For Mystics",
+            "eng": "Music For Mystics"
+        },
+        "link": "https://musicformystics.brianfoo.com/",
+        "description": {
+            "pl": "Narz\u0119dzie online do wydobywania ukrytych wzorc\u00f3w muzycznych ze starych tekst\u00f3w alchemicznych.",
+            "eng": "Online tool for conjuring musical patterns hidden in old alchemist texts."
+        },
+        "tags": [
+            "DIY",
+            "openSource"
+        ],
+        "more_links": [
+            {
+                "name": {
+                    "pl": "Opis koncepcji",
+                    "eng": "Concept explained"
+                },
+                "link": "https://blog.brianfoo.com/music-for-mystics/"
+            }
+        ],
+        "id": 96,
+        "created_at": "2026-09-15",
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -2112,7 +2438,7 @@
         ],
         "id": 55,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -2145,7 +2471,7 @@
         ],
         "id": 56,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -2182,7 +2508,7 @@
         ],
         "id": 57,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -2216,7 +2542,7 @@
         ],
         "id": 58,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -2242,7 +2568,7 @@
         "more_links": [],
         "id": 59,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -2277,7 +2603,7 @@
         ],
         "id": 60,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -2305,7 +2631,7 @@
         "more_links": [],
         "id": 61,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -2369,7 +2695,7 @@
         ],
         "id": 62,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -2427,7 +2753,7 @@
         ],
         "id": 63,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -2460,7 +2786,7 @@
         "more_links": [],
         "id": 64,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -2498,7 +2824,7 @@
         ],
         "id": 65,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -2533,7 +2859,7 @@
         ],
         "id": 66,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -2567,7 +2893,7 @@
         ],
         "id": 67,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -2602,7 +2928,7 @@
         ],
         "id": 68,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -2638,7 +2964,7 @@
         ],
         "id": 69,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -2664,7 +2990,38 @@
         "more_links": [],
         "id": 70,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
+    },
+    {
+        "authors": [
+            {
+                "name": "Jan Diehm",
+                "link": "https://pudding.cool/author/jan-diehm/"
+            },
+            {
+                "name": "Michelle Pera-McGhee",
+                "link": "https://pudding.cool/author/michelle-pera-mcghee/"
+            }
+        ],
+        "title": {
+            "pl": "Quantifying the Diva-ness of 138 National Anthem Performances",
+            "eng": "Quantifying the Diva-ness of 138 National Anthem Performances"
+        },
+        "link": "https://pudding.cool/2024/02/anthems/",
+        "description": {
+            "pl": "Por\u00f3wnanie 138 wykona\u0144 hymnu USA \u2014 \u201eDiva Score\u201d mierzy, jak bardzo melodia odbiega od standardu.",
+            "eng": "Compare 138 U.S. National Anthem performances \u2014 a \u201cDiva Score\u201d measures how far each melody strays from the standard."
+        },
+        "tags": [
+            "audioEssay",
+            "descriptive",
+            "learn",
+            "visual"
+        ],
+        "more_links": [],
+        "id": 104,
+        "created_at": "2026-09-16",
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -2693,7 +3050,7 @@
         "more_links": [],
         "id": 71,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -2727,7 +3084,7 @@
         ],
         "id": 72,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -2773,7 +3130,7 @@
         ],
         "id": 73,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -2797,7 +3154,7 @@
         "more_links": [],
         "id": 74,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -2823,7 +3180,7 @@
         "more_links": [],
         "id": 94,
         "created_at": "2026-09-15",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -2849,7 +3206,7 @@
         "more_links": [],
         "id": 75,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -2883,7 +3240,7 @@
         ],
         "id": 76,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -2909,7 +3266,7 @@
         "more_links": [],
         "id": 77,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -2935,7 +3292,7 @@
         "more_links": [],
         "id": 78,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -2970,7 +3327,7 @@
         ],
         "id": 79,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -2999,7 +3356,7 @@
         "more_links": [],
         "id": 80,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -3036,7 +3393,7 @@
         ],
         "id": 81,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -3081,7 +3438,7 @@
         ],
         "id": 82,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -3116,7 +3473,7 @@
         ],
         "id": 83,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -3150,7 +3507,7 @@
         ],
         "id": 84,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -3187,7 +3544,7 @@
         ],
         "id": 85,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -3220,7 +3577,7 @@
         ],
         "id": 86,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -3261,7 +3618,7 @@
         ],
         "id": 87,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -3303,7 +3660,7 @@
         ],
         "id": 88,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -3354,7 +3711,7 @@
         ],
         "id": 89,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -3382,7 +3739,34 @@
         "more_links": [],
         "id": 90,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
+    },
+    {
+        "authors": [
+            {
+                "name": "Michelle Pera-McGhee",
+                "link": "https://pudding.cool/author/michelle-pera-mcghee/"
+            }
+        ],
+        "title": {
+            "pl": "WONKY",
+            "eng": "WONKY"
+        },
+        "link": "https://pudding.cool/2023/06/groove/",
+        "description": {
+            "pl": "Eksploracja rytmu i groove\u2019\u00f3w, kt\u00f3re \u0142ami\u0105 zasady \u2014 od straight i swing po Dilla Time.",
+            "eng": "An exploration of rhythm and grooves that break the rules \u2014 from straight and swing to Dilla Time."
+        },
+        "tags": [
+            "audioEssay",
+            "descriptive",
+            "learn",
+            "visual"
+        ],
+        "more_links": [],
+        "id": 100,
+        "created_at": "2026-09-16",
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -3422,7 +3806,7 @@
         "more_links": [],
         "id": 91,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     },
     {
         "authors": [
@@ -3457,6 +3841,6 @@
         ],
         "id": 92,
         "created_at": "2022-06-01",
-        "last_verified_at": "2026-09-15"
+        "last_verified_at": "2026-09-16"
     }
 ]
