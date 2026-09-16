@@ -44,6 +44,8 @@ TAGS_DESCRIPTORS = {
 
 "ambient":"Relaxing, soft or slow-paced music.",
 
+"audioEssay":"Interactive narrative with embedded sound — scroll, listen, and learn.",
+
 "backgroundMuzak":"Music to be put in background, low listening effort expected.",
 
 "bigTech":"Created by big technological company.",
@@ -89,6 +91,8 @@ TAGS_DESCRIPTORS = {
 "sequencer":"App based on simple sound sequences.",
 
 "smallBandwidth": "Slow network users should not have issues with opening and using the app.",
+
+"sonification":"Turning non-musical data into sound or music.",
 
 "tool":"Useful to musicians and producers.",
 
